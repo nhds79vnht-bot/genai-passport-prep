@@ -1,138 +1,186 @@
+"""Generate app icons: side-view realistic brain with knowledge flowing in."""
+
 from PIL import Image, ImageDraw, ImageFilter
 
-
 SIZE = 512
+OUT = "/agent/genai-passport-prep/public"
 
 
-def vertical_gradient(size, top_color, bottom_color):
+def radial_bg(size):
     img = Image.new("RGBA", (size, size))
-    pixels = img.load()
+    px = img.load()
+    cx, cy = size // 2, size // 2
     for y in range(size):
-      t = y / (size - 1)
-      color = tuple(int(top_color[i] * (1 - t) + bottom_color[i] * t) for i in range(3)) + (255,)
-      for x in range(size):
-          pixels[x, y] = color
+        for x in range(size):
+            d = ((x - cx) ** 2 + (y - cy) ** 2) ** 0.5 / (size * 0.72)
+            t = min(d, 1.0)
+            r = int(18 + (45 - 18) * (1 - t))
+            g = int(12 + (28 - 12) * (1 - t))
+            b = int(42 + (72 - 42) * (1 - t))
+            px[x, y] = (r, g, b, 255)
     return img
 
 
-def glow_circle(base, center, radius, color, blur):
+def glow(base, center, radius, color, blur=16):
+    layer = Image.new("RGBA", base.size, (0, 0, 0, 0))
+    ImageDraw.Draw(layer).ellipse(
+        (center[0] - radius, center[1] - radius, center[0] + radius, center[1] + radius),
+        fill=color,
+    )
+    base.alpha_composite(layer.filter(ImageFilter.GaussianBlur(blur)))
+
+
+def draw_knowledge_streams(base):
+    """Light/data streams flowing from left into the brain."""
     layer = Image.new("RGBA", base.size, (0, 0, 0, 0))
     draw = ImageDraw.Draw(layer)
-    x, y = center
-    draw.ellipse((x - radius, y - radius, x + radius, y + radius), fill=color)
-    layer = layer.filter(ImageFilter.GaussianBlur(blur))
+
+    streams = [
+        [(28, 168), (88, 178), (148, 188), (198, 196)],
+        [(20, 208), (90, 210), (155, 214), (205, 218)],
+        [(32, 248), (95, 244), (158, 238), (210, 232)],
+        [(48, 288), (108, 278), (168, 268), (218, 258)],
+        [(64, 148), (120, 162), (175, 178), (215, 188)],
+    ]
+    colors = [
+        (103, 232, 249, 180),
+        (167, 139, 250, 170),
+        (244, 114, 182, 160),
+        (251, 191, 36, 140),
+        (129, 140, 248, 150),
+    ]
+
+    for pts, col in zip(streams, colors):
+        draw.line(pts, fill=col, width=5, joint="curve")
+        for i, (x, y) in enumerate(pts):
+            r = 5 + (i * 2)
+            draw.ellipse((x - r, y - r, x + r, y + r), fill=(*col[:3], min(255, col[3] + 40)))
+
+    # Floating knowledge particles
+    particles = [
+        (42, 132, 4), (58, 192, 3), (72, 228, 5), (38, 268, 3),
+        (96, 156, 3), (110, 272, 4), (54, 312, 3),
+    ]
+    for x, y, r in particles:
+        draw.ellipse((x - r, y - r, x + r, y + r), fill=(186, 230, 253, 200))
+
+    # Symbol fragments (mini nodes)
+    nodes = [(66, 178), (98, 218), (130, 252)]
+    for x, y in nodes:
+        draw.rectangle((x - 5, y - 5, x + 5, y + 5), outline=(224, 231, 255, 200), width=2)
+        draw.line((x - 8, y, x + 8, y), fill=(147, 197, 253, 160), width=1)
+        draw.line((x, y - 8, x, y + 8), fill=(147, 197, 253, 160), width=1)
+
+    layer = layer.filter(ImageFilter.GaussianBlur(2))
     base.alpha_composite(layer)
 
 
-def draw_book(draw):
-    left_page = [(90, 384), (180, 364), (256, 370), (256, 432), (170, 424), (90, 440)]
-    right_page = [(256, 370), (332, 364), (422, 384), (422, 440), (342, 424), (256, 432)]
-    draw.polygon(left_page, fill=(31, 18, 66, 255), outline=(175, 74, 236, 255))
-    draw.polygon(right_page, fill=(31, 18, 66, 255), outline=(175, 74, 236, 255))
-    draw.line((256, 370, 256, 432), fill=(231, 84, 255, 255), width=5)
-    draw.line((132, 392, 236, 384), fill=(131, 67, 189, 180), width=2)
-    draw.line((128, 406, 236, 398), fill=(131, 67, 189, 110), width=2)
-    draw.line((276, 384, 382, 392), fill=(131, 67, 189, 180), width=2)
-    draw.line((276, 398, 386, 406), fill=(131, 67, 189, 110), width=2)
-
-
-def draw_smoke(base):
-    layer = Image.new("RGBA", base.size, (0, 0, 0, 0))
-    draw = ImageDraw.Draw(layer)
-    smoke_colors = [
-        (230, 120, 255, 110),
-        (216, 70, 240, 100),
-        (168, 85, 247, 70),
-    ]
-    paths = [
-        [(220, 382), (240, 320), (246, 270), (256, 220), (266, 270), (272, 320), (292, 382)],
-        [(232, 382), (244, 332), (250, 284), (256, 244), (262, 284), (268, 332), (280, 382)],
-    ]
-    for pts, color in zip(paths, smoke_colors[:2]):
-        draw.polygon(pts, fill=color)
-    draw.polygon([(240, 382), (246, 340), (252, 286), (256, 250), (260, 286), (266, 340), (272, 382)], fill=smoke_colors[2])
-    layer = layer.filter(ImageFilter.GaussianBlur(18))
-    base.alpha_composite(layer)
-
-
-def draw_brain(base):
+def draw_brain_side(base):
+    """Lateral (side) view realistic brain silhouette."""
     glow = Image.new("RGBA", base.size, (0, 0, 0, 0))
-    gd = ImageDraw.Draw(glow)
-    gd.ellipse((118, 88, 394, 320), fill=(231, 84, 255, 90))
-    glow = glow.filter(ImageFilter.GaussianBlur(24))
-    base.alpha_composite(glow)
+    ImageDraw.Draw(glow).ellipse((175, 95, 430, 340), fill=(192, 38, 211, 70))
+    base.alpha_composite(glow.filter(ImageFilter.GaussianBlur(28)))
 
     layer = Image.new("RGBA", base.size, (0, 0, 0, 0))
     draw = ImageDraw.Draw(layer)
-    brain = [
-        (256, 108), (228, 108), (198, 122), (182, 150), (162, 148), (144, 168),
-        (144, 194), (136, 210), (136, 242), (154, 270), (180, 286), (204, 292),
-        (220, 304), (256, 304), (292, 304), (308, 292), (332, 286), (358, 270),
-        (376, 242), (376, 210), (368, 194), (368, 168), (350, 148), (330, 150),
-        (314, 122), (284, 108),
+
+    # Main cerebrum — lateral profile facing right
+    cerebrum = [
+        (198, 210), (192, 178), (205, 148), (232, 122), (268, 108),
+        (310, 104), (352, 112), (388, 132), (412, 162), (420, 198),
+        (418, 234), (402, 268), (372, 292), (334, 304), (292, 308),
+        (252, 302), (222, 282), (205, 252),
     ]
-    draw.polygon(brain, fill=(235, 154, 255, 255))
-    draw.line((256, 118, 256, 304), fill=(252, 234, 251, 170), width=5)
-    lines = [
-        (198, 154, 220, 190, 212, 252, 198, 286),
-        (314, 154, 292, 190, 300, 252, 314, 286),
-        (174, 208, 220, 198, 256, 198, 338, 208),
-        (166, 242, 220, 234, 256, 234, 346, 242),
+    draw.polygon(cerebrum, fill=(219, 39, 119, 255))
+
+    # Inner highlight (knowledge absorbed)
+    inner_glow_pts = [
+        (248, 188), (278, 168), (318, 162), (356, 172), (378, 198),
+        (382, 228), (364, 256), (328, 272), (286, 276), (252, 262), (238, 228),
     ]
-    for line in lines:
-        draw.line(line, fill=(252, 234, 251, 130), width=4, joint="curve")
-    layer = layer.filter(ImageFilter.GaussianBlur(1))
+    draw.polygon(inner_glow_pts, fill=(251, 207, 232, 120))
+
+    # Cerebellum (back-bottom lump)
+    cerebellum = [
+        (188, 248), (178, 272), (182, 298), (202, 318), (228, 328),
+        (252, 322), (262, 300), (254, 272), (238, 256),
+    ]
+    draw.polygon(cerebellum, fill=(190, 24, 93, 255))
+
+    # Brain stem
+    draw.polygon([(228, 318), (242, 328), (248, 358), (232, 362), (218, 348), (218, 328)], fill=(157, 23, 77, 255))
+
+    # Sulci / gyri — realistic fold lines
+    folds = [
+        [(228, 128), (248, 148), (258, 178), (252, 210), (238, 238)],
+        [(278, 118), (298, 142), (308, 172), (302, 208), (286, 238)],
+        [(328, 124), (348, 148), (356, 182), (348, 218), (328, 248)],
+        [(368, 148), (382, 178), (384, 212), (372, 242)],
+        [(212, 178), (252, 172), (292, 168), (332, 172), (372, 182)],
+        [(205, 212), (248, 206), (292, 202), (338, 208), (378, 218)],
+        [(198, 248), (238, 242), (278, 238), (318, 244)],
+        # Cerebellar stripes
+        [(192, 278), (210, 288), (228, 296), (246, 300)],
+        [(196, 292), (214, 302), (232, 308), (248, 310)],
+    ]
+    for fold in folds:
+        draw.line(fold, fill=(253, 242, 248, 140), width=3, joint="curve")
+
+    # Central sulcus / fissure (deeper groove)
+    draw.line([(268, 112), (278, 160), (282, 210), (276, 258), (262, 292)], fill=(131, 24, 67, 180), width=4, joint="curve")
+
+    # Entry point glow — where knowledge enters (frontal/temporal)
+    draw.ellipse((196, 196, 228, 232), fill=(103, 232, 249, 90))
+    draw.ellipse((204, 204, 220, 224), fill=(224, 242, 254, 160))
+
+    layer = layer.filter(ImageFilter.GaussianBlur(0.6))
     base.alpha_composite(layer)
 
 
-def draw_badges(base):
+def draw_internal_network(base):
+    """Neural network inside brain — knowledge being integrated."""
     layer = Image.new("RGBA", base.size, (0, 0, 0, 0))
     draw = ImageDraw.Draw(layer)
-    badges = [(82, 104), (430, 104), (74, 256), (438, 256), (256, 72)]
-    for x, y in badges:
-        draw.ellipse((x - 24, y - 24, x + 24, y + 24), outline=(231, 84, 255, 220), width=3, fill=(27, 9, 48, 140))
-    # gear
-    draw.ellipse((76, 98, 88, 110), outline=(247, 168, 252, 220), width=3)
-    for dx, dy in [(0, -14), (0, 14), (-14, 0), (14, 0), (-10, -10), (10, 10), (-10, 10), (10, -10)]:
-        draw.line((82 + dx * 0.7, 104 + dy * 0.7, 82 + dx, 104 + dy), fill=(231, 84, 255, 220), width=3)
-    # chart
-    draw.rectangle((420, 110, 428, 124), fill=(240, 171, 252, 240))
-    draw.rectangle((432, 98, 440, 124), fill=(217, 70, 239, 240))
-    draw.rectangle((444, 90, 452, 124), fill=(240, 171, 252, 240))
-    draw.line((418, 124, 454, 124), fill=(231, 84, 255, 220), width=3)
-    # chip
-    draw.rounded_rectangle((64, 246, 84, 266), radius=4, outline=(240, 171, 252, 220), width=3)
-    draw.ellipse((71, 253, 77, 259), fill=(217, 70, 239, 240))
-    # hex
-    draw.polygon([(438, 242), (450, 249), (450, 263), (438, 270), (426, 263), (426, 249)], outline=(240, 171, 252, 220), width=3)
-    draw.ellipse((434, 252, 442, 260), fill=(217, 70, 239, 240))
-    # AI badge
-    draw.rounded_rectangle((228, 56, 284, 88), radius=10, fill=(26, 5, 48, 180), outline=(231, 84, 255, 220), width=3)
-    draw.line((241, 80, 249, 60, 257, 80), fill=(240, 171, 252, 255), width=4)
-    draw.line((245, 72, 253, 72), fill=(240, 171, 252, 255), width=3)
-    draw.line((269, 60, 269, 80), fill=(240, 171, 252, 255), width=4)
-    draw.line((269, 60, 281, 60), fill=(240, 171, 252, 255), width=4)
-    draw.line((269, 70, 279, 70), fill=(240, 171, 252, 255), width=4)
-    draw.line((269, 80, 281, 80), fill=(240, 171, 252, 255), width=4)
+
+    nodes = [
+        (278, 178), (308, 168), (338, 182), (358, 210),
+        (348, 242), (318, 258), (286, 252), (268, 228), (272, 198),
+        (302, 198), (328, 218), (312, 238),
+    ]
+    edges = [
+        (0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 8),
+        (8, 0), (8, 9), (9, 10), (10, 11), (11, 5), (9, 1), (10, 2),
+    ]
+    for a, b in edges:
+        x1, y1 = nodes[a]
+        x2, y2 = nodes[b]
+        draw.line((x1, y1, x2, y2), fill=(186, 230, 253, 100), width=2)
+    for x, y in nodes:
+        draw.ellipse((x - 4, y - 4, x + 4, y + 4), fill=(224, 242, 254, 200))
+
     base.alpha_composite(layer.filter(ImageFilter.GaussianBlur(1)))
 
 
+def draw_accent_rim(base):
+    draw = ImageDraw.Draw(base)
+    draw.rounded_rectangle((8, 8, SIZE - 8, SIZE - 8), radius=90, outline=(139, 92, 246, 60), width=2)
+
+
 def main():
-    base = vertical_gradient(SIZE, (41, 24, 76), (13, 10, 26))
-    base = base.convert("RGBA")
+    base = radial_bg(SIZE)
+    draw_accent_rim(base)
 
-    border = ImageDraw.Draw(base)
-    border.rounded_rectangle((10, 10, SIZE - 10, SIZE - 10), radius=92, outline=(120, 80, 180, 70), width=2)
+    glow(base, (310, 210), 120, (168, 85, 247, 50), blur=32)
+    glow(base, (120, 220), 60, (56, 189, 248, 40), blur=20)
 
-    glow_circle(base, (256, 400), 40, (217, 70, 239, 100), 12)
-    draw_smoke(base)
-    draw_book(ImageDraw.Draw(base))
-    draw_brain(base)
-    draw_badges(base)
+    draw_knowledge_streams(base)
+    draw_brain_side(base)
+    draw_internal_network(base)
 
-    base.save("/agent/genai-passport-prep/public/apple-touch-icon.png")
-    base.save("/agent/genai-passport-prep/public/icon-512.png")
-    base.resize((180, 180), Image.LANCZOS).save("/agent/genai-passport-prep/public/icon-180.png")
+    base.save(f"{OUT}/apple-touch-icon.png")
+    base.save(f"{OUT}/icon-512.png")
+    base.resize((180, 180), Image.LANCZOS).save(f"{OUT}/icon-180.png")
+    print("Generated side-view brain icons")
 
 
 if __name__ == "__main__":
