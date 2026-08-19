@@ -1,6 +1,8 @@
 import { writeFileSync, mkdirSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { getCh3Questions, getCh4Questions } from './ch3-ch4-deep.mjs'
+import { enrichAll } from './question-enrich.mjs'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const outPath = join(__dirname, '../src/data/questionBank.ts')
@@ -162,8 +164,8 @@ function expandTopics(chapter, topics, perTopic) {
 }
 
 addChapter('第2章 生成AI', expandTopics('第2章 生成AI', ch2ExtraTopics, 4))
-addChapter('第3章 生成AIの技術', expandTopics('第3章 生成AIの技術', ch3Topics, 6))
-addChapter('第4章 法律と倫理', expandTopics('第4章 法律と倫理', ch4Topics, 6))
+addChapter('第3章 生成AIの技術', getCh3Questions(q))
+addChapter('第4章 法律と倫理', getCh4Questions(q))
 addChapter('第5章 活用実務', expandTopics('第5章 活用実務', ch5Topics, 6))
 
 // Pad each chapter to exactly 60 if needed
@@ -192,14 +194,16 @@ finalQuestions.forEach((item, index) => {
   item.id = `q${String(index + 1).padStart(3, '0')}`
 })
 
+const enrichedQuestions = enrichAll(finalQuestions)
+
 mkdirSync(dirname(outPath), { recursive: true })
 
 const body = `import type { Question } from '../lib/types'
 
-export const questionBank: Question[] = ${JSON.stringify(finalQuestions, null, 2)
+export const questionBank: Question[] = ${JSON.stringify(enrichedQuestions, null, 2)
   .replace(/"([^"]+)":/g, '$1:')
   .replace(/"/g, "'")}
 `
 
 writeFileSync(outPath, body, 'utf8')
-console.log(`Generated ${finalQuestions.length} questions -> ${outPath}`)
+console.log(`Generated ${enrichedQuestions.length} questions -> ${outPath}`)

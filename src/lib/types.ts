@@ -17,6 +17,9 @@ export type Question = {
   choices: string[]
   answers: number[]
   explanation: string
+  reviewSection: string
+  examTrap: string
+  choiceNotes: string[]
 }
 
 export type SessionResult = {
