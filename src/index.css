@@ -1,0 +1,189 @@
+:root {
+  color: #1e1e1e;
+  background-color: #f6f7fb;
+  font-family: 'Hiragino Kaku Gothic ProN', 'Yu Gothic', 'Segoe UI', sans-serif;
+  line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 24px 16px 56px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #e3e5ef;
+  padding: 16px;
+  margin-bottom: 14px;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 1.8rem;
+}
+
+h2 {
+  margin: 0 0 10px;
+  font-size: 1.25rem;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.02rem;
+}
+
+p {
+  margin: 0;
+}
+
+.chapter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+}
+
+button {
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.primary,
+.secondary {
+  border-radius: 10px;
+  padding: 10px 14px;
+  border: 1px solid transparent;
+}
+
+.primary {
+  background: #5b64f2;
+  color: #fff;
+}
+
+.secondary {
+  margin-left: 8px;
+  background: #fff;
+  color: #32385c;
+  border-color: #ced2e4;
+}
+
+.hint {
+  margin-top: 8px;
+  color: #5a617f;
+  font-size: 0.9rem;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.timer {
+  color: #ad1f34;
+  font-weight: 700;
+}
+
+.question-card {
+  border-left: 4px solid #5b64f2;
+}
+
+.choices {
+  margin-top: 10px;
+  display: grid;
+  gap: 8px;
+}
+
+.choice {
+  text-align: left;
+  padding: 10px;
+  border-radius: 9px;
+  border: 1px solid #d4d8ea;
+  background: #f8f9ff;
+}
+
+.choice.active {
+  border-color: #5b64f2;
+  background: #e9ecff;
+}
+
+.score {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.result-list {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.result-list li {
+  margin: 6px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.hero p {
+  margin-top: 6px;
+}
+
+.chapter-grid button {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.sub {
+  font-size: 0.78rem;
+  opacity: 0.85;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.review-list {
+  display: grid;
+  gap: 10px;
+}
+
+.review-item {
+  border: 1px solid #e3e5ef;
+  border-radius: 8px;
+  padding: 10px;
+  background: #fafbff;
+}
+
+.review-item h3 {
+  font-size: 0.98rem;
+  margin-bottom: 6px;
+}
+
+.review-item p {
+  margin-top: 4px;
+  font-size: 0.92rem;
+}
