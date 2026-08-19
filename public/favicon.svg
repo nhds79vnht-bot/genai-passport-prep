@@ -1,86 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Realistic brain with knowledge icons">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Neon pink brain app icon">
   <defs>
-    <radialGradient id="bg" cx="50%" cy="48%" r="65%">
-      <stop offset="0%" stop-color="#201638"/>
-      <stop offset="100%" stop-color="#0a0814"/>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#1a1035"/>
+      <stop offset="100%" stop-color="#06040f"/>
     </radialGradient>
-    <linearGradient id="brain" x1="20%" y1="20%" x2="85%" y2="85%">
-      <stop offset="0%" stop-color="#ebb5b0"/>
-      <stop offset="45%" stop-color="#d2827c"/>
-      <stop offset="100%" stop-color="#9e4f4c"/>
+    <linearGradient id="neon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff7bf0"/>
+      <stop offset="100%" stop-color="#d946ef"/>
     </linearGradient>
-    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
-      <feGaussianBlur stdDeviation="3" result="b"/>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
-
   <rect width="256" height="256" rx="52" fill="url(#bg)"/>
-
-  <!-- Realistic lateral brain -->
-  <g filter="url(#glow)">
-    <path fill="url(#brain)" d="M84 114 C78 98 84 78 98 64 C112 50 134 44 156 46 C178 48 196 58 208 74 C216 86 218 100 216 114 C214 128 206 142 192 152 C178 160 160 164 142 162 C124 160 108 152 96 138 C88 128 84 120 84 114Z"/>
-    <path fill="#a85555" opacity="0.35" d="M84 114 C96 138 108 152 124 160 C140 166 160 166 178 160 C196 154 210 140 216 120 C200 128 178 132 154 130 C128 128 104 122 84 114Z"/>
-    <!-- Cerebellum -->
-    <path fill="#c9706a" d="M76 132 C70 144 72 158 82 168 C92 176 106 178 116 172 C124 166 126 154 122 144 C116 136 106 132 96 132 C90 130 82 130 76 132Z"/>
-    <!-- Brain stem -->
-    <path fill="#b05e58" d="M96 168 L104 174 L106 188 L98 190 L92 182 L90 172Z"/>
-    <!-- Sulci -->
-    <path d="M98 64 C102 78 106 92 108 106 C110 120 108 134 104 146" fill="none" stroke="#6b3030" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
-    <path d="M124 50 C128 64 130 78 130 92 C130 106 128 120 124 132" fill="none" stroke="#6b3030" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
-    <path d="M156 48 C162 62 166 76 166 90 C166 104 162 118 156 130" fill="none" stroke="#6b3030" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
-    <path d="M88 92 L116 86 L144 84 L172 90" fill="none" stroke="#6b3030" stroke-width="2" stroke-linecap="round" opacity="0.55"/>
-    <path d="M84 110 L112 104 L140 102 L168 108" fill="none" stroke="#6b3030" stroke-width="1.8" stroke-linecap="round" opacity="0.5"/>
-    <!-- Gyri highlights -->
-    <path d="M106 58 L128 62 L150 68 L170 78" fill="none" stroke="#f0c4c0" stroke-width="1.2" opacity="0.6"/>
-    <path d="M100 82 L128 78 L156 78 L182 84" fill="none" stroke="#f0c4c0" stroke-width="1" opacity="0.45"/>
+  <!-- Simplified neon brain outline for favicon fallback -->
+  <g filter="url(#glow)" fill="none" stroke="url(#neon)" stroke-width="3" stroke-linecap="round">
+    <path d="M92 128 C88 108 96 88 114 74 C132 60 158 56 178 64 C198 72 212 90 216 112 C218 128 212 146 198 158 C184 168 164 172 146 168 C128 164 112 154 100 140 C94 132 92 128 92 128Z"/>
+    <path d="M88 140 C82 152 84 166 96 176 C108 184 124 184 134 176" opacity="0.8"/>
+    <path d="M108 74 C112 88 114 104 112 120" opacity="0.6"/>
+    <path d="M134 66 C140 80 142 96 140 112" opacity="0.6"/>
+    <path d="M162 72 C168 86 170 102 166 118" opacity="0.6"/>
   </g>
-
-  <!-- Knowledge badges (8 directions) -->
-  <g filter="url(#glow)">
-    <!-- connector lines -->
-    <g stroke="#93c5fd" stroke-width="1" opacity="0.35">
-      <line x1="128" y1="29" x2="148" y2="100"/><line x1="185" y1="49" x2="158" y2="96"/>
-      <line x1="204" y1="94" x2="168" y2="108"/><line x1="192" y1="144" x2="162" y2="128"/>
-      <line x1="128" y1="169" x2="148" y2="132"/><line x1="64" y1="144" x2="112" y2="128"/>
-      <line x1="52" y1="94" x2="108" y2="108"/><line x1="71" y1="49" x2="118" y2="96"/>
-    </g>
-
-    <!-- AI -->
-    <circle cx="128" cy="29" r="18" fill="#16102a" stroke="#a78bfa" stroke-width="2"/>
-    <text x="128" y="35" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="13" font-weight="900" fill="#e0f2fe">AI</text>
-
-    <!-- Chart -->
-    <circle cx="185" cy="49" r="18" fill="#16102a" stroke="#a78bfa" stroke-width="2"/>
-    <rect x="176" y="52" width="4" height="8" fill="#c4b5fd"/><rect x="181" y="48" width="4" height="12" fill="#a78bfa"/><rect x="186" y="44" width="4" height="16" fill="#c4b5fd"/>
-
-    <!-- Agent -->
-    <circle cx="204" cy="94" r="18" fill="#16102a" stroke="#a78bfa" stroke-width="2"/>
-    <rect x="194" y="88" width="20" height="14" rx="3" fill="none" stroke="#818cf8" stroke-width="1.5"/>
-    <circle cx="200" cy="94" r="2" fill="#a5b4fc"/><circle cx="208" cy="94" r="2" fill="#a5b4fc"/>
-
-    <!-- Network/RAG -->
-    <circle cx="192" cy="144" r="18" fill="#16102a" stroke="#a78bfa" stroke-width="2"/>
-    <circle cx="192" cy="144" r="3" fill="#bae6fd"/><circle cx="182" cy="144" r="2.5" fill="#bae6fd"/>
-    <circle cx="202" cy="144" r="2.5" fill="#bae6fd"/><circle cx="192" cy="134" r="2.5" fill="#bae6fd"/>
-    <circle cx="192" cy="154" r="2.5" fill="#bae6fd"/>
-
-    <!-- Code -->
-    <circle cx="128" cy="169" r="18" fill="#16102a" stroke="#a78bfa" stroke-width="2"/>
-    <polygon points="118,144 124,138 124,150" fill="#4ade80"/><polygon points="138,144 132,138 132,150" fill="#4ade80"/>
-
-    <!-- Shield/Ethics -->
-    <circle cx="64" cy="144" r="18" fill="#16102a" stroke="#a78bfa" stroke-width="2"/>
-    <path d="M64 132 L72 136 L70 150 L64 154 L58 150 L56 136 Z" fill="none" stroke="#fca5a5" stroke-width="1.5"/>
-
-    <!-- Law -->
-    <circle cx="52" cy="94" r="18" fill="#16102a" stroke="#a78bfa" stroke-width="2"/>
-    <line x1="52" y1="84" x2="52" y2="104" stroke="#f472b6" stroke-width="1.5"/>
-    <line x1="44" y1="88" x2="60" y2="88" stroke="#f472b6" stroke-width="1.5"/>
-
-    <!-- Tech/Gear -->
-    <circle cx="71" cy="49" r="18" fill="#16102a" stroke="#a78bfa" stroke-width="2"/>
-    <circle cx="71" cy="49" r="7" fill="none" stroke="#fbbf24" stroke-width="1.5"/>
-    <circle cx="71" cy="49" r="3" fill="none" stroke="#fbbf24" stroke-width="1"/>
-  </g>
+  <circle cx="128" cy="36" r="14" fill="#120a24" stroke="#d946ef" stroke-width="2"/>
+  <text x="128" y="41" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="11" fill="#f5d0fe">AI</text>
 </svg>
