@@ -26,6 +26,7 @@ export type SessionResult = {
   score: number
   total: number
   percentage: number
+  answers: Record<string, number[]>
   wrongQuestionIds: string[]
   completedAt: string
 }

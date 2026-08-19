@@ -23,6 +23,12 @@ import {
 } from './lib/storage'
 import type { Chapter, Question, SessionResult, StudyMode, View } from './lib/types'
 import { questionBank } from './data/questionBank'
+import {
+  buildReviewSummary,
+  buildStudyTip,
+  formatCorrectChoices,
+  formatSelectedChoices,
+} from './lib/review'
 
 const chapterById = Object.fromEntries(questionBank.map((q) => [q.id, q.chapter])) as Record<
   string,
@@ -45,6 +51,7 @@ export default function App() {
   const [results, setResults] = useState<SessionResult[]>(() => loadResults())
   const [stats, setStats] = useState(() => loadStats())
   const [latestResult, setLatestResult] = useState<SessionResult | null>(null)
+  const [currentIndex, setCurrentIndex] = useState(0)
 
   useEffect(() => {
     saveResults(results)
@@ -66,6 +73,7 @@ export default function App() {
       score,
       total,
       percentage,
+      answers,
       wrongQuestionIds,
       completedAt: new Date().toISOString(),
     }
@@ -109,6 +117,7 @@ export default function App() {
     setSelectedChapter(chapter)
     setQuestions(buildStudySet(chapter))
     setAnswers({})
+    setCurrentIndex(0)
     setView('exam')
   }
 
@@ -117,6 +126,7 @@ export default function App() {
     setQuestions(buildMockExam())
     setAnswers({})
     setSecondsLeft(MOCK_SECONDS)
+    setCurrentIndex(0)
     setView('exam')
   }
 
@@ -124,6 +134,7 @@ export default function App() {
     setMode('weak')
     setQuestions(buildWeakDrill(stats))
     setAnswers({})
+    setCurrentIndex(0)
     setView('exam')
   }
 
@@ -149,11 +160,16 @@ export default function App() {
     setQuestions([])
     setAnswers({})
     setLatestResult(null)
+    setCurrentIndex(0)
     setView('home')
   }
 
   const mm = String(Math.floor(secondsLeft / 60)).padStart(2, '0')
   const ss = String(secondsLeft % 60).padStart(2, '0')
+  const currentQuestion = questions[currentIndex]
+  const currentSelected = currentQuestion ? answers[currentQuestion.id] ?? [] : []
+  const canGoPrev = currentIndex > 0
+  const canGoNext = currentIndex < questions.length - 1
 
   if (view === 'home') {
     return (
@@ -258,11 +274,11 @@ export default function App() {
                 <article key={q.id} className="review-item">
                   <h3>{q.prompt}</h3>
                   <p className="hint">{q.chapter} / {q.topic}</p>
-                  <p>
-                    正解:{' '}
-                    {q.answers.map((idx) => q.choices[idx]).join('、')}
-                  </p>
-                  <p>{q.explanation}</p>
+                  <p><strong>あなたの回答:</strong> {formatSelectedChoices(q, latestResult.answers[q.id] ?? [])}</p>
+                  <p><strong>正解:</strong> {formatCorrectChoices(q)}</p>
+                  <p><strong>解説:</strong> {q.explanation}</p>
+                  <p><strong>理解のコツ:</strong> {buildReviewSummary(q, latestResult.answers[q.id] ?? [])}</p>
+                  <p><strong>覚え方:</strong> {buildStudyTip(q)}</p>
                 </article>
               ))}
             </div>
@@ -284,41 +300,48 @@ export default function App() {
         </div>
       </section>
 
-      {questions.map((q, idx) => {
-        const isMulti = q.answers.length > 1
-        const selected = answers[q.id] ?? []
-        return (
-          <section key={q.id} className="card question-card">
-            <h3>
-              Q{idx + 1}. {q.prompt}
-            </h3>
-            <p className="hint">
-              {q.chapter} / {q.topic} / {isMulti ? '複数選択' : '単一選択'}
-            </p>
-            <div className="choices">
-              {q.choices.map((choice, choiceIndex) => {
-                const active = selected.includes(choiceIndex)
-                return (
-                  <button
-                    key={`${q.id}-${choiceIndex}`}
-                    type="button"
-                    className={active ? 'choice active' : 'choice'}
-                    onClick={() => toggleChoice(q.id, choiceIndex)}
-                  >
-                    {choice}
-                  </button>
-                )
-              })}
-            </div>
-          </section>
-        )
-      })}
+      {currentQuestion && (
+        <section key={currentQuestion.id} className="card question-card">
+          <div className="question-meta">
+            <span className="badge">Q{currentIndex + 1}</span>
+            <span className="hint">
+              {currentQuestion.chapter} / {currentQuestion.topic} / {currentQuestion.answers.length > 1 ? '複数選択' : '単一選択'}
+            </span>
+          </div>
+          <h3 className="question-title">{currentQuestion.prompt}</h3>
+          <div className="choices">
+            {currentQuestion.choices.map((choice, choiceIndex) => {
+              const active = currentSelected.includes(choiceIndex)
+              return (
+                <button
+                  key={`${currentQuestion.id}-${choiceIndex}`}
+                  type="button"
+                  className={active ? 'choice active' : 'choice'}
+                  onClick={() => toggleChoice(currentQuestion.id, choiceIndex)}
+                >
+                  <span className="choice-marker">{String.fromCharCode(65 + choiceIndex)}</span>
+                  <span>{choice}</span>
+                </button>
+              )
+            })}
+          </div>
+        </section>
+      )}
 
-      <section className="card actions">
-        <button type="button" className="primary" onClick={finishExam}>
+      <section className="sticky-actions">
+        <button type="button" className="secondary nav-button" onClick={() => setCurrentIndex((prev) => prev - 1)} disabled={!canGoPrev}>
+          戻る
+        </button>
+        <button type="button" className="secondary nav-button" onClick={() => setCurrentIndex((prev) => prev + 1)} disabled={!canGoNext}>
+          次へ
+        </button>
+        <button type="button" className="primary finish-button" onClick={finishExam}>
           採点する
         </button>
-        <button type="button" className="secondary" onClick={resetToHome}>
+      </section>
+
+      <section className="card mobile-exit">
+        <button type="button" className="secondary full-width" onClick={resetToHome}>
           中断してホームへ戻る
         </button>
       </section>

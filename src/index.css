@@ -11,6 +11,7 @@
 
 body {
   margin: 0;
+  padding: 0;
 }
 
 #root {
@@ -20,7 +21,7 @@ body {
 .container {
   max-width: 920px;
   margin: 0 auto;
-  padding: 24px 16px 56px;
+  padding: 16px 16px 120px;
 }
 
 .card {
@@ -59,6 +60,7 @@ p {
 button {
   cursor: pointer;
   font-size: 0.95rem;
+  min-height: 48px;
 }
 
 .primary,
@@ -91,6 +93,7 @@ button {
   justify-content: space-between;
   align-items: center;
   gap: 12px;
+  flex-wrap: wrap;
 }
 
 .timer {
@@ -102,6 +105,32 @@ button {
   border-left: 4px solid #5b64f2;
 }
 
+.question-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 48px;
+  height: 32px;
+  padding: 0 10px;
+  border-radius: 999px;
+  background: #e9ecff;
+  color: #3c46cf;
+  font-weight: 700;
+}
+
+.question-title {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
 .choices {
   margin-top: 10px;
   display: grid;
@@ -109,8 +138,11 @@ button {
 }
 
 .choice {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
   text-align: left;
-  padding: 10px;
+  padding: 14px 12px;
   border-radius: 9px;
   border: 1px solid #d4d8ea;
   background: #f8f9ff;
@@ -119,6 +151,19 @@ button {
 .choice.active {
   border-color: #5b64f2;
   background: #e9ecff;
+}
+
+.choice-marker {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid #cfd5f0;
+  font-weight: 700;
+  color: #4b53bb;
 }
 
 .score {
@@ -161,6 +206,30 @@ button {
   gap: 8px;
 }
 
+.sticky-actions {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.2fr;
+  gap: 8px;
+  padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+  background: rgba(246, 247, 251, 0.96);
+  border-top: 1px solid #dbe0f0;
+  backdrop-filter: blur(8px);
+}
+
+.nav-button,
+.finish-button,
+.full-width {
+  width: 100%;
+}
+
+.mobile-exit {
+  margin-top: 8px;
+}
+
 button:disabled {
   opacity: 0.55;
   cursor: not-allowed;
@@ -186,4 +255,36 @@ button:disabled {
 .review-item p {
   margin-top: 4px;
   font-size: 0.92rem;
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 12px 12px 128px;
+  }
+
+  .card {
+    padding: 14px;
+    border-radius: 10px;
+  }
+
+  h1 {
+    font-size: 1.45rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  .chapter-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .result-list li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sticky-actions {
+    grid-template-columns: 1fr 1fr 1.2fr;
+  }
 }
