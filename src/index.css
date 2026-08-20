@@ -4,8 +4,8 @@
   --neon-pink: #ff4fd8;
   --neon-cyan: #00e5ff;
   --neon-purple: #a855f7;
-  --glass-bg: rgba(8, 12, 28, 0.62);
-  --glass-bg-strong: rgba(6, 10, 24, 0.82);
+  --glass-bg: rgba(8, 12, 28, 0.48);
+  --glass-bg-strong: rgba(6, 10, 24, 0.72);
   --glass-border: rgba(255, 255, 255, 0.14);
   --glass-highlight: rgba(255, 255, 255, 0.06);
   --text-primary: #f0f4ff;
@@ -70,22 +70,27 @@ body {
   inset: 0;
   z-index: 1;
   background:
-    linear-gradient(180deg, rgba(5, 8, 16, 0.55) 0%, rgba(5, 8, 16, 0.72) 45%, rgba(5, 8, 16, 0.88) 100%),
-    radial-gradient(ellipse 80% 50% at 50% 0%, rgba(168, 85, 247, 0.18), transparent 60%);
+    linear-gradient(180deg, rgba(5, 8, 16, 0.12) 0%, rgba(5, 8, 16, 0.22) 55%, rgba(5, 8, 16, 0.38) 100%);
   pointer-events: none;
+  transition: opacity 0.35s ease;
 }
 
 .app-bg-grid {
-  position: fixed;
-  inset: 0;
-  z-index: 2;
-  opacity: 0.07;
-  background-image:
-    linear-gradient(rgba(0, 229, 255, 0.5) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 229, 255, 0.5) 1px, transparent 1px);
-  background-size: 48px 48px;
+  display: none;
+}
+
+.app-shell.peek .app-bg-overlay {
+  opacity: 0;
+}
+
+.app-shell.peek .app-content > :not(.daily-bg-badge) {
+  opacity: 0;
   pointer-events: none;
-  mask-image: linear-gradient(180deg, black 0%, transparent 85%);
+  transform: translateY(8px);
+}
+
+.app-content > :not(.daily-bg-badge) {
+  transition: opacity 0.35s ease, transform 0.35s ease;
 }
 
 .app-content {
@@ -101,7 +106,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 5px 10px;
+  padding: 6px 12px;
   border-radius: 999px;
   font-family: var(--font-mono);
   font-size: 0.62rem;
@@ -111,7 +116,19 @@ body {
   border: 1px solid rgba(0, 229, 255, 0.35);
   backdrop-filter: blur(10px);
   text-transform: uppercase;
-  pointer-events: none;
+  cursor: pointer;
+  min-height: 32px;
+}
+
+.daily-bg-badge:hover,
+.daily-bg-badge:focus-visible {
+  border-color: var(--neon-pink);
+  box-shadow: 0 0 16px rgba(255, 79, 216, 0.35);
+}
+
+.app-shell.peek .daily-bg-badge {
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
 }
 
 .daily-bg-dot {
@@ -132,7 +149,7 @@ body {
 .container {
   max-width: 920px;
   margin: 0 auto;
-  padding: 20px 16px 120px;
+  padding: 52px 16px 120px;
 }
 
 .card {
@@ -141,7 +158,7 @@ body {
   border: 1px solid var(--glass-border);
   padding: 18px;
   margin-bottom: 14px;
-  backdrop-filter: blur(18px) saturate(1.4);
+  backdrop-filter: blur(14px) saturate(1.35);
   box-shadow:
     inset 0 1px 0 var(--glass-highlight),
     0 8px 32px rgba(0, 0, 0, 0.35);
@@ -602,7 +619,7 @@ button:disabled {
 
 @media (max-width: 640px) {
   .container {
-    padding: 16px 12px 128px;
+    padding: 48px 12px 128px;
   }
 
   .card {
