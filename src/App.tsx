@@ -1,4 +1,5 @@
-import { useCallback, useEffect, useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState, type ReactNode } from 'react'
+import { AppShell } from './components/AppShell'
 import { QuestionNavigator } from './components/QuestionNavigator'
 import { ReviewCard } from './components/ReviewCard'
 import {
@@ -174,14 +175,17 @@ export default function App() {
   const canGoPrev = currentIndex > 0
   const canGoNext = currentIndex < questions.length - 1
 
+  let content: ReactNode
+
   if (view === 'home') {
-    return (
+    content = (
       <main className="container">
         <header className="card hero">
+          <p className="hero-kicker">GENERATIVE AI · STUDY MODE</p>
           <h1>{APP_NAME}</h1>
           <p>{SYLLABUS_NOTE}</p>
           <p className="hint">登録問題数: {questionCount}問（章あたり{chapterQuestionCount[CHAPTERS[0]]}問）</p>
-          <p className="hint">スマホ向け：1問ずつ表示・下部ボタン操作・採点後に詳細解説</p>
+          <p className="hint">1問ずつ表示 · 下部ボタン操作 · 採点後に詳細解説</p>
         </header>
 
         <section className="card">
@@ -248,9 +252,7 @@ export default function App() {
         </section>
       </main>
     )
-  }
-
-  if (view === 'result' && latestResult) {
+  } else if (view === 'result' && latestResult) {
     const passLine = latestResult.mode === 'mock' ? 80 : 70
     const isRecommended = latestResult.percentage >= passLine
     const reviewQuestions = questions
@@ -263,7 +265,7 @@ export default function App() {
         return aWrong - bWrong
       })
 
-    return (
+    content = (
       <main className="container">
         <section className="card">
           <h2>結果 — {modeLabel(latestResult.mode, latestResult.chapter)}</h2>
@@ -300,10 +302,9 @@ export default function App() {
         </section>
       </main>
     )
-  }
-
-  return (
-    <main className="container exam-view">
+  } else {
+    content = (
+      <main className="container exam-view">
       <section className="card exam-header">
         <h2>{modeLabel(mode, selectedChapter)}</h2>
         <div className="toolbar">
@@ -380,5 +381,8 @@ export default function App() {
         </button>
       </section>
     </main>
-  )
+    )
+  }
+
+  return <AppShell>{content}</AppShell>
 }
