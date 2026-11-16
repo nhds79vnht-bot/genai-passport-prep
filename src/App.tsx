@@ -60,8 +60,8 @@ export default function App() {
   const [questions, setQuestions] = useState<Question[]>([])
   const [answers, setAnswers] = useState<Record<string, number[]>>({})
   const [secondsLeft, setSecondsLeft] = useState(MOCK_SECONDS)
-  const [results, setResults] = useState<SessionResult[]>(() => loadResults())
-  const [stats, setStats] = useState(() => loadStats())
+  const [results, setResults] = useState<SessionResult[]>(() => loadResults(learnerScope))
+  const [stats, setStats] = useState(() => loadStats(learnerScope))
   const [latestResult, setLatestResult] = useState<SessionResult | null>(null)
   const [currentIndex, setCurrentIndex] = useState(0)
   const [showUnansweredOnly, setShowUnansweredOnly] = useState(false)
@@ -72,8 +72,8 @@ export default function App() {
   }, [progress, progressKey])
 
   useEffect(() => {
-    saveResults(results)
-  }, [results])
+    saveResults(results, learnerScope)
+  }, [results, learnerScope])
 
   // Embedded in the signed-in くろ先生 app: submit answers through the parent frame.
   // Standalone use remains local-only; no credentials or claimed scores cross frames.
@@ -101,8 +101,8 @@ export default function App() {
   }, [])
 
   useEffect(() => {
-    saveStats(stats)
-  }, [stats])
+    saveStats(stats, learnerScope)
+  }, [stats, learnerScope])
 
   const finishExam = useCallback(() => {
     if (questions.length === 0 || completionGuard.current) return
