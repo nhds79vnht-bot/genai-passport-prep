@@ -984,7 +984,7 @@ export const questionBank: Question[] = [
     answers: [
       0
     ],
-    explanation: '基準統一で品質が安定します。',
+    explanation: 'ラベルの定義と付与基準を統一し、複数担当者の一致率や不一致例を点検することで教師データの品質を高める。',
     reviewSection: 'テキスト第1章（AI概論・機械学習の基礎） → 「データラベリング」',
     examTrap: '「データラベリング」は定義・目的・限界をセットで覚えると混同しにくいです。',
     choiceNotes: [
@@ -1008,7 +1008,7 @@ export const questionBank: Question[] = [
     answers: [
       0
     ],
-    explanation: '人の確認を組み込む設計です。',
+    explanation: 'Human-in-the-loopはAIの判断過程に人による確認や修正を組み込む設計。重要な判断をAIだけに委ねない。',
     reviewSection: 'テキスト第1章（AI概論・機械学習の基礎） → 「AIと人間協調」',
     examTrap: '「AIと人間協調」は定義・目的・限界をセットで覚えると混同しにくいです。',
     choiceNotes: [
@@ -1106,7 +1106,7 @@ export const questionBank: Question[] = [
     answers: [
       0
     ],
-    explanation: '課題不明確は失敗要因です。',
+    explanation: 'AI導入では解決する課題と評価指標が曖昧だと、技術が動いても業務上の成功を判断できない。',
     reviewSection: 'テキスト第1章（AI概論・機械学習の基礎） → 「AI導入失敗要因」',
     examTrap: '「AI導入失敗要因」は定義・目的・限界をセットで覚えると混同しにくいです。',
     choiceNotes: [
@@ -1251,7 +1251,7 @@ export const questionBank: Question[] = [
     answers: [
       0
     ],
-    explanation: 'まとめて学習する方式です。',
+    explanation: 'バッチ学習は蓄積したデータをまとめて使ってモデルを更新する方式。新規データを逐次反映するオンライン学習とは異なる。',
     reviewSection: 'テキスト第1章（AI概論・機械学習の基礎） → 「バッチ学習」',
     examTrap: '「バッチ学習」は定義・目的・限界をセットで覚えると混同しにくいです。',
     choiceNotes: [
@@ -1445,7 +1445,7 @@ export const questionBank: Question[] = [
     answers: [
       0
     ],
-    explanation: '標準データで比較評価します。',
+    explanation: 'ベンチマークは共通のデータセットと評価条件でモデルの性能を比較するために使う。実業務への適合は別途評価する。',
     reviewSection: 'テキスト第1章（AI概論・機械学習の基礎） → 「ベンチマーク」',
     examTrap: '「ベンチマーク」は定義・目的・限界をセットで覚えると混同しにくいです。',
     choiceNotes: [
@@ -1565,7 +1565,7 @@ export const questionBank: Question[] = [
     answers: [
       0
     ],
-    explanation: '長い文脈を保持できます。',
+    explanation: '長いコンテキスト窓は一度に参照できる文章量を増やす。ただし長文中の情報を必ず正しく利用できるわけではない。',
     reviewSection: 'テキスト第2章（生成AI・主要モデル・プロンプト） → 「コンテキスト長」',
     examTrap: '「コンテキスト長」は定義・目的・限界をセットで覚えると混同しにくいです。',
     choiceNotes: [
@@ -1589,7 +1589,7 @@ export const questionBank: Question[] = [
     answers: [
       0
     ],
-    explanation: '対話型LLMサービスです。',
+    explanation: 'ChatGPTは大規模言語モデルなどを利用した対話型AIサービス。個々のモデル名や提供機能とは区別して理解する。',
     reviewSection: 'テキスト第2章（生成AI・主要モデル・プロンプト） → 「ChatGPT」',
     examTrap: '「ChatGPT」は定義・目的・限界をセットで覚えると混同しにくいです。',
     choiceNotes: [
@@ -1613,7 +1613,7 @@ export const questionBank: Question[] = [
     answers: [
       0
     ],
-    explanation: '推論強化が特徴です。',
+    explanation: '推論に重点を置くモデルは複雑な課題で段階的な検討を行う設計が特徴。ただし正確性が常に保証されるわけではない。',
     reviewSection: 'テキスト第2章（生成AI・主要モデル・プロンプト） → 「GPT系モデル」',
     examTrap: '「GPT系モデル」は定義・目的・限界をセットで覚えると混同しにくいです。',
     choiceNotes: [
@@ -1687,7 +1687,7 @@ export const questionBank: Question[] = [
       0,
       1
     ],
-    explanation: '目的と制約の明示が重要です。',
+    explanation: '良いプロンプトでは目的と制約、必要な出力形式を明確にする。曖昧な指示では評価基準も揺れやすい。',
     reviewSection: 'テキスト第2章（生成AI・主要モデル・プロンプト） → 「プロンプト」',
     examTrap: '「プロンプト」は定義・目的・限界をセットで覚えると混同しにくいです。',
     choiceNotes: [
@@ -1711,7 +1711,7 @@ export const questionBank: Question[] = [
     answers: [
       0
     ],
-    explanation: '例なしでタスクを指示します。',
+    explanation: 'Zero-shotは入力と正解の具体例を示さずにタスクを指示する方法。Few-shotは少数例を与える点が異なる。',
     reviewSection: 'テキスト第2章（生成AI・主要モデル・プロンプト） → 「Zero-shot」',
     examTrap: '「Zero-shot」は定義・目的・限界をセットで覚えると混同しにくいです。',
     choiceNotes: [
@@ -1735,7 +1735,7 @@ export const questionBank: Question[] = [
     answers: [
       0
     ],
-    explanation: '少数例示で誘導します。',
+    explanation: 'Few-shotは少数の入出力例を示して期待する形式や分類基準を伝える方法。例の誤りは出力に影響する。',
     reviewSection: 'テキスト第2章（生成AI・主要モデル・プロンプト） → 「Few-shot」',
     examTrap: '「Few-shot」は定義・目的・限界をセットで覚えると混同しにくいです。',
     choiceNotes: [
@@ -1759,7 +1759,7 @@ export const questionBank: Question[] = [
     answers: [
       0
     ],
-    explanation: '思考過程を促す技法です。',
+    explanation: 'Chain-of-Thoughtは複数段階の推論を要する課題で中間的な検討を促す考え方。ただし推論文の提示は正答を保証しない。',
     reviewSection: 'テキスト第2章（生成AI・主要モデル・プロンプト） → 「CoT」',
     examTrap: '「CoT」は定義・目的・限界をセットで覚えると混同しにくいです。',
     choiceNotes: [
@@ -1783,7 +1783,7 @@ export const questionBank: Question[] = [
     answers: [
       0
     ],
-    explanation: '誤情報生成リスクです。',
+    explanation: 'ハルシネーションは根拠のない内容をもっともらしく生成する現象。出典や数値は独立して確認する。',
     reviewSection: 'テキスト第2章（生成AI・主要モデル・プロンプト） → 「ハルシネーション」',
     examTrap: '「ハルシネーション」は定義・目的・限界をセットで覚えると混同しにくいです。',
     choiceNotes: [
@@ -1856,7 +1856,7 @@ export const questionBank: Question[] = [
     answers: [
       0
     ],
-    explanation: '出力候補を確率で制限します。',
+    explanation: 'Top-pは確率の高い候補を累積確率が設定値に達する範囲まで残すサンプリング方式。出力の多様性に影響する。',
     reviewSection: 'テキスト第2章（生成AI・主要モデル・プロンプト） → 「Top-p」',
     examTrap: '「Top-p」は定義・目的・限界をセットで覚えると混同しにくいです。',
     choiceNotes: [
@@ -1880,7 +1880,7 @@ export const questionBank: Question[] = [
     answers: [
       0
     ],
-    explanation: '複数モダリティを扱います。',
+    explanation: 'マルチモーダルAIは文章・画像・音声など複数種類の情報を扱う。入力形式が増えても内容の正確性は別途確認する。',
     reviewSection: 'テキスト第2章（生成AI・主要モデル・プロンプト） → 「マルチモーダル」',
     examTrap: '「マルチモーダル」は定義・目的・限界をセットで覚えると混同しにくいです。',
     choiceNotes: [
@@ -1904,7 +1904,7 @@ export const questionBank: Question[] = [
     answers: [
       0
     ],
-    explanation: '動画生成関連です。',
+    explanation: 'Soraは動画生成に関連するAIシステム。動画が生成されたことと映像内容が実際に起きたことは区別する。',
     reviewSection: 'テキスト第2章（生成AI・主要モデル・プロンプト） → 「Sora」',
     examTrap: '「Sora」は定義・目的・限界をセットで覚えると混同しにくいです。',
     choiceNotes: [
@@ -2096,7 +2096,7 @@ export const questionBank: Question[] = [
     answers: [
       0
     ],
-    explanation: '指示には優先順位がある。',
+    explanation: 'システム指示と利用者指示が衝突する場合は指示の優先順位に従う。外部資料の文章を上位の指示として扱わない。',
     reviewSection: 'テキスト第2章（生成AI・主要モデル・プロンプト） → 「System Prompt」',
     examTrap: '指示と業務上の制約を区別しましょう。',
     choiceNotes: [
@@ -2216,7 +2216,7 @@ export const questionBank: Question[] = [
     answers: [
       0
     ],
-    explanation: '必須キー欠落は入力契約違反。',
+    explanation: '必須キーが欠けた構造化出力は契約違反として拒否する。形式だけでなく型と値の妥当性も検証する。',
     reviewSection: 'テキスト第2章（生成AI・主要モデル・プロンプト） → 「出力形式指定」',
     examTrap: '指示と業務上の制約を区別しましょう。',
     choiceNotes: [
@@ -2360,7 +2360,7 @@ export const questionBank: Question[] = [
     answers: [
       0
     ],
-    explanation: '評価軸を明確に分離する。',
+    explanation: '採点基準は正確性、根拠、形式遵守などの観点を分けて定義する。曖昧な総合点だけでは改善箇所が特定できない。',
     reviewSection: 'テキスト第2章（生成AI・主要モデル・プロンプト） → 「評価プロンプト」',
     examTrap: '条件と判断根拠を確認しましょう。',
     choiceNotes: [
@@ -2384,7 +2384,7 @@ export const questionBank: Question[] = [
     answers: [
       0
     ],
-    explanation: '自己評価には見落としがある。',
+    explanation: 'AI自身による自己採点は見落としや同じ誤りの追認があり得る。独立した基準や外部の検証を併用する。',
     reviewSection: 'テキスト第2章（生成AI・主要モデル・プロンプト） → 「評価プロンプト」',
     examTrap: '条件と判断根拠を確認しましょう。',
     choiceNotes: [
@@ -2408,7 +2408,7 @@ export const questionBank: Question[] = [
     answers: [
       0
     ],
-    explanation: '流暢さと正確さは別の評価軸。',
+    explanation: '自然な文章でも重要事項の欠落や誤記があり得る。要約は流暢さと原文への忠実性を別々に評価する。',
     reviewSection: 'テキスト第2章（生成AI・主要モデル・プロンプト） → 「評価プロンプト」',
     examTrap: '条件と判断根拠を確認しましょう。',
     choiceNotes: [
@@ -2696,7 +2696,7 @@ export const questionBank: Question[] = [
     answers: [
       0
     ],
-    explanation: '再試行時には重複実行を防ぐ。',
+    explanation: 'タイムアウト時は処理が完了している可能性がある。冪等キーや処理状態の確認により再試行での二重実行を防ぐ。',
     reviewSection: 'テキスト第2章（生成AI・主要モデル・プロンプト） → 「API利用」',
     examTrap: '条件と判断根拠を確認しましょう。',
     choiceNotes: [
@@ -2792,7 +2792,7 @@ export const questionBank: Question[] = [
     answers: [
       0
     ],
-    explanation: '単価と総額の両面で比較する。',
+    explanation: '利用件数が増えた場合は総費用だけでなく1件当たり費用も比較し、単価変化と利用量変化を分けて評価する。',
     reviewSection: 'テキスト第2章（生成AI・主要モデル・プロンプト） → 「コスト管理」',
     examTrap: '条件と判断根拠を確認しましょう。',
     choiceNotes: [
@@ -3130,7 +3130,7 @@ export const questionBank: Question[] = [
       0,
       1
     ],
-    explanation: '計画と実行の反復が基本です。',
+    explanation: 'AIエージェントは目標に応じて計画、ツール実行、結果確認を繰り返す。権限や停止条件の管理も必要。',
     reviewSection: 'テキスト第3章（RAG・AIエージェント・MCP ほか） → 「AIエージェント」',
     examTrap: '単発Chatと混同注意。計画→実行→ツール利用の反復が特徴です。',
     choiceNotes: [
@@ -3493,7 +3493,7 @@ export const questionBank: Question[] = [
     answers: [
       0
     ],
-    explanation: '権限最小化が重要です。',
+    explanation: 'Function Callingではツール実行の権限を最小化し、引数の型や操作対象を検証する。モデルの出力を無条件に実行しない。',
     reviewSection: 'テキスト第3章（RAG・AIエージェント・MCP ほか） → 「Function Calling」',
     examTrap: 'API開発そのものと混同注意。LLMが関数呼び出しを選ぶ機能です。',
     choiceNotes: [
@@ -3614,7 +3614,7 @@ export const questionBank: Question[] = [
       0,
       1
     ],
-    explanation: 'ツール管理と統制が必要です。',
+    explanation: 'MCPを導入するときは接続先ツールの権限と利用範囲を管理し、実行記録や不正な入力への対策を整える。',
     reviewSection: 'テキスト第3章（RAG・AIエージェント・MCP ほか） → 「MCP」',
     examTrap: 'Function Callingと同義と誤解されやすい。MCPは連携方式の標準化です。',
     choiceNotes: [
@@ -4517,7 +4517,7 @@ export const questionBank: Question[] = [
       0,
       1
     ],
-    explanation: '責任とルール整備が基盤です。',
+    explanation: 'AIガバナンスには責任分担、利用規程、監査、事故対応などの仕組みが必要。技術的な精度管理だけでは不十分。',
     reviewSection: 'テキスト第4章（法律・倫理・AI新法・ガイドライン） → 「ガバナンス」',
     examTrap: '「ツール導入=ガバナンス完了」と誤解されやすい。体制とルール整備が本体です。',
     choiceNotes: [
@@ -4541,7 +4541,7 @@ export const questionBank: Question[] = [
     answers: [
       0
     ],
-    explanation: '統制と説明責任が目的です。',
+    explanation: 'AIガバナンスは組織のAI利用に関する責任とルールを明確にし、リスクを管理しながら説明責任を果たすための仕組み。',
     reviewSection: 'テキスト第4章（法律・倫理・AI新法・ガイドライン） → 「ガバナンス」',
     examTrap: '「ツール導入=ガバナンス完了」と誤解されやすい。体制とルール整備が本体です。',
     choiceNotes: [
@@ -4759,7 +4759,7 @@ export const questionBank: Question[] = [
     answers: [
       0
     ],
-    explanation: 'リスクベース規制が特徴です。',
+    explanation: 'EU AI Actは用途等のリスクに応じて義務や禁止事項を設ける規制。適用範囲や施行時期は条項ごとに確認する。',
     reviewSection: 'テキスト第4章（法律・倫理・AI新法・ガイドライン） → 「国際規制」',
     examTrap: '「国際規制」は定義・目的・限界をセットで覚えると混同しにくいです。',
     choiceNotes: [
@@ -4783,7 +4783,7 @@ export const questionBank: Question[] = [
     answers: [
       0
     ],
-    explanation: 'グローバル展開時に必要です。',
+    explanation: '国際的なAI規制は国や地域で適用範囲が異なる。サービス提供先やデータ処理先に応じて必要な対応を確認する。',
     reviewSection: 'テキスト第4章（法律・倫理・AI新法・ガイドライン） → 「国際規制」',
     examTrap: '「国際規制」は定義・目的・限界をセットで覚えると混同しにくいです。',
     choiceNotes: [
@@ -4856,7 +4856,7 @@ export const questionBank: Question[] = [
     answers: [
       0
     ],
-    explanation: '特に慎重な取扱いが必要です。',
+    explanation: '要配慮個人情報は取得・利用等に特別な配慮が必要な情報。AIへ入力する前に利用目的と法的条件を確認する。',
     reviewSection: 'テキスト第4章（法律・倫理・AI新法・ガイドライン） → 「個人情報」',
     examTrap: '「匿名化すれば何でも可」と誤解されやすい。目的限定・最小化が基本です。',
     choiceNotes: [
@@ -4880,7 +4880,7 @@ export const questionBank: Question[] = [
     answers: [
       0
     ],
-    explanation: '技術・社会変化への追随です。',
+    explanation: 'AIに関するガイドラインは技術や社会的リスクの変化を踏まえて更新される。版と改訂箇所を確認する。',
     reviewSection: 'テキスト第4章（法律・倫理・AI新法・ガイドライン） → 「ガイドライン」',
     examTrap: '法律そのものと混同注意。事業者向けの具体的行動指針です。',
     choiceNotes: [
@@ -5854,7 +5854,7 @@ export const questionBank: Question[] = [
     answers: [
       0
     ],
-    explanation: '利用量と成果は異なる指標。',
+    explanation: 'FAQボットの利用回数が増えても問題解決率が下がれば成果が改善したとはいえない。利用量と解決率を併せて見る。',
     reviewSection: 'テキスト第5章（業務活用・運用・ガバナンス実務） → 「KPI」',
     examTrap: '業務条件と判断根拠を区別して確認しましょう。',
     choiceNotes: [
@@ -5878,7 +5878,7 @@ export const questionBank: Question[] = [
     answers: [
       0
     ],
-    explanation: '速度と品質を併せて監視する。',
+    explanation: '誤案内の影響が大きい業務では応答速度だけをKPIにすると危険。正確性や重大誤答率も監視する。',
     reviewSection: 'テキスト第5章（業務活用・運用・ガバナンス実務） → 「KPI」',
     examTrap: '業務条件と判断根拠を区別して確認しましょう。',
     choiceNotes: [
@@ -5998,7 +5998,7 @@ export const questionBank: Question[] = [
     answers: [
       0
     ],
-    explanation: '共通化と個別要件を両立する。',
+    explanation: '全社共通のテンプレートは共通部分を固定し、部署ごとに必要な入力項目や制約を切り替える設計が適切。',
     reviewSection: 'テキスト第5章（業務活用・運用・ガバナンス実務） → 「テンプレート」',
     examTrap: '業務条件と判断根拠を区別して確認しましょう。',
     choiceNotes: [
@@ -6022,7 +6022,7 @@ export const questionBank: Question[] = [
     answers: [
       0
     ],
-    explanation: '変更管理と形式検証が必要。',
+    explanation: '出力項目の変更は下流システムを壊す場合がある。版管理とスキーマ検証、変更前後の回帰試験を行う。',
     reviewSection: 'テキスト第5章（業務活用・運用・ガバナンス実務） → 「テンプレート」',
     examTrap: '業務条件と判断根拠を区別して確認しましょう。',
     choiceNotes: [
@@ -6070,7 +6070,7 @@ export const questionBank: Question[] = [
     answers: [
       0
     ],
-    explanation: '一貫した制約条件が必要。',
+    explanation: '矛盾する指示があると出力が不安定になる。優先順位と例外を整理して一貫した制約条件に修正する。',
     reviewSection: 'テキスト第5章（業務活用・運用・ガバナンス実務） → 「テンプレート」',
     examTrap: '業務条件と判断根拠を区別して確認しましょう。',
     choiceNotes: [
@@ -6094,7 +6094,7 @@ export const questionBank: Question[] = [
     answers: [
       0
     ],
-    explanation: '同条件の比較で効果を測る。',
+    explanation: 'テンプレート改善の効果は同じ評価問題と採点基準で変更前後を比較する。条件が違えば改善効果を判断しにくい。',
     reviewSection: 'テキスト第5章（業務活用・運用・ガバナンス実務） → 「テンプレート」',
     examTrap: '業務条件と判断根拠を区別して確認しましょう。',
     choiceNotes: [
@@ -6166,7 +6166,7 @@ export const questionBank: Question[] = [
     answers: [
       0
     ],
-    explanation: '実際の判断力を確認する。',
+    explanation: 'AI研修の理解度は知識の暗記だけでなく、誤回答の検出や出典確認などの実践的な課題で測る。',
     reviewSection: 'テキスト第5章（業務活用・運用・ガバナンス実務） → 「教育」',
     examTrap: '業務条件と判断根拠を区別して確認しましょう。',
     choiceNotes: [
@@ -6190,7 +6190,7 @@ export const questionBank: Question[] = [
     answers: [
       0
     ],
-    explanation: '出典の実在確認を習慣化する。',
+    explanation: 'AIが提示した文献は実在しない場合がある。研修では一次資料の検索と引用内容の照合を習慣化する。',
     reviewSection: 'テキスト第5章（業務活用・運用・ガバナンス実務） → 「教育」',
     examTrap: '業務条件と判断根拠を区別して確認しましょう。',
     choiceNotes: [
@@ -6334,7 +6334,7 @@ export const questionBank: Question[] = [
     answers: [
       0
     ],
-    explanation: '外部依存の停止を想定する。',
+    explanation: '外部AIサービスの停止に備え、有人対応などの代替手順、連絡先、復旧判断の条件を用意する。',
     reviewSection: 'テキスト第5章（業務活用・運用・ガバナンス実務） → 「運用」',
     examTrap: '業務条件と判断根拠を区別して確認しましょう。',
     choiceNotes: [
@@ -6358,7 +6358,7 @@ export const questionBank: Question[] = [
     answers: [
       0
     ],
-    explanation: '参照資料の鮮度を維持する。',
+    explanation: '社内FAQの参照資料には更新責任者、版、適用日を定め、検索索引も更新して旧情報の引用を防ぐ。',
     reviewSection: 'テキスト第5章（業務活用・運用・ガバナンス実務） → 「運用」',
     examTrap: '業務条件と判断根拠を区別して確認しましょう。',
     choiceNotes: [
@@ -6670,7 +6670,7 @@ export const questionBank: Question[] = [
     answers: [
       0
     ],
-    explanation: '比較条件を揃える必要がある。',
+    explanation: 'ベンダー比較では同じ業務課題、評価データ、費用条件で検証する。提案資料の指標だけでは公平に比較できない。',
     reviewSection: 'テキスト第5章（業務活用・運用・ガバナンス実務） → 「ベンダー選定」',
     examTrap: '業務条件と判断根拠を区別して確認しましょう。',
     choiceNotes: [
@@ -6910,7 +6910,7 @@ export const questionBank: Question[] = [
     answers: [
       0
     ],
-    explanation: '解説も品質保証の対象。',
+    explanation: '正答が合っていても解説の計算過程が誤れば誤学習につながる。答えと解説の両方を品質検査する。',
     reviewSection: 'テキスト第5章（業務活用・運用・ガバナンス実務） → 「品質保証」',
     examTrap: '業務条件と判断根拠を区別して確認しましょう。',
     choiceNotes: [
@@ -7006,7 +7006,7 @@ export const questionBank: Question[] = [
     answers: [
       0
     ],
-    explanation: '改善には原因の特定が必要。',
+    explanation: '同じ誤案内が繰り返される場合は発生条件と根拠資料を調べ、原因を修正した後に再発を検証する。',
     reviewSection: 'テキスト第5章（業務活用・運用・ガバナンス実務） → 「継続改善」',
     examTrap: '業務条件と判断根拠を区別して確認しましょう。',
     choiceNotes: [
@@ -7054,7 +7054,7 @@ export const questionBank: Question[] = [
     answers: [
       0
     ],
-    explanation: '改善には副作用の確認が必要。',
+    explanation: '改善後に一部の質問で性能が悪化することがある。固定した評価セットで回帰テストを行い副作用を検出する。',
     reviewSection: 'テキスト第5章（業務活用・運用・ガバナンス実務） → 「継続改善」',
     examTrap: '業務条件と判断根拠を区別して確認しましょう。',
     choiceNotes: [
