@@ -12,15 +12,13 @@ export function ReviewCard({ question, selected, showHeader = true }: Props) {
   const correct = isCorrect(question, selected)
   const researchText = `生成AIパスポート試験の次の問題を初学者向けに説明してください。問題：${question.prompt} 選択肢：${question.choices.join(' / ')} 正解：${formatCorrectChoices(question)}`
 
-  async function openGemini() {
+  function openGemini() {
     // The official Gemini website does not guarantee prompt prefill through a URL.
     // Copy the context when clipboard access is available; always open the official website.
-    try {
-      await navigator.clipboard.writeText(researchText)
-    } catch {
-      // Clipboard permission may be unavailable on some browsers.
-    }
     window.open('https://gemini.google.com/app', '_blank', 'noopener,noreferrer')
+    if (navigator.clipboard?.writeText) {
+      void navigator.clipboard.writeText(researchText).catch(() => {})
+    }
   }
 
   return (
