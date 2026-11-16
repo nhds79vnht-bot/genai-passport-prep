@@ -1,51 +1,92 @@
 import { readFileSync } from 'node:fs'
 import ts from 'typescript'
 
-const path = 'src/data/questionBank.ts'
-const source = ts.createSourceFile(path, readFileSync(path, 'utf8'), ts.ScriptTarget.Latest, true)
+const sources = [
+  ['src/data/questionBank.ts', 'questionBank'],
+  ['src/data/syllabus2027Questions.ts', 'items'],
+  ['src/data/expansion2027Questions.ts', 'rows'],
+  ['src/data/advanced2027Questions.ts', 'rows'],
+  ['src/data/practice2027Questions.ts', 'rows'],
+  ['src/data/applied2027Questions.ts', 'rows'],
+]
 const problems = []
-const counts = new Map()
+const warnings = []
+const all = []
+const chapters = new Map()
+const promptIndex = new Map()
 const ids = new Set()
-const normalizedPrompts = new Map()
-let total = 0
 
-function value(node) {
+function scalar(node) {
   if (ts.isStringLiteral(node) || ts.isNoSubstitutionTemplateLiteral(node)) return node.text
   if (ts.isNumericLiteral(node)) return Number(node.text)
-  if (ts.isArrayLiteralExpression(node)) return node.elements.map(value)
+  if (ts.isArrayLiteralExpression(node)) return node.elements.map(scalar)
   return undefined
 }
-function fields(node) {
-  const out = {}
+function fieldObject(node, source) {
+  const result = {}
   for (const prop of node.properties) {
     if (!ts.isPropertyAssignment(prop)) continue
-    const key = prop.name.getText(source).replace(/^['"]|['"]$/g, '')
-    out[key] = value(prop.initializer)
+    result[prop.name.getText(source).replace(/^['"]|['"]$/g, '')] = scalar(prop.initializer)
   }
-  return out
+  return result
 }
-function walk(node) {
-  if (ts.isVariableDeclaration(node) && node.name.getText(source) === 'questionBank' && node.initializer && ts.isArrayLiteralExpression(node.initializer)) {
-    for (const element of node.initializer.elements) {
-      if (!ts.isObjectLiteralExpression(element)) continue
-      const q = fields(element)
-      total++
-      counts.set(q.chapter, (counts.get(q.chapter) ?? 0) + 1)
-      if (ids.has(q.id)) problems.push(`重複ID: ${q.id}`)
-      ids.add(q.id)
-      if (!q.prompt || !q.explanation || !q.topic) problems.push(`必須項目不足: ${q.id}`)
-      if (!Array.isArray(q.choices) || q.choices.length !== 4 || new Set(q.choices).size !== 4) problems.push(`選択肢異常: ${q.id}`)
-      if (!Array.isArray(q.answers) || q.answers.length === 0 || q.answers.some(a => !Number.isInteger(a) || a < 0 || a >= (q.choices?.length ?? 0))) problems.push(`正答異常: ${q.id}`)
-      if (!Array.isArray(q.choiceNotes) || q.choiceNotes.length !== q.choices?.length) problems.push(`解説数異常: ${q.id}`)
-      const key = String(q.prompt ?? '').replace(/[\s、。？！?！]/g, '').toLowerCase()
-      if (normalizedPrompts.has(key)) problems.push(`設問文重複: ${normalizedPrompts.get(key)} / ${q.id}`)
-      else normalizedPrompts.set(key, q.id)
-      if (/復習問題として適切な学習法|シラバスのキーワードを整理/.test(q.prompt ?? '')) problems.push(`汎用水増し設問: ${q.id}`)
+function findArray(source, variable) {
+  let result
+  function visit(node) {
+    if (ts.isVariableDeclaration(node) && node.name.getText(source) === variable && node.initializer) {
+      let value = node.initializer
+      if (ts.isAsExpression(value)) value = value.expression
+      if (ts.isArrayLiteralExpression(value)) result = value
     }
+    ts.forEachChild(node, visit)
   }
-  ts.forEachChild(node, walk)
+  visit(source)
+  return result
 }
-walk(source)
-const report = { total, chapterCounts: Object.fromEntries(counts), problemCount: problems.length, examples: problems.slice(0, 60), note: '形式・完全一致重複・汎用設問の機械監査。事実正確性とシラバス適合性は別途人手監査が必要。' }
+function add(q, origin) {
+  const label = `${origin}:${q.id}`
+  all.push(q)
+  chapters.set(q.chapter, (chapters.get(q.chapter) ?? 0) + 1)
+  if (ids.has(q.id)) problems.push(`重複ID: ${label}`)
+  ids.add(q.id)
+  if (![q.id, q.chapter, q.topic, q.prompt, q.explanation].every(x => typeof x === 'string' && x.trim())) problems.push(`必須項目不足: ${label}`)
+  if (!Array.isArray(q.choices) || q.choices.length !== 4 || q.choices.some(x => typeof x !== 'string' || !x.trim()) || new Set(q.choices).size !== 4) problems.push(`選択肢異常: ${label}`)
+  if (!Array.isArray(q.answers) || !q.answers.length || new Set(q.answers).size !== q.answers.length || q.answers.some(a => !Number.isInteger(a) || a < 0 || a >= 4)) problems.push(`正答異常: ${label}`)
+  if (!Array.isArray(q.choiceNotes) || q.choiceNotes.length !== 4) problems.push(`解説数異常: ${label}`)
+  const key = String(q.prompt ?? '').replace(/[\s、。？！?！]/g, '').toLowerCase()
+  if (promptIndex.has(key)) problems.push(`設問文重複: ${promptIndex.get(key)} / ${label}`)
+  else promptIndex.set(key, label)
+  if (/復習問題として適切な学習法|シラバスのキーワードを整理/.test(q.prompt ?? '')) problems.push(`汎用水増し設問: ${label}`)
+  if (String(q.explanation ?? '').length < 15) warnings.push(`短い解説: ${label}`)
+  if (q.choices?.slice(1).some(x => String(x).length < 6)) warnings.push(`短い誤答選択肢: ${label}`)
+  if (q.choiceNotes?.slice(1).some(x => /^誤答：|^不正解：[^。]*$/.test(String(x)))) warnings.push(`理由のない選択肢解説: ${label}`)
+}
+for (const [path, variable] of sources) {
+  const source = ts.createSourceFile(path, readFileSync(path, 'utf8'), ts.ScriptTarget.Latest, true)
+  const array = findArray(source, variable)
+  if (!array) { problems.push(`問題配列が見つからない: ${path}`); continue }
+  array.elements.forEach((node, index) => {
+    if (variable === 'questionBank') {
+      if (!ts.isObjectLiteralExpression(node)) { problems.push(`形式異常: ${path} #${index}`); return }
+      add(fieldObject(node, source), path)
+    } else {
+      if (!ts.isArrayLiteralExpression(node)) { problems.push(`行形式異常: ${path} #${index}`); return }
+      const row = node.elements.map(scalar)
+      if (row.length !== 8 || row.some(x => typeof x !== 'string')) { problems.push(`行項目異常: ${path} #${index}`); return }
+      const [chapter, topic, prompt, correct, wrong1, wrong2, wrong3, explanation] = row
+      const prefix = path.includes('syllabus') ? 'sy27' : path.includes('expansion') ? 'ex27' : path.includes('advanced') ? 'adv27' : path.includes('practice') ? 'pr27' : 'ap27'
+      add({ id: `${prefix}-${String(index + 1).padStart(3, '0')}`, chapter, topic, prompt, choices: [correct, wrong1, wrong2, wrong3], answers: [0], explanation, choiceNotes: [explanation, `誤答：${wrong1}`, `誤答：${wrong2}`, `誤答：${wrong3}`] }, path)
+    }
+  })
+}
+const report = {
+  total: all.length,
+  chapterCounts: Object.fromEntries(chapters),
+  problemCount: problems.length,
+  problems: problems.slice(0, 80),
+  qualityWarningCount: warnings.length,
+  qualityWarnings: warnings.slice(0, 50),
+  scope: '全6ファイルの形式・ID・設問文完全一致・選択肢重複を確認。短い解説等は警告であり、意味的重複・正誤の事実検証・ビルド・実機試験は別途必要。',
+}
 console.log(JSON.stringify(report, null, 2))
 if (problems.length) process.exitCode = 1
