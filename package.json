@@ -7,6 +7,7 @@
     "dev": "vite",
     "generate:questions": "node scripts/generate-question-bank.mjs",
     "build": "tsc -b && vite build",
+    "test": "node --experimental-strip-types --test src/lib/scoreOutbox.test.mjs",
     "lint": "oxlint",
     "preview": "vite preview"
   },
