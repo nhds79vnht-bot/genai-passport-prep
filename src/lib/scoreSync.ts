@@ -9,6 +9,7 @@ import { questionBank } from '../data/questionBank'
  */
 export type ScoreSubmissionCandidate = {
   attemptId: string
+  learnerId?: string
   mode: 'quiz' | 'mock'
   completedAt: string
   questionIds: string[]
