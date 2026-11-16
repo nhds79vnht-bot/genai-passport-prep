@@ -40,7 +40,9 @@ export function enqueueScoreCandidate(
     // Never treat a conflicting attempt ID as a successful enqueue.
     const existing = pending.find((row) => row.attemptId === candidate.attemptId)
     if (existing) return JSON.stringify(existing) === JSON.stringify(candidate)
-    storage.setItem(KEY, JSON.stringify([candidate, ...pending].slice(0, MAX_PENDING)))
+    // Never silently evict an unacknowledged score, including another child's.
+    if (pending.length >= MAX_PENDING) return false
+    storage.setItem(KEY, JSON.stringify([candidate, ...pending]))
     return true
   } catch { return false }
 }
