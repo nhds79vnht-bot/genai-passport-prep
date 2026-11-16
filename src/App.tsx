@@ -14,6 +14,8 @@ import {
   questionCount,
 } from './lib/examBuilder'
 import { scoreAnswers } from './lib/scoring'
+import { createScoreSubmissionCandidate } from './lib/scoreSync'
+import { enqueueScoreCandidate } from './lib/scoreOutbox'
 import {
   loadResults,
   loadStats,
@@ -88,6 +90,10 @@ export default function App() {
       wrongQuestionIds,
       completedAt: new Date().toISOString(),
     }
+    // Persist a locally validated attempt for future authenticated server-side scoring.
+    // No network submission occurs until identity and trusted scoring are implemented.
+    const candidate = createScoreSubmissionCandidate(result, questions)
+    if (candidate) enqueueScoreCandidate(candidate)
     setLatestResult(result)
     setResults((prev) => [result, ...prev].slice(0, 50))
     setProgress((prev) => questions.reduce((state, q) => recordAnswer(state, q.id, !wrongQuestionIds.includes(q.id)), prev))
