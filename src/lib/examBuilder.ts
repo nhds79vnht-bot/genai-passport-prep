@@ -2,6 +2,9 @@ import { CHAPTERS, MOCK_QUESTION_COUNT, STUDY_QUESTION_COUNT, WEAK_DRILL_COUNT }
 import { shuffle } from './scoring'
 import type { Chapter, Question } from './types'
 import { questionBank } from '../data/questionBank'
+import { syllabus2027Questions } from '../data/syllabus2027Questions'
+
+export const activeQuestionBank: Question[] = [...questionBank, ...syllabus2027Questions]
 
 const PER_CHAPTER_MOCK = MOCK_QUESTION_COUNT / CHAPTERS.length
 
@@ -21,7 +24,7 @@ function prepareSession(questions: Question[]): Question[] {
 }
 
 export function getQuestionsByChapter(chapter: Chapter): Question[] {
-  return questionBank.filter((q) => q.chapter === chapter)
+  return activeQuestionBank.filter((q) => q.chapter === chapter)
 }
 
 export function buildStudySet(chapter: Chapter): Question[] {
@@ -45,7 +48,7 @@ export function buildWeakDrill(stats: Record<string, { wrong: number; seen: numb
     })
     .map(([id]) => id)
 
-  const byId = new Map(questionBank.map((q) => [q.id, q]))
+  const byId = new Map(activeQuestionBank.map((q) => [q.id, q]))
   const fromStats = wrongIds
     .map((id) => byId.get(id))
     .filter((q): q is Question => Boolean(q))
@@ -55,7 +58,7 @@ export function buildWeakDrill(stats: Record<string, { wrong: number; seen: numb
   }
 
   const selectedIds = new Set(fromStats.map((q) => q.id))
-  const fallback = shuffle(questionBank.filter((q) => !selectedIds.has(q.id))).slice(0, WEAK_DRILL_COUNT - fromStats.length)
+  const fallback = shuffle(activeQuestionBank.filter((q) => !selectedIds.has(q.id))).slice(0, WEAK_DRILL_COUNT - fromStats.length)
   return prepareSession(shuffle([...fromStats, ...fallback]))
 }
 
@@ -71,7 +74,7 @@ export function chapterStats(
   })
 }
 
-export const questionCount = questionBank.length
+export const questionCount = activeQuestionBank.length
 export const chapterQuestionCount = Object.fromEntries(
   CHAPTERS.map((chapter) => [chapter, getQuestionsByChapter(chapter).length]),
 ) as Record<Chapter, number>
