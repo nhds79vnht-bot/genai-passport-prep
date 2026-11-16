@@ -50,6 +50,18 @@ describe('passport score retry outbox', () => {
     assert.deepEqual(loadScoreOutbox(storage), [candidate])
   })
 
+  it('does not discard a pending score when the outbox reaches capacity', () => {
+    const storage = memoryStorage()
+    for (let i = 0; i < 50; i++) {
+      const attemptId = '123e4567-e89b-42d3-a456-' + String(i).padStart(12, '0')
+      assert.deepEqual(enqueueScoreCandidate({ ...candidate, attemptId }, storage), true)
+    }
+    assert.deepEqual(enqueueScoreCandidate(candidate, storage), false)
+    const pending = loadScoreOutbox(storage)
+    assert.deepEqual(pending.length, 50)
+    assert.deepEqual(pending.some((row) => row.attemptId === '123e4567-e89b-42d3-a456-000000000000'), true)
+  })
+
   it('does not acknowledge an unknown attempt by deleting a different attempt', () => {
     const storage = memoryStorage()
     enqueueScoreCandidate(candidate, storage)
