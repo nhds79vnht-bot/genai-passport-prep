@@ -73,10 +73,12 @@ export default function App() {
   // Standalone use remains local-only; no credentials or claimed scores cross frames.
   useEffect(() => {
     if (window.parent === window) return
-    const parentOrigin = new URLSearchParams(window.location.search).get('parentOrigin')
-    if (!parentOrigin || !/^https:\/\/[^/]+$/.test(parentOrigin)) return
+    const params = new URLSearchParams(window.location.search)
+    const parentOrigin = params.get('parentOrigin')
+    const learnerId = params.get('learnerId')
+    if (!learnerId || !parentOrigin || !/^https:\/\/[^/]+$/.test(parentOrigin)) return
     const send = () => {
-      for (const candidate of loadScoreOutbox()) {
+      for (const candidate of loadScoreOutbox().filter((row) => row.learnerId === learnerId)) {
         window.parent.postMessage({ type: 'kuro-passport-attempt-v1', candidate }, parentOrigin)
       }
     }
@@ -117,9 +119,11 @@ export default function App() {
     // No network submission occurs until identity and trusted scoring are implemented.
     const candidate = createScoreSubmissionCandidate(result, questions)
     if (candidate) {
+      const scopedLearnerId = new URLSearchParams(window.location.search).get('learnerId')
+      if (scopedLearnerId && window.parent !== window) candidate.learnerId = scopedLearnerId
       enqueueScoreCandidate(candidate)
       const parentOrigin = new URLSearchParams(window.location.search).get('parentOrigin')
-      if (window.parent !== window && parentOrigin && /^https:\/\/[^/]+$/.test(parentOrigin)) {
+      if (window.parent !== window && candidate.learnerId && parentOrigin && /^https:\/\/[^/]+$/.test(parentOrigin)) {
         window.parent.postMessage({ type: 'kuro-passport-attempt-v1', candidate }, parentOrigin)
       }
     }
