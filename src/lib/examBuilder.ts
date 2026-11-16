@@ -1,5 +1,5 @@
 import { CHAPTERS, MOCK_QUESTION_COUNT, STUDY_QUESTION_COUNT, WEAK_DRILL_COUNT } from './chapters'
-import { shuffle } from './scoring'
+import { shuffle, shuffleQuestionChoices } from './scoring'
 import type { Chapter, Question } from './types'
 import { questionBank } from '../data/questionBank'
 
@@ -10,14 +10,14 @@ export function getQuestionsByChapter(chapter: Chapter): Question[] {
 }
 
 export function buildStudySet(chapter: Chapter): Question[] {
-  return shuffle(getQuestionsByChapter(chapter)).slice(0, STUDY_QUESTION_COUNT)
+  return shuffle(getQuestionsByChapter(chapter)).slice(0, STUDY_QUESTION_COUNT).map(shuffleQuestionChoices)
 }
 
 export function buildMockExam(): Question[] {
   const picked = CHAPTERS.flatMap((chapter) =>
     shuffle(getQuestionsByChapter(chapter)).slice(0, PER_CHAPTER_MOCK),
   )
-  return shuffle(picked).slice(0, MOCK_QUESTION_COUNT)
+  return shuffle(picked).slice(0, MOCK_QUESTION_COUNT).map(shuffleQuestionChoices)
 }
 
 export function buildWeakDrill(stats: Record<string, { wrong: number; seen: number }>): Question[] {
@@ -36,11 +36,13 @@ export function buildWeakDrill(stats: Record<string, { wrong: number; seen: numb
     .filter((q): q is Question => Boolean(q))
 
   if (fromStats.length >= WEAK_DRILL_COUNT) {
-    return shuffle(fromStats).slice(0, WEAK_DRILL_COUNT)
+    return shuffle(fromStats).slice(0, WEAK_DRILL_COUNT).map(shuffleQuestionChoices)
   }
 
-  const fallback = shuffle(questionBank).slice(0, WEAK_DRILL_COUNT - fromStats.length)
-  return shuffle([...fromStats, ...fallback])
+  const usedIds = new Set(fromStats.map((q) => q.id))
+  const fallback = shuffle(questionBank.filter((q) => !usedIds.has(q.id)))
+    .slice(0, WEAK_DRILL_COUNT - fromStats.length)
+  return shuffle([...fromStats, ...fallback]).map(shuffleQuestionChoices)
 }
 
 export function chapterStats(
