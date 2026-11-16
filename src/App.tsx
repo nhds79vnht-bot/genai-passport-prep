@@ -45,7 +45,7 @@ export default function App() {
   const learnerScope = (() => {
     const params = new URLSearchParams(window.location.search)
     const learnerId = params.get('learnerId')
-    return window.parent !== window && learnerId && /^[0-9a-f-]{36}$/i.test(learnerId) ? learnerId : null
+    return window.parent !== window && learnerId && /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(learnerId) ? learnerId : null
   })()
   const progressKey = learnerScope ? `genai-passport-prep:progress-v1:${learnerScope}` : 'genai-passport-prep:progress-v1'
   const [progress, setProgress] = useState<LearnerProgress>(() => {
@@ -82,7 +82,7 @@ export default function App() {
     const params = new URLSearchParams(window.location.search)
     const parentOrigin = params.get('parentOrigin')
     const learnerId = params.get('learnerId')
-    if (!learnerId || !parentOrigin || !/^https:\/\/[^/]+$/.test(parentOrigin)) return
+    if (!learnerId || !/^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(learnerId) || !parentOrigin || !/^https:\/\/[^/]+$/.test(parentOrigin)) return
     const send = () => {
       for (const candidate of loadScoreOutbox().filter((row) => row.learnerId === learnerId)) {
         window.parent.postMessage({ type: 'kuro-passport-attempt-v1', candidate }, parentOrigin)
@@ -131,8 +131,10 @@ export default function App() {
       if (window.parent !== window && scopedLearnerId && /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(scopedLearnerId) &&
           parentOrigin && /^https:\/\/[^/]+$/.test(parentOrigin)) {
         candidate.learnerId = scopedLearnerId
-        enqueueScoreCandidate(candidate)
-        window.parent.postMessage({ type: 'kuro-passport-attempt-v1', candidate }, parentOrigin)
+        // Never bypass outbox validation or send a conflicting attempt ID.
+        if (enqueueScoreCandidate(candidate)) {
+          window.parent.postMessage({ type: 'kuro-passport-attempt-v1', candidate }, parentOrigin)
+        }
       }
     }
     setLatestResult(result)
