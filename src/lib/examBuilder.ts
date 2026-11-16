@@ -3,8 +3,9 @@ import { shuffle } from './scoring'
 import type { Chapter, Question } from './types'
 import { questionBank } from '../data/questionBank'
 import { syllabus2027Questions } from '../data/syllabus2027Questions'
+import { expansion2027Questions } from '../data/expansion2027Questions'
 
-export const activeQuestionBank: Question[] = [...questionBank, ...syllabus2027Questions]
+export const activeQuestionBank: Question[] = [...questionBank, ...syllabus2027Questions, ...expansion2027Questions]
 
 const PER_CHAPTER_MOCK = MOCK_QUESTION_COUNT / CHAPTERS.length
 
