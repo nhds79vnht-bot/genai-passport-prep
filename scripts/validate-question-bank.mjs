@@ -56,7 +56,7 @@ function add(q, origin) {
   const key = String(q.prompt ?? '').replace(/[\s、。？！?！]/g, '').toLowerCase()
   if (promptIndex.has(key)) problems.push(`設問文重複: ${promptIndex.get(key)} / ${label}`)
   else promptIndex.set(key, label)
-  if (/復習問題として適切な学習法|シラバスのキーワードを整理/.test(q.prompt ?? '')) problems.push(`汎用水増し設問: ${label}`)
+  if (/復習問題(?:\\d+)?として適切な学習法|シラバスのキーワードを整理/.test(q.prompt ?? '')) problems.push(`汎用水増し設問: ${label}`)
   if (String(q.explanation ?? '').length < 15) warnings.push(`短い解説: ${label}`)
   if (q.choices?.slice(1).some(x => String(x).length < 6)) warnings.push(`短い誤答選択肢: ${label}`)
   if (q.choiceNotes?.slice(1).some(x => /^誤答：|^不正解：[^。]*$/.test(String(x)))) warnings.push(`理由のない選択肢解説: ${label}`)
@@ -86,7 +86,7 @@ const report = {
   problems: problems.slice(0, 80),
   qualityWarningCount: warnings.length,
   qualityWarnings: warnings.slice(0, 50),
-  scope: '全6ファイルの形式・ID・設問文完全一致・選択肢重複を確認。短い解説等は警告であり、意味的重複・正誤の事実検証・ビルド・実機試験は別途必要。',
+  scope: '全6ファイルの形式・ID・設問文完全一致・選択肢重複・番号付き水増し設問を確認。短い解説等は警告であり、意味的重複・正誤の事実検証・ビルド・実機試験は別途必要。',
 }
 console.log(JSON.stringify(report, null, 2))
 if (problems.length) process.exitCode = 1
