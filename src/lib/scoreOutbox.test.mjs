@@ -12,10 +12,10 @@ const candidate = {
 }
 
 function memoryStorage() {
-  const values = new Map<string, string>()
+  const values = new Map()
   return {
-    getItem: (key: string) => values.get(key) ?? null,
-    setItem: (key: string, value: string) => { values.set(key, value) },
+    getItem: (key) => values.get(key) ?? null,
+    setItem: (key, value) => { values.set(key, value) },
   }
 }
 
