@@ -13,22 +13,22 @@ function readJson<T>(key: string, fallback: T): T {
   }
 }
 
-export function loadResults(): SessionResult[] {
-  const parsed = readJson<SessionResult[]>(RESULTS_KEY, [])
+export function loadResults(scope?: string | null): SessionResult[] {
+  const parsed = readJson<SessionResult[]>(scope ? `${RESULTS_KEY}:${scope}` : RESULTS_KEY, [])
   return Array.isArray(parsed) ? parsed : []
 }
 
-export function saveResults(results: SessionResult[]): void {
-  localStorage.setItem(RESULTS_KEY, JSON.stringify(results))
+export function saveResults(results: SessionResult[], scope?: string | null): void {
+  localStorage.setItem(scope ? `${RESULTS_KEY}:${scope}` : RESULTS_KEY, JSON.stringify(results))
 }
 
-export function loadStats(): QuestionStats {
-  const parsed = readJson<QuestionStats>(STATS_KEY, {})
+export function loadStats(scope?: string | null): QuestionStats {
+  const parsed = readJson<QuestionStats>(scope ? `${STATS_KEY}:${scope}` : STATS_KEY, {})
   return parsed && typeof parsed === 'object' ? parsed : {}
 }
 
-export function saveStats(stats: QuestionStats): void {
-  localStorage.setItem(STATS_KEY, JSON.stringify(stats))
+export function saveStats(stats: QuestionStats, scope?: string | null): void {
+  localStorage.setItem(scope ? `${STATS_KEY}:${scope}` : STATS_KEY, JSON.stringify(stats))
 }
 
 export function updateStatsAfterSession(
