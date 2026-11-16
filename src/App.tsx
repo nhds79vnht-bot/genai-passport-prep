@@ -44,6 +44,7 @@ export default function App() {
   const [questions, setQuestions] = useState<Question[]>([])
   const [answers, setAnswers] = useState<Record<string, number[]>>({})
   const [secondsLeft, setSecondsLeft] = useState(MOCK_SECONDS)
+  const [mockDeadline, setMockDeadline] = useState<number | null>(null)
   const [results, setResults] = useState<SessionResult[]>(() => loadResults())
   const [stats, setStats] = useState(() => loadStats())
   const [latestResult, setLatestResult] = useState<SessionResult | null>(null)
@@ -90,14 +91,16 @@ export default function App() {
   }, [answers, mode, questions, selectedChapter])
 
   useEffect(() => {
-    if (view !== 'exam' || mode !== 'mock') return
-    if (secondsLeft <= 0) {
-      finishExam()
-      return
+    if (view !== 'exam' || mode !== 'mock' || mockDeadline === null) return
+    const updateCountdown = () => {
+      const remaining = Math.max(0, Math.ceil((mockDeadline - Date.now()) / 1000))
+      setSecondsLeft(remaining)
+      if (remaining === 0) finishExam()
     }
-    const timerId = window.setTimeout(() => setSecondsLeft((prev) => prev - 1), 1000)
-    return () => window.clearTimeout(timerId)
-  }, [view, mode, secondsLeft, finishExam])
+    updateCountdown()
+    const timerId = window.setInterval(updateCountdown, 250)
+    return () => window.clearInterval(timerId)
+  }, [view, mode, mockDeadline, finishExam])
 
   const answeredCount = useMemo(
     () => questions.filter((q) => (answers[q.id] ?? []).length > 0).length,
@@ -127,6 +130,7 @@ export default function App() {
     setQuestions(buildMockExam())
     setAnswers({})
     setSecondsLeft(MOCK_SECONDS)
+    setMockDeadline(Date.now() + MOCK_SECONDS * 1000)
     setCurrentIndex(0)
     setShowUnansweredOnly(false)
     setView('exam')
