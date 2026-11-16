@@ -8,6 +8,7 @@ import {
   SYLLABUS_NOTE,
 } from './lib/chapters'
 import {
+  activeQuestionBank,
   buildMockExam,
   buildStudySet,
   buildWeakDrill,
@@ -24,9 +25,8 @@ import {
   updateStatsAfterSession,
 } from './lib/storage'
 import type { Chapter, Question, SessionResult, StudyMode, View } from './lib/types'
-import { questionBank } from './data/questionBank'
 
-const chapterById = Object.fromEntries(questionBank.map((q) => [q.id, q.chapter])) as Record<
+const chapterById = Object.fromEntries(activeQuestionBank.map((q) => [q.id, q.chapter])) as Record<
   string,
   Chapter
 >
