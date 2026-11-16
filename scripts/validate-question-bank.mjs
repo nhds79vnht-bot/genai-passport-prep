@@ -74,7 +74,7 @@ for (const [path, variable] of sources) {
       const row = node.elements.map(scalar)
       if (row.length !== 8 || row.some(x => typeof x !== 'string')) { problems.push(`行項目異常: ${path} #${index}`); return }
       const [chapter, topic, prompt, correct, wrong1, wrong2, wrong3, explanation] = row
-      const prefix = path.includes('syllabus') ? 'sy27' : path.includes('expansion') ? 'ex27' : path.includes('advanced') ? 'adv27' : path.includes('practice') ? 'pr27' : 'ap27'
+      const prefix = path.includes('syllabus') ? 's27' : path.includes('expansion') ? 'ex27' : path.includes('advanced') ? 'adv27' : path.includes('practice') ? 'pr27' : 'ap27'
       add({ id: `${prefix}-${String(index + 1).padStart(3, '0')}`, chapter, topic, prompt, choices: [correct, wrong1, wrong2, wrong3], answers: [0], explanation, choiceNotes: [explanation, `誤答：${wrong1}`, `誤答：${wrong2}`, `誤答：${wrong3}`] }, path)
     }
   })
