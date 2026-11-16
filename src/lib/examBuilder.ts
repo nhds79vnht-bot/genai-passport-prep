@@ -4,8 +4,9 @@ import type { Chapter, Question } from './types'
 import { questionBank } from '../data/questionBank'
 import { syllabus2027Questions } from '../data/syllabus2027Questions'
 import { expansion2027Questions } from '../data/expansion2027Questions'
+import { advanced2027Questions } from '../data/advanced2027Questions'
 
-export const activeQuestionBank: Question[] = [...questionBank, ...syllabus2027Questions, ...expansion2027Questions]
+export const activeQuestionBank: Question[] = [...questionBank, ...syllabus2027Questions, ...expansion2027Questions, ...advanced2027Questions]
 
 const PER_CHAPTER_MOCK = MOCK_QUESTION_COUNT / CHAPTERS.length
 
