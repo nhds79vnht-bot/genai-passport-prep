@@ -86,7 +86,7 @@ export default function App() {
       if (event.source !== window.parent || event.origin !== parentOrigin) return
       const message = event.data
       if (!message || message.type !== 'kuro-passport-ack-v1' || typeof message.attemptId !== 'string') return
-      if (message.ok === true) acknowledgeScoreCandidate(message.attemptId)
+      if (message.ok === true && loadScoreOutbox().some((row) => row.attemptId === message.attemptId && row.learnerId === learnerId)) acknowledgeScoreCandidate(message.attemptId)
     }
     window.addEventListener('message', onMessage)
     send()
@@ -116,7 +116,7 @@ export default function App() {
       completedAt: new Date().toISOString(),
     }
     // Persist a locally validated attempt for future authenticated server-side scoring.
-    // No network submission occurs until identity and trusted scoring are implemented.
+    // The authenticated parent frame submits this candidate for independent server scoring.
     const candidate = createScoreSubmissionCandidate(result, questions)
     if (candidate) {
       const scopedLearnerId = new URLSearchParams(window.location.search).get('learnerId')
