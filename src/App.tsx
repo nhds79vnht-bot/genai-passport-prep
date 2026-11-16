@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { QuestionNavigator } from './components/QuestionNavigator'
 import { ReviewCard } from './components/ReviewCard'
 import {
@@ -9,14 +9,14 @@ import {
 } from './lib/chapters'
 import {
   activeQuestionBank,
-  buildMockExam,
-  buildStudySet,
   buildWeakDrill,
   chapterQuestionCount,
   chapterStats,
   questionCount,
 } from './lib/examBuilder'
 import { scoreAnswers } from './lib/scoring'
+import { createScoreSubmissionCandidate } from './lib/scoreSync'
+import { enqueueScoreCandidate, loadScoreOutbox, acknowledgeScoreCandidate } from './lib/scoreOutbox'
 import {
   loadResults,
   loadStats,
@@ -25,6 +25,9 @@ import {
   updateStatsAfterSession,
 } from './lib/storage'
 import type { Chapter, Question, SessionResult, StudyMode, View } from './lib/types'
+import { questionBank } from './data/questionBank'
+import { buildBalancedMock, buildDailySet, emptyProgress, randomizeChoices, recordAnswer } from './lib/studyEngine'
+import type { LearnerProgress } from './lib/studyEngine'
 
 const chapterById = Object.fromEntries(activeQuestionBank.map((q) => [q.id, q.chapter])) as Record<
   string,
@@ -38,30 +41,74 @@ function modeLabel(mode: StudyMode, chapter?: Chapter): string {
 }
 
 export default function App() {
+  const completionGuard = useRef(false)
   const [view, setView] = useState<View>('home')
+  const learnerScope = (() => {
+    const params = new URLSearchParams(window.location.search)
+    const learnerId = params.get('learnerId')
+    return window.parent !== window && learnerId && /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(learnerId) ? learnerId : null
+  })()
+  const progressKey = learnerScope ? `genai-passport-prep:progress-v1:${learnerScope}` : 'genai-passport-prep:progress-v1'
+  const [progress, setProgress] = useState<LearnerProgress>(() => {
+    try {
+      const raw = localStorage.getItem(progressKey)
+      const parsed = raw ? JSON.parse(raw) as LearnerProgress : emptyProgress()
+      return parsed?.version === 1 && parsed.items && typeof parsed.items === 'object' ? parsed : emptyProgress()
+    } catch { return emptyProgress() }
+  })
   const [mode, setMode] = useState<StudyMode>('study')
   const [selectedChapter, setSelectedChapter] = useState<Chapter>(CHAPTERS[0])
   const [questions, setQuestions] = useState<Question[]>([])
   const [answers, setAnswers] = useState<Record<string, number[]>>({})
   const [secondsLeft, setSecondsLeft] = useState(MOCK_SECONDS)
   const [mockDeadline, setMockDeadline] = useState<number | null>(null)
-  const [results, setResults] = useState<SessionResult[]>(() => loadResults())
-  const [stats, setStats] = useState(() => loadStats())
+  const [results, setResults] = useState<SessionResult[]>(() => loadResults(learnerScope))
+  const [stats, setStats] = useState(() => loadStats(learnerScope))
   const [latestResult, setLatestResult] = useState<SessionResult | null>(null)
   const [currentIndex, setCurrentIndex] = useState(0)
   const [showUnansweredOnly, setShowUnansweredOnly] = useState(false)
   const [resultFilter, setResultFilter] = useState<'wrong' | 'all'>('wrong')
 
   useEffect(() => {
-    saveResults(results)
-  }, [results])
+    try { localStorage.setItem(progressKey, JSON.stringify(progress)) } catch { /* storage unavailable */ }
+  }, [progress, progressKey])
 
   useEffect(() => {
-    saveStats(stats)
-  }, [stats])
+    saveResults(results, learnerScope)
+  }, [results, learnerScope])
+
+  // Embedded in the signed-in くろ先生 app: submit answers through the parent frame.
+  // Standalone use remains local-only; no credentials or claimed scores cross frames.
+  useEffect(() => {
+    if (window.parent === window) return
+    const params = new URLSearchParams(window.location.search)
+    const parentOrigin = params.get('parentOrigin')
+    const learnerId = params.get('learnerId')
+    if (!learnerId || !/^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(learnerId) || !parentOrigin || !/^https:\/\/[^/]+$/.test(parentOrigin)) return
+    const send = () => {
+      for (const candidate of loadScoreOutbox().filter((row) => row.learnerId === learnerId)) {
+        window.parent.postMessage({ type: 'kuro-passport-attempt-v1', candidate }, parentOrigin)
+      }
+    }
+    const onMessage = (event: MessageEvent) => {
+      if (event.source !== window.parent || event.origin !== parentOrigin) return
+      const message = event.data
+      if (!message || message.type !== 'kuro-passport-ack-v1' || typeof message.attemptId !== 'string') return
+      if (message.ok === true && loadScoreOutbox().some((row) => row.attemptId === message.attemptId && row.learnerId === learnerId)) acknowledgeScoreCandidate(message.attemptId)
+    }
+    window.addEventListener('message', onMessage)
+    send()
+    const interval = window.setInterval(send, 15000)
+    return () => { window.removeEventListener('message', onMessage); window.clearInterval(interval) }
+  }, [])
+
+  useEffect(() => {
+    saveStats(stats, learnerScope)
+  }, [stats, learnerScope])
 
   const finishExam = useCallback(() => {
-    if (questions.length === 0) return
+    if (questions.length === 0 || completionGuard.current) return
+    completionGuard.current = true
     const { score, wrongQuestionIds } = scoreAnswers(questions, answers)
     const total = questions.length
     const percentage = Math.round((score / total) * 1000) / 10
@@ -76,8 +123,25 @@ export default function App() {
       wrongQuestionIds,
       completedAt: new Date().toISOString(),
     }
+    // Persist a locally validated attempt for future authenticated server-side scoring.
+    // The authenticated parent frame submits this candidate for independent server scoring.
+    const candidate = createScoreSubmissionCandidate(result, questions)
+    if (candidate) {
+      const scopedLearnerId = new URLSearchParams(window.location.search).get('learnerId')
+      const parentOrigin = new URLSearchParams(window.location.search).get('parentOrigin')
+      // Standalone results stay local; never queue an unscoped attempt for another child.
+      if (window.parent !== window && scopedLearnerId && /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(scopedLearnerId) &&
+          parentOrigin && /^https:\/\/[^/]+$/.test(parentOrigin)) {
+        candidate.learnerId = scopedLearnerId
+        // Never bypass outbox validation or send a conflicting attempt ID.
+        if (enqueueScoreCandidate(candidate)) {
+          window.parent.postMessage({ type: 'kuro-passport-attempt-v1', candidate }, parentOrigin)
+        }
+      }
+    }
     setLatestResult(result)
     setResults((prev) => [result, ...prev].slice(0, 50))
+    setProgress((prev) => questions.reduce((state, q) => recordAnswer(state, q.id, !wrongQuestionIds.includes(q.id)), prev))
     setStats((prev) =>
       updateStatsAfterSession(
         prev,
@@ -115,10 +179,23 @@ export default function App() {
   const statsByChapter = useMemo(() => chapterStats(stats), [stats])
   const questionIds = useMemo(() => questions.map((q) => q.id), [questions])
 
+  function startDaily() {
+    completionGuard.current = false
+    setMode('study')
+    setSelectedChapter(CHAPTERS[0])
+    // Scored sessions stay on the foundational 300 so navi passport-score-submit keys match.
+    setQuestions(buildDailySet(questionBank, progress, 10).map(randomizeChoices))
+    setAnswers({})
+    setCurrentIndex(0)
+    setShowUnansweredOnly(false)
+    setView('exam')
+  }
+
   function startStudy(chapter: Chapter) {
+    completionGuard.current = false
     setMode('study')
     setSelectedChapter(chapter)
-    setQuestions(buildStudySet(chapter))
+    setQuestions(buildDailySet(questionBank, progress, 10, new Date(), chapter).map(randomizeChoices))
     setAnswers({})
     setCurrentIndex(0)
     setShowUnansweredOnly(false)
@@ -126,8 +203,9 @@ export default function App() {
   }
 
   function startMock() {
+    completionGuard.current = false
     setMode('mock')
-    setQuestions(buildMockExam())
+    setQuestions(buildBalancedMock(questionBank, CHAPTERS))
     setAnswers({})
     setSecondsLeft(MOCK_SECONDS)
     setMockDeadline(Date.now() + MOCK_SECONDS * 1000)
@@ -137,8 +215,9 @@ export default function App() {
   }
 
   function startWeakDrill() {
+    completionGuard.current = false
     setMode('weak')
-    setQuestions(buildWeakDrill(stats))
+    setQuestions(buildWeakDrill(stats).map(randomizeChoices))
     setAnswers({})
     setCurrentIndex(0)
     setShowUnansweredOnly(false)
@@ -189,6 +268,13 @@ export default function App() {
         </header>
 
         <section className="card">
+          <h2>今日の学習（10問）</h2>
+          <p className="hint">復習期限の問題を優先し、残りは未学習問題から出題します。</p>
+          <button type="button" className="primary" onClick={startDaily}>今日の学習を始める</button>
+          <p className="hint">学習済み {Object.keys(progress.items).length}問 / 復習待ち {Object.values(progress.items).filter((item) => Date.parse(item.dueAt) <= Date.now()).length}問</p>
+        </section>
+
+        <section className="card">
           <h2>章別学習（10問）</h2>
           <div className="chapter-grid">
             {CHAPTERS.map((chapter) => (
@@ -205,7 +291,7 @@ export default function App() {
           <button type="button" className="primary" onClick={startMock}>
             模試を開始する
           </button>
-          <p className="hint">各章12問ずつランダム抽出。選択肢も毎回入れ替わります。80%は自主学習の目安です。</p>
+          <p className="hint">各章12問ずつランダム抽出。選択肢も毎回入れ替わります。60分の制限時間。80%はアプリ独自の学習目標で、公式の合格基準ではありません。</p>
         </section>
 
         <section className="card">
@@ -274,7 +360,7 @@ export default function App() {
           <p className="score">
             {latestResult.score} / {latestResult.total} 問（{latestResult.percentage}%）
           </p>
-          <p>{isRecommended ? '推奨ライン到達です。' : '復習後に再チャレンジしましょう。'}</p>
+          <p>{isRecommended ? 'アプリの学習目標に到達しました（合格判定ではありません）。' : '復習後に再チャレンジしましょう。'}</p>
           <div className="result-actions">
             <button type="button" className="primary" onClick={resetToHome}>
               ホームへ戻る
