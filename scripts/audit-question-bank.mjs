@@ -2,7 +2,7 @@ import { readFileSync } from 'node:fs'
 import assert from 'node:assert/strict'
 
 const source = readFileSync(new URL('../src/data/questionBank.ts', import.meta.url), 'utf8')
-const blocks = source.split(/\n  \{\n    id: /).slice(1).map((block) => 'id: ' + block)
+const starts = [...source.matchAll(/\bid: 'q\\d+'/g)].map((match) => match.index)\nconst blocks = starts.map((start, index) => source.slice(start, starts[index + 1] ?? source.length))
 const counts = new Map()
 const positions = [0, 0, 0, 0]
 const ids = new Set()
