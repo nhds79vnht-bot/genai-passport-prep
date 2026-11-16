@@ -53,6 +53,7 @@ export function acknowledgeScoreCandidate(
   if (!attemptId) return false
   try {
     const pending = loadScoreOutbox(storage)
+    if (!pending.some((row) => row.attemptId === attemptId)) return false
     storage.setItem(KEY, JSON.stringify(pending.filter((row) => row.attemptId !== attemptId)))
     return true
   } catch { return false }
