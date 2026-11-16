@@ -126,10 +126,12 @@ export default function App() {
     const candidate = createScoreSubmissionCandidate(result, questions)
     if (candidate) {
       const scopedLearnerId = new URLSearchParams(window.location.search).get('learnerId')
-      if (scopedLearnerId && window.parent !== window) candidate.learnerId = scopedLearnerId
-      enqueueScoreCandidate(candidate)
       const parentOrigin = new URLSearchParams(window.location.search).get('parentOrigin')
-      if (window.parent !== window && candidate.learnerId && parentOrigin && /^https:\/\/[^/]+$/.test(parentOrigin)) {
+      // Standalone results stay local; never queue an unscoped attempt for another child.
+      if (window.parent !== window && scopedLearnerId && /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(scopedLearnerId) &&
+          parentOrigin && /^https:\/\/[^/]+$/.test(parentOrigin)) {
+        candidate.learnerId = scopedLearnerId
+        enqueueScoreCandidate(candidate)
         window.parent.postMessage({ type: 'kuro-passport-attempt-v1', candidate }, parentOrigin)
       }
     }
