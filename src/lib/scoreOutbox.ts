@@ -36,3 +36,16 @@ export function enqueueScoreCandidate(
     return true
   } catch { return false }
 }
+
+/** Removes only a server-acknowledged attempt; keeps failed attempts for retry. */
+export function acknowledgeScoreCandidate(
+  attemptId: string,
+  storage: Pick<Storage, 'getItem' | 'setItem'> = localStorage,
+): boolean {
+  if (!attemptId) return false
+  try {
+    const pending = loadScoreOutbox(storage)
+    storage.setItem(KEY, JSON.stringify(pending.filter((row) => row.attemptId !== attemptId)))
+    return true
+  } catch { return false }
+}
