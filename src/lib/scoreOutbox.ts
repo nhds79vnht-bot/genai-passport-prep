@@ -16,12 +16,18 @@ function isCandidate(value: unknown): value is ScoreSubmissionCandidate {
   if (!value || typeof value !== 'object') return false
   const row = value as Partial<ScoreSubmissionCandidate>
   return typeof row.attemptId === 'string' && row.attemptId.length > 0 &&
+    typeof row.learnerId === 'string' && /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(row.learnerId) &&
     (row.mode === 'quiz' || row.mode === 'mock') &&
     typeof row.completedAt === 'string' && Number.isFinite(Date.parse(row.completedAt)) &&
-    Array.isArray(row.questionIds) && row.questionIds.length > 0 &&
+    Array.isArray(row.questionIds) && row.questionIds.length > 0 && row.questionIds.length <= 60 &&
+    (row.mode !== 'mock' || row.questionIds.length === 60) &&
     row.questionIds.every((id) => typeof id === 'string' && id.length > 0) &&
     new Set(row.questionIds).size === row.questionIds.length &&
-    !!row.answers && typeof row.answers === 'object' && !Array.isArray(row.answers)
+    !!row.answers && typeof row.answers === 'object' && !Array.isArray(row.answers) &&
+    Object.keys(row.answers).every((id) => row.questionIds?.includes(id)) &&
+    Object.values(row.answers).every((answer) => Array.isArray(answer) && answer.length <= 4 &&
+      answer.every((index) => Number.isInteger(index) && index >= 0 && index < 4) &&
+      new Set(answer).size === answer.length)
 }
 
 export function enqueueScoreCandidate(
