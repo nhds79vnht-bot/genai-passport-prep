@@ -8,8 +8,6 @@ import {
   SYLLABUS_NOTE,
 } from './lib/chapters'
 import {
-  buildMockExam,
-  buildStudySet,
   buildWeakDrill,
   chapterQuestionCount,
   chapterStats,
@@ -25,6 +23,8 @@ import {
 } from './lib/storage'
 import type { Chapter, Question, SessionResult, StudyMode, View } from './lib/types'
 import { questionBank } from './data/questionBank'
+import { buildBalancedMock, buildDailySet, emptyProgress, randomizeChoices, recordAnswer } from './lib/studyEngine'
+import type { LearnerProgress } from './lib/studyEngine'
 
 const chapterById = Object.fromEntries(questionBank.map((q) => [q.id, q.chapter])) as Record<
   string,
@@ -39,6 +39,13 @@ function modeLabel(mode: StudyMode, chapter?: Chapter): string {
 
 export default function App() {
   const [view, setView] = useState<View>('home')
+  const [progress, setProgress] = useState<LearnerProgress>(() => {
+    try {
+      const raw = localStorage.getItem('genai-passport-prep:progress-v1')
+      const parsed = raw ? JSON.parse(raw) as LearnerProgress : emptyProgress()
+      return parsed?.version === 1 && parsed.items && typeof parsed.items === 'object' ? parsed : emptyProgress()
+    } catch { return emptyProgress() }
+  })
   const [mode, setMode] = useState<StudyMode>('study')
   const [selectedChapter, setSelectedChapter] = useState<Chapter>(CHAPTERS[0])
   const [questions, setQuestions] = useState<Question[]>([])
@@ -50,6 +57,10 @@ export default function App() {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [showUnansweredOnly, setShowUnansweredOnly] = useState(false)
   const [resultFilter, setResultFilter] = useState<'wrong' | 'all'>('wrong')
+
+  useEffect(() => {
+    try { localStorage.setItem('genai-passport-prep:progress-v1', JSON.stringify(progress)) } catch { /* storage unavailable */ }
+  }, [progress])
 
   useEffect(() => {
     saveResults(results)
@@ -77,6 +88,7 @@ export default function App() {
     }
     setLatestResult(result)
     setResults((prev) => [result, ...prev].slice(0, 50))
+    setProgress((prev) => questions.reduce((state, q) => recordAnswer(state, q.id, !wrongQuestionIds.includes(q.id)), prev))
     setStats((prev) =>
       updateStatsAfterSession(
         prev,
@@ -112,10 +124,20 @@ export default function App() {
   const statsByChapter = useMemo(() => chapterStats(stats), [stats])
   const questionIds = useMemo(() => questions.map((q) => q.id), [questions])
 
+  function startDaily() {
+    setMode('study')
+    setSelectedChapter(CHAPTERS[0])
+    setQuestions(buildDailySet(questionBank, progress, 10).map(randomizeChoices))
+    setAnswers({})
+    setCurrentIndex(0)
+    setShowUnansweredOnly(false)
+    setView('exam')
+  }
+
   function startStudy(chapter: Chapter) {
     setMode('study')
     setSelectedChapter(chapter)
-    setQuestions(buildStudySet(chapter))
+    setQuestions(buildDailySet(questionBank, progress, 10, new Date(), chapter).map(randomizeChoices))
     setAnswers({})
     setCurrentIndex(0)
     setShowUnansweredOnly(false)
@@ -124,7 +146,7 @@ export default function App() {
 
   function startMock() {
     setMode('mock')
-    setQuestions(buildMockExam())
+    setQuestions(buildBalancedMock(questionBank, CHAPTERS))
     setAnswers({})
     setSecondsLeft(MOCK_SECONDS)
     setCurrentIndex(0)
@@ -134,7 +156,7 @@ export default function App() {
 
   function startWeakDrill() {
     setMode('weak')
-    setQuestions(buildWeakDrill(stats))
+    setQuestions(buildWeakDrill(stats).map(randomizeChoices))
     setAnswers({})
     setCurrentIndex(0)
     setShowUnansweredOnly(false)
@@ -185,6 +207,13 @@ export default function App() {
         </header>
 
         <section className="card">
+          <h2>今日の学習（10問）</h2>
+          <p className="hint">復習期限の問題を優先し、残りは未学習問題から出題します。</p>
+          <button type="button" className="primary" onClick={startDaily}>今日の学習を始める</button>
+          <p className="hint">学習済み {Object.keys(progress.items).length}問 / 復習待ち {Object.values(progress.items).filter((item) => Date.parse(item.dueAt) <= Date.now()).length}問</p>
+        </section>
+
+        <section className="card">
           <h2>章別学習（10問）</h2>
           <div className="chapter-grid">
             {CHAPTERS.map((chapter) => (
@@ -201,7 +230,7 @@ export default function App() {
           <button type="button" className="primary" onClick={startMock}>
             模試を開始する
           </button>
-          <p className="hint">各章12問ずつランダム抽出。合格基準は非公表のため80%超を推奨ライン表示。</p>
+          <p className="hint">各章12問ずつランダム抽出。60分の制限時間。80%はアプリ独自の学習目標で、公式の合格基準ではありません。</p>
         </section>
 
         <section className="card">
@@ -270,7 +299,7 @@ export default function App() {
           <p className="score">
             {latestResult.score} / {latestResult.total} 問（{latestResult.percentage}%）
           </p>
-          <p>{isRecommended ? '推奨ライン到達です。' : '復習後に再チャレンジしましょう。'}</p>
+          <p>{isRecommended ? 'アプリの学習目標に到達しました（合格判定ではありません）。' : '復習後に再チャレンジしましょう。'}</p>
           <div className="result-actions">
             <button type="button" className="primary" onClick={resetToHome}>
               ホームへ戻る
