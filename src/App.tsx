@@ -8,6 +8,7 @@ import {
   SYLLABUS_NOTE,
 } from './lib/chapters'
 import {
+  activeQuestionBank,
   buildWeakDrill,
   chapterQuestionCount,
   chapterStats,
@@ -28,7 +29,7 @@ import { questionBank } from './data/questionBank'
 import { buildBalancedMock, buildDailySet, emptyProgress, randomizeChoices, recordAnswer } from './lib/studyEngine'
 import type { LearnerProgress } from './lib/studyEngine'
 
-const chapterById = Object.fromEntries(questionBank.map((q) => [q.id, q.chapter])) as Record<
+const chapterById = Object.fromEntries(activeQuestionBank.map((q) => [q.id, q.chapter])) as Record<
   string,
   Chapter
 >
@@ -60,6 +61,7 @@ export default function App() {
   const [questions, setQuestions] = useState<Question[]>([])
   const [answers, setAnswers] = useState<Record<string, number[]>>({})
   const [secondsLeft, setSecondsLeft] = useState(MOCK_SECONDS)
+  const [mockDeadline, setMockDeadline] = useState<number | null>(null)
   const [results, setResults] = useState<SessionResult[]>(() => loadResults(learnerScope))
   const [stats, setStats] = useState(() => loadStats(learnerScope))
   const [latestResult, setLatestResult] = useState<SessionResult | null>(null)
@@ -153,14 +155,16 @@ export default function App() {
   }, [answers, mode, questions, selectedChapter])
 
   useEffect(() => {
-    if (view !== 'exam' || mode !== 'mock') return
-    if (secondsLeft <= 0) {
-      finishExam()
-      return
+    if (view !== 'exam' || mode !== 'mock' || mockDeadline === null) return
+    const updateCountdown = () => {
+      const remaining = Math.max(0, Math.ceil((mockDeadline - Date.now()) / 1000))
+      setSecondsLeft(remaining)
+      if (remaining === 0) finishExam()
     }
-    const timerId = window.setTimeout(() => setSecondsLeft((prev) => prev - 1), 1000)
-    return () => window.clearTimeout(timerId)
-  }, [view, mode, secondsLeft, finishExam])
+    updateCountdown()
+    const timerId = window.setInterval(updateCountdown, 250)
+    return () => window.clearInterval(timerId)
+  }, [view, mode, mockDeadline, finishExam])
 
   const answeredCount = useMemo(
     () => questions.filter((q) => (answers[q.id] ?? []).length > 0).length,
@@ -179,6 +183,7 @@ export default function App() {
     completionGuard.current = false
     setMode('study')
     setSelectedChapter(CHAPTERS[0])
+    // Scored sessions stay on the foundational 300 so navi passport-score-submit keys match.
     setQuestions(buildDailySet(questionBank, progress, 10).map(randomizeChoices))
     setAnswers({})
     setCurrentIndex(0)
@@ -203,6 +208,7 @@ export default function App() {
     setQuestions(buildBalancedMock(questionBank, CHAPTERS))
     setAnswers({})
     setSecondsLeft(MOCK_SECONDS)
+    setMockDeadline(Date.now() + MOCK_SECONDS * 1000)
     setCurrentIndex(0)
     setShowUnansweredOnly(false)
     setView('exam')
@@ -285,7 +291,7 @@ export default function App() {
           <button type="button" className="primary" onClick={startMock}>
             模試を開始する
           </button>
-          <p className="hint">各章12問ずつランダム抽出。60分の制限時間。80%はアプリ独自の学習目標で、公式の合格基準ではありません。</p>
+          <p className="hint">各章12問ずつランダム抽出。選択肢も毎回入れ替わります。60分の制限時間。80%はアプリ独自の学習目標で、公式の合格基準ではありません。</p>
         </section>
 
         <section className="card">
