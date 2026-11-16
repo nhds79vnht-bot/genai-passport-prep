@@ -15,7 +15,7 @@ export function loadScoreOutbox(storage: Pick<Storage, 'getItem'> = localStorage
 function isCandidate(value: unknown): value is ScoreSubmissionCandidate {
   if (!value || typeof value !== 'object') return false
   const row = value as Partial<ScoreSubmissionCandidate>
-  return typeof row.attemptId === 'string' && row.attemptId.length > 0 &&
+  return typeof row.attemptId === 'string' && /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(row.attemptId) &&
     typeof row.learnerId === 'string' && /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(row.learnerId) &&
     (row.mode === 'quiz' || row.mode === 'mock') &&
     typeof row.completedAt === 'string' && Number.isFinite(Date.parse(row.completedAt)) &&
@@ -37,7 +37,9 @@ export function enqueueScoreCandidate(
   if (!isCandidate(candidate)) return false
   try {
     const pending = loadScoreOutbox(storage)
-    if (pending.some((row) => row.attemptId === candidate.attemptId)) return true
+    // Never treat a conflicting attempt ID as a successful enqueue.
+    const existing = pending.find((row) => row.attemptId === candidate.attemptId)
+    if (existing) return JSON.stringify(existing) === JSON.stringify(candidate)
     storage.setItem(KEY, JSON.stringify([candidate, ...pending].slice(0, MAX_PENDING)))
     return true
   } catch { return false }
