@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { QuestionNavigator } from './components/QuestionNavigator'
 import { ReviewCard } from './components/ReviewCard'
 import {
@@ -38,6 +38,7 @@ function modeLabel(mode: StudyMode, chapter?: Chapter): string {
 }
 
 export default function App() {
+  const completionGuard = useRef(false)
   const [view, setView] = useState<View>('home')
   const [mode, setMode] = useState<StudyMode>('study')
   const [selectedChapter, setSelectedChapter] = useState<Chapter>(CHAPTERS[0])
@@ -61,7 +62,8 @@ export default function App() {
   }, [stats])
 
   const finishExam = useCallback(() => {
-    if (questions.length === 0) return
+    if (questions.length === 0 || completionGuard.current) return
+    completionGuard.current = true
     const { score, wrongQuestionIds } = scoreAnswers(questions, answers)
     const total = questions.length
     const percentage = Math.round((score / total) * 1000) / 10
@@ -116,6 +118,7 @@ export default function App() {
   const questionIds = useMemo(() => questions.map((q) => q.id), [questions])
 
   function startStudy(chapter: Chapter) {
+    completionGuard.current = false
     setMode('study')
     setSelectedChapter(chapter)
     setQuestions(buildStudySet(chapter))
@@ -126,6 +129,7 @@ export default function App() {
   }
 
   function startMock() {
+    completionGuard.current = false
     setMode('mock')
     setQuestions(buildMockExam())
     setAnswers({})
@@ -137,6 +141,7 @@ export default function App() {
   }
 
   function startWeakDrill() {
+    completionGuard.current = false
     setMode('weak')
     setQuestions(buildWeakDrill(stats))
     setAnswers({})
