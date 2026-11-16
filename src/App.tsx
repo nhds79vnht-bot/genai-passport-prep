@@ -15,7 +15,7 @@ import {
 } from './lib/examBuilder'
 import { scoreAnswers } from './lib/scoring'
 import { createScoreSubmissionCandidate } from './lib/scoreSync'
-import { enqueueScoreCandidate } from './lib/scoreOutbox'
+import { enqueueScoreCandidate, loadScoreOutbox, acknowledgeScoreCandidate } from './lib/scoreOutbox'
 import {
   loadResults,
   loadStats,
@@ -69,6 +69,29 @@ export default function App() {
     saveResults(results)
   }, [results])
 
+  // Embedded in the signed-in くろ先生 app: submit answers through the parent frame.
+  // Standalone use remains local-only; no credentials or claimed scores cross frames.
+  useEffect(() => {
+    if (window.parent === window) return
+    const parentOrigin = new URLSearchParams(window.location.search).get('parentOrigin')
+    if (!parentOrigin || !/^https:\/\/[^/]+$/.test(parentOrigin)) return
+    const send = () => {
+      for (const candidate of loadScoreOutbox()) {
+        window.parent.postMessage({ type: 'kuro-passport-attempt-v1', candidate }, parentOrigin)
+      }
+    }
+    const onMessage = (event: MessageEvent) => {
+      if (event.source !== window.parent || event.origin !== parentOrigin) return
+      const message = event.data
+      if (!message || message.type !== 'kuro-passport-ack-v1' || typeof message.attemptId !== 'string') return
+      if (message.ok === true) acknowledgeScoreCandidate(message.attemptId)
+    }
+    window.addEventListener('message', onMessage)
+    send()
+    const interval = window.setInterval(send, 15000)
+    return () => { window.removeEventListener('message', onMessage); window.clearInterval(interval) }
+  }, [])
+
   useEffect(() => {
     saveStats(stats)
   }, [stats])
@@ -93,7 +116,13 @@ export default function App() {
     // Persist a locally validated attempt for future authenticated server-side scoring.
     // No network submission occurs until identity and trusted scoring are implemented.
     const candidate = createScoreSubmissionCandidate(result, questions)
-    if (candidate) enqueueScoreCandidate(candidate)
+    if (candidate) {
+      enqueueScoreCandidate(candidate)
+      const parentOrigin = new URLSearchParams(window.location.search).get('parentOrigin')
+      if (window.parent !== window && parentOrigin && /^https:\/\/[^/]+$/.test(parentOrigin)) {
+        window.parent.postMessage({ type: 'kuro-passport-attempt-v1', candidate }, parentOrigin)
+      }
+    }
     setLatestResult(result)
     setResults((prev) => [result, ...prev].slice(0, 50))
     setProgress((prev) => questions.reduce((state, q) => recordAnswer(state, q.id, !wrongQuestionIds.includes(q.id)), prev))
