@@ -5,19 +5,34 @@ import { questionBank } from '../data/questionBank'
 
 const PER_CHAPTER_MOCK = MOCK_QUESTION_COUNT / CHAPTERS.length
 
+// Shuffle choices together with their answer indices and per-choice explanations.
+function randomizeChoices(question: Question): Question {
+  const indices = shuffle(question.choices.map((_, index) => index))
+  return {
+    ...question,
+    choices: indices.map((index) => question.choices[index]),
+    answers: question.answers.map((answer) => indices.indexOf(answer)).sort((a, b) => a - b),
+    choiceNotes: indices.map((index) => question.choiceNotes[index]),
+  }
+}
+
+function prepareSession(questions: Question[]): Question[] {
+  return questions.map(randomizeChoices)
+}
+
 export function getQuestionsByChapter(chapter: Chapter): Question[] {
   return questionBank.filter((q) => q.chapter === chapter)
 }
 
 export function buildStudySet(chapter: Chapter): Question[] {
-  return shuffle(getQuestionsByChapter(chapter)).slice(0, STUDY_QUESTION_COUNT)
+  return prepareSession(shuffle(getQuestionsByChapter(chapter)).slice(0, STUDY_QUESTION_COUNT))
 }
 
 export function buildMockExam(): Question[] {
   const picked = CHAPTERS.flatMap((chapter) =>
     shuffle(getQuestionsByChapter(chapter)).slice(0, PER_CHAPTER_MOCK),
   )
-  return shuffle(picked).slice(0, MOCK_QUESTION_COUNT)
+  return prepareSession(shuffle(picked).slice(0, MOCK_QUESTION_COUNT))
 }
 
 export function buildWeakDrill(stats: Record<string, { wrong: number; seen: number }>): Question[] {
@@ -36,11 +51,12 @@ export function buildWeakDrill(stats: Record<string, { wrong: number; seen: numb
     .filter((q): q is Question => Boolean(q))
 
   if (fromStats.length >= WEAK_DRILL_COUNT) {
-    return shuffle(fromStats).slice(0, WEAK_DRILL_COUNT)
+    return prepareSession(shuffle(fromStats).slice(0, WEAK_DRILL_COUNT))
   }
 
-  const fallback = shuffle(questionBank).slice(0, WEAK_DRILL_COUNT - fromStats.length)
-  return shuffle([...fromStats, ...fallback])
+  const selectedIds = new Set(fromStats.map((q) => q.id))
+  const fallback = shuffle(questionBank.filter((q) => !selectedIds.has(q.id))).slice(0, WEAK_DRILL_COUNT - fromStats.length)
+  return prepareSession(shuffle([...fromStats, ...fallback]))
 }
 
 export function chapterStats(
