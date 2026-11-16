@@ -53,7 +53,7 @@ describe('passport score retry outbox', () => {
   it('does not acknowledge an unknown attempt by deleting a different attempt', () => {
     const storage = memoryStorage()
     enqueueScoreCandidate(candidate, storage)
-    expect(acknowledgeScoreCandidate('123e4567-e89b-42d3-a456-426614174099', storage)).toBe(true)
+    expect(acknowledgeScoreCandidate('123e4567-e89b-42d3-a456-426614174099', storage)).toBe(false)
     expect(loadScoreOutbox(storage)).toEqual([candidate])
   })
 })
