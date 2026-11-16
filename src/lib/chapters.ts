@@ -22,4 +22,4 @@ export const STUDY_QUESTION_COUNT = 10
 export const WEAK_DRILL_COUNT = 15
 
 export const APP_NAME = 'くろ先生 生成AIパスポート対策'
-export const SYLLABUS_NOTE = '第4版シラバス（2026年2月試験以降）想定のオリジナル問題'
+export const SYLLABUS_NOTE = '2027年版重点問題を追加中（旧問題は順次監査・更新）'
