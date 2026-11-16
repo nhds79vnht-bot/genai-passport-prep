@@ -36,3 +36,23 @@ export function shuffle<T>(items: T[]): T[] {
   }
   return copy
 }
+
+/**
+ * Randomize the displayed options without changing the underlying question bank.
+ * Keep answers and per-option explanations aligned with their new positions.
+ */
+export function shuffleQuestionChoices(question: Question): Question {
+  const indices = shuffle(question.choices.map((_, index) => index))
+  const answers = indices
+    .map((originalIndex, newIndex) =>
+      question.answers.includes(originalIndex) ? newIndex : -1,
+    )
+    .filter((index) => index !== -1)
+
+  return {
+    ...question,
+    choices: indices.map((index) => question.choices[index]),
+    answers,
+    choiceNotes: indices.map((index) => question.choiceNotes[index]),
+  }
+}
