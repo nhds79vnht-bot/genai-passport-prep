@@ -42,9 +42,15 @@ function modeLabel(mode: StudyMode, chapter?: Chapter): string {
 export default function App() {
   const completionGuard = useRef(false)
   const [view, setView] = useState<View>('home')
+  const learnerScope = (() => {
+    const params = new URLSearchParams(window.location.search)
+    const learnerId = params.get('learnerId')
+    return window.parent !== window && learnerId && /^[0-9a-f-]{36}$/i.test(learnerId) ? learnerId : null
+  })()
+  const progressKey = learnerScope ? `genai-passport-prep:progress-v1:${learnerScope}` : 'genai-passport-prep:progress-v1'
   const [progress, setProgress] = useState<LearnerProgress>(() => {
     try {
-      const raw = localStorage.getItem('genai-passport-prep:progress-v1')
+      const raw = localStorage.getItem(progressKey)
       const parsed = raw ? JSON.parse(raw) as LearnerProgress : emptyProgress()
       return parsed?.version === 1 && parsed.items && typeof parsed.items === 'object' ? parsed : emptyProgress()
     } catch { return emptyProgress() }
@@ -62,8 +68,8 @@ export default function App() {
   const [resultFilter, setResultFilter] = useState<'wrong' | 'all'>('wrong')
 
   useEffect(() => {
-    try { localStorage.setItem('genai-passport-prep:progress-v1', JSON.stringify(progress)) } catch { /* storage unavailable */ }
-  }, [progress])
+    try { localStorage.setItem(progressKey, JSON.stringify(progress)) } catch { /* storage unavailable */ }
+  }, [progress, progressKey])
 
   useEffect(() => {
     saveResults(results)
