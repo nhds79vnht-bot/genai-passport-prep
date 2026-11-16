@@ -201,7 +201,7 @@ export default function App() {
           <button type="button" className="primary" onClick={startMock}>
             模試を開始する
           </button>
-          <p className="hint">各章12問ずつランダム抽出。合格基準は非公表のため80%超を推奨ライン表示。</p>
+          <p className="hint">各章12問ずつランダム抽出。選択肢も毎回入れ替わります。80%は自主学習の目安です。</p>
         </section>
 
         <section className="card">
