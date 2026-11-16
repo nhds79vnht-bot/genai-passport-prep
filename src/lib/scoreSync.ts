@@ -1,5 +1,6 @@
 import type { Question, SessionResult } from './types'
 import { scoreAnswers } from './scoring'
+import { questionBank } from '../data/questionBank'
 
 /**
  * A score submission candidate, NOT an authenticated cloud record.
@@ -25,10 +26,15 @@ export function createScoreSubmissionCandidate(
   const computed = scoreAnswers([...questions], result.answers)
   if (computed.score !== result.score) return null
   const answers: Record<string, number[]> = {}
+  const canonical = new Map(questionBank.map((q) => [q.id, q]))
   for (const question of questions) {
     const selected = result.answers[question.id] ?? []
     if (!Array.isArray(selected) || !selected.every((index) => Number.isInteger(index) && index >= 0 && index < question.choices.length) || new Set(selected).size !== selected.length) return null
-    answers[question.id] = [...selected]
+    const source = canonical.get(question.id)
+    if (!source || source.choices.length !== question.choices.length || new Set(source.choices).size !== source.choices.length) return null
+    const canonicalIndexes = selected.map((index) => source.choices.indexOf(question.choices[index]))
+    if (canonicalIndexes.some((index) => index < 0) || new Set(canonicalIndexes).size !== canonicalIndexes.length) return null
+    answers[question.id] = canonicalIndexes.sort((a, b) => a - b)
   }
   return {
     attemptId: result.id,
