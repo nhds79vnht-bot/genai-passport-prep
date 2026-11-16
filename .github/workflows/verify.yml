@@ -1,0 +1,20 @@
+name: Verify question bank and app
+on:
+  pull_request:
+  push:
+    branches:
+      - fix/choice-randomization-2027-audit
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - name: TypeScript and production build
+        run: npm run build
+      - name: Question bank audit
+        run: npm run audit:questions
