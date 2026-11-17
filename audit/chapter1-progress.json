@@ -40,12 +40,12 @@
   },
   "checkpoint": {
     "phase": "round1-repair",
-    "last_completed_id": "ap27-051",
-    "next_action": "Continue round1-repair at ap27-052",
+    "last_completed_id": "ap27-088",
+    "next_action": "Continue round1-repair at next needs_fix in applied2027Questions.ts",
     "last_verified_commit": null,
     "round1_passed": 0,
-    "round1_needs_fix": 146,
-    "round1_recheck": 154,
+    "round1_needs_fix": 126,
+    "round1_recheck": 174,
     "round1_unverified": 0,
     "round2_passed": 0,
     "chapter_accepted": false,
@@ -1980,12 +1980,13 @@
       "id": "ap27-052",
       "file": "applied2027Questions.ts",
       "topic": "識別系AIと生成系AI",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "生成と識別の定義当てはq029/q058/ap27-012旧版と重複。生成物評価など別の能力を問う問題へ差し替え。"
+        "生成と識別の定義当てはq029/q058/ap27-012旧版と重複。生成物評価など別の能力を問う問題へ差し替え。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -1993,12 +1994,13 @@
       "id": "ap27-061",
       "file": "applied2027Questions.ts",
       "topic": "CNN・重み共有",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "CNNの重み共有は正しいが、他の選択肢が『絶対座標だけ』『単一値に圧縮』等の明白な誤答。実際のフィルタ比較へ改善。"
+        "CNNの重み共有は正しいが、他の選択肢が『絶対座標だけ』『単一値に圧縮』等の明白な誤答。実際のフィルタ比較へ改善。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -2006,12 +2008,13 @@
       "id": "ap27-062",
       "file": "applied2027Questions.ts",
       "topic": "RNN・系列情報",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "RNNの系列情報の正答は妥当。誤答が『単語出現回数だけ』『固定画像』等で易しい。長期依存や語順の処理比較へ改善。"
+        "RNNの系列情報の正答は妥当。誤答が『単語出現回数だけ』『固定画像』等で易しい。長期依存や語順の処理比較へ改善。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -2019,12 +2022,13 @@
       "id": "ap27-071",
       "file": "applied2027Questions.ts",
       "topic": "機械学習・運用評価",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "現地工場での分布シフト検証は妥当だが、誤答が全て評価省略。ap27-041と同じ判断を問うため差別化。"
+        "現地工場での分布シフト検証は妥当だが、誤答が全て評価省略。ap27-041と同じ判断を問うため差別化。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -2032,12 +2036,13 @@
       "id": "ap27-072",
       "file": "applied2027Questions.ts",
       "topic": "ニューラルネットワーク・入力表現",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "入力解像度の制約を問う題材は有用。入力形状を変える方法と後段構造の関係をさらに精密に問う。"
+        "入力解像度の制約を問う題材は有用。入力形状を変える方法と後段構造の関係をさらに精密に問う。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -2045,12 +2050,13 @@
       "id": "ap27-073",
       "file": "applied2027Questions.ts",
       "topic": "ニューラルネットワーク・勾配と活性化",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "dying ReLUの負領域の勾配0とLeaky ReLUの対処は技術的に妥当。誤答が『必ず改善』『損失0』等の極端な断定。"
+        "dying ReLUの負領域の勾配0とLeaky ReLUの対処は技術的に妥当。誤答が『必ず改善』『損失0』等の極端な断定。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -2058,12 +2064,13 @@
       "id": "ap27-074",
       "file": "applied2027Questions.ts",
       "topic": "ニューラルネットワーク・学習率スケジュール",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "学習率スケジュールの理解は妥当だが、誤答が『自動的に低下』『収束保証』等の明白な誤り。q031との重複比較。"
+        "学習率スケジュールの理解は妥当だが、誤答が『自動的に低下』『収束保証』等の明白な誤り。q031との重複比較。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -2084,12 +2091,13 @@
       "id": "ap27-076",
       "file": "applied2027Questions.ts",
       "topic": "ニューラルネットワーク・交差エントロピー",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "交差エントロピーの大小関係は正しいが、画像解像度だけで決まる等の無関係な誤答がある。-log(p)の数値比較へ改善。"
+        "交差エントロピーの大小関係は正しいが、画像解像度だけで決まる等の無関係な誤答がある。-log(p)の数値比較へ改善。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -2097,12 +2105,13 @@
       "id": "ap27-077",
       "file": "applied2027Questions.ts",
       "topic": "LSTM・ゲート機構",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "LSTMのゲートの説明は妥当だが、平均・一切保持しない等の誤答が容易。ap27-081と重複比較。"
+        "LSTMのゲートの説明は妥当だが、平均・一切保持しない等の誤答が容易。ap27-081と重複比較。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -2110,12 +2119,13 @@
       "id": "ap27-078",
       "file": "applied2027Questions.ts",
       "topic": "第一次AIブーム・探索の工夫",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "ヒューリスティクスの探索改善は妥当だが、誤答が全列挙・時間一定など明白。探索の最適性保証とのトレードオフを問う。"
+        "ヒューリスティクスの探索改善は妥当だが、誤答が全列挙・時間一定など明白。探索の最適性保証とのトレードオフを問う。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -2123,12 +2133,13 @@
       "id": "ap27-079",
       "file": "applied2027Questions.ts",
       "topic": "CNN・フィルタの学習",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "CNNのフィルタ更新の正答は妥当。『人が手作業指定』『重みを持たない』等の誤答が容易。"
+        "CNNのフィルタ更新の正答は妥当。『人が手作業指定』『重みを持たない』等の誤答が容易。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -2136,12 +2147,13 @@
       "id": "ap27-080",
       "file": "applied2027Questions.ts",
       "topic": "RNN・長期依存と勾配",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "RNNの勾配消失の説明は妥当だが、誤答が『勾配は常に1』『完全保存』等の極端な断定。"
+        "RNNの勾配消失の説明は妥当だが、誤答が『勾配は常に1』『完全保存』等の極端な断定。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -2149,12 +2161,13 @@
       "id": "ap27-081",
       "file": "applied2027Questions.ts",
       "topic": "LSTM・情報の制御",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "LSTM忘却ゲートに対し『ラベル削除』『順序並べ替え』『重み固定』は無関係な誤答。ap27-077と重複。"
+        "LSTM忘却ゲートに対し『ラベル削除』『順序並べ替え』『重み固定』は無関係な誤答。ap27-077と重複。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -2162,12 +2175,13 @@
       "id": "ap27-082",
       "file": "applied2027Questions.ts",
       "topic": "過学習・ドロップアウト",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "ドロップアウトの狙いに対し『恒久削除』『ラベル変更』等の無関係な誤答が複数。"
+        "ドロップアウトの狙いに対し『恒久削除』『ラベル変更』等の無関係な誤答が複数。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -2175,12 +2189,13 @@
       "id": "ap27-083",
       "file": "applied2027Questions.ts",
       "topic": "深層学習・特徴表現の転移",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "転移学習で浅い層を固定する理由は妥当だが、誤答に『性能保証』『検証不要』等が複数。q035/pr27-030との重複。"
+        "転移学習で浅い層を固定する理由は妥当だが、誤答に『性能保証』『検証不要』等が複数。q035/pr27-030との重複。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -2188,12 +2203,13 @@
       "id": "ap27-084",
       "file": "applied2027Questions.ts",
       "topic": "ニューラルネットワーク・損失関数",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "損失関数の役割を問う設問はq056/pr27-034と重複。誤答もレコード件数・表示桁数で容易。"
+        "損失関数の役割を問う設問はq056/pr27-034と重複。誤答もレコード件数・表示桁数で容易。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -2201,12 +2217,13 @@
       "id": "ap27-085",
       "file": "applied2027Questions.ts",
       "topic": "AIの歴史・初期研究の限界",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "初期AIの探索空間と知識表現の限界はq003/ex27-001と重複。応用条件を追加するか差し替え。"
+        "初期AIの探索空間と知識表現の限界はq003/ex27-001と重複。応用条件を追加するか差し替え。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -2214,12 +2231,13 @@
       "id": "ap27-086",
       "file": "applied2027Questions.ts",
       "topic": "過学習・ドロップアウトの運用",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "ドロップアウトの通常推論時無効化は正しい。『ラベル変更』『恒久削除』等の無関係な誤答が複数。"
+        "ドロップアウトの通常推論時無効化は正しい。『ラベル変更』『恒久削除』等の無関係な誤答が複数。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -2227,12 +2245,13 @@
       "id": "ap27-087",
       "file": "applied2027Questions.ts",
       "topic": "第一次AIブーム・組合せ爆発",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "分岐数3の探索候補の指数増加は妥当だが、誤答が比例・3件増など単純。深さを与えた定量比較へ改善。"
+        "分岐数3の探索候補の指数増加は妥当だが、誤答が比例・3件増など単純。深さを与えた定量比較へ改善。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -2240,12 +2259,13 @@
       "id": "ap27-088",
       "file": "applied2027Questions.ts",
       "topic": "識別系AI・画像分類",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "背景への過度な依存の検証は妥当。誤答は検証省略に偏るため、背景別評価指標などを問う。"
+        "背景への過度な依存の検証は妥当。誤答は検証省略に偏るため、背景別評価指標などを問う。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
