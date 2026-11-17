@@ -40,12 +40,12 @@
   },
   "checkpoint": {
     "phase": "round1-repair",
-    "last_completed_id": "q044",
-    "next_action": "Continue round1-repair at q045",
+    "last_completed_id": "q052",
+    "next_action": "Continue round1-repair at q053",
     "last_verified_commit": null,
     "round1_passed": 0,
-    "round1_needs_fix": 221,
-    "round1_recheck": 79,
+    "round1_needs_fix": 213,
+    "round1_recheck": 87,
     "round1_unverified": 0,
     "round2_passed": 0,
     "chapter_accepted": false,
@@ -657,12 +657,13 @@
       "id": "q045",
       "file": "questionBank.ts",
       "topic": "強化学習・探索と活用",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "探索と活用の定義は妥当だが、誤答が両概念の単純な逆転・極端な無作為化で識別が容易。"
+        "探索と活用の定義は妥当だが、誤答が両概念の単純な逆転・極端な無作為化で識別が容易。",
+        "設問・選択肢・正答・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -670,12 +671,13 @@
       "id": "q046",
       "file": "questionBank.ts",
       "topic": "エキスパートシステム",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "エキスパートシステムに対し画像生成・拡散モデル等の時代の違う用語が並ぶ。q027との重複比較。"
+        "エキスパートシステムに対し画像生成・拡散モデル等の時代の違う用語が並ぶ。q027との重複比較。",
+        "設問・選択肢・正答・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -683,12 +685,13 @@
       "id": "q047",
       "file": "questionBank.ts",
       "topic": "再現性",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "再現性の記録に対し『勤務時間だけ』『ファイル名だけ』など無関係な誤答が複数。"
+        "再現性の記録に対し『勤務時間だけ』『ファイル名だけ』など無関係な誤答が複数。",
+        "設問・選択肢・正答・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -696,12 +699,13 @@
       "id": "q048",
       "file": "questionBank.ts",
       "topic": "転移学習",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "転移学習の再評価で『性能保証』『ラベル削除』など明白な誤答が複数。"
+        "転移学習の再評価で『性能保証』『ラベル削除』など明白な誤答が複数。",
+        "設問・選択肢・正答・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -709,12 +713,13 @@
       "id": "q049",
       "file": "questionBank.ts",
       "topic": "教師なし学習",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "クラスタ妥当性の選択肢で『必ず増やす』『検証せず削除』など極端な誤答が複数。"
+        "クラスタ妥当性の選択肢で『必ず増やす』『検証せず削除』など極端な誤答が複数。",
+        "設問・選択肢・正答・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -722,12 +727,13 @@
       "id": "q050",
       "file": "questionBank.ts",
       "topic": "ニューラルネットワーク",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "入力層・出力層の二つを選ぶ設問で『重みは調整できない』『隠れ層は常に存在しない』の極端な誤答。q024と重複比較。"
+        "入力層・出力層の二つを選ぶ設問で『重みは調整できない』『隠れ層は常に存在しない』の極端な誤答。q024と重複比較。",
+        "設問・選択肢・正答・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -735,12 +741,13 @@
       "id": "q051",
       "file": "questionBank.ts",
       "topic": "推論と学習",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "推論運用で『毎回全重み再学習』『毎回初期化』など明白な誤答が複数。q038との重複比較。"
+        "推論運用で『毎回全重み再学習』『毎回初期化』など明白な誤答が複数。q038との重複比較。",
+        "設問・選択肢・正答・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -748,12 +755,13 @@
       "id": "q052",
       "file": "questionBank.ts",
       "topic": "AIの歴史・AIの冬",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "AIの冬の誤答が『全世界で法律により禁止』『全AIが人間超え』等の極端な断定。q059と重複比較。"
+        "AIの冬の誤答が『全世界で法律により禁止』『全AIが人間超え』等の極端な断定。q059と重複比較。",
+        "設問・選択肢・正答・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
