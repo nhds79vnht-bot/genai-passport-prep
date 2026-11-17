@@ -40,15 +40,17 @@
   },
   "checkpoint": {
     "phase": "round1",
-    "last_completed_id": null,
-    "next_action": "Verify authoritative 2027 syllabus and classification; audit all 300 in durable batches. Do not mark passed without evidence.",
+    "last_completed_id": "NONE",
+    "next_action": "Round 1: start with q001, record evidence and commit checkpoint after each durable batch; preserve prior code edits.",
     "last_verified_commit": null,
     "round1_passed": 0,
     "round1_needs_fix": 0,
     "round1_recheck": 0,
     "round1_unverified": 300,
     "round2_passed": 0,
-    "chapter_accepted": false
+    "chapter_accepted": false,
+    "next_question_id": "q001",
+    "cursor_basis": "No individually evidenced passed question; start at first unverified item in ledger order. NONE means no completed audit ID, not no previous editing."
   },
   "items": [
     {
