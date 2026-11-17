@@ -84,7 +84,7 @@
   "checkpoint": {
     "last_completed_id": "q120",
     "next_question_id": null,
-    "next_action": "Run full 300 question structure, allocation, semantic duplication and q075 multi-select runtime verification",
+    "next_action": "Verify exam UI support for q075 multi-select and conduct bounded independent semantic correctness review; do not accept chapter solely from structural pass",
     "last_verified_commit": "1a1a089d18cc89905f985aecc52c0daf3f006408",
     "chapter_accepted": false
   },
@@ -235,7 +235,7 @@
     "source_commit": "797c43e3be79012ace5577343e5ec3fae2377269"
   },
   "chapter2_audit": {
-    "stage": "first_pass_closure_checks_pending",
+    "stage": "second_pass_semantic_and_runtime_verification_pending",
     "checked": 300,
     "allocation_matched": 31,
     "missing_topic_or_prompt": 0,
@@ -409,6 +409,28 @@
       "confirmed_defect": "ap27-640 had three additional true choices despite single-answer format; revised to one defensible answer",
       "first_pass_applied_tail_review_complete": true,
       "source_commit": "45bb806269be5cd8fa90698de326de568bca617a"
+    },
+    "full_300_structure_recheck": {
+      "date": "2026-11-18",
+      "question_count": 300,
+      "source_counts": {
+        "questionBank": 60,
+        "expansion2027": 20,
+        "syllabus2027": 9,
+        "advanced2027": 20,
+        "practice2027": 20,
+        "applied2027": 171
+      },
+      "distinct_small_topics": 31,
+      "all_four_choices": true,
+      "invalid_answer_indices": 0,
+      "missing_topic_or_prompt": 0,
+      "normalized_exact_duplicate_prompts": 0,
+      "multi_answer_questions": [
+        "q075"
+      ],
+      "method": "GitHub source text static inspection; q061-q120 choice parsing verified with quote-aware matching",
+      "limitations": "Does not prove runtime multiple-choice behavior, semantic uniqueness, or explanation correctness"
     }
   }
 }
