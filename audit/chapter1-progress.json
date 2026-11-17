@@ -40,16 +40,16 @@
   },
   "checkpoint": {
     "phase": "round1",
-    "last_completed_id": "ap27-629",
-    "next_action": "Continue at ap27-630. 20 findings saved; ap27-573 GAN mode collapse rewrite committed at ecf206d and pending recheck. Prioritize substantive source fixes over accumulating findings.",
+    "last_completed_id": "ap27-729",
+    "next_action": "Resume at ap27-730; 20 inspected, four actual source rewrites at 3c7e0a2. Independently recheck modified questions and continue repairs.",
     "last_verified_commit": null,
     "round1_passed": 0,
-    "round1_needs_fix": 255,
-    "round1_recheck": 7,
-    "round1_unverified": 38,
+    "round1_needs_fix": 271,
+    "round1_recheck": 11,
+    "round1_unverified": 18,
     "round2_passed": 0,
     "chapter_accepted": false,
-    "next_question_id": "ap27-630",
+    "next_question_id": "ap27-730",
     "cursor_basis": "No individually evidenced passed question; start at first unverified item in ledger order. NONE means no completed audit ID, not no previous editing."
   },
   "items": [
@@ -3465,220 +3465,260 @@
       "id": "ap27-630",
       "file": "applied2027Questions.ts",
       "topic": "AIの歴史・生成AIへの発展",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "生成AIの発展に大規模学習が寄与した点は妥当だが、ap27-180/ap27-627と重複。誤答が『手入力規則だけ』『学習パラメータなし』で容易。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-671",
       "file": "applied2027Questions.ts",
       "topic": "AIの基本・ルールベース",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "ルールベースと学習型分類器の違いはap27-473/ap27-378と重複。誤答が『常に正解』『評価不要』で容易。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-672",
       "file": "applied2027Questions.ts",
       "topic": "強化学習・報酬",
-      "status": "unverified",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "累積報酬の定義当てを経路A=-20、経路B=+6の数値比較へ修正。報酬の加算と選択肢を再検査する。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-673",
       "file": "applied2027Questions.ts",
       "topic": "機械学習・決定木",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "決定木の分岐条件の定義は妥当だが、誤答がVAE/NN/入力順序で異分野。実際の分岐予測へ改善。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-674",
       "file": "applied2027Questions.ts",
       "topic": "半教師あり学習・擬似ラベル",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "擬似ラベル誤りの混入と独立評価は妥当。誤答が『保証』『評価不要』と極端。擬似ラベル採用基準の比較へ改善。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-675",
       "file": "applied2027Questions.ts",
       "topic": "教師なし学習・次元削減",
-      "status": "unverified",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "PCAの名称当てを寄与率45%、25%、10%の累積寄与率70%を計算する問題へ修正。再検査待ち。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-676",
       "file": "applied2027Questions.ts",
       "topic": "ルールベース・限界",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "ルールベースの言い換え対応の限界はpr27-026と重複。誤答が『全て理解』『文字列参照不可』と不自然。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-677",
       "file": "applied2027Questions.ts",
       "topic": "教師あり学習・ラベル品質",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "ラベルの不一致と判定基準の統一は妥当。ap27-725とラベル品質問題が重複。誤答が全正例化等で容易。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-678",
       "file": "applied2027Questions.ts",
       "topic": "半教師あり学習・適用条件",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "半教師あり学習のラベル付き・なし併用はap27-274/ap27-721と重複。誤答が報酬学習等で容易。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-679",
       "file": "applied2027Questions.ts",
       "topic": "第二次AIブーム・知識獲得の制約",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "規則競合の検証はap27-289/ap27-390と重複。誤答が『必ず整合』等で容易。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-680",
       "file": "applied2027Questions.ts",
       "topic": "機械学習・データ分布",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "室内と屋外の分布差に対する独立評価は妥当。ap27-278とデータ代表性の観点が重複。誤答が『保証』等。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-721",
       "file": "applied2027Questions.ts",
       "topic": "半教師あり学習・評価データ",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "半教師あり学習でも独立した正解付き評価が必要なのは妥当。ap27-674/ap27-678と重複。誤答が100%正解等。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-722",
       "file": "applied2027Questions.ts",
       "topic": "ニューラルネットワーク・重み更新",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "教師ありNNの損失・勾配更新は正しいが、ap27-371/ap27-479と概念重複。誤答が『正解ラベル破棄』等。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-723",
       "file": "applied2027Questions.ts",
       "topic": "機械学習・学習と推論",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "学習と推論の区別は妥当。誤答が『必ず初期化』『入力を使わない』等の極端な否定。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-724",
       "file": "applied2027Questions.ts",
       "topic": "過学習・対策",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "過学習への正則化・データ拡張の検証は妥当。ap27-185/ap27-288と重複。誤答が『保証』『評価しない』。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-725",
       "file": "applied2027Questions.ts",
       "topic": "教師あり学習・ラベル品質",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "誤ラベル修正の重要性はap27-677と重複。原因調査の観点を区別した設問へ改善。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-726",
       "file": "applied2027Questions.ts",
       "topic": "識別系AI・画像分類",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "画像分類と画像生成の区別はap27-290旧問題/ap27-287と重複。誤答が撮影機材制御等の異分野。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-727",
       "file": "applied2027Questions.ts",
       "topic": "機械学習・不均衡データ",
-      "status": "unverified",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "正解率90%・再現率0%の重複を、Aの再現率70%とBの85%、偽陽性30対90の比較へ修正。数値検算済み、再検査待ち。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-728",
       "file": "applied2027Questions.ts",
       "topic": "半教師あり学習・分布の違い",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "昼夜の分布差と夜間の独立評価は妥当。ap27-680と分布シフトの評価重複。誤答が『必ず消える』等。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-729",
       "file": "applied2027Questions.ts",
       "topic": "教師なし学習・尺度",
-      "status": "unverified",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "尺度の標準化という定義的重複をk=3のシルエット係数0.52とk=5の0.31の比較へ修正。係数の解釈を再検査する。"
+      ],
       "verified_at_commit": null
     },
     {
