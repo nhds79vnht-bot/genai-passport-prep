@@ -40,12 +40,12 @@
   },
   "checkpoint": {
     "phase": "round1-repair",
-    "last_completed_id": "ap27-787",
-    "next_action": "Round1 repair continues. 12 core-bank questions revised at 54a2617; recheck all edits, continue with q019, q020, q022, q024, q026, q027 and remaining q bank. Do not mark passed without independent review.",
+    "last_completed_id": "q027",
+    "next_action": "Continue round1-repair at q029 and remaining questionBank.ts needs_fix. Six revised questions await independent recheck; source commit 1371434386fb3490f0c6e966560d7cfe1cfaf0e6",
     "last_verified_commit": null,
     "round1_passed": 0,
-    "round1_needs_fix": 243,
-    "round1_recheck": 57,
+    "round1_needs_fix": 237,
+    "round1_recheck": 63,
     "round1_unverified": 0,
     "round2_passed": 0,
     "chapter_accepted": false,
@@ -291,12 +291,14 @@
       "id": "q019",
       "file": "questionBank.ts",
       "topic": "説明可能性",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "choiceNotesが正答説明の反復を中心としており、各誤答が不適切な理由の個別説明が不足。"
+        "choiceNotesが正答説明の反復を中心としており、各誤答が不適切な理由の個別説明が不足。",
+        "設問・選択肢・正答・解説・選択肢別解説を是正。独立再検査待ち。",
+        "source commit 1371434386fb3490f0c6e966560d7cfe1cfaf0e6"
       ],
       "verified_at_commit": null
     },
@@ -304,12 +306,14 @@
       "id": "q020",
       "file": "questionBank.ts",
       "topic": "AI活用分野",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "誤答選択肢に時代錯誤・極端な断定・無関係な概念が複数あり、消去法で正答を特定しやすい。選択肢の再設計が必要。"
+        "誤答選択肢に時代錯誤・極端な断定・無関係な概念が複数あり、消去法で正答を特定しやすい。選択肢の再設計が必要。",
+        "設問・選択肢・正答・解説・選択肢別解説を是正。独立再検査待ち。",
+        "source commit 1371434386fb3490f0c6e966560d7cfe1cfaf0e6"
       ],
       "verified_at_commit": null
     },
@@ -330,12 +334,14 @@
       "id": "q022",
       "file": "questionBank.ts",
       "topic": "正解率",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "再現率の計算は正答80%だが、誤答85%・15%・20%の導出理由を個別に説明できるよう改善余地。"
+        "再現率の計算は正答80%だが、誤答85%・15%・20%の導出理由を個別に説明できるよう改善余地。",
+        "設問・選択肢・正答・解説・選択肢別解説を是正。独立再検査待ち。",
+        "source commit 1371434386fb3490f0c6e966560d7cfe1cfaf0e6"
       ],
       "verified_at_commit": null
     },
@@ -356,12 +362,14 @@
       "id": "q024",
       "file": "questionBank.ts",
       "topic": "ニューラルネットワーク",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "入力層・出力層に対し『知識ベースだけ』『報酬だけ』が容易に除外可能。"
+        "入力層・出力層に対し『知識ベースだけ』『報酬だけ』が容易に除外可能。",
+        "設問・選択肢・正答・解説・選択肢別解説を是正。独立再検査待ち。",
+        "source commit 1371434386fb3490f0c6e966560d7cfe1cfaf0e6"
       ],
       "verified_at_commit": null
     },
@@ -382,12 +390,14 @@
       "id": "q026",
       "file": "questionBank.ts",
       "topic": "ノーフリーランチ定理",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "『必ず最良』『比較不要』など極端な断定が複数あり、消去が容易。"
+        "『必ず最良』『比較不要』など極端な断定が複数あり、消去が容易。",
+        "設問・選択肢・正答・解説・選択肢別解説を是正。独立再検査待ち。",
+        "source commit 1371434386fb3490f0c6e966560d7cfe1cfaf0e6"
       ],
       "verified_at_commit": null
     },
@@ -395,12 +405,14 @@
       "id": "q027",
       "file": "questionBank.ts",
       "topic": "AIの歴史",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "第二次AIブームの選択肢に拡散モデル・Transformerが混在し、時代錯誤で消去が容易。"
+        "第二次AIブームの選択肢に拡散モデル・Transformerが混在し、時代錯誤で消去が容易。",
+        "設問・選択肢・正答・解説・選択肢別解説を是正。独立再検査待ち。",
+        "source commit 1371434386fb3490f0c6e966560d7cfe1cfaf0e6"
       ],
       "verified_at_commit": null
     },
