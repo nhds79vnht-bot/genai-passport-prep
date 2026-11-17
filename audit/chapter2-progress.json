@@ -1,16 +1,68 @@
 {
   "schema_version": 1,
-  "chapter": "第2章",
-  "phase": "syllabus-source-verification",
+  "chapter": "第2章 生成AI",
+  "phase": "inventory-and-mapping",
   "status": "in_progress",
   "target_question_count": null,
   "existing_question_count": null,
   "official_syllabus": {
-    "exam_version": "2027年2月試験以降",
-    "verified_announcement": "https://guga.or.jp/2026-10-01-1100-2",
-    "warning": "https://guga.or.jp/assets/syllabus.pdf returned a document headed 2026年2月試験より適用 at inspection; do not treat it as the verified 2027 detailed syllabus.",
-    "middle_topics": [],
-    "small_topics": []
+    "exam_version": "2027年2月試験より適用",
+    "url": "https://guga.or.jp/assets/syllabus.pdf",
+    "verified": true,
+    "page": 2,
+    "middle_topics": [
+      "生成AIを支える技術革新（Transformer以降）",
+      "生成AIの学習プロセス",
+      "生成AIの生成（推論）プロセス",
+      "LLM（大規模言語モデル）の基礎",
+      "ChatGPTと主要な生成AIモデルの動向",
+      "各モダリティの生成AI"
+    ],
+    "small_topics": [
+      [
+        "Transformerモデルの革命",
+        "Transformer登場以後の派生モデルの系譜",
+        "拡散モデルの登場",
+        "基盤モデルとマルチモーダルモデル"
+      ],
+      [
+        "事前学習",
+        "ファインチューニング",
+        "RLHF",
+        "学習データの規模と課題",
+        "スケーリング則"
+      ],
+      [
+        "トークン化",
+        "埋め込みとベクトル表現",
+        "確率的な次トークン予測",
+        "ハルシネーション",
+        "生成パラメータ（Temperature・Top-p）",
+        "コンテキストウィンドウ"
+      ],
+      [
+        "LM（言語モデル）とは",
+        "LLM（大規模言語モデル）とは",
+        "オンプレミス／オープンソースLLM"
+      ],
+      [
+        "ChatGPTとは",
+        "ChatGPT登場までの歴史（GPT-1〜GPT-3.5）",
+        "GPTモデルの進化（GPT-4〜GPT-6 Astra）",
+        "マルチモーダルモデルへの展開",
+        "推論モデルと推論時の計算",
+        "Operator / Codex / Image Generation",
+        "Gemini（Google）",
+        "Claude（Anthropic）",
+        "Copilot（Microsoft）"
+      ],
+      [
+        "画像生成AI",
+        "音楽生成AI",
+        "音声生成AI",
+        "動画生成AI"
+      ]
+    ]
   },
   "source_files": [
     "src/data/questionBank.ts",
@@ -32,7 +84,7 @@
   "checkpoint": {
     "last_completed_id": null,
     "next_question_id": null,
-    "next_action": "Locate and verify actual 2027 detailed official syllabus; enumerate chapter 2 items across all six source files; map and set fixed target before edits.",
+    "next_action": "Count and identify all existing chapter-2 items across six source files, compare each against the 31 official small topics, decide fixed target and edit; do not treat old chapter assignments as authoritative.",
     "last_verified_commit": null,
     "chapter_accepted": false
   },
