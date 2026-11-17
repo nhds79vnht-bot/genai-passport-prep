@@ -84,8 +84,8 @@
   "checkpoint": {
     "last_completed_id": "q120",
     "next_question_id": null,
-    "next_action": "Verify runtime shuffle and audit correctness/plausibility for all 300 questions, then decide finite chapter acceptance",
-    "last_verified_commit": "e9a2fafb062a11f1f5cf73868e305a47d2c25e38",
+    "next_action": "First-pass semantic audit of remaining 231 questions (60 base and 171 applied), then finish finite acceptance check",
+    "last_verified_commit": "8614646431829577d9d127f8172fd944df67964c",
     "chapter_accepted": false
   },
   "exit_criteria": [
@@ -235,7 +235,7 @@
     "source_commit": "797c43e3be79012ace5577343e5ec3fae2377269"
   },
   "chapter2_audit": {
-    "stage": "answer_structure_and_distractor_review_in_progress",
+    "stage": "first_pass_semantic_audit_continues",
     "checked": 300,
     "allocation_matched": 31,
     "missing_topic_or_prompt": 0,
@@ -274,6 +274,15 @@
     "blocking_issues": [
       "Full 300-question semantic verification of unique correct answer and distractor plausibility remains incomplete",
       "Runtime answer-choice shuffling for 240 row-based questions has not been verified"
+    ],
+    "runtime_choice_shuffle_verified": true,
+    "runtime_shuffle_evidence": "src/lib/examBuilder.ts randomizeChoices maps choices, answers, and choiceNotes through same shuffled indices; prepareSession used by study/mock builders",
+    "runtime_visual_test_verified": false,
+    "source_semantic_review_batch_checked": 69,
+    "source_semantic_review_batch_scope": "expansion2027Questions.ts, syllabus2027Questions.ts, advanced2027Questions.ts, practice2027Questions.ts",
+    "source_semantic_review_batch_confirmed_topic_mismatches_fixed": [
+      "ex27-031 speech synthesis rather than recognition",
+      "adv27-093 context window rather than generic hallucination"
     ]
   }
 }
