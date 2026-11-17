@@ -84,7 +84,7 @@
   "checkpoint": {
     "last_completed_id": "q120",
     "next_question_id": null,
-    "next_action": "Continue with syllabus2027Questions.ts, advanced2027Questions.ts, practice2027Questions.ts and applied2027Questions.ts; audit revised items and reconcile distribution against targets.",
+    "next_action": "Continue advanced2027Questions.ts and practice2027Questions.ts with substantive content-based mapping and rewrite; then applied2027Questions.ts.",
     "last_verified_commit": null,
     "chapter_accepted": false
   },
@@ -155,6 +155,14 @@
       "commit": "226126d9809040c8418630d512c57cebdf7197ab",
       "status": "source_updated_pending_independent_audit",
       "purpose": "Rebuild twenty expansion questions to official 2027 small topics"
+    },
+    {
+      "file": "src/data/syllabus2027Questions.ts",
+      "count": 9,
+      "rewritten": 2,
+      "retagged": 7,
+      "commit": "de8d94984dacf64448ae750cd453d785a646bfd2",
+      "status": "source_updated_pending_independent_audit"
     }
   ],
   "allocation_file": "audit/chapter2-allocation-2027.json",
