@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "chapter": "第2章 生成AI",
-  "phase": "semantic-mapping-and-scope-decision",
+  "phase": "question-rewrite",
   "status": "in_progress",
   "target_question_count": null,
   "existing_question_count": 300,
@@ -84,7 +84,7 @@
   "checkpoint": {
     "last_completed_id": null,
     "next_question_id": null,
-    "next_action": "Review question prompts and choices for 151 topic/reuse candidates; decide and persist final target allocation across 31 small topics, then rewrite 202 off-scope items or reassign to proper chapter. Do not modify chapter 1 accepted items blindly.",
+    "next_action": "Continue substantive q101-q120 rewrite and cross-chapter reclassification; independently audit q081-q100 for answer uniqueness, accuracy, and duplication; do not mark quality passed yet.",
     "last_verified_commit": null,
     "chapter_accepted": false
   },
@@ -126,5 +126,14 @@
     "retain_other_chapter": 5,
     "off_scope_or_rewrite": 202,
     "semantic_approval_count": 0
-  }
+  },
+  "rewrite_batches": [
+    {
+      "ids": "q081-q100",
+      "count": 20,
+      "commit": "728bdd9c5c3788d244e1b50adc02a9da9288b901",
+      "status": "source_updated_pending_independent_audit",
+      "purpose": "Replace off-syllabus prompt-focused items with 2027 chapter 2 topics including ten previously uncovered subjects"
+    }
+  ]
 }
