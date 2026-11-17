@@ -490,7 +490,7 @@ export const questionBank: Question[] = [
     id: 'q021',
     chapter: '第1章 AIの基礎',
     topic: '機械学習の分類',
-    prompt: "不正検知モデルで誤警報が多く、調査担当者の負荷が高い。特に確認すべき指標はどれか。",
+    prompt: "画像を「犬」「猫」「鳥」の3種類に判定する課題はどれか。",
     choices: [
       "多値分類",
       "二値分類",
@@ -500,7 +500,7 @@ export const questionBank: Question[] = [
     answers: [
       0
     ],
-    explanation: "誤警報は偽陽性に当たる。陽性と判定した案件のうち実際に不正だった割合を示す適合率を確認し、必要に応じて偽陽性件数と再現率も併せて評価する。",
+    explanation: "3種類以上のクラスを予測する課題は多値分類である。",
     reviewSection: '2027年公式シラバス第1章 → 「機械学習の分類」',
     examTrap: '状況と評価指標の意味を確認しましょう。',
     choiceNotes: [
@@ -514,7 +514,7 @@ export const questionBank: Question[] = [
     id: 'q022',
     chapter: '第1章 AIの基礎',
     topic: '正解率',
-    prompt: '100件の画像判定のうち85件が正解だった。正解率はどれか。',
+    prompt: "100件の画像判定のうち85件が正解だった。正解率はどれか。",
     choices: [
       "15%",
       "100%",
@@ -524,7 +524,7 @@ export const questionBank: Question[] = [
     answers: [
       2
     ],
-    explanation: '正解率は正しく判定した件数を全体で割るため85÷100=85%。',
+    explanation: "正解率は正しく判定した件数を全体で割るため85÷100=85%。",
     reviewSection: '2027年公式シラバス第1章 → 「正解率」',
     examTrap: '状況と評価指標の意味を確認しましょう。',
     choiceNotes: [
@@ -538,7 +538,7 @@ export const questionBank: Question[] = [
     id: 'q023',
     chapter: '第1章 AIの基礎',
     topic: 'ルールベース',
-    prompt: '「気温30度以上なら冷房をつける」という固定規則で動く仕組みはどれか。',
+    prompt: "「気温30度以上なら冷房をつける」という固定規則で動く仕組みはどれか。",
     choices: [
       "強化学習",
       "ルールベース",
@@ -548,7 +548,7 @@ export const questionBank: Question[] = [
     answers: [
       1
     ],
-    explanation: 'あらかじめ決めた条件分岐で動くのはルールベースの例。',
+    explanation: "あらかじめ決めた条件分岐で動くのはルールベースの例。",
     reviewSection: '2027年公式シラバス第1章 → 「ルールベース」',
     examTrap: '状況と評価指標の意味を確認しましょう。',
     choiceNotes: [
@@ -562,7 +562,7 @@ export const questionBank: Question[] = [
     id: 'q024',
     chapter: '第1章 AIの基礎',
     topic: 'ニューラルネットワーク',
-    prompt: 'ニューラルネットワークの構成要素として適切なものを2つ選べ。',
+    prompt: "ニューラルネットワークの構成要素として適切なものを2つ選べ。",
     choices: [
       "入力層",
       "出力層",
@@ -573,7 +573,7 @@ export const questionBank: Question[] = [
       0,
       1
     ],
-    explanation: 'ニューラルネットワークには入力層と出力層があり、その間に隠れ層を持つ構成も一般的。',
+    explanation: "ニューラルネットワークには入力層と出力層があり、その間に隠れ層を持つ構成も一般的。",
     reviewSection: '2027年公式シラバス第1章 → 「ニューラルネットワーク」',
     examTrap: '状況と評価指標の意味を確認しましょう。',
     choiceNotes: [
@@ -587,7 +587,7 @@ export const questionBank: Question[] = [
     id: 'q025',
     chapter: '第1章 AIの基礎',
     topic: '教師データ',
-    prompt: '教師あり学習で画像と「犬」「猫」などの正解情報を組み合わせる。この正解情報の名称はどれか。',
+    prompt: "教師あり学習で画像と「犬」「猫」などの正解情報を組み合わせる。この正解情報の名称はどれか。",
     choices: [
       "価値",
       "損失関数",
@@ -597,7 +597,7 @@ export const questionBank: Question[] = [
     answers: [
       3
     ],
-    explanation: '教師あり学習は入力データと対応する正解ラベルを用いる。',
+    explanation: "教師あり学習は入力データと対応する正解ラベルを用いる。",
     reviewSection: '2027年公式シラバス第1章 → 「教師データ」',
     examTrap: '状況と評価指標の意味を確認しましょう。',
     choiceNotes: [
@@ -611,7 +611,7 @@ export const questionBank: Question[] = [
     id: 'q026',
     chapter: '第1章 AIの基礎',
     topic: 'ノーフリーランチ定理',
-    prompt: '画像分類で最良だった手法を売上予測にも無条件に採用する判断について適切なのはどれか。',
+    prompt: "画像分類で最良だった手法を売上予測にも無条件に採用する判断について適切なのはどれか。",
     choices: [
       "すべての課題で同じ手法が必ず最良",
       "深いモデルは必ず最良",
@@ -621,7 +621,7 @@ export const questionBank: Question[] = [
     answers: [
       2
     ],
-    explanation: 'ノーフリーランチ定理は全課題で万能な学習手法はないことを示唆する。',
+    explanation: "ノーフリーランチ定理は全課題で万能な学習手法はないことを示唆する。",
     reviewSection: '2027年公式シラバス第1章 → 「ノーフリーランチ定理」',
     examTrap: '状況と評価指標の意味を確認しましょう。',
     choiceNotes: [
@@ -635,7 +635,7 @@ export const questionBank: Question[] = [
     id: 'q027',
     chapter: '第1章 AIの基礎',
     topic: 'AIの歴史',
-    prompt: '第二次AIブームを代表する特徴として適切なものを2つ選べ。',
+    prompt: "第二次AIブームを代表する特徴として適切なものを2つ選べ。",
     choices: [
       "画像生成の拡散モデル",
       "エキスパートシステム",
@@ -646,7 +646,7 @@ export const questionBank: Question[] = [
       1,
       2
     ],
-    explanation: '第二次AIブームでは知識ベースと推論を利用するエキスパートシステムが中心だった。',
+    explanation: "第二次AIブームでは知識ベースと推論を利用するエキスパートシステムが中心だった。",
     reviewSection: '2027年公式シラバス第1章 → 「AIの歴史」',
     examTrap: '状況と評価指標の意味を確認しましょう。',
     choiceNotes: [
@@ -660,7 +660,7 @@ export const questionBank: Question[] = [
     id: 'q028',
     chapter: '第1章 AIの基礎',
     topic: '過学習',
-    prompt: '訓練データで高い精度が出たのに、初めて見るデータで精度が低下した。疑われる状態はどれか。',
+    prompt: "訓練データで高い精度が出たのに、初めて見るデータで精度が低下した。疑われる状態はどれか。",
     choices: [
       "過学習",
       "転移学習",
@@ -670,7 +670,7 @@ export const questionBank: Question[] = [
     answers: [
       0
     ],
-    explanation: '過学習では訓練データに適合しすぎて未知データへの汎化が弱まる。',
+    explanation: "過学習では訓練データに適合しすぎて未知データへの汎化が弱まる。",
     reviewSection: '2027年公式シラバス第1章 → 「過学習」',
     examTrap: '状況と評価指標の意味を確認しましょう。',
     choiceNotes: [
@@ -684,7 +684,7 @@ export const questionBank: Question[] = [
     id: 'q029',
     chapter: '第1章 AIの基礎',
     topic: '識別系AIと生成系AI',
-    prompt: '製品画像の不良判定と新しい製品画像の作成を比較した説明として適切なのはどれか。',
+    prompt: "製品画像の不良判定と新しい製品画像の作成を比較した説明として適切なのはどれか。",
     choices: [
       "両方とも識別系AI",
       "両方とも生成系AI",
@@ -694,7 +694,7 @@ export const questionBank: Question[] = [
     answers: [
       3
     ],
-    explanation: '画像の判定は識別系、画像の新規作成は生成系AIの用途。',
+    explanation: "画像の判定は識別系、画像の新規作成は生成系AIの用途。",
     reviewSection: '2027年公式シラバス第1章 → 「識別系AIと生成系AI」',
     examTrap: '状況と評価指標の意味を確認しましょう。',
     choiceNotes: [
@@ -708,7 +708,7 @@ export const questionBank: Question[] = [
     id: 'q030',
     chapter: '第1章 AIの基礎',
     topic: 'ディープフェイク',
-    prompt: 'AIで実在人物の顔を合成した映像について、技術的に正しい説明はどれか。',
+    prompt: "AIで実在人物の顔を合成した映像について、技術的に正しい説明はどれか。",
     choices: [
       "AIは映像の合成に利用できない",
       "合成映像は必ず実写だと確認できる",
@@ -718,7 +718,7 @@ export const questionBank: Question[] = [
     answers: [
       2
     ],
-    explanation: '深層学習などで人物の外見や声を合成したものはディープフェイクと呼ばれる。',
+    explanation: "深層学習などで人物の外見や声を合成したものはディープフェイクと呼ばれる。",
     reviewSection: '2027年公式シラバス第1章 → 「ディープフェイク」',
     examTrap: '状況と評価指標の意味を確認しましょう。',
     choiceNotes: [
@@ -780,7 +780,7 @@ export const questionBank: Question[] = [
     id: 'q033',
     chapter: '第1章 AIの基礎',
     topic: 'AIの歴史',
-    prompt: '第三次AIブームの発展を支えた要因を2つ選べ。',
+    prompt: "第三次AIブームの発展を支えた要因を2つ選べ。",
     choices: [
       "大量データの蓄積",
       "手書きルールだけへの全面回帰",
@@ -791,7 +791,7 @@ export const questionBank: Question[] = [
       0,
       3
     ],
-    explanation: '大量データと計算資源の発展が深層学習の普及を支えた。',
+    explanation: "大量データと計算資源の発展が深層学習の普及を支えた。",
     reviewSection: '2027年公式シラバス第1章 → 「AIの歴史」',
     examTrap: '条件と限界を区別しましょう。',
     choiceNotes: [
@@ -853,7 +853,7 @@ export const questionBank: Question[] = [
     id: 'q036',
     chapter: '第1章 AIの基礎',
     topic: 'AIの基本的な仕組み',
-    prompt: 'AIとロボットの関係について正しいのはどれか。',
+    prompt: "AIとロボットの関係について正しいのはどれか。",
     choices: [
       "AIはソフトウェアとしても存在し、ロボットと同一ではない",
       "AIは必ず人型のロボットである",
@@ -863,7 +863,7 @@ export const questionBank: Question[] = [
     answers: [
       0
     ],
-    explanation: 'AIは情報処理技術であり、物理的なロボットと同じ意味ではない。',
+    explanation: "AIは情報処理技術であり、物理的なロボットと同じ意味ではない。",
     reviewSection: '2027年公式シラバス第1章 → 「AIの基本的な仕組み」',
     examTrap: '条件と限界を区別しましょう。',
     choiceNotes: [
@@ -877,7 +877,7 @@ export const questionBank: Question[] = [
     id: 'q037',
     chapter: '第1章 AIの基礎',
     topic: 'ルールベースの限界',
-    prompt: 'キーワード一致だけで問い合わせを分類すると、言い換えに弱い場合がある。理由として適切なのはどれか。',
+    prompt: "キーワード一致だけで問い合わせを分類すると、言い換えに弱い場合がある。理由として適切なのはどれか。",
     choices: [
       "機械学習は言葉を扱えない",
       "ルールベースでは条件分岐を使わない",
@@ -887,7 +887,7 @@ export const questionBank: Question[] = [
     answers: [
       3
     ],
-    explanation: 'ルールベースは定義済み条件に依存するため未知の表現に弱い場合がある。',
+    explanation: "ルールベースは定義済み条件に依存するため未知の表現に弱い場合がある。",
     reviewSection: '2027年公式シラバス第1章 → 「ルールベースの限界」',
     examTrap: '条件と限界を区別しましょう。',
     choiceNotes: [
@@ -901,7 +901,7 @@ export const questionBank: Question[] = [
     id: 'q038',
     chapter: '第1章 AIの基礎',
     topic: '学習済みモデル',
-    prompt: '学習済みモデルに新しい入力を与えて予測結果を得る処理はどれか。',
+    prompt: "学習済みモデルに新しい入力を与えて予測結果を得る処理はどれか。",
     choices: [
       "学習用データの収集",
       "正解ラベルの作成",
@@ -911,7 +911,7 @@ export const questionBank: Question[] = [
     answers: [
       2
     ],
-    explanation: '推論は学習済みパラメータを使って新しい入力を処理すること。',
+    explanation: "推論は学習済みパラメータを使って新しい入力を処理すること。",
     reviewSection: '2027年公式シラバス第1章 → 「学習済みモデル」',
     examTrap: '条件と限界を区別しましょう。',
     choiceNotes: [
@@ -950,7 +950,7 @@ export const questionBank: Question[] = [
     id: 'q040',
     chapter: '第1章 AIの基礎',
     topic: '誤差逆伝播法',
-    prompt: 'ニューラルネットワークで誤差逆伝播法を使う目的はどれか。',
+    prompt: "ニューラルネットワークで誤差逆伝播法を使う目的はどれか。",
     choices: [
       "各重みの勾配を効率よく求める",
       "正解ラベルを全て削除する",
@@ -960,7 +960,7 @@ export const questionBank: Question[] = [
     answers: [
       0
     ],
-    explanation: '誤差逆伝播法は損失に対する各パラメータの勾配を計算する。',
+    explanation: "誤差逆伝播法は損失に対する各パラメータの勾配を計算する。",
     reviewSection: '2027年公式シラバス第1章 → 「誤差逆伝播法」',
     examTrap: '条件と限界を区別しましょう。',
     choiceNotes: [
@@ -1071,7 +1071,7 @@ export const questionBank: Question[] = [
     id: 'q045',
     chapter: '第1章 AIの基礎',
     topic: '強化学習',
-    prompt: '強化学習の基本概念として適切なものを2つ選べ。',
+    prompt: "強化学習の基本概念として適切なものを2つ選べ。",
     choices: [
       "報酬",
       "正解率だけ",
@@ -1082,7 +1082,7 @@ export const questionBank: Question[] = [
       0,
       3
     ],
-    explanation: '強化学習では報酬を手がかりに方策を改善する。',
+    explanation: "強化学習では報酬を手がかりに方策を改善する。",
     reviewSection: '2027年公式シラバス第1章 → 「強化学習」',
     examTrap: '「データガバナンス」は定義・目的・限界をセットで覚えると混同しにくいです。',
     choiceNotes: [
@@ -1144,7 +1144,7 @@ export const questionBank: Question[] = [
     id: 'q048',
     chapter: '第1章 AIの基礎',
     topic: '転移学習',
-    prompt: '一般画像で学習したモデルを少量の製品画像の分類に活用する方法はどれか。',
+    prompt: "一般画像で学習したモデルを少量の製品画像の分類に活用する方法はどれか。",
     choices: [
       "転移学習",
       "全ての学習済み知識の破棄",
@@ -1154,7 +1154,7 @@ export const questionBank: Question[] = [
     answers: [
       0
     ],
-    explanation: '転移学習は既存モデルの学習済み知識を別の課題へ活用する。',
+    explanation: "転移学習は既存モデルの学習済み知識を別の課題へ活用する。",
     reviewSection: '2027年公式シラバス第1章 → 「転移学習」',
     examTrap: '「AIと統計」は定義・目的・限界をセットで覚えると混同しにくいです。',
     choiceNotes: [
@@ -1192,7 +1192,7 @@ export const questionBank: Question[] = [
     id: 'q050',
     chapter: '第1章 AIの基礎',
     topic: 'ニューラルネットワーク',
-    prompt: 'ニューラルネットワークの構造に関する説明として正しいものを2つ選べ。',
+    prompt: "ニューラルネットワークの構造に関する説明として正しいものを2つ選べ。",
     choices: [
       "重みは学習で調整できない",
       "入力層は情報を受け取る",
@@ -1203,7 +1203,7 @@ export const questionBank: Question[] = [
       1,
       2
     ],
-    explanation: '入力層が情報を受け取り、隠れ層などを通して出力層が結果を出す。',
+    explanation: "入力層が情報を受け取り、隠れ層などを通して出力層が結果を出す。",
     reviewSection: '2027年公式シラバス第1章 → 「ニューラルネットワーク」',
     examTrap: '「AI教育」は定義・目的・限界をセットで覚えると混同しにくいです。',
     choiceNotes: [
@@ -1289,7 +1289,7 @@ export const questionBank: Question[] = [
     id: 'q054',
     chapter: '第1章 AIの基礎',
     topic: 'AIの歴史',
-    prompt: 'AIの歴史に関する正しい説明を2つ選べ。',
+    prompt: "AIの歴史に関する正しい説明を2つ選べ。",
     choices: [
       "第一次AIブームはTransformerが中心",
       "第二次AIブームは拡散モデルが中心",
@@ -1300,7 +1300,7 @@ export const questionBank: Question[] = [
       2,
       3
     ],
-    explanation: '第一次は探索・推論、第二次は知識ベースとエキスパートシステムが中心。',
+    explanation: "第一次は探索・推論、第二次は知識ベースとエキスパートシステムが中心。",
     reviewSection: '2027年公式シラバス第1章 → 「AIの歴史」',
     examTrap: '「AI監査」は定義・目的・限界をセットで覚えると混同しにくいです。',
     choiceNotes: [
@@ -1314,7 +1314,7 @@ export const questionBank: Question[] = [
     id: 'q055',
     chapter: '第1章 AIの基礎',
     topic: '正解率',
-    prompt: "病気のスクリーニングで陽性者の見逃しを減らしたい。特に重視する指標はどれか。",
+    prompt: "画像100枚中92枚を正しく分類したモデルの正解率はどれか。",
     choices: [
       "8%",
       "92%",
@@ -1324,7 +1324,7 @@ export const questionBank: Question[] = [
     answers: [
       1
     ],
-    explanation: "再現率は真陽性÷実際の陽性数。見逃しを減らす目的では重要な指標となる。",
+    explanation: "正解率は92÷100=92%。",
     reviewSection: '2027年公式シラバス第1章 → 「正解率」',
     examTrap: '「精度と再現率」は定義・目的・限界をセットで覚えると混同しにくいです。',
     choiceNotes: [
@@ -1338,7 +1338,7 @@ export const questionBank: Question[] = [
     id: 'q056',
     chapter: '第1章 AIの基礎',
     topic: 'ニューラルネットワーク',
-    prompt: "不正と誤判定した正常取引の調査費用が高い。特に重視する指標はどれか。",
+    prompt: "ニューラルネットワークで損失関数が果たす役割はどれか。",
     choices: [
       "予測と正解のずれを数値化する",
       "学習データの著作権を決定する",
@@ -1348,7 +1348,7 @@ export const questionBank: Question[] = [
     answers: [
       0
     ],
-    explanation: "適合率は陽性判定の信頼性を示す。誤検知費用が大きい場合は偽陽性件数や再現率も合わせて判断する。",
+    explanation: "損失関数は予測と正解の差を評価する。",
     reviewSection: '2027年公式シラバス第1章 → 「ニューラルネットワーク」',
     examTrap: '「適合率」は定義・目的・限界をセットで覚えると混同しにくいです。',
     choiceNotes: [
@@ -1362,7 +1362,7 @@ export const questionBank: Question[] = [
     id: 'q057',
     chapter: '第1章 AIの基礎',
     topic: '強化学習',
-    prompt: "高リスクAIの導入前に倫理委員会で審議する事項として適切なのはどれか。",
+    prompt: "強化学習の「価値」の説明として適切なのはどれか。",
     choices: [
       "入力層の数",
       "画像の解像度",
@@ -1372,7 +1372,7 @@ export const questionBank: Question[] = [
     answers: [
       3
     ],
-    explanation: "高リスク利用では関係者への影響、公平性、説明責任などを審議する。",
+    explanation: "価値は将来の報酬の期待を表す。",
     reviewSection: '2027年公式シラバス第1章 → 「強化学習」',
     examTrap: '「AI倫理委員会」は定義・目的・限界をセットで覚えると混同しにくいです。',
     choiceNotes: [
@@ -1410,7 +1410,7 @@ export const questionBank: Question[] = [
     id: 'q059',
     chapter: '第1章 AIの基礎',
     topic: 'AIの歴史',
-    prompt: 'AIの冬に関する説明として適切なものを2つ選べ。',
+    prompt: "AIの冬に関する説明として適切なものを2つ選べ。",
     choices: [
       "AI研究が世界的に法律で禁止された",
       "期待した成果が得られず研究投資が低迷した",
@@ -1421,7 +1421,7 @@ export const questionBank: Question[] = [
       1,
       2
     ],
-    explanation: 'AIの冬は期待と成果の差などにより研究への関心や投資が低迷した時期。',
+    explanation: "AIの冬は期待と成果の差などにより研究への関心や投資が低迷した時期。",
     reviewSection: '2027年公式シラバス第1章 → 「AIの歴史」',
     examTrap: '「AIと就労」は定義・目的・限界をセットで覚えると混同しにくいです。',
     choiceNotes: [
@@ -1435,7 +1435,7 @@ export const questionBank: Question[] = [
     id: 'q060',
     chapter: '第1章 AIの基礎',
     topic: 'シンギュラリティ',
-    prompt: "2つの分類モデルの性能をベンチマークで比較する際に適切なのはどれか。",
+    prompt: "シンギュラリティについて正しい説明はどれか。",
     choices: [
       "AIなどの進歩による技術的転換点を想定する仮説である",
       "到来日は科学的に確定している",
@@ -1445,7 +1445,7 @@ export const questionBank: Question[] = [
     answers: [
       0
     ],
-    explanation: "ベンチマークでは比較条件を揃え、評価データの独立性を保つ。",
+    explanation: "シンギュラリティは将来の技術発展に関する概念であり到来は確定していない。",
     reviewSection: '2027年公式シラバス第1章 → 「シンギュラリティ」',
     examTrap: '「ベンチマーク」は定義・目的・限界をセットで覚えると混同しにくいです。',
     choiceNotes: [
