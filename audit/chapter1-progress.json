@@ -40,16 +40,16 @@
   },
   "checkpoint": {
     "phase": "round1",
-    "last_completed_id": "ap27-188",
-    "next_action": "Continue at ap27-189; ap27-173 clustering feature scaling question edited at c9f9a939 and awaits recheck; prioritize correcting repetitive history and knowledge-base questions, official syllabus mapping and duplicate review.",
+    "last_completed_id": "ap27-288",
+    "next_action": "Resume at ap27-289. ap27-290 was rewritten ahead of cursor to remove near-duplicate; marked recheck. 20 items ap27-189..288 inspected with specific findings. Syllabus mapping, cross-bank duplication and source corrections remain.",
     "last_verified_commit": null,
     "round1_passed": 0,
-    "round1_needs_fix": 178,
-    "round1_recheck": 3,
-    "round1_unverified": 119,
+    "round1_needs_fix": 198,
+    "round1_recheck": 4,
+    "round1_unverified": 98,
     "round2_passed": 0,
     "chapter_accepted": false,
-    "next_question_id": "ap27-189",
+    "next_question_id": "ap27-289",
     "cursor_basis": "No individually evidenced passed question; start at first unverified item in ledger order. NONE means no completed audit ID, not no previous editing."
   },
   "items": [
@@ -2412,220 +2412,260 @@
       "id": "ap27-189",
       "file": "applied2027Questions.ts",
       "topic": "AIの歴史・ビッグデータ",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "大量データがパターン学習の材料となる点は妥当だが、誤答が全て『性能評価省略』『制約自動解消』など明白。第三次ブームの相乗効果を問うap27-180と重複。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-190",
       "file": "applied2027Questions.ts",
       "topic": "AIの歴史・計算資源",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "GPU並列計算の役割は妥当。『CPUは禁止』『行列演算不要』等の極端な誤答。ap27-180との重複比較。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-271",
       "file": "applied2027Questions.ts",
       "topic": "シンギュラリティ",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "技術的特異点の不確実性は妥当だが、q060とほぼ同じ設問。到来時期確定・損失ゼロなど容易に除外可能。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-272",
       "file": "applied2027Questions.ts",
       "topic": "第一次AIブーム・探索戦略",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "幅優先探索は等コストの辺で最短手数を見つけられる（有限分岐など適切な条件下）。他の選択肢はDFSの特徴とA*の混同を含み、比較として概ね有効だが条件の明確化が必要。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-273",
       "file": "applied2027Questions.ts",
       "topic": "VAE・潜在分布の正則化",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "VAEのKLダイバージェンスの役割は正しいが、誤答が正解率・画素数・GAN勝率で異質。再構成損失との役割分担を問う。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-274",
       "file": "applied2027Questions.ts",
       "topic": "機械学習・半教師あり学習",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "半教師あり学習の定義は妥当。ラベル付き500/10000枚の設定が解答に使われず、誤答も不自然。擬似ラベルの誤りの影響を問う応用へ改善。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-275",
       "file": "applied2027Questions.ts",
       "topic": "AIの基本・強いAI",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "強いAIと特化型AIの区別は妥当。『画像分類器はすべて強いAI』『温度制御』等の明白な誤答。q006との重複比較。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-276",
       "file": "applied2027Questions.ts",
       "topic": "AIの基本・ルールベース",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "税率表のルールベース処理は妥当だが、『必ず深層学習』『必ず生成AI』等が容易に消去可能。q023と重複。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-277",
       "file": "applied2027Questions.ts",
       "topic": "活性化関数・線形性",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "線形変換の合成が線形（バイアス込みでは厳密にはアフィン）になる点は妥当。表現上の線形／アフィンの区別を明確化し、誤答を改善。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-278",
       "file": "applied2027Questions.ts",
       "topic": "AIの基本・学習データ",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "方言データの代表性の重要性は妥当だが、誤答が『原理的に不可能』等の極端な断定。データ分布別の評価へ改善。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-279",
       "file": "applied2027Questions.ts",
       "topic": "AIの基本・判断支援",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "医療画像AIを判断材料とする点は妥当。q001/q002と人間による確認の理解が重複。臨床評価の条件を問う別設問へ改善。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-280",
       "file": "applied2027Questions.ts",
       "topic": "損失関数・目的との整合",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "回帰の損失関数を目的に合わせる点は妥当。誤答が『回帰では定義できない』等の明白な誤り。MAEとMSEの比較へ改善。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-281",
       "file": "applied2027Questions.ts",
       "topic": "ディープラーニング・表現学習",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "深層モデルの階層的特徴学習は妥当だが、誤答が『深い層では学習なし』等で易しい。ex27-006と重複。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-282",
       "file": "applied2027Questions.ts",
       "topic": "識別系AI・分類結果",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "0.8の分類スコアは校正なしでは確率の保証がない点は妥当。『誤分類なし』等の極端な誤答。校正の評価例を問う。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-283",
       "file": "applied2027Questions.ts",
       "topic": "ニューラルネットワーク・勾配降下法",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "学習率過大による振動はq031/pr27-002と重複。学習率調整の具体数値や検証損失の解釈に差し替え。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-284",
       "file": "applied2027Questions.ts",
       "topic": "機械学習・学習アルゴリズム",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "同じアルゴリズムでも学習データが異なればパラメータが異なり得る点は妥当。誤答が『常に一致』等の極端な断定。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-285",
       "file": "applied2027Questions.ts",
       "topic": "転移学習・適用可能性",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "犬猫画像から医療画像への転移はq035/pr27-030と重複。転移元・転移先の差が大きい場合の評価計画へ改善。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-286",
       "file": "applied2027Questions.ts",
       "topic": "識別系AI・物体検出",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "物体検出がクラスと位置を推定する点は妥当。誤答が『画像生成だけ』『位置を扱わない』等の定義否定で易しい。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-287",
       "file": "applied2027Questions.ts",
       "topic": "識別系AIと生成系AI",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "生成系と識別系の評価目的の違いは妥当だが、pr27-028とほぼ同じ設問。生成品質と検出性能を具体的に比較する応用へ改善。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-288",
       "file": "applied2027Questions.ts",
       "topic": "過学習・アーリーストッピング",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "検証損失最小の重みを選ぶのは妥当。adv27-003/ap27-051と重複。誤答は『常に最終』『検証混入』など容易に除外。"
+      ],
       "verified_at_commit": null
     },
     {
@@ -2643,11 +2683,13 @@
       "id": "ap27-290",
       "file": "applied2027Questions.ts",
       "topic": "識別系AIと生成系AI",
-      "status": "unverified",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "生成系と識別系の名称当てを、生成した傷画像を訓練に追加した場合の実画像による独立評価へ差し替え。出題・解説の再検査待ち。"
+      ],
       "verified_at_commit": null
     },
     {
