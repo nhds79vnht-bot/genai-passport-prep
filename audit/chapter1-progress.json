@@ -40,16 +40,16 @@
   },
   "checkpoint": {
     "phase": "round1",
-    "last_completed_id": "adv27-090",
-    "next_action": "Continue round1 at next_question_id; first 109 items have provisional quality findings, not final verified passes. Replace generic findings with item-specific evidence during correction; validate syllabus and cross-bank duplicates.",
+    "last_completed_id": "pr27-036",
+    "next_action": "Continue at ap27-001. Practice 20 have item-specific findings; repair semantic duplicates and distractors, verify against official syllabus and recheck before passing.",
     "last_verified_commit": null,
     "round1_passed": 0,
-    "round1_needs_fix": 109,
+    "round1_needs_fix": 129,
     "round1_recheck": 0,
-    "round1_unverified": 191,
+    "round1_unverified": 171,
     "round2_passed": 0,
     "chapter_accepted": false,
-    "next_question_id": "pr27-001",
+    "next_question_id": "ap27-001",
     "cursor_basis": "No individually evidenced passed question; start at first unverified item in ledger order. NONE means no completed audit ID, not no previous editing."
   },
   "items": [
@@ -1476,220 +1476,260 @@
       "id": "pr27-001",
       "file": "practice2027Questions.ts",
       "topic": "AIの歴史・チューリングテスト",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "誤答がROC曲線・勾配降下法・クラスタリングと異なる領域の用語のみで、チューリングテストを容易に選べる。歴史の評価観点を競わせる選択肢へ変更。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "pr27-002",
       "file": "practice2027Questions.ts",
       "topic": "学習率",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "学習率の増大による振動は正しいが、他の3択がいずれも単純な逆説。勾配・収束条件を混同させる誤答へ改善。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "pr27-003",
       "file": "practice2027Questions.ts",
       "topic": "決定木",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "誤答の『枝の名称だけ』『表示形式だけ』は課題と無関係。検証指標・剪定・木の深さの比較へ改善。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "pr27-004",
       "file": "practice2027Questions.ts",
       "topic": "強化学習",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "q011およびpr27-029と実質的に同じ報酬に基づく強化学習の名称当て。差し替え候補。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "pr27-021",
       "file": "practice2027Questions.ts",
       "topic": "AIの歴史",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "第一次ブームの探索と推論に対しTransformer・拡散モデル・RLHFは年代だけで全て消去可能。q034と重複。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "pr27-022",
       "file": "practice2027Questions.ts",
       "topic": "教師なし学習",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "q009と顧客購買クラスタリングの設定・正答が実質重複。GANだけの誤答も不自然。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "pr27-023",
       "file": "practice2027Questions.ts",
       "topic": "CNN",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "CNNに対するエキスパートシステム・強化学習方策は異なる種類の概念。CNNと他の画像処理アーキテクチャを比較する設問へ改善。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "pr27-024",
       "file": "practice2027Questions.ts",
       "topic": "RNN",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "RNNに対し『決定木だけ』『ルールベースだけ』という不自然な誤答。系列処理手法の比較へ改善。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "pr27-025",
       "file": "practice2027Questions.ts",
       "topic": "過学習",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "分布シフトという追加観点は妥当だが、誤答が『混ぜて評価』『無関係』など明白。q015と重複比較。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "pr27-026",
       "file": "practice2027Questions.ts",
       "topic": "ルールベースの限界",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "固定ルールの言い換え限界について、誤答3つがいずれも『自動的に網羅できる』趣旨の変形。選択肢の独立性を改善。q037と重複。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "pr27-027",
       "file": "practice2027Questions.ts",
       "topic": "誤差逆伝播法・勾配の連鎖",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "連鎖律の正答は妥当。『一切影響しない』『毎回ランダム』『損失一切計算しない』の断定で誤答が容易。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "pr27-028",
       "file": "practice2027Questions.ts",
       "topic": "識別系AIと生成系AI・評価指標",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "識別系と生成系の評価指標を比較する点は有用だが、正答以外は指標の入れ替え・正解率だけ・パラメータ数だけで容易に除外可能。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "pr27-029",
       "file": "practice2027Questions.ts",
       "topic": "強化学習",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "pr27-004とほぼ同じ強化学習の定義当て。両方残さず、報酬設計などの応用へ差し替え。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "pr27-030",
       "file": "practice2027Questions.ts",
       "topic": "転移学習",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "転移学習に対し『全知識の削除』『データ暗号化』は無関係で容易に除外。q035と概念重複。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "pr27-031",
       "file": "practice2027Questions.ts",
       "topic": "クラスタリング",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "q010と『顧客3群の意味づけ』が実質重複。群の安定性の評価など別観点に差し替え。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "pr27-032",
       "file": "practice2027Questions.ts",
       "topic": "回帰",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "MAEの正答は妥当だが、適合率・再現率・真陽性数と分類指標だけの比較で易しすぎる。RMSE等の回帰指標を競わせる。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "pr27-033",
       "file": "practice2027Questions.ts",
       "topic": "次元削減",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "PCAの定義は妥当だが、誤答が『情報損失なし』『必ず向上』など極端な断定。分散最大化と予測性能の違いを精密に問う。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "pr27-034",
       "file": "practice2027Questions.ts",
       "topic": "損失関数",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "損失関数に対しトークン化・暗号化など無関係な誤答が複数。q056と実質重複。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "pr27-035",
       "file": "practice2027Questions.ts",
       "topic": "正則化",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "L2正則化の定義は妥当だが、『勾配を計算せず固定』等の不自然な誤答。q032との重複比較。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "pr27-036",
       "file": "practice2027Questions.ts",
       "topic": "第二次AIブーム・規則の競合",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "規則の競合・優先順位という応用観点は妥当。『2つ以上で推論不可』『競合は自動的に消える』が極端で選択肢改善。"
+      ],
       "verified_at_commit": null
     },
     {
