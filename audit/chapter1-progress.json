@@ -40,12 +40,12 @@
   },
   "checkpoint": {
     "phase": "round1-repair",
-    "last_completed_id": "ap27-572",
+    "last_completed_id": "ap27-674",
     "next_action": "Continue round1-repair at next needs_fix in applied2027Questions.ts",
     "last_verified_commit": null,
     "round1_passed": 0,
-    "round1_needs_fix": 46,
-    "round1_recheck": 254,
+    "round1_needs_fix": 26,
+    "round1_recheck": 274,
     "round1_unverified": 0,
     "round2_passed": 0,
     "chapter_accepted": false,
@@ -3458,12 +3458,13 @@
       "id": "ap27-574",
       "file": "applied2027Questions.ts",
       "topic": "第二次AIブーム・前向き推論",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "前向き推論の定義は妥当。後向き推論が実質唯一の同分野の誤答で、残り2つは異分野。実際の規則適用順序へ改善。"
+        "前向き推論の定義は妥当。後向き推論が実質唯一の同分野の誤答で、残り2つは異分野。実際の規則適用順序へ改善。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3471,12 +3472,13 @@
       "id": "ap27-575",
       "file": "applied2027Questions.ts",
       "topic": "ニューラルネットワーク・重みの初期化",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "同一初期値での対称性問題は妥当だが、誤答が『必ず独立』『勾配不要』など極端。対称性の解消方法を比較。"
+        "同一初期値での対称性問題は妥当だが、誤答が『必ず独立』『勾配不要』など極端。対称性の解消方法を比較。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3484,12 +3486,13 @@
       "id": "ap27-576",
       "file": "applied2027Questions.ts",
       "topic": "AIの歴史・チューリングテスト",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "チューリングテストの対話評価はpr27-001と重複。誤答が画像精度・重み数・計算速度で異分野。"
+        "チューリングテストの対話評価はpr27-001と重複。誤答が画像精度・重み数・計算速度で異分野。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3497,12 +3500,13 @@
       "id": "ap27-577",
       "file": "applied2027Questions.ts",
       "topic": "ディープフェイク",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "ディープフェイクの技術説明は妥当。誤答が『自然なら真正性証明』『必ず音声も合成』で容易。第1章の公式小項目への対応確認が必要。"
+        "ディープフェイクの技術説明は妥当。誤答が『自然なら真正性証明』『必ず音声も合成』で容易。第1章の公式小項目への対応確認が必要。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3510,12 +3514,13 @@
       "id": "ap27-578",
       "file": "applied2027Questions.ts",
       "topic": "AIの歴史・ELIZA",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "ELIZAのパターン照合は妥当。LSTM・ニューラル重み学習・MYCINとの歴史的区別はできるが、年表配分との重複確認が必要。"
+        "ELIZAのパターン照合は妥当。LSTM・ニューラル重み学習・MYCINとの歴史的区別はできるが、年表配分との重複確認が必要。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3523,12 +3528,13 @@
       "id": "ap27-579",
       "file": "applied2027Questions.ts",
       "topic": "AIの歴史・SHRDLU",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "SHRDLUの積み木世界の限定的理解は妥当。『全て理解』『画像生成』など極端な誤答を改善。"
+        "SHRDLUの積み木世界の限定的理解は妥当。『全て理解』『画像生成』など極端な誤答を改善。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3536,12 +3542,13 @@
       "id": "ap27-580",
       "file": "applied2027Questions.ts",
       "topic": "活性化関数・Leaky ReLU",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "Leaky ReLUの負領域の傾きは妥当。ap27-073と内容重複。Softmax等の無関係な誤答が多い。"
+        "Leaky ReLUの負領域の傾きは妥当。ap27-073と内容重複。Softmax等の無関係な誤答が多い。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3549,12 +3556,13 @@
       "id": "ap27-621",
       "file": "applied2027Questions.ts",
       "topic": "過学習・ドロップアウト",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "ドロップアウトの通常推論時無効化はap27-086と重複。誤答が『教師ラベル生成』『全重みゼロ』で容易。"
+        "ドロップアウトの通常推論時無効化はap27-086と重複。誤答が『教師ラベル生成』『全重みゼロ』で容易。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3562,12 +3570,13 @@
       "id": "ap27-622",
       "file": "applied2027Questions.ts",
       "topic": "第二次AIブーム・MYCIN",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "MYCINのルールベース医療エキスパートシステムは妥当。誤答がニューラル・クラスタリング等の技術差で容易。"
+        "MYCINのルールベース医療エキスパートシステムは妥当。誤答がニューラル・クラスタリング等の技術差で容易。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3575,12 +3584,13 @@
       "id": "ap27-623",
       "file": "applied2027Questions.ts",
       "topic": "第二次AIブーム・知識表現",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "IF-THEN規則の定義はap27-390とほぼ同文で重複。別の推論上の能力を問う設問へ差し替え。"
+        "IF-THEN規則の定義はap27-390とほぼ同文で重複。別の推論上の能力を問う設問へ差し替え。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3588,12 +3598,13 @@
       "id": "ap27-624",
       "file": "applied2027Questions.ts",
       "topic": "第二次AIブーム・知識獲得",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "暗黙知の知識獲得ボトルネックはap27-389と重複。『保存装置への複製』等の無関係な誤答。"
+        "暗黙知の知識獲得ボトルネックはap27-389と重複。『保存装置への複製』等の無関係な誤答。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3601,12 +3612,13 @@
       "id": "ap27-625",
       "file": "applied2027Questions.ts",
       "topic": "AIの冬・期待と実用性",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "AIの冬における期待と実用性の隔たりはap27-388/ap27-179と重複。誤答が資金増・全面停止等の断定。"
+        "AIの冬における期待と実用性の隔たりはap27-388/ap27-179と重複。誤答が資金増・全面停止等の断定。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3614,12 +3626,13 @@
       "id": "ap27-626",
       "file": "applied2027Questions.ts",
       "topic": "識別系AI・物体検出",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "歩行者3人の物体検出はap27-286と同じ分類対検出の定義問題。誤答が生成・クラスタリング等で容易。"
+        "歩行者3人の物体検出はap27-286と同じ分類対検出の定義問題。誤答が生成・クラスタリング等で容易。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3627,12 +3640,13 @@
       "id": "ap27-627",
       "file": "applied2027Questions.ts",
       "topic": "第三次AIブーム・深層学習",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "第三次AIブームのデータ・計算資源・手法はap27-180/ap27-472と重複。誤答がデータ不要等で容易。"
+        "第三次AIブームのデータ・計算資源・手法はap27-180/ap27-472と重複。誤答がデータ不要等で容易。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3640,12 +3654,13 @@
       "id": "ap27-628",
       "file": "applied2027Questions.ts",
       "topic": "第三次AIブーム・AlphaGo",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "AlphaGoの深層NNと探索の併用は妥当。手作業IF-THENのみ等の誤答が容易。歴史小項目との照合が必要。"
+        "AlphaGoの深層NNと探索の併用は妥当。手作業IF-THENのみ等の誤答が容易。歴史小項目との照合が必要。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3653,12 +3668,13 @@
       "id": "ap27-629",
       "file": "applied2027Questions.ts",
       "topic": "AIの歴史・Transformer",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "TransformerのAttentionの系列内参照はap27-476と重複。誤答が画像変換のみ・遠方除外で容易。"
+        "TransformerのAttentionの系列内参照はap27-476と重複。誤答が画像変換のみ・遠方除外で容易。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3666,12 +3682,13 @@
       "id": "ap27-630",
       "file": "applied2027Questions.ts",
       "topic": "AIの歴史・生成AIへの発展",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "生成AIの発展に大規模学習が寄与した点は妥当だが、ap27-180/ap27-627と重複。誤答が『手入力規則だけ』『学習パラメータなし』で容易。"
+        "生成AIの発展に大規模学習が寄与した点は妥当だが、ap27-180/ap27-627と重複。誤答が『手入力規則だけ』『学習パラメータなし』で容易。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3679,12 +3696,13 @@
       "id": "ap27-671",
       "file": "applied2027Questions.ts",
       "topic": "AIの基本・ルールベース",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "ルールベースと学習型分類器の違いはap27-473/ap27-378と重複。誤答が『常に正解』『評価不要』で容易。"
+        "ルールベースと学習型分類器の違いはap27-473/ap27-378と重複。誤答が『常に正解』『評価不要』で容易。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3705,12 +3723,13 @@
       "id": "ap27-673",
       "file": "applied2027Questions.ts",
       "topic": "機械学習・決定木",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "決定木の分岐条件の定義は妥当だが、誤答がVAE/NN/入力順序で異分野。実際の分岐予測へ改善。"
+        "決定木の分岐条件の定義は妥当だが、誤答がVAE/NN/入力順序で異分野。実際の分岐予測へ改善。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3718,12 +3737,13 @@
       "id": "ap27-674",
       "file": "applied2027Questions.ts",
       "topic": "半教師あり学習・擬似ラベル",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "擬似ラベル誤りの混入と独立評価は妥当。誤答が『保証』『評価不要』と極端。擬似ラベル採用基準の比較へ改善。"
+        "擬似ラベル誤りの混入と独立評価は妥当。誤答が『保証』『評価不要』と極端。擬似ラベル採用基準の比較へ改善。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
