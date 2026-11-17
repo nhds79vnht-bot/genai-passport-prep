@@ -84,8 +84,8 @@
   "checkpoint": {
     "last_completed_id": "q120",
     "next_question_id": null,
-    "next_action": "Continue first-pass q101-q120 and remaining applied choice-level checks; complete finite first-pass then second-pass corrected-item review",
-    "last_verified_commit": "31727f70af56ee3d2999669dc10afee46cb33033",
+    "next_action": "Continue applied 171 question choice-level first-pass; perform finite post-edit review before chapter acceptance",
+    "last_verified_commit": "1a33b3452b40b0e43df837d53ab84bc2578fdec5",
     "chapter_accepted": false
   },
   "exit_criteria": [
@@ -235,7 +235,7 @@
     "source_commit": "797c43e3be79012ace5577343e5ec3fae2377269"
   },
   "chapter2_audit": {
-    "stage": "first_pass_choice_semantics_in_progress",
+    "stage": "first_pass_applied_choice_semantics_in_progress",
     "checked": 300,
     "allocation_matched": 31,
     "missing_topic_or_prompt": 0,
@@ -363,6 +363,34 @@
       "q100"
     ],
     "post_edit_question_count_verified": 300,
-    "post_edit_choice_array_structure_errors": 0
+    "post_edit_choice_array_structure_errors": 0,
+    "base_question_distractor_pass_completed": 60,
+    "base_question_distractor_pass_latest_ids": "q101-q120",
+    "applied_distractor_sets_rewritten_latest_batch": 23,
+    "applied_distractor_ids_latest_batch": [
+      "ap27-095",
+      "ap27-096",
+      "ap27-097",
+      "ap27-098",
+      "ap27-099",
+      "ap27-100",
+      "ap27-101",
+      "ap27-102",
+      "ap27-103",
+      "ap27-104",
+      "ap27-105",
+      "ap27-106",
+      "ap27-107",
+      "ap27-108",
+      "ap27-109",
+      "ap27-191",
+      "ap27-192",
+      "ap27-193",
+      "ap27-194",
+      "ap27-195",
+      "ap27-196",
+      "ap27-197",
+      "ap27-198"
+    ]
   }
 }
