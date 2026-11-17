@@ -40,12 +40,12 @@
   },
   "checkpoint": {
     "phase": "round1-repair",
-    "last_completed_id": "ex27-020",
-    "next_action": "Continue round1-repair at next needs_fix in advanced2027Questions.ts",
+    "last_completed_id": "adv27-010",
+    "next_action": "Continue round1-repair at adv27-081",
     "last_verified_commit": null,
     "round1_passed": 0,
-    "round1_needs_fix": 176,
-    "round1_recheck": 124,
+    "round1_needs_fix": 166,
+    "round1_recheck": 134,
     "round1_unverified": 0,
     "round2_passed": 0,
     "chapter_accepted": false,
@@ -1287,12 +1287,13 @@
       "id": "adv27-001",
       "file": "advanced2027Questions.ts",
       "topic": "ノーフリーランチ定理",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "誤答選択肢の妥当性と個別解説を改善対象として記録。正答・小項目・重複は全件横断監査で再確認。"
+        "誤答選択肢の妥当性と個別解説を改善対象として記録。正答・小項目・重複は全件横断監査で再確認。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -1300,12 +1301,13 @@
       "id": "adv27-002",
       "file": "advanced2027Questions.ts",
       "topic": "強化学習・報酬設計",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "状態・報酬・方策の違いを問う選択肢の識別力と条件の厳密性を確認。q011/q012/q045/q057との重複比較が必要。"
+        "状態・報酬・方策の違いを問う選択肢の識別力と条件の厳密性を確認。q011/q012/q045/q057との重複比較が必要。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -1313,12 +1315,13 @@
       "id": "adv27-003",
       "file": "advanced2027Questions.ts",
       "topic": "過学習・アーリーストッピング",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "過学習・汎化の原因と対策の識別力を要検証。q015/q016/q028/q032との意味的重複を確認し、誤答のもっともらしさを改善する。"
+        "過学習・汎化の原因と対策の識別力を要検証。q015/q016/q028/q032との意味的重複を確認し、誤答のもっともらしさを改善する。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -1326,12 +1329,13 @@
       "id": "adv27-004",
       "file": "advanced2027Questions.ts",
       "topic": "AIの歴史・第一次AIブーム",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "AI史の年代・研究潮流を問う選択肢に、他時代の用語や明白な誤答が混在しないか精査が必要。q003/q027/q034/q052/q054/q059等との重複比較が必要。"
+        "AI史の年代・研究潮流を問う選択肢に、他時代の用語や明白な誤答が混在しないか精査が必要。q003/q027/q034/q052/q054/q059等との重複比較が必要。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -1339,12 +1343,13 @@
       "id": "adv27-005",
       "file": "advanced2027Questions.ts",
       "topic": "ニューラルネットワーク・隠れ層",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "ネットワークの構造・学習手順の概念混同を問う誤答の品質を確認。q013/q014/q024/q040/q050/q053/q056との重複比較が必要。"
+        "ネットワークの構造・学習手順の概念混同を問う誤答の品質を確認。q013/q014/q024/q040/q050/q053/q056との重複比較が必要。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -1352,12 +1357,13 @@
       "id": "adv27-006",
       "file": "advanced2027Questions.ts",
       "topic": "第三次AIブーム",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "AI史の年代・研究潮流を問う選択肢に、他時代の用語や明白な誤答が混在しないか精査が必要。q003/q027/q034/q052/q054/q059等との重複比較が必要。"
+        "AI史の年代・研究潮流を問う選択肢に、他時代の用語や明白な誤答が混在しないか精査が必要。q003/q027/q034/q052/q054/q059等との重複比較が必要。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -1365,12 +1371,13 @@
       "id": "adv27-007",
       "file": "advanced2027Questions.ts",
       "topic": "ニューラルネットワーク・入力",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "ネットワークの構造・学習手順の概念混同を問う誤答の品質を確認。q013/q014/q024/q040/q050/q053/q056との重複比較が必要。"
+        "ネットワークの構造・学習手順の概念混同を問う誤答の品質を確認。q013/q014/q024/q040/q050/q053/q056との重複比較が必要。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -1378,12 +1385,13 @@
       "id": "adv27-008",
       "file": "advanced2027Questions.ts",
       "topic": "ニューラルネットワーク・活性化関数",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "ネットワークの構造・学習手順の概念混同を問う誤答の品質を確認。q013/q014/q024/q040/q050/q053/q056との重複比較が必要。"
+        "ネットワークの構造・学習手順の概念混同を問う誤答の品質を確認。q013/q014/q024/q040/q050/q053/q056との重複比較が必要。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -1391,12 +1399,13 @@
       "id": "adv27-009",
       "file": "advanced2027Questions.ts",
       "topic": "ニューラルネットワーク・転移学習",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "ネットワークの構造・学習手順の概念混同を問う誤答の品質を確認。q013/q014/q024/q040/q050/q053/q056との重複比較が必要。"
+        "ネットワークの構造・学習手順の概念混同を問う誤答の品質を確認。q013/q014/q024/q040/q050/q053/q056との重複比較が必要。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -1404,12 +1413,13 @@
       "id": "adv27-010",
       "file": "advanced2027Questions.ts",
       "topic": "ニューラルネットワーク・正則化",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "過学習・汎化の原因と対策の識別力を要検証。q015/q016/q028/q032との意味的重複を確認し、誤答のもっともらしさを改善する。"
+        "過学習・汎化の原因と対策の識別力を要検証。q015/q016/q028/q032との意味的重複を確認し、誤答のもっともらしさを改善する。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
