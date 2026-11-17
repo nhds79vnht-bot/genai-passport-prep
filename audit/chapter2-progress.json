@@ -84,7 +84,7 @@
   "checkpoint": {
     "last_completed_id": "q120",
     "next_question_id": null,
-    "next_action": "Reconcile other source files and migrate chapter 2 questions to 31-topic targets; audit q061-q120 before accepting quality.",
+    "next_action": "Continue with syllabus2027Questions.ts, advanced2027Questions.ts, practice2027Questions.ts and applied2027Questions.ts; audit revised items and reconcile distribution against targets.",
     "last_verified_commit": null,
     "chapter_accepted": false
   },
@@ -148,6 +148,13 @@
       "commit": "38c7063b3d81bd6e8f4957641451b5ef405ae42a",
       "status": "topic_aligned_pending_independent_audit",
       "purpose": "Rewrite five off-syllabus prompts and retag fifteen existing chapter-2 questions"
+    },
+    {
+      "file": "src/data/expansion2027Questions.ts",
+      "count": 20,
+      "commit": "226126d9809040c8418630d512c57cebdf7197ab",
+      "status": "source_updated_pending_independent_audit",
+      "purpose": "Rebuild twenty expansion questions to official 2027 small topics"
     }
   ],
   "allocation_file": "audit/chapter2-allocation-2027.json",
