@@ -40,16 +40,16 @@
   },
   "checkpoint": {
     "phase": "round1",
-    "last_completed_id": "NONE",
-    "next_action": "Round 1: start with q001, record evidence and commit checkpoint after each durable batch; preserve prior code edits.",
+    "last_completed_id": "q020",
+    "next_action": "Continue round1 from q021; q001-q020 have recorded specific distractor/explanation findings. Verify official small-topic mapping before assigning; preserve existing edits. Fix flagged items in durable batch, then recheck.",
     "last_verified_commit": null,
     "round1_passed": 0,
-    "round1_needs_fix": 0,
+    "round1_needs_fix": 20,
     "round1_recheck": 0,
-    "round1_unverified": 300,
+    "round1_unverified": 280,
     "round2_passed": 0,
     "chapter_accepted": false,
-    "next_question_id": "q001",
+    "next_question_id": "q021",
     "cursor_basis": "No individually evidenced passed question; start at first unverified item in ledger order. NONE means no completed audit ID, not no previous editing."
   },
   "items": [
@@ -57,220 +57,262 @@
       "id": "q001",
       "file": "questionBank.ts",
       "topic": "AIの定義",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "choiceNotesが正答説明の反復を中心としており、各誤答が不適切な理由の個別説明が不足。",
+        "同じ『AIは判断支援で人が確認する』理解を重ねて評価しており、全300問での意味的重複比較が必要。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q002",
       "file": "questionBank.ts",
       "topic": "AIの定義",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "choiceNotesが正答説明の反復を中心としており、各誤答が不適切な理由の個別説明が不足。",
+        "同じ『AIは判断支援で人が確認する』理解を重ねて評価しており、全300問での意味的重複比較が必要。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q003",
       "file": "questionBank.ts",
       "topic": "AIの歴史",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "誤答選択肢に時代錯誤・極端な断定・無関係な概念が複数あり、消去法で正答を特定しやすい。選択肢の再設計が必要。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q004",
       "file": "questionBank.ts",
       "topic": "AIの歴史",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "choiceNotesが正答説明の反復を中心としており、各誤答が不適切な理由の個別説明が不足。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q005",
       "file": "questionBank.ts",
       "topic": "弱いAI",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "誤答選択肢に時代錯誤・極端な断定・無関係な概念が複数あり、消去法で正答を特定しやすい。選択肢の再設計が必要。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q006",
       "file": "questionBank.ts",
       "topic": "強いAI",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "誤答選択肢に時代錯誤・極端な断定・無関係な概念が複数あり、消去法で正答を特定しやすい。選択肢の再設計が必要。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q007",
       "file": "questionBank.ts",
       "topic": "教師あり学習",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "choiceNotesが正答説明の反復を中心としており、各誤答が不適切な理由の個別説明が不足。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q008",
       "file": "questionBank.ts",
       "topic": "教師あり学習",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "choiceNotesが正答説明の反復を中心としており、各誤答が不適切な理由の個別説明が不足。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q009",
       "file": "questionBank.ts",
       "topic": "教師なし学習",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "choiceNotesが正答説明の反復を中心としており、各誤答が不適切な理由の個別説明が不足。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q010",
       "file": "questionBank.ts",
       "topic": "教師なし学習",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "choiceNotesが正答説明の反復を中心としており、各誤答が不適切な理由の個別説明が不足。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q011",
       "file": "questionBank.ts",
       "topic": "強化学習",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "choiceNotesが正答説明の反復を中心としており、各誤答が不適切な理由の個別説明が不足。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q012",
       "file": "questionBank.ts",
       "topic": "強化学習",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "choiceNotesが正答説明の反復を中心としており、各誤答が不適切な理由の個別説明が不足。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q013",
       "file": "questionBank.ts",
       "topic": "ディープラーニング",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "誤答選択肢に時代錯誤・極端な断定・無関係な概念が複数あり、消去法で正答を特定しやすい。選択肢の再設計が必要。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q014",
       "file": "questionBank.ts",
       "topic": "ディープラーニング",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "誤答選択肢に時代錯誤・極端な断定・無関係な概念が複数あり、消去法で正答を特定しやすい。選択肢の再設計が必要。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q015",
       "file": "questionBank.ts",
       "topic": "過学習",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "誤答選択肢に時代錯誤・極端な断定・無関係な概念が複数あり、消去法で正答を特定しやすい。選択肢の再設計が必要。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q016",
       "file": "questionBank.ts",
       "topic": "過学習",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "誤答選択肢に時代錯誤・極端な断定・無関係な概念が複数あり、消去法で正答を特定しやすい。選択肢の再設計が必要。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q017",
       "file": "questionBank.ts",
       "topic": "データ品質",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "choiceNotesが正答説明の反復を中心としており、各誤答が不適切な理由の個別説明が不足。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q018",
       "file": "questionBank.ts",
       "topic": "バイアス",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "choiceNotesが正答説明の反復を中心としており、各誤答が不適切な理由の個別説明が不足。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q019",
       "file": "questionBank.ts",
       "topic": "説明可能性",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "choiceNotesが正答説明の反復を中心としており、各誤答が不適切な理由の個別説明が不足。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q020",
       "file": "questionBank.ts",
       "topic": "AI活用分野",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "誤答選択肢に時代錯誤・極端な断定・無関係な概念が複数あり、消去法で正答を特定しやすい。選択肢の再設計が必要。"
+      ],
       "verified_at_commit": null
     },
     {
