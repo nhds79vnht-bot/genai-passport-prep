@@ -40,12 +40,12 @@
   },
   "checkpoint": {
     "phase": "round1-repair",
-    "last_completed_id": "q027",
-    "next_action": "Continue round1-repair at q029 and remaining questionBank.ts needs_fix. Six revised questions await independent recheck; source commit 1371434386fb3490f0c6e966560d7cfe1cfaf0e6",
+    "last_completed_id": "q036",
+    "next_action": "Continue round1-repair at q037",
     "last_verified_commit": null,
     "round1_passed": 0,
-    "round1_needs_fix": 237,
-    "round1_recheck": 63,
+    "round1_needs_fix": 229,
+    "round1_recheck": 71,
     "round1_unverified": 0,
     "round2_passed": 0,
     "chapter_accepted": false,
@@ -433,12 +433,13 @@
       "id": "q029",
       "file": "questionBank.ts",
       "topic": "識別系AIと生成系AI",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "識別系と生成系の対比は妥当だが、全300問でq058との実質重複を比較する必要。"
+        "識別系と生成系の対比は妥当だが、全300問でq058との実質重複を比較する必要。",
+        "設問・選択肢・正答・解説を修正。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -446,12 +447,13 @@
       "id": "q030",
       "file": "questionBank.ts",
       "topic": "ディープフェイク",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "ディープフェイクの誤答3件が『できない』『必ず』等の極端な断定で容易に除外可能。章境界も要照合。"
+        "ディープフェイクの誤答3件が『できない』『必ず』等の極端な断定で容易に除外可能。章境界も要照合。",
+        "設問・選択肢・正答・解説を修正。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -459,12 +461,13 @@
       "id": "q031",
       "file": "questionBank.ts",
       "topic": "学習率",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "学習率の振動対策で、ログ除外・検証データ混入等の明白な誤答が複数。"
+        "学習率の振動対策で、ログ除外・検証データ混入等の明白な誤答が複数。",
+        "設問・選択肢・正答・解説を修正。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -472,12 +475,13 @@
       "id": "q032",
       "file": "questionBank.ts",
       "topic": "正則化",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "L2正則化の誤答に『データ自動削除』『ラベル追加』など無関係な機能が含まれる。"
+        "L2正則化の誤答に『データ自動削除』『ラベル追加』など無関係な機能が含まれる。",
+        "設問・選択肢・正答・解説を修正。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -485,12 +489,13 @@
       "id": "q033",
       "file": "questionBank.ts",
       "topic": "AIの歴史",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "深層学習普及の要因で『AI研究の全面停止』等が容易に除外可能。q004との重複比較が必要。"
+        "深層学習普及の要因で『AI研究の全面停止』等が容易に除外可能。q004との重複比較が必要。",
+        "設問・選択肢・正答・解説を修正。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -498,12 +503,13 @@
       "id": "q034",
       "file": "questionBank.ts",
       "topic": "AIの歴史・探索",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "第一次AIブームの探索に対し拡散モデル・RLHF等が時代錯誤で容易に除外可能。"
+        "第一次AIブームの探索に対し拡散モデル・RLHF等が時代錯誤で容易に除外可能。",
+        "設問・選択肢・正答・解説を修正。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -511,12 +517,13 @@
       "id": "q035",
       "file": "questionBank.ts",
       "topic": "転移学習",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "転移学習の選択肢が『評価対象から除く』『ラベル確認せず』等の明白な不適切操作に偏る。"
+        "転移学習の選択肢が『評価対象から除く』『ラベル確認せず』等の明白な不適切操作に偏る。",
+        "設問・選択肢・正答・解説を修正。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -524,12 +531,13 @@
       "id": "q036",
       "file": "questionBank.ts",
       "topic": "AIの基本的な仕組み",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "AIとロボットの違いを問う誤答3件が『必ず』『物理的な腕』等の極端な断定。"
+        "AIとロボットの違いを問う誤答3件が『必ず』『物理的な腕』等の極端な断定。",
+        "設問・選択肢・正答・解説を修正。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
