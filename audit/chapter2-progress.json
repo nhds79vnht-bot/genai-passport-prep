@@ -78,7 +78,7 @@
     "src/data/expansion2027Questions.ts": "5c445426ecb4481c7af71f10a5968f324f605abd",
     "src/data/advanced2027Questions.ts": "94eac33cd7b07ae27b6d1ddbb32308fb347559ce",
     "src/data/practice2027Questions.ts": "08cf5035884532d6eab98ed7fbb8628c7656b4e2",
-    "src/data/applied2027Questions.ts": "31a8eea7ee65683ca82c261eb664b541c54c65f8"
+    "src/data/applied2027Questions.ts": "81717d76d39f42c081f8fa10ecfbfc614f268e83"
   },
   "items": [],
   "checkpoint": {
@@ -393,6 +393,16 @@
       "ap27-198"
     ],
     "applied_distractor_choices_rewritten_latest_batch": 93,
-    "applied_latest_batch_ids": "ap27-409, ap27-410, ap27-481–490, ap27-531–539, ap27-581–590"
+    "applied_latest_batch_ids": "ap27-409, ap27-410, ap27-481–490, ap27-531–539, ap27-581–590",
+    "first_pass_followup": {
+      "reviewed_scope": "ap27-631 onward targeted review",
+      "distractor_revisions": [
+        "ap27-633",
+        "ap27-636",
+        "ap27-800"
+      ],
+      "note": "Three targeted distractor edits; first pass and independent semantic acceptance remain open",
+      "source_commit": "e01154187870b2553b3eec820b8911c893f5d94d"
+    }
   }
 }
