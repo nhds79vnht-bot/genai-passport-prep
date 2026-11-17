@@ -1,0 +1,3481 @@
+{
+  "schema_version": 1,
+  "scope": "358 preliminary candidates; keyword mapping by legacy topic only, not semantic approval",
+  "items": [
+    {
+      "id": "q035",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第1章 AIの基礎",
+      "legacy_topic": "転移学習",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "q058",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第1章 AIの基礎",
+      "legacy_topic": "識別系AIと生成系AI",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "q061",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "生成AI定義",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "q062",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "LLM",
+      "proposed_small_topics": [
+        "2-4-2"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "q063",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "Transformer",
+      "proposed_small_topics": [
+        "2-1-1"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "q064",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "トークン",
+      "proposed_small_topics": [
+        "2-3-1"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "q065",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "コンテキスト長",
+      "proposed_small_topics": [
+        "2-3-6"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "q066",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "ChatGPT",
+      "proposed_small_topics": [
+        "2-5-1"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "q067",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "GPT系モデル",
+      "proposed_small_topics": [
+        "2-1-2"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "q068",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "主要モデル",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "q069",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "Copilot",
+      "proposed_small_topics": [
+        "2-5-9"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "q070",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "プロンプト",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "q071",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "Zero-shot",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "q072",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "Few-shot",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "q073",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "CoT",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "q074",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "ハルシネーション",
+      "proposed_small_topics": [
+        "2-3-4"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "q075",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "ハルシネーション対策",
+      "proposed_small_topics": [
+        "2-3-4"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "q076",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "Temperature",
+      "proposed_small_topics": [
+        "2-3-5"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "q077",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "Top-p",
+      "proposed_small_topics": [
+        "2-3-5"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "q078",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "マルチモーダル",
+      "proposed_small_topics": [
+        "2-1-4",
+        "2-5-4"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "q079",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "Sora",
+      "proposed_small_topics": [
+        "2-6-4"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "q080",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "画像生成",
+      "proposed_small_topics": [
+        "2-6-1"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "q081",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "Role Prompt",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "q082",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "Role Prompt",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "q083",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "Role Prompt",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "q084",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "Role Prompt",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "q085",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "System Prompt",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "q086",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "System Prompt",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "q087",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "System Prompt",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "q088",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "System Prompt",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "q089",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "出力形式指定",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "q090",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "出力形式指定",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "q091",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "出力形式指定",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "q092",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "出力形式指定",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "q093",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "制約プロンプト",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "q094",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "制約プロンプト",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "q095",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "制約プロンプト",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "q096",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "制約プロンプト",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "q097",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "評価プロンプト",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "q098",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "評価プロンプト",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "q099",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "評価プロンプト",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "q100",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "評価プロンプト",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "q101",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "反復改善",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "q102",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "反復改善",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "q103",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "反復改善",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "q104",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "反復改善",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "q105",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "モデル選定",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "q106",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "モデル選定",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "q107",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "モデル選定",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "q108",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "モデル選定",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "q109",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "API利用",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "q110",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "API利用",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "q111",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "API利用",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "q112",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "API利用",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "q113",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "コスト管理",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "q114",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "コスト管理",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "q115",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "コスト管理",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "q116",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "コスト管理",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "q117",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "セキュリティ入力",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "q118",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "セキュリティ入力",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "q119",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "セキュリティ入力",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "q120",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "セキュリティ入力",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "q126",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第3章 生成AIの技術",
+      "legacy_topic": "Embedding",
+      "proposed_small_topics": [
+        "2-3-2"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "q136",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第3章 生成AIの技術",
+      "legacy_topic": "画像生成",
+      "proposed_small_topics": [
+        "2-6-1"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "q143",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第3章 生成AIの技術",
+      "legacy_topic": "Embedding",
+      "proposed_small_topics": [
+        "2-3-2"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "q151",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第3章 生成AIの技術",
+      "legacy_topic": "トークン化",
+      "proposed_small_topics": [
+        "2-3-1"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "q152",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第3章 生成AIの技術",
+      "legacy_topic": "コンテキスト長",
+      "proposed_small_topics": [
+        "2-3-6"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "q153",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第3章 生成AIの技術",
+      "legacy_topic": "自己注意機構",
+      "proposed_small_topics": [
+        "2-1-1"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "q154",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第3章 生成AIの技術",
+      "legacy_topic": "位置情報",
+      "proposed_small_topics": [
+        "2-1-1"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "q155",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第3章 生成AIの技術",
+      "legacy_topic": "埋め込み",
+      "proposed_small_topics": [
+        "2-3-2"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "q157",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第3章 生成AIの技術",
+      "legacy_topic": "RAG",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "q164",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第3章 生成AIの技術",
+      "legacy_topic": "ファインチューニング",
+      "proposed_small_topics": [
+        "2-2-2"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "q168",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第3章 生成AIの技術",
+      "legacy_topic": "RLHF",
+      "proposed_small_topics": [
+        "2-2-3"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "q169",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第3章 生成AIの技術",
+      "legacy_topic": "Function Calling",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "q176",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第3章 生成AIの技術",
+      "legacy_topic": "モデル更新",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "q178",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第3章 生成AIの技術",
+      "legacy_topic": "マルチモーダル",
+      "proposed_small_topics": [
+        "2-1-4",
+        "2-5-4"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "q179",
+      "source_file": "src/data/questionBank.ts",
+      "legacy_chapter": "第3章 生成AIの技術",
+      "legacy_topic": "画像生成",
+      "proposed_small_topics": [
+        "2-6-1"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "s27-015",
+      "source_file": "src/data/syllabus2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "ハルシネーション",
+      "proposed_small_topics": [
+        "2-3-4"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "s27-016",
+      "source_file": "src/data/syllabus2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "生成AIの限界",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "s27-017",
+      "source_file": "src/data/syllabus2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "プロンプト",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "s27-033",
+      "source_file": "src/data/syllabus2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "生成モデル",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "s27-034",
+      "source_file": "src/data/syllabus2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "温度パラメータ",
+      "proposed_small_topics": [
+        "2-3-5"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "s27-035",
+      "source_file": "src/data/syllabus2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "マルチモーダル",
+      "proposed_small_topics": [
+        "2-1-4",
+        "2-5-4"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "s27-036",
+      "source_file": "src/data/syllabus2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "トークン",
+      "proposed_small_topics": [
+        "2-3-1"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "s27-037",
+      "source_file": "src/data/syllabus2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "ファインチューニング",
+      "proposed_small_topics": [
+        "2-2-2"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "s27-038",
+      "source_file": "src/data/syllabus2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "コンテキスト窓",
+      "proposed_small_topics": [
+        "2-3-6"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "s27-039",
+      "source_file": "src/data/syllabus2027Questions.ts",
+      "legacy_chapter": "第3章 生成AIの技術",
+      "legacy_topic": "埋め込み",
+      "proposed_small_topics": [
+        "2-3-2"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ex27-018",
+      "source_file": "src/data/expansion2027Questions.ts",
+      "legacy_chapter": "第1章 AIの基礎",
+      "legacy_topic": "転移学習",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ex27-021",
+      "source_file": "src/data/expansion2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "言語モデル",
+      "proposed_small_topics": [
+        "2-4-1"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ex27-022",
+      "source_file": "src/data/expansion2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "事前学習",
+      "proposed_small_topics": [
+        "2-2-1"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ex27-023",
+      "source_file": "src/data/expansion2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "指示追従",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ex27-024",
+      "source_file": "src/data/expansion2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "RLHF",
+      "proposed_small_topics": [
+        "2-2-3"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ex27-025",
+      "source_file": "src/data/expansion2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "生成AIと検索",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ex27-026",
+      "source_file": "src/data/expansion2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "ゼロショット",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ex27-027",
+      "source_file": "src/data/expansion2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "フューショット",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ex27-028",
+      "source_file": "src/data/expansion2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "出力形式",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ex27-029",
+      "source_file": "src/data/expansion2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "確率的生成",
+      "proposed_small_topics": [
+        "2-3-3"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ex27-030",
+      "source_file": "src/data/expansion2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "画像生成",
+      "proposed_small_topics": [
+        "2-6-1"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ex27-031",
+      "source_file": "src/data/expansion2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "音声認識",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ex27-032",
+      "source_file": "src/data/expansion2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "音声合成",
+      "proposed_small_topics": [
+        "2-6-3"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ex27-033",
+      "source_file": "src/data/expansion2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "翻訳",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ex27-034",
+      "source_file": "src/data/expansion2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "要約",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ex27-035",
+      "source_file": "src/data/expansion2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "プロンプトの制約",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ex27-036",
+      "source_file": "src/data/expansion2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "文脈の不足",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ex27-037",
+      "source_file": "src/data/expansion2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "制約条件",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ex27-038",
+      "source_file": "src/data/expansion2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "学習と推論の区別",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ex27-039",
+      "source_file": "src/data/expansion2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "モデル更新",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ex27-040",
+      "source_file": "src/data/expansion2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "生成AIの評価",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ex27-041",
+      "source_file": "src/data/expansion2027Questions.ts",
+      "legacy_chapter": "第3章 生成AIの技術",
+      "legacy_topic": "Transformer",
+      "proposed_small_topics": [
+        "2-1-1"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ex27-042",
+      "source_file": "src/data/expansion2027Questions.ts",
+      "legacy_chapter": "第3章 生成AIの技術",
+      "legacy_topic": "自己注意",
+      "proposed_small_topics": [
+        "2-1-1"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ex27-043",
+      "source_file": "src/data/expansion2027Questions.ts",
+      "legacy_chapter": "第3章 生成AIの技術",
+      "legacy_topic": "埋め込み",
+      "proposed_small_topics": [
+        "2-3-2"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "adv27-011",
+      "source_file": "src/data/advanced2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "文脈窓",
+      "proposed_small_topics": [
+        "2-3-6"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "adv27-012",
+      "source_file": "src/data/advanced2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "事実検証",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "adv27-013",
+      "source_file": "src/data/advanced2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "画像理解",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "adv27-014",
+      "source_file": "src/data/advanced2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "指示の優先度",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "adv27-015",
+      "source_file": "src/data/advanced2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "出力検証",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "adv27-016",
+      "source_file": "src/data/advanced2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "再現性",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "adv27-017",
+      "source_file": "src/data/advanced2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "機密性",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "adv27-018",
+      "source_file": "src/data/advanced2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "生成の偏り",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "adv27-019",
+      "source_file": "src/data/advanced2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "モデル選択",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "adv27-020",
+      "source_file": "src/data/advanced2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "音声処理",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "adv27-091",
+      "source_file": "src/data/advanced2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "事実と推測",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "adv27-092",
+      "source_file": "src/data/advanced2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "プロンプト改善",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "adv27-093",
+      "source_file": "src/data/advanced2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "要約品質",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "adv27-094",
+      "source_file": "src/data/advanced2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "創作と事実",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "adv27-095",
+      "source_file": "src/data/advanced2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "モデルの限界",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "adv27-096",
+      "source_file": "src/data/advanced2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "画像生成",
+      "proposed_small_topics": [
+        "2-6-1"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "adv27-097",
+      "source_file": "src/data/advanced2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "プロンプト例示",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "adv27-098",
+      "source_file": "src/data/advanced2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "出力の長さ",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "adv27-099",
+      "source_file": "src/data/advanced2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "多言語対応",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "adv27-100",
+      "source_file": "src/data/advanced2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "引用",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "pr27-005",
+      "source_file": "src/data/practice2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "Top-p",
+      "proposed_small_topics": [
+        "2-3-5"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "pr27-006",
+      "source_file": "src/data/practice2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "指示チューニング",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "pr27-007",
+      "source_file": "src/data/practice2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "出力の揺らぎ",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "pr27-008",
+      "source_file": "src/data/practice2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "長文入力",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "pr27-028",
+      "source_file": "src/data/practice2027Questions.ts",
+      "legacy_chapter": "第1章 AIの基礎",
+      "legacy_topic": "識別系AIと生成系AI・評価指標",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "pr27-030",
+      "source_file": "src/data/practice2027Questions.ts",
+      "legacy_chapter": "第1章 AIの基礎",
+      "legacy_topic": "転移学習",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "pr27-037",
+      "source_file": "src/data/practice2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "トークン",
+      "proposed_small_topics": [
+        "2-3-1"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "pr27-038",
+      "source_file": "src/data/practice2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "温度",
+      "proposed_small_topics": [
+        "2-3-5"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "pr27-039",
+      "source_file": "src/data/practice2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "ハルシネーション",
+      "proposed_small_topics": [
+        "2-3-4"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "pr27-040",
+      "source_file": "src/data/practice2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "Few-shot",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "pr27-041",
+      "source_file": "src/data/practice2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "Zero-shot",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "pr27-042",
+      "source_file": "src/data/practice2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "マルチモーダル",
+      "proposed_small_topics": [
+        "2-1-4",
+        "2-5-4"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "pr27-043",
+      "source_file": "src/data/practice2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "拡散モデル",
+      "proposed_small_topics": [
+        "2-1-3"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "pr27-044",
+      "source_file": "src/data/practice2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "指示追従",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "pr27-045",
+      "source_file": "src/data/practice2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "事前学習",
+      "proposed_small_topics": [
+        "2-2-1"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "pr27-046",
+      "source_file": "src/data/practice2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "RLHF",
+      "proposed_small_topics": [
+        "2-2-3"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "pr27-047",
+      "source_file": "src/data/practice2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "長文要約",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "pr27-048",
+      "source_file": "src/data/practice2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "出力形式",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "pr27-049",
+      "source_file": "src/data/practice2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "検索と生成",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "pr27-050",
+      "source_file": "src/data/practice2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "音声認識",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "pr27-051",
+      "source_file": "src/data/practice2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "翻訳",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "pr27-052",
+      "source_file": "src/data/practice2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "画像内文字",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-003",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "引用検証",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-004",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "指示の曖昧性",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-013",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "根拠と推測",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-014",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "プロンプト設計",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-023",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "温度パラメータ",
+      "proposed_small_topics": [
+        "2-3-5"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ap27-024",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "トークン制限",
+      "proposed_small_topics": [
+        "2-3-1"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ap27-025",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第3章 生成AIの技術",
+      "legacy_topic": "埋め込み",
+      "proposed_small_topics": [
+        "2-3-2"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ap27-033",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "Few-shot",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-034",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "コンテキスト長",
+      "proposed_small_topics": [
+        "2-3-6"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ap27-043",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "ゼロショット",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-044",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "出力検証",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-053",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "Few-shotの品質",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-054",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "長文要約",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-063",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "検索根拠",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-064",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "不確実性の表現",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-083",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第1章 AIの基礎",
+      "legacy_topic": "深層学習・特徴表現の転移",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-091",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "指示設計",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-092",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "ゼロショット",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-093",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "Few-shot",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-094",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "温度",
+      "proposed_small_topics": [
+        "2-3-5"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ap27-095",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "JSON",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-096",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "C2PA",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-097",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "要約",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-098",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "翻訳",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-099",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "役割指定",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-100",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "文脈長",
+      "proposed_small_topics": [
+        "2-3-6"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ap27-101",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "機密情報",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-102",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "推測",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-103",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "多言語",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-104",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "冗長出力",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-105",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "画像の文字",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-106",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "音声認識",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-107",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "用語統一",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-108",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "注入攻撃",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-109",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "再現性",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-110",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "利用者説明",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-112",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第3章 生成AIの技術",
+      "legacy_topic": "埋め込み",
+      "proposed_small_topics": [
+        "2-3-2"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ap27-191",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "出力形式",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-192",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "禁止事項",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-193",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "比較要約",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-194",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "反例",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-195",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "プロンプト分離",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-196",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "質問の分解",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-197",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "出力長",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-198",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "温度設定",
+      "proposed_small_topics": [
+        "2-3-5"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ap27-199",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "プロンプト評価",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-200",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "システム指示",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-201",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "OCR",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-202",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "多段階生成",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-203",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "生成画像",
+      "proposed_small_topics": [
+        "2-6-1"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ap27-204",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "文字起こし",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-205",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "翻訳校正",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-206",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "出典提示",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-207",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "会話履歴",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-208",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "モデル変更",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-209",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "多様な案",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-210",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "重要事項",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-220",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第3章 生成AIの技術",
+      "legacy_topic": "ファインチューニング",
+      "proposed_small_topics": [
+        "2-2-2"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ap27-285",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第1章 AIの基礎",
+      "legacy_topic": "転移学習・適用可能性",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-291",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "指示の優先順位",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-292",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "根拠不足",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-293",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "要約評価",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-294",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "Few-shotの選定",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-295",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "機密文書の引用",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-296",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "制約の衝突",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-297",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "文書校正",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-298",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "事例生成",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-299",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "トーン調整",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-300",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "モデル出力検査",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-301",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "生成物の出典",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-302",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "数値計算",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-303",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "会話の引継ぎ",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-304",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "マルチモーダル",
+      "proposed_small_topics": [
+        "2-1-4",
+        "2-5-4"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ap27-305",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "温度と正確性",
+      "proposed_small_topics": [
+        "2-3-5"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ap27-306",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "入力情報の優先",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-307",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "反復プロンプト",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-308",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "画像広告",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-309",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "メール生成",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-310",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "生成の監査",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-311",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第3章 生成AIの技術",
+      "legacy_topic": "Transformer",
+      "proposed_small_topics": [
+        "2-1-1"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ap27-312",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第3章 生成AIの技術",
+      "legacy_topic": "位置情報",
+      "proposed_small_topics": [
+        "2-1-1"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ap27-313",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第3章 生成AIの技術",
+      "legacy_topic": "トークナイズ",
+      "proposed_small_topics": [
+        "2-3-1"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ap27-314",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第3章 生成AIの技術",
+      "legacy_topic": "埋め込み評価",
+      "proposed_small_topics": [
+        "2-3-2"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ap27-319",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第3章 生成AIの技術",
+      "legacy_topic": "埋め込み更新",
+      "proposed_small_topics": [
+        "2-3-2"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ap27-321",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第3章 生成AIの技術",
+      "legacy_topic": "ファインチューニング評価",
+      "proposed_small_topics": [
+        "2-2-2"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ap27-391",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "要約の抜け",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-392",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "架空の納期",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-393",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "比較表",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-394",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "引用の検証",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-395",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "Few-shot",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-396",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "注入攻撃",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-397",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "JSON",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-398",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "画像生成",
+      "proposed_small_topics": [
+        "2-6-1"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ap27-399",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "音声認識",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-400",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "翻訳",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-401",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "温度",
+      "proposed_small_topics": [
+        "2-3-5"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ap27-402",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "定型出力",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-403",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "モデル更新",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-404",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "会話制約",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-405",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "要約評価",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-406",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "役割指定",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-407",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "架空事例",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-408",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "計算確認",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-409",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "多言語",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-410",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "資料の鮮度",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-412",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第3章 生成AIの技術",
+      "legacy_topic": "埋め込み",
+      "proposed_small_topics": [
+        "2-3-2"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ap27-423",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第3章 生成AIの技術",
+      "legacy_topic": "蒸留",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-476",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第1章 AIの基礎",
+      "legacy_topic": "Transformer・Self-Attention",
+      "proposed_small_topics": [
+        "2-1-1"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ap27-481",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "システム指示と資料",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-482",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "ハルシネーション",
+      "proposed_small_topics": [
+        "2-3-4"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ap27-483",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "出力制約",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-484",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "要約の忠実性",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-485",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "翻訳と固有名詞",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-486",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "回答拒否",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-487",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "プロンプト評価",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-488",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "マルチモーダル",
+      "proposed_small_topics": [
+        "2-1-4",
+        "2-5-4"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ap27-489",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "生成の再現性",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-490",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "Few-shotの偏り",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-494",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第3章 生成AIの技術",
+      "legacy_topic": "ベクトル更新",
+      "proposed_small_topics": [
+        "2-3-2"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ap27-498",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第3章 生成AIの技術",
+      "legacy_topic": "構造化出力",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-531",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "トークンと文字数",
+      "proposed_small_topics": [
+        "2-3-1"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ap27-532",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "温度設定",
+      "proposed_small_topics": [
+        "2-3-5"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ap27-533",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "文脈依存",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-534",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "プロンプト分離",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-535",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "事実確認",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-536",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "表形式の整合",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-537",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "多言語対応",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-538",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "出力長制限",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-539",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "モデルの更新",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-540",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "要約の省略",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-541",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第3章 生成AIの技術",
+      "legacy_topic": "Attention",
+      "proposed_small_topics": [
+        "2-1-1"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ap27-542",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第3章 生成AIの技術",
+      "legacy_topic": "位置情報",
+      "proposed_small_topics": [
+        "2-1-1"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ap27-543",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第3章 生成AIの技術",
+      "legacy_topic": "自己回帰",
+      "proposed_small_topics": [
+        "2-3-3"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ap27-544",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第3章 生成AIの技術",
+      "legacy_topic": "埋め込み類似度",
+      "proposed_small_topics": [
+        "2-3-2"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ap27-548",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第3章 生成AIの技術",
+      "legacy_topic": "ファインチューニング",
+      "proposed_small_topics": [
+        "2-2-2"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ap27-581",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "オープンウェイト",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-582",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "Few-shot",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-583",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "文書要約の忠実性",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-584",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "曖昧な指示",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-585",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "情報の鮮度",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-586",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "文章校正",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-587",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "出典と回答",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-588",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "機密情報の入力",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-589",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "生成結果の検算",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-590",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "回答の不確実性",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-593",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第3章 生成AIの技術",
+      "legacy_topic": "Embeddingの限界",
+      "proposed_small_topics": [
+        "2-3-2"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ap27-629",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第1章 AIの基礎",
+      "legacy_topic": "AIの歴史・Transformer",
+      "proposed_small_topics": [
+        "2-1-1"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ap27-631",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "文脈の優先順位",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-632",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "出力の網羅性",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-633",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "翻訳の品質",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-634",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "プロンプト評価",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-635",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "要約の責任",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-636",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "多言語の固有名詞",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-637",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "回答の根拠",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-638",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "出力形式",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-639",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "機密とプロンプト",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-640",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "反復生成",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-681",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "役割指定",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-682",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "入力例の設計",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-683",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "推測と事実",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-684",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "プロンプトの改善",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-685",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "生成の限界",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-686",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "制約の優先",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-687",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "機械可読性",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-688",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "複数資料の矛盾",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-689",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "対話履歴",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-690",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "指示のテスト",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-691",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第3章 生成AIの技術",
+      "legacy_topic": "トークン化",
+      "proposed_small_topics": [
+        "2-3-1"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ap27-692",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第3章 生成AIの技術",
+      "legacy_topic": "位置埋め込み",
+      "proposed_small_topics": [
+        "2-1-1",
+        "2-3-2"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ap27-693",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第3章 生成AIの技術",
+      "legacy_topic": "Self-Attention",
+      "proposed_small_topics": [
+        "2-1-1"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ap27-695",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第3章 生成AIの技術",
+      "legacy_topic": "埋め込み",
+      "proposed_small_topics": [
+        "2-3-2"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ap27-698",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第3章 生成AIの技術",
+      "legacy_topic": "ファインチューニング",
+      "proposed_small_topics": [
+        "2-2-2"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ap27-731",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "情報抽出",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-732",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "Few-shotの品質",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-733",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "文章の要約",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-734",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "出力の検証",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-735",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "事実と推測",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-736",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "翻訳の照合",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-737",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "検索結果の信頼性",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-738",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "長文入力",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-739",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "応答の一貫性",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-740",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "プロンプト改善",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-749",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第3章 生成AIの技術",
+      "legacy_topic": "モデル更新",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-781",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第1章 AIの基礎",
+      "legacy_topic": "拡散モデル",
+      "proposed_small_topics": [
+        "2-1-3"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ap27-785",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第1章 AIの基礎",
+      "legacy_topic": "拡散モデル・段階的な生成",
+      "proposed_small_topics": [
+        "2-1-3"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ap27-788",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "LLM",
+      "proposed_small_topics": [
+        "2-4-2"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ap27-789",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "生成と検索",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-790",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "プロンプト設計",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-791",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "ハルシネーション",
+      "proposed_small_topics": [
+        "2-3-4"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ap27-792",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "文書校正",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-793",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "Few-shot",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-794",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "出力の構造",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-795",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "AIと計算",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-796",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "引用の確認",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-797",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "多言語の注意",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-798",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "会話の文脈",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-799",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "指示と資料",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-800",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "生成の再現性",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-801",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "プロンプト評価",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-802",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "長文の網羅",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-803",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "入力の最小化",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-804",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第2章 生成AI",
+      "legacy_topic": "回答の鮮度",
+      "proposed_small_topics": [],
+      "review_status": "manual_review",
+      "decision": null
+    },
+    {
+      "id": "ap27-805",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第3章 生成AIの技術",
+      "legacy_topic": "Attention",
+      "proposed_small_topics": [
+        "2-1-1"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ap27-806",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第3章 生成AIの技術",
+      "legacy_topic": "Embedding",
+      "proposed_small_topics": [
+        "2-3-2"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    },
+    {
+      "id": "ap27-812",
+      "source_file": "src/data/applied2027Questions.ts",
+      "legacy_chapter": "第3章 生成AIの技術",
+      "legacy_topic": "ファインチューニング",
+      "proposed_small_topics": [
+        "2-2-2"
+      ],
+      "review_status": "topic_candidate",
+      "decision": null
+    }
+  ],
+  "coverage_candidates": {
+    "2-1-1": 14,
+    "2-1-2": 1,
+    "2-1-3": 3,
+    "2-1-4": 6,
+    "2-2-1": 2,
+    "2-2-2": 7,
+    "2-2-3": 3,
+    "2-2-4": 0,
+    "2-2-5": 0,
+    "2-3-1": 8,
+    "2-3-2": 16,
+    "2-3-3": 2,
+    "2-3-4": 6,
+    "2-3-5": 11,
+    "2-3-6": 6,
+    "2-4-1": 1,
+    "2-4-2": 2,
+    "2-4-3": 0,
+    "2-5-1": 1,
+    "2-5-2": 0,
+    "2-5-3": 0,
+    "2-5-4": 6,
+    "2-5-5": 0,
+    "2-5-6": 0,
+    "2-5-7": 0,
+    "2-5-8": 0,
+    "2-5-9": 1,
+    "2-6-1": 7,
+    "2-6-2": 0,
+    "2-6-3": 1,
+    "2-6-4": 1
+  },
+  "summary": {
+    "total": 358,
+    "topic_candidate": 98,
+    "manual_review": 260,
+    "zero_candidate_topics": [
+      "2-2-4",
+      "2-2-5",
+      "2-4-3",
+      "2-5-2",
+      "2-5-3",
+      "2-5-5",
+      "2-5-6",
+      "2-5-7",
+      "2-5-8",
+      "2-6-2"
+    ]
+  }
+}
