@@ -40,16 +40,16 @@
   },
   "checkpoint": {
     "phase": "round1",
-    "last_completed_id": "ap27-389",
-    "next_action": "Resume at ap27-390; 20 item-specific findings recorded; ap27-383 rewritten at 28a1cdb and awaits recheck. Fix repeated definitions, check syllabus mapping and validate all source edits.",
+    "last_completed_id": "ap27-529",
+    "next_action": "Continue at ap27-530. 20 individual findings saved; ap27-479 numeric chain rule source edited at ddcd4f8, pending independent recheck. Do not equate audit notes with quality passes.",
     "last_verified_commit": null,
     "round1_passed": 0,
-    "round1_needs_fix": 217,
-    "round1_recheck": 5,
-    "round1_unverified": 78,
+    "round1_needs_fix": 236,
+    "round1_recheck": 6,
+    "round1_unverified": 58,
     "round2_passed": 0,
     "chapter_accepted": false,
-    "next_question_id": "ap27-390",
+    "next_question_id": "ap27-530",
     "cursor_basis": "No individually evidenced passed question; start at first unverified item in ledger order. NONE means no completed audit ID, not no previous editing."
   },
   "items": [
@@ -2945,220 +2945,260 @@
       "id": "ap27-390",
       "file": "applied2027Questions.ts",
       "topic": "第二次AIブーム・IF-THEN規則",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "IF-THEN形式の定義は正しいが、誤答がCNN/VAE/勾配法と異分野で容易。pr27-036/ap27-174と重複し、具体的な競合規則を問う問題へ差し替え。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-471",
       "file": "applied2027Questions.ts",
       "topic": "第二次AIブーム・推論機構",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "推論機構と知識ベースの役割分担は正しいが、ap27-089/ap27-174と重複。実際の推論順序を問う問題へ差し替え。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-472",
       "file": "applied2027Questions.ts",
       "topic": "第三次AIブーム・技術基盤",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "第三次AIブームのデータ・GPUの寄与は正しいが、ap27-180/ap27-189/ap27-190と重複。誤答も無関係な技術で易しい。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-473",
       "file": "applied2027Questions.ts",
       "topic": "AIの基本・ルールベースと学習",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "ルールベースから学習型への切替でデータ代表性と未知データ評価が必要なのは妥当。ap27-031/ap27-378と重複。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-474",
       "file": "applied2027Questions.ts",
       "topic": "AIの歴史・ブームの順序",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "ダートマス会議→エキスパートシステム→深層学習の時系列は正しい。年表の理解として残す余地があるが、他の歴史設問との配分照合が必要。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-475",
       "file": "applied2027Questions.ts",
       "topic": "ニューラルネットワーク・ReLU",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "ReLU(-2)=0、ReLU(3)=3を計算確認。正答は妥当だが、基礎計算として難度ラベルと配分を確認。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-476",
       "file": "applied2027Questions.ts",
       "topic": "Transformer・Self-Attention",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "Self-Attentionの文脈依存表現は正しい。誤答が『固定規則だけ』『位置情報の設計なし』など極端で識別力不足。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-477",
       "file": "applied2027Questions.ts",
       "topic": "ニューラルネットワーク・シグモイド",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "有限の実数入力でシグモイド出力は0と1の間。正答妥当だが、確率校正を伴わず確率と断定しない。誤答が簡単。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-478",
       "file": "applied2027Questions.ts",
       "topic": "ニューラルネットワーク・Softmax",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "Softmaxの確率総和1と順位保存は正しい。ロジット[2,1,0]の数値を解答に活かしておらず、計算問題へ改善。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-479",
       "file": "applied2027Questions.ts",
       "topic": "ニューラルネットワーク・誤差逆伝播",
-      "status": "unverified",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "連鎖律の名称当てを2層の数値計算に差し替え。z=2、y=4、dL/dy=-5、dy/dz=4、dz/dw=2で勾配-40を検算。ソース差し替え後の再検査待ち。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-480",
       "file": "applied2027Questions.ts",
       "topic": "GAN・学習の仕組み",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "GANの生成器と識別器の競合学習は正しいが、ap27-175とほぼ重複。誤答が役割逆転・固定規則等で容易。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-521",
       "file": "applied2027Questions.ts",
       "topic": "AIの基本・AIとロボット",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "AIとロボットの区別は妥当。誤答が『必ずAI』『ロボット内部のみ』等の断定で易しい。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-522",
       "file": "applied2027Questions.ts",
       "topic": "VAE・再パラメータ化",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "VAEの再パラメータ化の説明は正しい。潜在変数のノイズ分離と勾配経路の理解を深める選択肢に改善。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-523",
       "file": "applied2027Questions.ts",
       "topic": "識別系AI・予測スコア",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "分類スコア校正の必要性はap27-282/ap27-379と重複。犬0.7/猫0.3の設定が単純で選択肢も容易。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-524",
       "file": "applied2027Questions.ts",
       "topic": "CNN・パディング",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "3×3ストライド1で周囲1画素のパディングは正しい（通常のdilation=1を前提）。誤答が色チャンネル数など無関係。出力サイズ計算へ改善。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-525",
       "file": "applied2027Questions.ts",
       "topic": "機械学習・ノーフリーランチ定理",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "ノーフリーランチ定理の実務的な解釈は妥当。ただし定理自体の成立条件を省略しているため『どの課題でも等しい』等の誤答との区別を明確化。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-526",
       "file": "applied2027Questions.ts",
       "topic": "CNN・プーリング",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "2×2最大プーリングの局所最大値による縮小は妥当。誤答が『クラスラベル必ず生成』等の明白な誤り。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-527",
       "file": "applied2027Questions.ts",
       "topic": "ニューラルネットワーク・隠れ層",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "隠れ層の中間表現は正しい。誤答が『教師ラベルへ置換』『逆方向だけ』等の不自然な否定。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-528",
       "file": "applied2027Questions.ts",
       "topic": "機械学習・正解率",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "A=30/40=75%、B=30/60=50%を計算確認。正答は妥当だが、単純な百分率計算として応用難度との整合を確認。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-529",
       "file": "applied2027Questions.ts",
       "topic": "LSTM・ゲートの役割",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "LSTM入力ゲートの役割は妥当。ap27-077/ap27-081/ap27-375とゲート概念が重複。忘却・入力・出力ゲートの具体的な比較へ改善。"
+      ],
       "verified_at_commit": null
     },
     {
