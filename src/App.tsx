@@ -179,12 +179,14 @@ export default function App() {
   const statsByChapter = useMemo(() => chapterStats(stats), [stats])
   const questionIds = useMemo(() => questions.map((q) => q.id), [questions])
 
+  // Embedded scoring accepts only canonical q001-q300 IDs; standalone study can use the full bank.
+  const scoredQuestionBank = learnerScope ? questionBank : activeQuestionBank
+
   function startDaily() {
     completionGuard.current = false
     setMode('study')
     setSelectedChapter(CHAPTERS[0])
-    // Scored sessions stay on the foundational 300 so navi passport-score-submit keys match.
-    setQuestions(buildDailySet(questionBank, progress, 10).map(randomizeChoices))
+    setQuestions(buildDailySet(scoredQuestionBank, progress, 10).map(randomizeChoices))
     setAnswers({})
     setCurrentIndex(0)
     setShowUnansweredOnly(false)
@@ -195,7 +197,7 @@ export default function App() {
     completionGuard.current = false
     setMode('study')
     setSelectedChapter(chapter)
-    setQuestions(buildDailySet(questionBank, progress, 10, new Date(), chapter).map(randomizeChoices))
+    setQuestions(buildDailySet(scoredQuestionBank, progress, 10, new Date(), chapter).map(randomizeChoices))
     setAnswers({})
     setCurrentIndex(0)
     setShowUnansweredOnly(false)
@@ -205,7 +207,7 @@ export default function App() {
   function startMock() {
     completionGuard.current = false
     setMode('mock')
-    setQuestions(buildBalancedMock(questionBank, CHAPTERS))
+    setQuestions(buildBalancedMock(scoredQuestionBank, CHAPTERS))
     setAnswers({})
     setSecondsLeft(MOCK_SECONDS)
     setMockDeadline(Date.now() + MOCK_SECONDS * 1000)
@@ -265,6 +267,7 @@ export default function App() {
           <p>{SYLLABUS_NOTE}</p>
           <p className="hint">登録問題数: {questionCount}問（章あたり{chapterQuestionCount[CHAPTERS[0]]}問）</p>
           <p className="hint">スマホ向け：1問ずつ表示・下部ボタン操作・採点後に詳細解説</p>
+          {learnerScope && <p className="hint">連携学習ではサーバー採点対応の基本300問から出題します。追加問題は単独版で学習できます。</p>}
         </header>
 
         <section className="card">
