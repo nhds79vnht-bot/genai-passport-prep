@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "chapter": "第2章 生成AI",
-  "phase": "inventory-and-mapping",
+  "phase": "semantic-mapping-and-scope-decision",
   "status": "in_progress",
   "target_question_count": null,
   "existing_question_count": 300,
@@ -84,7 +84,7 @@
   "checkpoint": {
     "last_completed_id": null,
     "next_question_id": null,
-    "next_action": "Inspect topics and prompts in all legacy chapters; identify transfer candidates for 2027 chapter 2, remove off-syllabus old chapter 2 questions, set target and IDs, then edit in substantive batches.",
+    "next_action": "Semantically review all 358 preliminary candidates and scan remaining items for synonyms; assign each retained question to exactly one of 31 official small topics; move off-topic questions out of chapter 2, then fix target count and edit. Keyword misses do not imply noncoverage.",
     "last_verified_commit": null,
     "chapter_accepted": false
   },
@@ -108,5 +108,13 @@
     "src/data/advanced2027Questions.ts": 20,
     "src/data/practice2027Questions.ts": 20,
     "src/data/applied2027Questions.ts": 171
+  },
+  "inventory_file": "audit/chapter2-candidate-inventory.json",
+  "inventory_commit": "044d317cb4d1e2a62eadb727bdfdc526dc6cd831",
+  "inventory_summary": {
+    "total_parsed": 1499,
+    "legacy_chapter2": 300,
+    "cross_chapter_keyword_candidates": 58,
+    "legacy_chapter2_without_keyword_hit": 253
   }
 }
