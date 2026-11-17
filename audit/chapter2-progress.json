@@ -84,8 +84,8 @@
   "checkpoint": {
     "last_completed_id": "q120",
     "next_question_id": null,
-    "next_action": "First-pass semantic audit of remaining 231 questions (60 base and 171 applied), then finish finite acceptance check",
-    "last_verified_commit": "8614646431829577d9d127f8172fd944df67964c",
+    "next_action": "Complete first-pass choice-by-choice audit of 60 base and 171 applied questions; then second-pass review of corrected defects",
+    "last_verified_commit": "0d781403cad2d1fdd8b7415bd373c7d060075c61",
     "chapter_accepted": false
   },
   "exit_criteria": [
@@ -235,7 +235,7 @@
     "source_commit": "797c43e3be79012ace5577343e5ec3fae2377269"
   },
   "chapter2_audit": {
-    "stage": "first_pass_semantic_audit_continues",
+    "stage": "first_pass_topic_and_prompt_review_completed_choice_semantics_pending",
     "checked": 300,
     "allocation_matched": 31,
     "missing_topic_or_prompt": 0,
@@ -272,8 +272,8 @@
     "applied_question_duplicate_choices_checked": 171,
     "applied_question_duplicate_choices": 0,
     "blocking_issues": [
-      "Full 300-question semantic verification of unique correct answer and distractor plausibility remains incomplete",
-      "Runtime answer-choice shuffling for 240 row-based questions has not been verified"
+      "Choice-by-choice semantic correctness and distractor plausibility for 231 base/applied questions not fully verified",
+      "Browser/device runtime testing not completed"
     ],
     "runtime_choice_shuffle_verified": true,
     "runtime_shuffle_evidence": "src/lib/examBuilder.ts randomizeChoices maps choices, answers, and choiceNotes through same shuffled indices; prepareSession used by study/mock builders",
@@ -283,6 +283,21 @@
     "source_semantic_review_batch_confirmed_topic_mismatches_fixed": [
       "ex27-031 speech synthesis rather than recognition",
       "adv27-093 context window rather than generic hallucination"
+    ],
+    "prompt_topic_reviewed": 300,
+    "base_prompt_topic_reviewed": 60,
+    "applied_prompt_topic_reviewed": 171,
+    "base_topic_alignment_fixed": [
+      "q068 Gemini question previously tested generic two-brand identification"
+    ],
+    "applied_semantic_duplicate_rewrites": [
+      "ap27-682",
+      "ap27-689",
+      "ap27-734",
+      "ap27-800"
+    ],
+    "multi_answer_questions_remaining": [
+      "q075"
     ]
   }
 }
