@@ -4,7 +4,7 @@
   "phase": "inventory-and-mapping",
   "status": "in_progress",
   "target_question_count": null,
-  "existing_question_count": null,
+  "existing_question_count": 300,
   "official_syllabus": {
     "exam_version": "2027年2月試験より適用",
     "url": "https://guga.or.jp/assets/syllabus.pdf",
@@ -84,7 +84,7 @@
   "checkpoint": {
     "last_completed_id": null,
     "next_question_id": null,
-    "next_action": "Count and identify all existing chapter-2 items across six source files, compare each against the 31 official small topics, decide fixed target and edit; do not treat old chapter assignments as authoritative.",
+    "next_action": "Inspect topics and prompts in all legacy chapters; identify transfer candidates for 2027 chapter 2, remove off-syllabus old chapter 2 questions, set target and IDs, then edit in substantive batches.",
     "last_verified_commit": null,
     "chapter_accepted": false
   },
@@ -99,5 +99,14 @@
     "github_actions": false,
     "unbounded_reaudit": false,
     "source_and_ledger_persist_required": true
+  },
+  "existing_question_count_definition": "Only legacy chapter label 第2章 生成AI; NOT syllabus-aligned count. Other legacy chapters may contain applicable questions.",
+  "legacy_chapter2_counts": {
+    "src/data/questionBank.ts": 60,
+    "src/data/syllabus2027Questions.ts": 9,
+    "src/data/expansion2027Questions.ts": 20,
+    "src/data/advanced2027Questions.ts": 20,
+    "src/data/practice2027Questions.ts": 20,
+    "src/data/applied2027Questions.ts": 171
   }
 }
