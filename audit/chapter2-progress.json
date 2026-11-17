@@ -84,8 +84,8 @@
   "checkpoint": {
     "last_completed_id": "q120",
     "next_question_id": null,
-    "next_action": "Complete first-pass choice-by-choice audit of 60 base and 171 applied questions; then second-pass review of corrected defects",
-    "last_verified_commit": "0d781403cad2d1fdd8b7415bd373c7d060075c61",
+    "next_action": "Continue first-pass choice-by-choice verification and distractor improvement; do not declare chapter accepted until full pass",
+    "last_verified_commit": "031489b3d0025a8da1d719549b99e9e17121221c",
     "chapter_accepted": false
   },
   "exit_criteria": [
@@ -235,7 +235,7 @@
     "source_commit": "797c43e3be79012ace5577343e5ec3fae2377269"
   },
   "chapter2_audit": {
-    "stage": "first_pass_topic_and_prompt_review_completed_choice_semantics_pending",
+    "stage": "first_pass_choice_semantics_in_progress",
     "checked": 300,
     "allocation_matched": 31,
     "missing_topic_or_prompt": 0,
@@ -298,6 +298,28 @@
     ],
     "multi_answer_questions_remaining": [
       "q075"
+    ],
+    "applied_distractor_sets_rewritten_this_batch": 18,
+    "applied_distractor_choice_count_rewritten_this_batch": 54,
+    "applied_distractor_ids": [
+      "ap27-003",
+      "ap27-004",
+      "ap27-013",
+      "ap27-014",
+      "ap27-024",
+      "ap27-034",
+      "ap27-043",
+      "ap27-044",
+      "ap27-053",
+      "ap27-054",
+      "ap27-064",
+      "ap27-094",
+      "ap27-110",
+      "ap27-399",
+      "ap27-540",
+      "ap27-732",
+      "ap27-733",
+      "ap27-735"
     ]
   }
 }
