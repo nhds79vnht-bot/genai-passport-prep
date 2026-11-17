@@ -41,11 +41,11 @@
   "checkpoint": {
     "phase": "round1-repair",
     "last_completed_id": "ap27-787",
-    "next_action": "Round1 repair: 12 practice questions pr27-001..035 rewritten at 6517970, independently recheck them; 273 needs_fix remain. Continue with pr27-025,026,028,030,031,033,034,036 or other high-duplication rows. Do not advance first-round cursor or claim passed.",
+    "next_action": "All 20 chapter1 practice rows rewritten in two commits 6517970 and 8da2a43. Next: repair chapter1 source bank q or applied duplicates in substantial batches, independently recheck. Preserve IDs and no GitHub Actions.",
     "last_verified_commit": null,
     "round1_passed": 0,
-    "round1_needs_fix": 273,
-    "round1_recheck": 27,
+    "round1_needs_fix": 265,
+    "round1_recheck": 35,
     "round1_unverified": 0,
     "round2_passed": 0,
     "chapter_accepted": false,
@@ -1580,12 +1580,12 @@
       "id": "pr27-025",
       "file": "practice2027Questions.ts",
       "topic": "過学習",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "分布シフトという追加観点は妥当だが、誤答が『混ぜて評価』『無関係』など明白。q015と重複比較。"
+        "問題文・選択肢・解説を実際に改稿（source commit 8da2a43）。単純な定義選択から評価・判断を要する設問へ変更。選択肢の一意性・独立品質・シラバス再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -1593,12 +1593,12 @@
       "id": "pr27-026",
       "file": "practice2027Questions.ts",
       "topic": "ルールベースの限界",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "固定ルールの言い換え限界について、誤答3つがいずれも『自動的に網羅できる』趣旨の変形。選択肢の独立性を改善。q037と重複。"
+        "問題文・選択肢・解説を実際に改稿（source commit 8da2a43）。単純な定義選択から評価・判断を要する設問へ変更。選択肢の一意性・独立品質・シラバス再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -1619,12 +1619,12 @@
       "id": "pr27-028",
       "file": "practice2027Questions.ts",
       "topic": "識別系AIと生成系AI・評価指標",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "識別系と生成系の評価指標を比較する点は有用だが、正答以外は指標の入れ替え・正解率だけ・パラメータ数だけで容易に除外可能。"
+        "問題文・選択肢・解説を実際に改稿（source commit 8da2a43）。不良再現率90/100=90%を確認。選択肢の一意性・独立品質・シラバス再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -1645,12 +1645,12 @@
       "id": "pr27-030",
       "file": "practice2027Questions.ts",
       "topic": "転移学習",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "転移学習に対し『全知識の削除』『データ暗号化』は無関係で容易に除外。q035と概念重複。"
+        "問題文・選択肢・解説を実際に改稿（source commit 8da2a43）。単純な定義選択から評価・判断を要する設問へ変更。選択肢の一意性・独立品質・シラバス再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -1658,12 +1658,12 @@
       "id": "pr27-031",
       "file": "practice2027Questions.ts",
       "topic": "クラスタリング",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "q010と『顧客3群の意味づけ』が実質重複。群の安定性の評価など別観点に差し替え。"
+        "問題文・選択肢・解説を実際に改稿（source commit 8da2a43）。単純な定義選択から評価・判断を要する設問へ変更。選択肢の一意性・独立品質・シラバス再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -1684,12 +1684,12 @@
       "id": "pr27-033",
       "file": "practice2027Questions.ts",
       "topic": "次元削減",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "PCAの定義は妥当だが、誤答が『情報損失なし』『必ず向上』など極端な断定。分散最大化と予測性能の違いを精密に問う。"
+        "問題文・選択肢・解説を実際に改稿（source commit 8da2a43）。累積寄与率50%+25%+15%=90%、最小3個を確認。選択肢の一意性・独立品質・シラバス再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -1697,12 +1697,12 @@
       "id": "pr27-034",
       "file": "practice2027Questions.ts",
       "topic": "損失関数",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "損失関数に対しトークン化・暗号化など無関係な誤答が複数。q056と実質重複。"
+        "問題文・選択肢・解説を実際に改稿（source commit 8da2a43）。y=1、p=0.8で損失=-ln(0.8)≒0.223を確認。選択肢の一意性・独立品質・シラバス再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -1723,12 +1723,12 @@
       "id": "pr27-036",
       "file": "practice2027Questions.ts",
       "topic": "第二次AIブーム・規則の競合",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "規則の競合・優先順位という応用観点は妥当。『2つ以上で推論不可』『競合は自動的に消える』が極端で選択肢改善。"
+        "問題文・選択肢・解説を実際に改稿（source commit 8da2a43）。単純な定義選択から評価・判断を要する設問へ変更。選択肢の一意性・独立品質・シラバス再検査待ち。"
       ],
       "verified_at_commit": null
     },
