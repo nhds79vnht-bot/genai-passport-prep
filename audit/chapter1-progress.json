@@ -40,12 +40,12 @@
   },
   "checkpoint": {
     "phase": "round1-repair",
-    "last_completed_id": "s27-033",
-    "next_action": "Continue round1-repair at ex27-001 in expansion2027Questions.ts",
+    "last_completed_id": "ex27-010",
+    "next_action": "Continue round1-repair at ex27-011",
     "last_verified_commit": null,
     "round1_passed": 0,
-    "round1_needs_fix": 196,
-    "round1_recheck": 104,
+    "round1_needs_fix": 186,
+    "round1_recheck": 114,
     "round1_unverified": 0,
     "round2_passed": 0,
     "chapter_accepted": false,
@@ -1007,12 +1007,13 @@
       "id": "ex27-001",
       "file": "expansion2027Questions.ts",
       "topic": "AIの歴史・第一次AIブーム",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "AI史の年代・研究潮流を問う選択肢に、他時代の用語や明白な誤答が混在しないか精査が必要。q003/q027/q034/q052/q054/q059等との重複比較が必要。"
+        "AI史の年代・研究潮流を問う選択肢に、他時代の用語や明白な誤答が混在しないか精査が必要。q003/q027/q034/q052/q054/q059等との重複比較が必要。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -1020,12 +1021,13 @@
       "id": "ex27-002",
       "file": "expansion2027Questions.ts",
       "topic": "AIの歴史・第二次AIブーム",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "AI史の年代・研究潮流を問う選択肢に、他時代の用語や明白な誤答が混在しないか精査が必要。q003/q027/q034/q052/q054/q059等との重複比較が必要。"
+        "AI史の年代・研究潮流を問う選択肢に、他時代の用語や明白な誤答が混在しないか精査が必要。q003/q027/q034/q052/q054/q059等との重複比較が必要。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -1033,12 +1035,13 @@
       "id": "ex27-003",
       "file": "expansion2027Questions.ts",
       "topic": "AIの歴史・第三次AIブーム",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "AI史の年代・研究潮流を問う選択肢に、他時代の用語や明白な誤答が混在しないか精査が必要。q003/q027/q034/q052/q054/q059等との重複比較が必要。"
+        "AI史の年代・研究潮流を問う選択肢に、他時代の用語や明白な誤答が混在しないか精査が必要。q003/q027/q034/q052/q054/q059等との重複比較が必要。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -1046,12 +1049,13 @@
       "id": "ex27-004",
       "file": "expansion2027Questions.ts",
       "topic": "機械学習",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "誤答選択肢の妥当性と個別解説を改善対象として記録。正答・小項目・重複は全件横断監査で再確認。"
+        "誤答選択肢の妥当性と個別解説を改善対象として記録。正答・小項目・重複は全件横断監査で再確認。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -1059,12 +1063,13 @@
       "id": "ex27-005",
       "file": "expansion2027Questions.ts",
       "topic": "ニューラルネットワーク",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "ネットワークの構造・学習手順の概念混同を問う誤答の品質を確認。q013/q014/q024/q040/q050/q053/q056との重複比較が必要。"
+        "ネットワークの構造・学習手順の概念混同を問う誤答の品質を確認。q013/q014/q024/q040/q050/q053/q056との重複比較が必要。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -1072,12 +1077,13 @@
       "id": "ex27-006",
       "file": "expansion2027Questions.ts",
       "topic": "深層学習・階層的表現",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "ネットワークの構造・学習手順の概念混同を問う誤答の品質を確認。q013/q014/q024/q040/q050/q053/q056との重複比較が必要。"
+        "ネットワークの構造・学習手順の概念混同を問う誤答の品質を確認。q013/q014/q024/q040/q050/q053/q056との重複比較が必要。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -1085,12 +1091,13 @@
       "id": "ex27-007",
       "file": "expansion2027Questions.ts",
       "topic": "特徴量",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "誤答選択肢の妥当性と個別解説を改善対象として記録。正答・小項目・重複は全件横断監査で再確認。"
+        "誤答選択肢の妥当性と個別解説を改善対象として記録。正答・小項目・重複は全件横断監査で再確認。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -1098,12 +1105,13 @@
       "id": "ex27-008",
       "file": "expansion2027Questions.ts",
       "topic": "学習と推論・再学習判断",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "誤答選択肢の妥当性と個別解説を改善対象として記録。正答・小項目・重複は全件横断監査で再確認。"
+        "誤答選択肢の妥当性と個別解説を改善対象として記録。正答・小項目・重複は全件横断監査で再確認。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -1111,12 +1119,13 @@
       "id": "ex27-009",
       "file": "expansion2027Questions.ts",
       "topic": "機械学習・代表性",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "誤答選択肢の妥当性と個別解説を改善対象として記録。正答・小項目・重複は全件横断監査で再確認。"
+        "誤答選択肢の妥当性と個別解説を改善対象として記録。正答・小項目・重複は全件横断監査で再確認。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -1124,12 +1133,13 @@
       "id": "ex27-010",
       "file": "expansion2027Questions.ts",
       "topic": "機械学習・検証とテスト",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "誤答選択肢の妥当性と個別解説を改善対象として記録。正答・小項目・重複は全件横断監査で再確認。"
+        "誤答選択肢の妥当性と個別解説を改善対象として記録。正答・小項目・重複は全件横断監査で再確認。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
