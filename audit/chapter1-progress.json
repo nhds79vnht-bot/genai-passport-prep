@@ -39,13 +39,13 @@
     "final_pass": "all 300 reaudited, zero blocking findings"
   },
   "checkpoint": {
-    "phase": "round1-repair",
-    "last_completed_id": "ap27-674",
-    "next_action": "Continue round1-repair at next needs_fix in applied2027Questions.ts",
+    "phase": "round2-independent-recheck",
+    "last_completed_id": "ap27-787",
+    "next_action": "Start independent recheck of 300 chapter 1 questions against syllabus, duplicates, correctness, distractors and explanations",
     "last_verified_commit": null,
     "round1_passed": 0,
-    "round1_needs_fix": 26,
-    "round1_recheck": 274,
+    "round1_needs_fix": 0,
+    "round1_recheck": 300,
     "round1_unverified": 0,
     "round2_passed": 0,
     "chapter_accepted": false,
@@ -3764,12 +3764,13 @@
       "id": "ap27-676",
       "file": "applied2027Questions.ts",
       "topic": "ルールベース・限界",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "ルールベースの言い換え対応の限界はpr27-026と重複。誤答が『全て理解』『文字列参照不可』と不自然。"
+        "ルールベースの言い換え対応の限界はpr27-026と重複。誤答が『全て理解』『文字列参照不可』と不自然。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3777,12 +3778,13 @@
       "id": "ap27-677",
       "file": "applied2027Questions.ts",
       "topic": "教師あり学習・ラベル品質",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "ラベルの不一致と判定基準の統一は妥当。ap27-725とラベル品質問題が重複。誤答が全正例化等で容易。"
+        "ラベルの不一致と判定基準の統一は妥当。ap27-725とラベル品質問題が重複。誤答が全正例化等で容易。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3790,12 +3792,13 @@
       "id": "ap27-678",
       "file": "applied2027Questions.ts",
       "topic": "半教師あり学習・適用条件",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "半教師あり学習のラベル付き・なし併用はap27-274/ap27-721と重複。誤答が報酬学習等で容易。"
+        "半教師あり学習のラベル付き・なし併用はap27-274/ap27-721と重複。誤答が報酬学習等で容易。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3803,12 +3806,13 @@
       "id": "ap27-679",
       "file": "applied2027Questions.ts",
       "topic": "第二次AIブーム・知識獲得の制約",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "規則競合の検証はap27-289/ap27-390と重複。誤答が『必ず整合』等で容易。"
+        "規則競合の検証はap27-289/ap27-390と重複。誤答が『必ず整合』等で容易。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3816,12 +3820,13 @@
       "id": "ap27-680",
       "file": "applied2027Questions.ts",
       "topic": "機械学習・データ分布",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "室内と屋外の分布差に対する独立評価は妥当。ap27-278とデータ代表性の観点が重複。誤答が『保証』等。"
+        "室内と屋外の分布差に対する独立評価は妥当。ap27-278とデータ代表性の観点が重複。誤答が『保証』等。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3829,12 +3834,13 @@
       "id": "ap27-721",
       "file": "applied2027Questions.ts",
       "topic": "半教師あり学習・評価データ",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "半教師あり学習でも独立した正解付き評価が必要なのは妥当。ap27-674/ap27-678と重複。誤答が100%正解等。"
+        "半教師あり学習でも独立した正解付き評価が必要なのは妥当。ap27-674/ap27-678と重複。誤答が100%正解等。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3842,12 +3848,13 @@
       "id": "ap27-722",
       "file": "applied2027Questions.ts",
       "topic": "ニューラルネットワーク・重み更新",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "教師ありNNの損失・勾配更新は正しいが、ap27-371/ap27-479と概念重複。誤答が『正解ラベル破棄』等。"
+        "教師ありNNの損失・勾配更新は正しいが、ap27-371/ap27-479と概念重複。誤答が『正解ラベル破棄』等。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3855,12 +3862,13 @@
       "id": "ap27-723",
       "file": "applied2027Questions.ts",
       "topic": "機械学習・学習と推論",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "学習と推論の区別は妥当。誤答が『必ず初期化』『入力を使わない』等の極端な否定。"
+        "学習と推論の区別は妥当。誤答が『必ず初期化』『入力を使わない』等の極端な否定。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3868,12 +3876,13 @@
       "id": "ap27-724",
       "file": "applied2027Questions.ts",
       "topic": "過学習・対策",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "過学習への正則化・データ拡張の検証は妥当。ap27-185/ap27-288と重複。誤答が『保証』『評価しない』。"
+        "過学習への正則化・データ拡張の検証は妥当。ap27-185/ap27-288と重複。誤答が『保証』『評価しない』。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3881,12 +3890,13 @@
       "id": "ap27-725",
       "file": "applied2027Questions.ts",
       "topic": "教師あり学習・ラベル品質",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "誤ラベル修正の重要性はap27-677と重複。原因調査の観点を区別した設問へ改善。"
+        "誤ラベル修正の重要性はap27-677と重複。原因調査の観点を区別した設問へ改善。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3894,12 +3904,13 @@
       "id": "ap27-726",
       "file": "applied2027Questions.ts",
       "topic": "識別系AI・画像分類",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "画像分類と画像生成の区別はap27-290旧問題/ap27-287と重複。誤答が撮影機材制御等の異分野。"
+        "画像分類と画像生成の区別はap27-290旧問題/ap27-287と重複。誤答が撮影機材制御等の異分野。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3920,12 +3931,13 @@
       "id": "ap27-728",
       "file": "applied2027Questions.ts",
       "topic": "半教師あり学習・分布の違い",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "昼夜の分布差と夜間の独立評価は妥当。ap27-680と分布シフトの評価重複。誤答が『必ず消える』等。"
+        "昼夜の分布差と夜間の独立評価は妥当。ap27-680と分布シフトの評価重複。誤答が『必ず消える』等。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3946,12 +3958,13 @@
       "id": "ap27-730",
       "file": "applied2027Questions.ts",
       "topic": "第三次AIブーム・データと計算資源",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "第三次AIブームのデータ・GPU・学習技術の相乗効果は妥当だが、ap27-180/ap27-472/ap27-627と重複。誤答が全て『必ず』『不要』。"
+        "第三次AIブームのデータ・GPU・学習技術の相乗効果は妥当だが、ap27-180/ap27-472/ap27-627と重複。誤答が全て『必ず』『不要』。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3959,12 +3972,13 @@
       "id": "ap27-771",
       "file": "applied2027Questions.ts",
       "topic": "エキスパートシステム・保守",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "医療知識の更新時に知識ベースの保守が必要なのは妥当。ap27-177/ap27-389と重複。誤答が画像生成器等の無関係な技術。"
+        "医療知識の更新時に知識ベースの保守が必要なのは妥当。ap27-177/ap27-389と重複。誤答が画像生成器等の無関係な技術。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3972,12 +3986,13 @@
       "id": "ap27-772",
       "file": "applied2027Questions.ts",
       "topic": "チューリングテスト",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "チューリングテストの対話評価と意識の証明を区別する点は妥当。ap27-576/pr27-001と重複。"
+        "チューリングテストの対話評価と意識の証明を区別する点は妥当。ap27-576/pr27-001と重複。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3985,12 +4000,13 @@
       "id": "ap27-773",
       "file": "applied2027Questions.ts",
       "topic": "教師なし学習・目的",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "教師なしクラスタリングは事前の正解グループ名が不要なのは妥当。ap27-173旧問題/ap27-031と重複。誤答が『自動的に優良・不良』等。"
+        "教師なしクラスタリングは事前の正解グループ名が不要なのは妥当。ap27-173旧問題/ap27-031と重複。誤答が『自動的に優良・不良』等。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -4011,12 +4027,13 @@
       "id": "ap27-775",
       "file": "applied2027Questions.ts",
       "topic": "第一次AIブーム・推論",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "第一次AIブームの探索・推論の説明は妥当。pr27-021と重複。誤答が深層学習/GAN/LLMで時代差が明白。"
+        "第一次AIブームの探索・推論の説明は妥当。pr27-021と重複。誤答が深層学習/GAN/LLMで時代差が明白。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -4024,12 +4041,13 @@
       "id": "ap27-776",
       "file": "applied2027Questions.ts",
       "topic": "識別系と生成系",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "識別系と生成系の名称選択はap27-290旧問題/ap27-287と重複。誤答が単なる入れ替えで容易。"
+        "識別系と生成系の名称選択はap27-290旧問題/ap27-287と重複。誤答が単なる入れ替えで容易。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -4037,12 +4055,13 @@
       "id": "ap27-777",
       "file": "applied2027Questions.ts",
       "topic": "教師あり学習・分類",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "手書き数字0〜9の教師あり多クラス分類は妥当。回帰・クラスタリング・強化学習との違いを確認する基礎問題だが、選択肢が単純。"
+        "手書き数字0〜9の教師あり多クラス分類は妥当。回帰・クラスタリング・強化学習との違いを確認する基礎問題だが、選択肢が単純。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -4050,12 +4069,13 @@
       "id": "ap27-778",
       "file": "applied2027Questions.ts",
       "topic": "深層学習・特徴抽出",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "深層学習の特徴表現学習はap27-201/ap27-278と重複。誤答が『全て手書き』『推論不可』等で容易。"
+        "深層学習の特徴表現学習はap27-201/ap27-278と重複。誤答が『全て手書き』『推論不可』等で容易。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -4063,12 +4083,13 @@
       "id": "ap27-779",
       "file": "applied2027Questions.ts",
       "topic": "正則化・目的",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "正則化で汎化改善を狙う説明は妥当。pr27-035/ap27-386と重複。誤答が『全重み最大化』『ラベル消去』等で容易。"
+        "正則化で汎化改善を狙う説明は妥当。pr27-035/ap27-386と重複。誤答が『全重み最大化』『ラベル消去』等で容易。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -4102,12 +4123,13 @@
       "id": "ap27-782",
       "file": "applied2027Questions.ts",
       "topic": "シンギュラリティ・仮説",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "シンギュラリティは実現時期が未確定の仮説という説明は妥当。ap27-192/q060と重複。誤答が到来日確定等。"
+        "シンギュラリティは実現時期が未確定の仮説という説明は妥当。ap27-192/q060と重複。誤答が到来日確定等。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -4115,12 +4137,13 @@
       "id": "ap27-783",
       "file": "applied2027Questions.ts",
       "topic": "VAE・GANの違い",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "VAEとGANの枠組みの比較は妥当。誤答が『固定ルール』『完全に同じ』で容易。潜在変数・目的関数の違いへ改善。"
+        "VAEとGANの枠組みの比較は妥当。誤答が『固定ルール』『完全に同じ』で容易。潜在変数・目的関数の違いへ改善。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -4128,12 +4151,13 @@
       "id": "ap27-784",
       "file": "applied2027Questions.ts",
       "topic": "VAE・潜在ベクトル",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "VAE潜在ベクトルの名称当てはap27-181/ap27-522と重複。誤答が画素数/累積報酬等で容易。"
+        "VAE潜在ベクトルの名称当てはap27-181/ap27-522と重複。誤答が画素数/累積報酬等で容易。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -4141,12 +4165,13 @@
       "id": "ap27-785",
       "file": "applied2027Questions.ts",
       "topic": "拡散モデル・段階的な生成",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "拡散モデルのノイズ除去説明はap27-781の旧問題と重複。ステップと品質の評価に差し替え候補。"
+        "拡散モデルのノイズ除去説明はap27-781の旧問題と重複。ステップと品質の評価に差し替え候補。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -4167,12 +4192,13 @@
       "id": "ap27-787",
       "file": "applied2027Questions.ts",
       "topic": "シンギュラリティ・概念",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "シンギュラリティの名称当てはap27-782/ap27-192と重複。誤答が交差検証等の異分野。"
+        "シンギュラリティの名称当てはap27-782/ap27-192と重複。誤答が交差検証等の異分野。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     }
