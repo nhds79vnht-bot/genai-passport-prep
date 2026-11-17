@@ -78,14 +78,14 @@
     "src/data/expansion2027Questions.ts": "5c445426ecb4481c7af71f10a5968f324f605abd",
     "src/data/advanced2027Questions.ts": "94eac33cd7b07ae27b6d1ddbb32308fb347559ce",
     "src/data/practice2027Questions.ts": "08cf5035884532d6eab98ed7fbb8628c7656b4e2",
-    "src/data/applied2027Questions.ts": "837c8d96ba092868bec1f878acb3fbd757ab6c5d"
+    "src/data/applied2027Questions.ts": "148426eae4c6c495c1f689368a965d38c11d7438"
   },
   "items": [],
   "checkpoint": {
     "last_completed_id": "q120",
     "next_question_id": null,
-    "next_action": "Rewrite remaining 89 applied chapter-2 questions, reconcile allocations, independently audit",
-    "last_verified_commit": "512f32c16b4ad8e7d301fa85fc2d4d0d57eb6c6c",
+    "next_action": "Rewrite remaining 58 applied chapter-2 questions; reconcile 31-topic distribution and audit",
+    "last_verified_commit": "80c2e3c1a8127b4676e05799d2ffca5f47744fde",
     "chapter_accepted": false
   },
   "exit_criteria": [
@@ -200,14 +200,21 @@
       "commit": "512f32c16b4ad8e7d301fa85fc2d4d0d57eb6c6c",
       "status": "source_updated_pending_independent_audit",
       "purpose": "Rewrite another 31 applied questions across all 2027 topics"
+    },
+    {
+      "file": "src/data/applied2027Questions.ts",
+      "count": 31,
+      "commit": "80c2e3c1a8127b4676e05799d2ffca5f47744fde",
+      "status": "source_updated_pending_independent_audit",
+      "purpose": "Technical rewrite of another 31 applied questions"
     }
   ],
   "allocation_file": "audit/chapter2-allocation-2027.json",
   "allocation_commit": "d54ad11df85489f73c538451542b4e9b4433c9dc",
   "allocation_status": "fixed_31_small_topics",
   "applied_rewrite_progress": {
-    "completed": 82,
+    "completed": 113,
     "total": 171,
-    "remaining": 89
+    "remaining": 58
   }
 }
