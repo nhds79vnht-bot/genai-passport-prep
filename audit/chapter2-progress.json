@@ -78,13 +78,14 @@
     "src/data/expansion2027Questions.ts": "5c445426ecb4481c7af71f10a5968f324f605abd",
     "src/data/advanced2027Questions.ts": "94eac33cd7b07ae27b6d1ddbb32308fb347559ce",
     "src/data/practice2027Questions.ts": "08cf5035884532d6eab98ed7fbb8628c7656b4e2",
-    "src/data/applied2027Questions.ts": "21cd541cb081e60c6830c1489ed251ba65105262"
+    "src/data/applied2027Questions.ts": "21cd541cb081e60c6830c1489ed251ba65105262",
+    "src/App.tsx": "0b4ceec8b0564871ad478f19733d7277542f8517"
   },
   "items": [],
   "checkpoint": {
     "last_completed_id": "q120",
     "next_question_id": null,
-    "next_action": "Resolve chapter-2 study/mock bank integration with score submission contract; then bounded semantic audit and Safari device test",
+    "next_action": "Run build/browser tests for standalone full-bank integration; bounded semantic review of chapter 2; separately plan embedded server score expansion",
     "last_verified_commit": "1a1a089d18cc89905f985aecc52c0daf3f006408",
     "chapter_accepted": false
   },
@@ -445,6 +446,13 @@
       "affected": "chapter study, daily study, 60-question mock",
       "weak_drill": "buildWeakDrill uses activeQuestionBank but requires wrong-question stats; newly added items not routinely reachable",
       "decision": "Do not mark 300-item chapter as delivered until integration is resolved or explicitly scoped"
+    },
+    "integration_fix": {
+      "commit": "2156e69bee1d9311c22e39ac7b0f7d39727bc816",
+      "status": "source_updated_not_built_or_device_tested",
+      "standalone": "daily, chapter study, mock now use activeQuestionBank",
+      "embedded": "retains canonical questionBank to preserve server score validation; added explicit user notice",
+      "remaining": "server-side canonical scoring integration for expanded items; browser smoke test"
     }
   }
 }
