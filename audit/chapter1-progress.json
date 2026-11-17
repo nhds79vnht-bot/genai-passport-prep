@@ -40,12 +40,12 @@
   },
   "checkpoint": {
     "phase": "round1-repair",
-    "last_completed_id": "ap27-289",
+    "last_completed_id": "ap27-471",
     "next_action": "Continue round1-repair at next needs_fix in applied2027Questions.ts",
     "last_verified_commit": null,
     "round1_passed": 0,
-    "round1_needs_fix": 86,
-    "round1_recheck": 214,
+    "round1_needs_fix": 66,
+    "round1_recheck": 234,
     "round1_unverified": 0,
     "round2_passed": 0,
     "chapter_accepted": false,
@@ -2859,12 +2859,13 @@
       "id": "ap27-371",
       "file": "applied2027Questions.ts",
       "topic": "ニューラルネットワーク・誤差逆伝播",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "連鎖律の名称当てはap27-075修正版と概念重複。数値計算または勾配の伝播方向へ差し替え。"
+        "連鎖律の名称当てはap27-075修正版と概念重複。数値計算または勾配の伝播方向へ差し替え。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -2872,12 +2873,13 @@
       "id": "ap27-372",
       "file": "applied2027Questions.ts",
       "topic": "CNN・局所特徴",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "CNNの局所特徴と重み共有はap27-061と重複。誤答が『独立分類器』『重み学習不要』で易しい。"
+        "CNNの局所特徴と重み共有はap27-061と重複。誤答が『独立分類器』『重み学習不要』で易しい。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -2885,12 +2887,13 @@
       "id": "ap27-373",
       "file": "applied2027Questions.ts",
       "topic": "RNN・系列長とパディング",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "パディングをマスクする実装上の注意は妥当。誤答が『実際の単語数が増える』等で容易に除外。"
+        "パディングをマスクする実装上の注意は妥当。誤答が『実際の単語数が増える』等で容易に除外。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -2898,12 +2901,13 @@
       "id": "ap27-374",
       "file": "applied2027Questions.ts",
       "topic": "CNN・ストライドと解像度",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "ストライド2で出力空間サイズが減る説明は妥当。誤答が『入力2倍』『出力必ず増加』で易しい。寸法計算へ改善。"
+        "ストライド2で出力空間サイズが減る説明は妥当。誤答が『入力2倍』『出力必ず増加』で易しい。寸法計算へ改善。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -2911,12 +2915,13 @@
       "id": "ap27-375",
       "file": "applied2027Questions.ts",
       "topic": "LSTM・長期依存",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "LSTMのゲートの説明はap27-077/ap27-081と重複。誤答が無関係な断定に偏る。"
+        "LSTMのゲートの説明はap27-077/ap27-081と重複。誤答が無関係な断定に偏る。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -2924,12 +2929,13 @@
       "id": "ap27-376",
       "file": "applied2027Questions.ts",
       "topic": "ニューラルネットワーク・勾配消失",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "勾配消失への残差接続・活性化関数の対策は妥当。誤答が『必ず増える』『検証データを混ぜる』で容易。"
+        "勾配消失への残差接続・活性化関数の対策は妥当。誤答が『必ず増える』『検証データを混ぜる』で容易。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -2937,12 +2943,13 @@
       "id": "ap27-377",
       "file": "applied2027Questions.ts",
       "topic": "ニューラルネットワーク・勾配爆発",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "勾配爆発へのクリッピングは妥当。誤答が乱数更新・検証無視など不自然。具体的な勾配ノルム比較へ改善。"
+        "勾配爆発へのクリッピングは妥当。誤答が乱数更新・検証無視など不自然。具体的な勾配ノルム比較へ改善。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -2950,12 +2957,13 @@
       "id": "ap27-378",
       "file": "applied2027Questions.ts",
       "topic": "ルールベースと機械学習",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "固定ルールと機械学習の評価はap27-031と重複。誤答が全て評価省略・監視停止。"
+        "固定ルールと機械学習の評価はap27-031と重複。誤答が全て評価省略・監視停止。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -2963,12 +2971,13 @@
       "id": "ap27-379",
       "file": "applied2027Questions.ts",
       "topic": "機械学習・予測確率",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "分類スコア校正の必要性はap27-282と重複。90%の確率解釈と画素割合の誤答が易しい。"
+        "分類スコア校正の必要性はap27-282と重複。90%の確率解釈と画素割合の誤答が易しい。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -2976,12 +2985,13 @@
       "id": "ap27-380",
       "file": "applied2027Questions.ts",
       "topic": "機械学習・運用監視",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "運用後の予測誤差監視はap27-001/ap27-022と重複。誤答が全てデータ収集・評価の放棄。"
+        "運用後の予測誤差監視はap27-001/ap27-022と重複。誤答が全てデータ収集・評価の放棄。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -2989,12 +2999,13 @@
       "id": "ap27-381",
       "file": "applied2027Questions.ts",
       "topic": "ニューラルネットワーク・出力層",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "10クラス分類の出力層は妥当。誤答が10画素・訓練10枚など明白。出力スコアと確率変換の違いを問う。"
+        "10クラス分類の出力層は妥当。誤答が10画素・訓練10枚など明白。出力スコアと確率変換の違いを問う。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3002,12 +3013,13 @@
       "id": "ap27-382",
       "file": "applied2027Questions.ts",
       "topic": "機械学習・学習済みモデル",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "学習済みモデルの移植先評価はap27-021/ap27-285と重複。誤答が全て検証不要・自動更新。"
+        "学習済みモデルの移植先評価はap27-021/ap27-285と重複。誤答が全て検証不要・自動更新。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3028,12 +3040,13 @@
       "id": "ap27-384",
       "file": "applied2027Questions.ts",
       "topic": "AIの基本・定義の幅",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "AIの定義の幅は妥当。誤答が『世界で厳密統一』『必ず深層学習』で容易。定義と技術分類を区別する設問へ改善。"
+        "AIの定義の幅は妥当。誤答が『世界で厳密統一』『必ず深層学習』で容易。定義と技術分類を区別する設問へ改善。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3041,12 +3054,13 @@
       "id": "ap27-385",
       "file": "applied2027Questions.ts",
       "topic": "ニューラルネットワーク・パーセプトロン",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "パーセプトロンの閾値処理は妥当だが、他の選択肢がラベル削除・画像生成・10層追加で無関係。"
+        "パーセプトロンの閾値処理は妥当だが、他の選択肢がラベル削除・画像生成・10層追加で無関係。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3054,12 +3068,13 @@
       "id": "ap27-386",
       "file": "applied2027Questions.ts",
       "topic": "ニューラルネットワーク・多層化",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "非線形活性化による表現力の向上は妥当。誤答が『必ず誤差ゼロ』等で容易。ap27-277との比較。"
+        "非線形活性化による表現力の向上は妥当。誤答が『必ず誤差ゼロ』等で容易。ap27-277との比較。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3067,12 +3082,13 @@
       "id": "ap27-387",
       "file": "applied2027Questions.ts",
       "topic": "ニューラルネットワーク・重み減衰",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "重み減衰の役割はpr27-035と重複。誤答がテストラベル混入・乱数置換で不自然。"
+        "重み減衰の役割はpr27-035と重複。誤答がテストラベル混入・乱数置換で不自然。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3080,12 +3096,13 @@
       "id": "ap27-388",
       "file": "applied2027Questions.ts",
       "topic": "AIの冬・技術評価",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "AIの冬の教訓は妥当だが、誤答が『必ず同精度』『評価不要』など極端。歴史的背景の比較へ改善。"
+        "AIの冬の教訓は妥当だが、誤答が『必ず同精度』『評価不要』など極端。歴史的背景の比較へ改善。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3093,12 +3110,13 @@
       "id": "ap27-389",
       "file": "applied2027Questions.ts",
       "topic": "第二次AIブーム・知識獲得",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "暗黙知の規則化の難しさは妥当。誤答がCNN・RNN・生成モデルで異分野すぎる。知識獲得の実例を比較。"
+        "暗黙知の規則化の難しさは妥当。誤答がCNN・RNN・生成モデルで異分野すぎる。知識獲得の実例を比較。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3106,12 +3124,13 @@
       "id": "ap27-390",
       "file": "applied2027Questions.ts",
       "topic": "第二次AIブーム・IF-THEN規則",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "IF-THEN形式の定義は正しいが、誤答がCNN/VAE/勾配法と異分野で容易。pr27-036/ap27-174と重複し、具体的な競合規則を問う問題へ差し替え。"
+        "IF-THEN形式の定義は正しいが、誤答がCNN/VAE/勾配法と異分野で容易。pr27-036/ap27-174と重複し、具体的な競合規則を問う問題へ差し替え。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3119,12 +3138,13 @@
       "id": "ap27-471",
       "file": "applied2027Questions.ts",
       "topic": "第二次AIブーム・推論機構",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "推論機構と知識ベースの役割分担は正しいが、ap27-089/ap27-174と重複。実際の推論順序を問う問題へ差し替え。"
+        "推論機構と知識ベースの役割分担は正しいが、ap27-089/ap27-174と重複。実際の推論順序を問う問題へ差し替え。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
