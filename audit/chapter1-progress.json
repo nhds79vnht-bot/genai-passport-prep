@@ -41,11 +41,11 @@
   "checkpoint": {
     "phase": "round1-repair",
     "last_completed_id": "ap27-787",
-    "next_action": "All 300 received initial item-level findings. Begin substantive repair of 285 needs_fix and independently recheck 15 revised items; do not mark passed until independently verified. Preserve stable IDs, no GitHub Actions.",
+    "next_action": "Round1 repair: 12 practice questions pr27-001..035 rewritten at 6517970, independently recheck them; 273 needs_fix remain. Continue with pr27-025,026,028,030,031,033,034,036 or other high-duplication rows. Do not advance first-round cursor or claim passed.",
     "last_verified_commit": null,
     "round1_passed": 0,
-    "round1_needs_fix": 285,
-    "round1_recheck": 15,
+    "round1_needs_fix": 273,
+    "round1_recheck": 27,
     "round1_unverified": 0,
     "round2_passed": 0,
     "chapter_accepted": false,
@@ -1476,12 +1476,12 @@
       "id": "pr27-001",
       "file": "practice2027Questions.ts",
       "topic": "AIの歴史・チューリングテスト",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "誤答がROC曲線・勾配降下法・クラスタリングと異なる領域の用語のみで、チューリングテストを容易に選べる。歴史の評価観点を競わせる選択肢へ変更。"
+        "実際に設問・4選択肢・解説を応用型に改稿（source commit 6517970）。選択肢重複なしを確認。独立の正誤・重複・難度・シラバス再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -1489,12 +1489,12 @@
       "id": "pr27-002",
       "file": "practice2027Questions.ts",
       "topic": "学習率",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "学習率の増大による振動は正しいが、他の3択がいずれも単純な逆説。勾配・収束条件を混同させる誤答へ改善。"
+        "実際に設問・4選択肢・解説を応用型に改稿（source commit 6517970）。勾配更新の計算値5を確認。独立の正誤・重複・難度・シラバス再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -1502,12 +1502,12 @@
       "id": "pr27-003",
       "file": "practice2027Questions.ts",
       "topic": "決定木",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "誤答の『枝の名称だけ』『表示形式だけ』は課題と無関係。検証指標・剪定・木の深さの比較へ改善。"
+        "実際に設問・4選択肢・解説を応用型に改稿（source commit 6517970）。選択肢重複なしを確認。独立の正誤・重複・難度・シラバス再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -1515,12 +1515,12 @@
       "id": "pr27-004",
       "file": "practice2027Questions.ts",
       "topic": "強化学習",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "q011およびpr27-029と実質的に同じ報酬に基づく強化学習の名称当て。差し替え候補。"
+        "実際に設問・4選択肢・解説を応用型に改稿（source commit 6517970）。選択肢重複なしを確認。独立の正誤・重複・難度・シラバス再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -1528,12 +1528,12 @@
       "id": "pr27-021",
       "file": "practice2027Questions.ts",
       "topic": "AIの歴史",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "第一次ブームの探索と推論に対しTransformer・拡散モデル・RLHFは年代だけで全て消去可能。q034と重複。"
+        "実際に設問・4選択肢・解説を応用型に改稿（source commit 6517970）。選択肢重複なしを確認。独立の正誤・重複・難度・シラバス再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -1541,12 +1541,12 @@
       "id": "pr27-022",
       "file": "practice2027Questions.ts",
       "topic": "教師なし学習",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "q009と顧客購買クラスタリングの設定・正答が実質重複。GANだけの誤答も不自然。"
+        "実際に設問・4選択肢・解説を応用型に改稿（source commit 6517970）。選択肢重複なしを確認。独立の正誤・重複・難度・シラバス再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -1554,12 +1554,12 @@
       "id": "pr27-023",
       "file": "practice2027Questions.ts",
       "topic": "CNN",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "CNNに対するエキスパートシステム・強化学習方策は異なる種類の概念。CNNと他の画像処理アーキテクチャを比較する設問へ改善。"
+        "実際に設問・4選択肢・解説を応用型に改稿（source commit 6517970）。選択肢重複なしを確認。独立の正誤・重複・難度・シラバス再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -1567,12 +1567,12 @@
       "id": "pr27-024",
       "file": "practice2027Questions.ts",
       "topic": "RNN",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "RNNに対し『決定木だけ』『ルールベースだけ』という不自然な誤答。系列処理手法の比較へ改善。"
+        "実際に設問・4選択肢・解説を応用型に改稿（source commit 6517970）。選択肢重複なしを確認。独立の正誤・重複・難度・シラバス再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -1606,12 +1606,12 @@
       "id": "pr27-027",
       "file": "practice2027Questions.ts",
       "topic": "誤差逆伝播法・勾配の連鎖",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "連鎖律の正答は妥当。『一切影響しない』『毎回ランダム』『損失一切計算しない』の断定で誤答が容易。"
+        "実際に設問・4選択肢・解説を応用型に改稿（source commit 6517970）。連鎖律の計算値-8を確認。独立の正誤・重複・難度・シラバス再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -1632,12 +1632,12 @@
       "id": "pr27-029",
       "file": "practice2027Questions.ts",
       "topic": "強化学習",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "pr27-004とほぼ同じ強化学習の定義当て。両方残さず、報酬設計などの応用へ差し替え。"
+        "実際に設問・4選択肢・解説を応用型に改稿（source commit 6517970）。選択肢重複なしを確認。独立の正誤・重複・難度・シラバス再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -1671,12 +1671,12 @@
       "id": "pr27-032",
       "file": "practice2027Questions.ts",
       "topic": "回帰",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "MAEの正答は妥当だが、適合率・再現率・真陽性数と分類指標だけの比較で易しすぎる。RMSE等の回帰指標を競わせる。"
+        "実際に設問・4選択肢・解説を応用型に改稿（source commit 6517970）。MAE=2、RMSE=√7を確認。独立の正誤・重複・難度・シラバス再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -1710,12 +1710,12 @@
       "id": "pr27-035",
       "file": "practice2027Questions.ts",
       "topic": "正則化",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "L2正則化の定義は妥当だが、『勾配を計算せず固定』等の不自然な誤答。q032との重複比較。"
+        "実際に設問・4選択肢・解説を応用型に改稿（source commit 6517970）。L2勾配0.6を確認。独立の正誤・重複・難度・シラバス再検査待ち。"
       ],
       "verified_at_commit": null
     },
