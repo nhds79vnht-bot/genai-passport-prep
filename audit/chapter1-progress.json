@@ -40,12 +40,12 @@
   },
   "checkpoint": {
     "phase": "round1-repair",
-    "last_completed_id": "ap27-471",
+    "last_completed_id": "ap27-572",
     "next_action": "Continue round1-repair at next needs_fix in applied2027Questions.ts",
     "last_verified_commit": null,
     "round1_passed": 0,
-    "round1_needs_fix": 66,
-    "round1_recheck": 234,
+    "round1_needs_fix": 46,
+    "round1_recheck": 254,
     "round1_unverified": 0,
     "round2_passed": 0,
     "chapter_accepted": false,
@@ -3152,12 +3152,13 @@
       "id": "ap27-472",
       "file": "applied2027Questions.ts",
       "topic": "第三次AIブーム・技術基盤",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "第三次AIブームのデータ・GPUの寄与は正しいが、ap27-180/ap27-189/ap27-190と重複。誤答も無関係な技術で易しい。"
+        "第三次AIブームのデータ・GPUの寄与は正しいが、ap27-180/ap27-189/ap27-190と重複。誤答も無関係な技術で易しい。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3165,12 +3166,13 @@
       "id": "ap27-473",
       "file": "applied2027Questions.ts",
       "topic": "AIの基本・ルールベースと学習",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "ルールベースから学習型への切替でデータ代表性と未知データ評価が必要なのは妥当。ap27-031/ap27-378と重複。"
+        "ルールベースから学習型への切替でデータ代表性と未知データ評価が必要なのは妥当。ap27-031/ap27-378と重複。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3178,12 +3180,13 @@
       "id": "ap27-474",
       "file": "applied2027Questions.ts",
       "topic": "AIの歴史・ブームの順序",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "ダートマス会議→エキスパートシステム→深層学習の時系列は正しい。年表の理解として残す余地があるが、他の歴史設問との配分照合が必要。"
+        "ダートマス会議→エキスパートシステム→深層学習の時系列は正しい。年表の理解として残す余地があるが、他の歴史設問との配分照合が必要。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3191,12 +3194,13 @@
       "id": "ap27-475",
       "file": "applied2027Questions.ts",
       "topic": "ニューラルネットワーク・ReLU",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "ReLU(-2)=0、ReLU(3)=3を計算確認。正答は妥当だが、基礎計算として難度ラベルと配分を確認。"
+        "ReLU(-2)=0、ReLU(3)=3を計算確認。正答は妥当だが、基礎計算として難度ラベルと配分を確認。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3204,12 +3208,13 @@
       "id": "ap27-476",
       "file": "applied2027Questions.ts",
       "topic": "Transformer・Self-Attention",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "Self-Attentionの文脈依存表現は正しい。誤答が『固定規則だけ』『位置情報の設計なし』など極端で識別力不足。"
+        "Self-Attentionの文脈依存表現は正しい。誤答が『固定規則だけ』『位置情報の設計なし』など極端で識別力不足。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3217,12 +3222,13 @@
       "id": "ap27-477",
       "file": "applied2027Questions.ts",
       "topic": "ニューラルネットワーク・シグモイド",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "有限の実数入力でシグモイド出力は0と1の間。正答妥当だが、確率校正を伴わず確率と断定しない。誤答が簡単。"
+        "有限の実数入力でシグモイド出力は0と1の間。正答妥当だが、確率校正を伴わず確率と断定しない。誤答が簡単。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3230,12 +3236,13 @@
       "id": "ap27-478",
       "file": "applied2027Questions.ts",
       "topic": "ニューラルネットワーク・Softmax",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "Softmaxの確率総和1と順位保存は正しい。ロジット[2,1,0]の数値を解答に活かしておらず、計算問題へ改善。"
+        "Softmaxの確率総和1と順位保存は正しい。ロジット[2,1,0]の数値を解答に活かしておらず、計算問題へ改善。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3256,12 +3263,13 @@
       "id": "ap27-480",
       "file": "applied2027Questions.ts",
       "topic": "GAN・学習の仕組み",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "GANの生成器と識別器の競合学習は正しいが、ap27-175とほぼ重複。誤答が役割逆転・固定規則等で容易。"
+        "GANの生成器と識別器の競合学習は正しいが、ap27-175とほぼ重複。誤答が役割逆転・固定規則等で容易。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3269,12 +3277,13 @@
       "id": "ap27-521",
       "file": "applied2027Questions.ts",
       "topic": "AIの基本・AIとロボット",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "AIとロボットの区別は妥当。誤答が『必ずAI』『ロボット内部のみ』等の断定で易しい。"
+        "AIとロボットの区別は妥当。誤答が『必ずAI』『ロボット内部のみ』等の断定で易しい。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3282,12 +3291,13 @@
       "id": "ap27-522",
       "file": "applied2027Questions.ts",
       "topic": "VAE・再パラメータ化",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "VAEの再パラメータ化の説明は正しい。潜在変数のノイズ分離と勾配経路の理解を深める選択肢に改善。"
+        "VAEの再パラメータ化の説明は正しい。潜在変数のノイズ分離と勾配経路の理解を深める選択肢に改善。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3295,12 +3305,13 @@
       "id": "ap27-523",
       "file": "applied2027Questions.ts",
       "topic": "識別系AI・予測スコア",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "分類スコア校正の必要性はap27-282/ap27-379と重複。犬0.7/猫0.3の設定が単純で選択肢も容易。"
+        "分類スコア校正の必要性はap27-282/ap27-379と重複。犬0.7/猫0.3の設定が単純で選択肢も容易。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3308,12 +3319,13 @@
       "id": "ap27-524",
       "file": "applied2027Questions.ts",
       "topic": "CNN・パディング",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "3×3ストライド1で周囲1画素のパディングは正しい（通常のdilation=1を前提）。誤答が色チャンネル数など無関係。出力サイズ計算へ改善。"
+        "3×3ストライド1で周囲1画素のパディングは正しい（通常のdilation=1を前提）。誤答が色チャンネル数など無関係。出力サイズ計算へ改善。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3321,12 +3333,13 @@
       "id": "ap27-525",
       "file": "applied2027Questions.ts",
       "topic": "機械学習・ノーフリーランチ定理",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "ノーフリーランチ定理の実務的な解釈は妥当。ただし定理自体の成立条件を省略しているため『どの課題でも等しい』等の誤答との区別を明確化。"
+        "ノーフリーランチ定理の実務的な解釈は妥当。ただし定理自体の成立条件を省略しているため『どの課題でも等しい』等の誤答との区別を明確化。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3334,12 +3347,13 @@
       "id": "ap27-526",
       "file": "applied2027Questions.ts",
       "topic": "CNN・プーリング",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "2×2最大プーリングの局所最大値による縮小は妥当。誤答が『クラスラベル必ず生成』等の明白な誤り。"
+        "2×2最大プーリングの局所最大値による縮小は妥当。誤答が『クラスラベル必ず生成』等の明白な誤り。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3347,12 +3361,13 @@
       "id": "ap27-527",
       "file": "applied2027Questions.ts",
       "topic": "ニューラルネットワーク・隠れ層",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "隠れ層の中間表現は正しい。誤答が『教師ラベルへ置換』『逆方向だけ』等の不自然な否定。"
+        "隠れ層の中間表現は正しい。誤答が『教師ラベルへ置換』『逆方向だけ』等の不自然な否定。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3360,12 +3375,13 @@
       "id": "ap27-528",
       "file": "applied2027Questions.ts",
       "topic": "機械学習・正解率",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "A=30/40=75%、B=30/60=50%を計算確認。正答は妥当だが、単純な百分率計算として応用難度との整合を確認。"
+        "A=30/40=75%、B=30/60=50%を計算確認。正答は妥当だが、単純な百分率計算として応用難度との整合を確認。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3373,12 +3389,13 @@
       "id": "ap27-529",
       "file": "applied2027Questions.ts",
       "topic": "LSTM・ゲートの役割",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "LSTM入力ゲートの役割は妥当。ap27-077/ap27-081/ap27-375とゲート概念が重複。忘却・入力・出力ゲートの具体的な比較へ改善。"
+        "LSTM入力ゲートの役割は妥当。ap27-077/ap27-081/ap27-375とゲート概念が重複。忘却・入力・出力ゲートの具体的な比較へ改善。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3386,12 +3403,13 @@
       "id": "ap27-530",
       "file": "applied2027Questions.ts",
       "topic": "ニューラルネットワーク・損失関数",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "訓練損失と未知データの乖離はap27-051/ap27-288と重複。誤答が『必ず』『自動的に』で容易。"
+        "訓練損失と未知データの乖離はap27-051/ap27-288と重複。誤答が『必ず』『自動的に』で容易。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3399,12 +3417,13 @@
       "id": "ap27-571",
       "file": "applied2027Questions.ts",
       "topic": "RNN・長期依存",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "従来RNNの長期依存と勾配消失はap27-080/ap27-375と重複。誤答が『語順は一切影響なし』等の極端な断定。"
+        "従来RNNの長期依存と勾配消失はap27-080/ap27-375と重複。誤答が『語順は一切影響なし』等の極端な断定。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -3412,12 +3431,13 @@
       "id": "ap27-572",
       "file": "applied2027Questions.ts",
       "topic": "ニューラルネットワーク・ミニバッチ",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "1万件÷100件=100ミニバッチ、各バッチ更新なら1エポック100回。正答は妥当。残余バッチや更新回数の比較へ難度改善。"
+        "1万件÷100件=100ミニバッチ、各バッチ更新なら1エポック100回。正答は妥当。残余バッチや更新回数の比較へ難度改善。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
