@@ -84,8 +84,8 @@
   "checkpoint": {
     "last_completed_id": "q120",
     "next_question_id": null,
-    "next_action": "Review remaining concise explanations and assess semantically overlapping questions; complete finite independent audit",
-    "last_verified_commit": "1f73af6e695bb4567e7502a5dc3e43656cbd6867",
+    "next_action": "Conduct finite final audit of revised 300 questions, check distractor plausibility and explanation accuracy, then decide chapter-2 acceptance",
+    "last_verified_commit": "e42f4f1f8300db083497bfabaac7682ac856b996",
     "chapter_accepted": false
   },
   "exit_criteria": [
@@ -235,7 +235,7 @@
     "source_commit": "797c43e3be79012ace5577343e5ec3fae2377269"
   },
   "chapter2_audit": {
-    "stage": "semantic_review_and_correction_in_progress",
+    "stage": "explanation_and_similarity_screening_completed",
     "checked": 300,
     "allocation_matched": 31,
     "missing_topic_or_prompt": 0,
@@ -257,6 +257,11 @@
     "accepted": 0,
     "source_commit": "58d6e82e64fe5deb33b6e454fa6b8c67b9ccfe09",
     "short_explanations_under_22_chars_before_corrections": 59,
-    "short_explanations_under_22_chars_estimated_after_corrections": 48
+    "short_explanations_under_22_chars_estimated_after_corrections": 48,
+    "short_explanations_under_22_chars_after_corrections": 0,
+    "explanation_expanded": 48,
+    "near_duplicate_prompt_pairs_flagged_by_character_bigrams_before_corrections": 15,
+    "near_duplicate_questions_rewritten": 7,
+    "remaining_work": "Verify revised distractor rationale, semantic uniqueness, and full final quality acceptance; automated similarity screening is not a substitute for human-like content audit"
   }
 }
