@@ -40,16 +40,16 @@
   },
   "checkpoint": {
     "phase": "round1",
-    "last_completed_id": "q060",
-    "next_action": "Continue round1 from sy27-013 in ledger order. q001-q060 have recorded first-pass findings; official small-topic mapping and full cross-bank duplicate audit remain pending. Fix and recheck without discarding prior edits.",
+    "last_completed_id": "adv27-090",
+    "next_action": "Continue round1 at next_question_id; first 109 items have provisional quality findings, not final verified passes. Replace generic findings with item-specific evidence during correction; validate syllabus and cross-bank duplicates.",
     "last_verified_commit": null,
     "round1_passed": 0,
-    "round1_needs_fix": 60,
+    "round1_needs_fix": 109,
     "round1_recheck": 0,
-    "round1_unverified": 240,
+    "round1_unverified": 191,
     "round2_passed": 0,
     "chapter_accepted": false,
-    "next_question_id": "sy27-013",
+    "next_question_id": "pr27-001",
     "cursor_basis": "No individually evidenced passed question; start at first unverified item in ledger order. NONE means no completed audit ID, not no previous editing."
   },
   "items": [
@@ -839,539 +839,637 @@
       "id": "s27-013",
       "file": "syllabus2027Questions.ts",
       "topic": "教師あり学習",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "分類・回帰・評価指標・ラベルの条件を設問で厳密化し、正答一意性と誤答の導出理由を確認。q007/q008/q021/q022/q055との重複を比較。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "s27-014",
       "file": "syllabus2027Questions.ts",
       "topic": "過学習",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "過学習・汎化の原因と対策の識別力を要検証。q015/q016/q028/q032との意味的重複を確認し、誤答のもっともらしさを改善する。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "s27-015",
       "file": "syllabus2027Questions.ts",
       "topic": "教師あり学習",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "分類・回帰・評価指標・ラベルの条件を設問で厳密化し、正答一意性と誤答の導出理由を確認。q007/q008/q021/q022/q055との重複を比較。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "s27-028",
       "file": "syllabus2027Questions.ts",
       "topic": "分類と回帰",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "分類・回帰・評価指標・ラベルの条件を設問で厳密化し、正答一意性と誤答の導出理由を確認。q007/q008/q021/q022/q055との重複を比較。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "s27-029",
       "file": "syllabus2027Questions.ts",
       "topic": "分類と回帰",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "分類・回帰・評価指標・ラベルの条件を設問で厳密化し、正答一意性と誤答の導出理由を確認。q007/q008/q021/q022/q055との重複を比較。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "s27-030",
       "file": "syllabus2027Questions.ts",
       "topic": "教師なし学習",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "誤答選択肢の妥当性と個別解説を改善対象として記録。正答・小項目・重複は全件横断監査で再確認。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "s27-031",
       "file": "syllabus2027Questions.ts",
       "topic": "強化学習",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "状態・報酬・方策の違いを問う選択肢の識別力と条件の厳密性を確認。q011/q012/q045/q057との重複比較が必要。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "s27-032",
       "file": "syllabus2027Questions.ts",
       "topic": "ルールベース",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "ルールベースと学習方式の比較で、無関係な誤答や年代だけで除外できる誤答を改善する。q023/q037/q046との重複比較が必要。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "s27-033",
       "file": "syllabus2027Questions.ts",
       "topic": "分類と回帰",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "分類・回帰・評価指標・ラベルの条件を設問で厳密化し、正答一意性と誤答の導出理由を確認。q007/q008/q021/q022/q055との重複を比較。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ex27-001",
       "file": "expansion2027Questions.ts",
       "topic": "AIの歴史・第一次AIブーム",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "AI史の年代・研究潮流を問う選択肢に、他時代の用語や明白な誤答が混在しないか精査が必要。q003/q027/q034/q052/q054/q059等との重複比較が必要。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ex27-002",
       "file": "expansion2027Questions.ts",
       "topic": "AIの歴史・第二次AIブーム",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "AI史の年代・研究潮流を問う選択肢に、他時代の用語や明白な誤答が混在しないか精査が必要。q003/q027/q034/q052/q054/q059等との重複比較が必要。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ex27-003",
       "file": "expansion2027Questions.ts",
       "topic": "AIの歴史・第三次AIブーム",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "AI史の年代・研究潮流を問う選択肢に、他時代の用語や明白な誤答が混在しないか精査が必要。q003/q027/q034/q052/q054/q059等との重複比較が必要。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ex27-004",
       "file": "expansion2027Questions.ts",
       "topic": "機械学習",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "誤答選択肢の妥当性と個別解説を改善対象として記録。正答・小項目・重複は全件横断監査で再確認。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ex27-005",
       "file": "expansion2027Questions.ts",
       "topic": "ニューラルネットワーク",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "ネットワークの構造・学習手順の概念混同を問う誤答の品質を確認。q013/q014/q024/q040/q050/q053/q056との重複比較が必要。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ex27-006",
       "file": "expansion2027Questions.ts",
       "topic": "深層学習・階層的表現",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "ネットワークの構造・学習手順の概念混同を問う誤答の品質を確認。q013/q014/q024/q040/q050/q053/q056との重複比較が必要。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ex27-007",
       "file": "expansion2027Questions.ts",
       "topic": "特徴量",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "誤答選択肢の妥当性と個別解説を改善対象として記録。正答・小項目・重複は全件横断監査で再確認。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ex27-008",
       "file": "expansion2027Questions.ts",
       "topic": "学習と推論・再学習判断",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "誤答選択肢の妥当性と個別解説を改善対象として記録。正答・小項目・重複は全件横断監査で再確認。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ex27-009",
       "file": "expansion2027Questions.ts",
       "topic": "機械学習・代表性",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "誤答選択肢の妥当性と個別解説を改善対象として記録。正答・小項目・重複は全件横断監査で再確認。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ex27-010",
       "file": "expansion2027Questions.ts",
       "topic": "機械学習・検証とテスト",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "誤答選択肢の妥当性と個別解説を改善対象として記録。正答・小項目・重複は全件横断監査で再確認。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ex27-011",
       "file": "expansion2027Questions.ts",
       "topic": "過学習",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "過学習・汎化の原因と対策の識別力を要検証。q015/q016/q028/q032との意味的重複を確認し、誤答のもっともらしさを改善する。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ex27-012",
       "file": "expansion2027Questions.ts",
       "topic": "ニューラルネットワーク・非線形変換",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "ネットワークの構造・学習手順の概念混同を問う誤答の品質を確認。q013/q014/q024/q040/q050/q053/q056との重複比較が必要。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ex27-013",
       "file": "expansion2027Questions.ts",
       "topic": "生成系AI",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "誤答選択肢の妥当性と個別解説を改善対象として記録。正答・小項目・重複は全件横断監査で再確認。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ex27-014",
       "file": "expansion2027Questions.ts",
       "topic": "正解率",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "分類・回帰・評価指標・ラベルの条件を設問で厳密化し、正答一意性と誤答の導出理由を確認。q007/q008/q021/q022/q055との重複を比較。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ex27-015",
       "file": "expansion2027Questions.ts",
       "topic": "第一次AIブーム・ダートマス会議",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "AI史の年代・研究潮流を問う選択肢に、他時代の用語や明白な誤答が混在しないか精査が必要。q003/q027/q034/q052/q054/q059等との重複比較が必要。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ex27-016",
       "file": "expansion2027Questions.ts",
       "topic": "教師あり学習・ラベル品質",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "分類・回帰・評価指標・ラベルの条件を設問で厳密化し、正答一意性と誤答の導出理由を確認。q007/q008/q021/q022/q055との重複を比較。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ex27-017",
       "file": "expansion2027Questions.ts",
       "topic": "次元削減",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "誤答選択肢の妥当性と個別解説を改善対象として記録。正答・小項目・重複は全件横断監査で再確認。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ex27-018",
       "file": "expansion2027Questions.ts",
       "topic": "転移学習",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "ネットワークの構造・学習手順の概念混同を問う誤答の品質を確認。q013/q014/q024/q040/q050/q053/q056との重複比較が必要。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ex27-019",
       "file": "expansion2027Questions.ts",
       "topic": "機械学習・ノーフリーランチ定理",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "誤答選択肢の妥当性と個別解説を改善対象として記録。正答・小項目・重複は全件横断監査で再確認。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ex27-020",
       "file": "expansion2027Questions.ts",
       "topic": "AIの限界",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "誤答選択肢の妥当性と個別解説を改善対象として記録。正答・小項目・重複は全件横断監査で再確認。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "adv27-001",
       "file": "advanced2027Questions.ts",
       "topic": "ノーフリーランチ定理",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "誤答選択肢の妥当性と個別解説を改善対象として記録。正答・小項目・重複は全件横断監査で再確認。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "adv27-002",
       "file": "advanced2027Questions.ts",
       "topic": "強化学習・報酬設計",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "状態・報酬・方策の違いを問う選択肢の識別力と条件の厳密性を確認。q011/q012/q045/q057との重複比較が必要。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "adv27-003",
       "file": "advanced2027Questions.ts",
       "topic": "過学習・アーリーストッピング",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "過学習・汎化の原因と対策の識別力を要検証。q015/q016/q028/q032との意味的重複を確認し、誤答のもっともらしさを改善する。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "adv27-004",
       "file": "advanced2027Questions.ts",
       "topic": "AIの歴史・第一次AIブーム",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "AI史の年代・研究潮流を問う選択肢に、他時代の用語や明白な誤答が混在しないか精査が必要。q003/q027/q034/q052/q054/q059等との重複比較が必要。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "adv27-005",
       "file": "advanced2027Questions.ts",
       "topic": "ニューラルネットワーク・隠れ層",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "ネットワークの構造・学習手順の概念混同を問う誤答の品質を確認。q013/q014/q024/q040/q050/q053/q056との重複比較が必要。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "adv27-006",
       "file": "advanced2027Questions.ts",
       "topic": "第三次AIブーム",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "AI史の年代・研究潮流を問う選択肢に、他時代の用語や明白な誤答が混在しないか精査が必要。q003/q027/q034/q052/q054/q059等との重複比較が必要。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "adv27-007",
       "file": "advanced2027Questions.ts",
       "topic": "ニューラルネットワーク・入力",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "ネットワークの構造・学習手順の概念混同を問う誤答の品質を確認。q013/q014/q024/q040/q050/q053/q056との重複比較が必要。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "adv27-008",
       "file": "advanced2027Questions.ts",
       "topic": "ニューラルネットワーク・活性化関数",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "ネットワークの構造・学習手順の概念混同を問う誤答の品質を確認。q013/q014/q024/q040/q050/q053/q056との重複比較が必要。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "adv27-009",
       "file": "advanced2027Questions.ts",
       "topic": "ニューラルネットワーク・転移学習",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "ネットワークの構造・学習手順の概念混同を問う誤答の品質を確認。q013/q014/q024/q040/q050/q053/q056との重複比較が必要。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "adv27-010",
       "file": "advanced2027Questions.ts",
       "topic": "ニューラルネットワーク・正則化",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "過学習・汎化の原因と対策の識別力を要検証。q015/q016/q028/q032との意味的重複を確認し、誤答のもっともらしさを改善する。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "adv27-081",
       "file": "advanced2027Questions.ts",
       "topic": "第二次AIブーム・知識表現",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "AI史の年代・研究潮流を問う選択肢に、他時代の用語や明白な誤答が混在しないか精査が必要。q003/q027/q034/q052/q054/q059等との重複比較が必要。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "adv27-082",
       "file": "advanced2027Questions.ts",
       "topic": "学習曲線",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "過学習・汎化の原因と対策の識別力を要検証。q015/q016/q028/q032との意味的重複を確認し、誤答のもっともらしさを改善する。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "adv27-083",
       "file": "advanced2027Questions.ts",
       "topic": "教師なし学習・クラスタリング",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "誤答選択肢の妥当性と個別解説を改善対象として記録。正答・小項目・重複は全件横断監査で再確認。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "adv27-084",
       "file": "advanced2027Questions.ts",
       "topic": "機械学習・汎化",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "過学習・汎化の原因と対策の識別力を要検証。q015/q016/q028/q032との意味的重複を確認し、誤答のもっともらしさを改善する。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "adv27-085",
       "file": "advanced2027Questions.ts",
       "topic": "教師あり学習・ラベル品質",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "分類・回帰・評価指標・ラベルの条件を設問で厳密化し、正答一意性と誤答の導出理由を確認。q007/q008/q021/q022/q055との重複を比較。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "adv27-086",
       "file": "advanced2027Questions.ts",
       "topic": "クラス不均衡",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "分類・回帰・評価指標・ラベルの条件を設問で厳密化し、正答一意性と誤答の導出理由を確認。q007/q008/q021/q022/q055との重複を比較。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "adv27-087",
       "file": "advanced2027Questions.ts",
       "topic": "クラスタリング",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "誤答選択肢の妥当性と個別解説を改善対象として記録。正答・小項目・重複は全件横断監査で再確認。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "adv27-088",
       "file": "advanced2027Questions.ts",
       "topic": "ニューラルネットワーク・勾配消失",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "ネットワークの構造・学習手順の概念混同を問う誤答の品質を確認。q013/q014/q024/q040/q050/q053/q056との重複比較が必要。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "adv27-089",
       "file": "advanced2027Questions.ts",
       "topic": "AIの歴史・シンギュラリティ",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "AI史の年代・研究潮流を問う選択肢に、他時代の用語や明白な誤答が混在しないか精査が必要。q003/q027/q034/q052/q054/q059等との重複比較が必要。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "adv27-090",
       "file": "advanced2027Questions.ts",
       "topic": "学習データ",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "誤答選択肢の妥当性と個別解説を改善対象として記録。正答・小項目・重複は全件横断監査で再確認。"
+      ],
       "verified_at_commit": null
     },
     {
