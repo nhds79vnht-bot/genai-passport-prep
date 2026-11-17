@@ -84,8 +84,8 @@
   "checkpoint": {
     "last_completed_id": "q120",
     "next_question_id": null,
-    "next_action": "Continue first-pass choice-by-choice verification and distractor improvement; do not declare chapter accepted until full pass",
-    "last_verified_commit": "031489b3d0025a8da1d719549b99e9e17121221c",
+    "next_action": "Continue first-pass basic and applied choice-level audit, focus on remaining weak distractors and check explanatory consistency",
+    "last_verified_commit": "cf7cdddac4b0cb226beb46b9d2d0341882d71752",
     "chapter_accepted": false
   },
   "exit_criteria": [
@@ -320,6 +320,24 @@
       "ap27-732",
       "ap27-733",
       "ap27-735"
-    ]
+    ],
+    "base_distractor_sets_rewritten_this_batch": 14,
+    "base_distractor_ids": [
+      "q061",
+      "q062",
+      "q063",
+      "q064",
+      "q065",
+      "q066",
+      "q067",
+      "q069",
+      "q074",
+      "q076",
+      "q077",
+      "q078",
+      "q079",
+      "q080"
+    ],
+    "base_choice_notes_synchronized": true
   }
 }
