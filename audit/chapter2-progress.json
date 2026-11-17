@@ -78,14 +78,14 @@
     "src/data/expansion2027Questions.ts": "5c445426ecb4481c7af71f10a5968f324f605abd",
     "src/data/advanced2027Questions.ts": "94eac33cd7b07ae27b6d1ddbb32308fb347559ce",
     "src/data/practice2027Questions.ts": "08cf5035884532d6eab98ed7fbb8628c7656b4e2",
-    "src/data/applied2027Questions.ts": "a0f6e0f80fa5a442467543cbcc883d5fa79f8613"
+    "src/data/applied2027Questions.ts": "837c8d96ba092868bec1f878acb3fbd757ab6c5d"
   },
   "items": [],
   "checkpoint": {
     "last_completed_id": "q120",
     "next_question_id": null,
-    "next_action": "Continue remaining 120 applied chapter-2 items and reconcile final allocation",
-    "last_verified_commit": "5c5290a83e4004ca325e0ba4712d5ca013e02ac4",
+    "next_action": "Rewrite remaining 89 applied chapter-2 questions, reconcile allocations, independently audit",
+    "last_verified_commit": "512f32c16b4ad8e7d301fa85fc2d4d0d57eb6c6c",
     "chapter_accepted": false
   },
   "exit_criteria": [
@@ -193,14 +193,21 @@
       "commit": "5c5290a83e4004ca325e0ba4712d5ca013e02ac4",
       "status": "source_updated_pending_independent_audit",
       "purpose": "Rewrite next 20 applied chapter-2 items to technical syllabus"
+    },
+    {
+      "file": "src/data/applied2027Questions.ts",
+      "count": 31,
+      "commit": "512f32c16b4ad8e7d301fa85fc2d4d0d57eb6c6c",
+      "status": "source_updated_pending_independent_audit",
+      "purpose": "Rewrite another 31 applied questions across all 2027 topics"
     }
   ],
   "allocation_file": "audit/chapter2-allocation-2027.json",
   "allocation_commit": "d54ad11df85489f73c538451542b4e9b4433c9dc",
   "allocation_status": "fixed_31_small_topics",
   "applied_rewrite_progress": {
-    "completed": 51,
+    "completed": 82,
     "total": 171,
-    "remaining": 120
+    "remaining": 89
   }
 }
