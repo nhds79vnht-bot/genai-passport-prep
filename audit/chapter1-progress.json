@@ -39,17 +39,17 @@
     "final_pass": "all 300 reaudited, zero blocking findings"
   },
   "checkpoint": {
-    "phase": "round1",
-    "last_completed_id": "ap27-729",
-    "next_action": "Resume at ap27-730; 20 inspected, four actual source rewrites at 3c7e0a2. Independently recheck modified questions and continue repairs.",
+    "phase": "round1-repair",
+    "last_completed_id": "ap27-787",
+    "next_action": "All 300 received initial item-level findings. Begin substantive repair of 285 needs_fix and independently recheck 15 revised items; do not mark passed until independently verified. Preserve stable IDs, no GitHub Actions.",
     "last_verified_commit": null,
     "round1_passed": 0,
-    "round1_needs_fix": 271,
-    "round1_recheck": 11,
-    "round1_unverified": 18,
+    "round1_needs_fix": 285,
+    "round1_recheck": 15,
+    "round1_unverified": 0,
     "round2_passed": 0,
     "chapter_accepted": false,
-    "next_question_id": "ap27-730",
+    "next_question_id": null,
     "cursor_basis": "No individually evidenced passed question; start at first unverified item in ledger order. NONE means no completed audit ID, not no previous editing."
   },
   "items": [
@@ -3725,198 +3725,234 @@
       "id": "ap27-730",
       "file": "applied2027Questions.ts",
       "topic": "第三次AIブーム・データと計算資源",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "第三次AIブームのデータ・GPU・学習技術の相乗効果は妥当だが、ap27-180/ap27-472/ap27-627と重複。誤答が全て『必ず』『不要』。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-771",
       "file": "applied2027Questions.ts",
       "topic": "エキスパートシステム・保守",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "医療知識の更新時に知識ベースの保守が必要なのは妥当。ap27-177/ap27-389と重複。誤答が画像生成器等の無関係な技術。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-772",
       "file": "applied2027Questions.ts",
       "topic": "チューリングテスト",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "チューリングテストの対話評価と意識の証明を区別する点は妥当。ap27-576/pr27-001と重複。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-773",
       "file": "applied2027Questions.ts",
       "topic": "教師なし学習・目的",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "教師なしクラスタリングは事前の正解グループ名が不要なのは妥当。ap27-173旧問題/ap27-031と重複。誤答が『自動的に優良・不良』等。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-774",
       "file": "applied2027Questions.ts",
       "topic": "次元削減",
-      "status": "unverified",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "PCAの名称当てを寄与率40%、20%、15%の累積寄与率75%に必要な主成分数3個の計算問題へ修正。再検査待ち。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-775",
       "file": "applied2027Questions.ts",
       "topic": "第一次AIブーム・推論",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "第一次AIブームの探索・推論の説明は妥当。pr27-021と重複。誤答が深層学習/GAN/LLMで時代差が明白。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-776",
       "file": "applied2027Questions.ts",
       "topic": "識別系と生成系",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "識別系と生成系の名称選択はap27-290旧問題/ap27-287と重複。誤答が単なる入れ替えで容易。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-777",
       "file": "applied2027Questions.ts",
       "topic": "教師あり学習・分類",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "手書き数字0〜9の教師あり多クラス分類は妥当。回帰・クラスタリング・強化学習との違いを確認する基礎問題だが、選択肢が単純。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-778",
       "file": "applied2027Questions.ts",
       "topic": "深層学習・特徴抽出",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "深層学習の特徴表現学習はap27-201/ap27-278と重複。誤答が『全て手書き』『推論不可』等で容易。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-779",
       "file": "applied2027Questions.ts",
       "topic": "正則化・目的",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "正則化で汎化改善を狙う説明は妥当。pr27-035/ap27-386と重複。誤答が『全重み最大化』『ラベル消去』等で容易。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-780",
       "file": "applied2027Questions.ts",
       "topic": "過学習対策",
-      "status": "unverified",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "決定木の剪定をA(訓練99/検証72)、B(91/83)、C(70/69)の比較へ修正。過学習緩和と学習不足の識別を再検査する。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-781",
       "file": "applied2027Questions.ts",
       "topic": "拡散モデル",
-      "status": "unverified",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "拡散モデルの定義当てを逆拡散ステップ数と速度・品質のトレードオフを判断する問題へ修正。再検査待ち。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-782",
       "file": "applied2027Questions.ts",
       "topic": "シンギュラリティ・仮説",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "シンギュラリティは実現時期が未確定の仮説という説明は妥当。ap27-192/q060と重複。誤答が到来日確定等。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-783",
       "file": "applied2027Questions.ts",
       "topic": "VAE・GANの違い",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "VAEとGANの枠組みの比較は妥当。誤答が『固定ルール』『完全に同じ』で容易。潜在変数・目的関数の違いへ改善。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-784",
       "file": "applied2027Questions.ts",
       "topic": "VAE・潜在ベクトル",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "VAE潜在ベクトルの名称当てはap27-181/ap27-522と重複。誤答が画素数/累積報酬等で容易。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-785",
       "file": "applied2027Questions.ts",
       "topic": "拡散モデル・段階的な生成",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "拡散モデルのノイズ除去説明はap27-781の旧問題と重複。ステップと品質の評価に差し替え候補。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-786",
       "file": "applied2027Questions.ts",
       "topic": "ノーフリーランチ定理",
-      "status": "unverified",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "ノーフリーランチ定理の定義的選択を応答制約10ms、A=100ms/92%、B=5ms/91%の業務比較へ修正。独立評価待ち。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "ap27-787",
       "file": "applied2027Questions.ts",
       "topic": "シンギュラリティ・概念",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "シンギュラリティの名称当てはap27-782/ap27-192と重複。誤答が交差検証等の異分野。"
+      ],
       "verified_at_commit": null
     }
   ]
