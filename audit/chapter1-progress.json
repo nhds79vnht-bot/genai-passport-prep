@@ -41,11 +41,11 @@
   "checkpoint": {
     "phase": "round1-repair",
     "last_completed_id": "ap27-787",
-    "next_action": "Round1 repair: ten core q questions rewritten at cd11b392; verify answers and choiceNotes independently, continue repairing core q bank in meaningful batches. No GitHub Actions.",
+    "next_action": "Round1 repair continues. 12 core-bank questions revised at 54a2617; recheck all edits, continue with q019, q020, q022, q024, q026, q027 and remaining q bank. Do not mark passed without independent review.",
     "last_verified_commit": null,
     "round1_passed": 0,
-    "round1_needs_fix": 255,
-    "round1_recheck": 45,
+    "round1_needs_fix": 243,
+    "round1_recheck": 57,
     "round1_unverified": 0,
     "round2_passed": 0,
     "chapter_accepted": false,
@@ -57,13 +57,12 @@
       "id": "q001",
       "file": "questionBank.ts",
       "topic": "AIの定義",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "choiceNotesが正答説明の反復を中心としており、各誤答が不適切な理由の個別説明が不足。",
-        "同じ『AIは判断支援で人が確認する』理解を重ねて評価しており、全300問での意味的重複比較が必要。"
+        "設問・選択肢・正答位置・解説・選択肢別解説を修正（source 54a2617b76d8cfbdd0de40046b0a75f944361e3f）。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -71,13 +70,12 @@
       "id": "q002",
       "file": "questionBank.ts",
       "topic": "AIの定義",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "choiceNotesが正答説明の反復を中心としており、各誤答が不適切な理由の個別説明が不足。",
-        "同じ『AIは判断支援で人が確認する』理解を重ねて評価しており、全300問での意味的重複比較が必要。"
+        "設問・選択肢・正答位置・解説・選択肢別解説を修正（source 54a2617b76d8cfbdd0de40046b0a75f944361e3f）。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -98,12 +96,12 @@
       "id": "q004",
       "file": "questionBank.ts",
       "topic": "AIの歴史",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "choiceNotesが正答説明の反復を中心としており、各誤答が不適切な理由の個別説明が不足。"
+        "設問・選択肢・正答位置・解説・選択肢別解説を修正（source 54a2617b76d8cfbdd0de40046b0a75f944361e3f）。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -124,12 +122,12 @@
       "id": "q006",
       "file": "questionBank.ts",
       "topic": "強いAI",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "誤答選択肢に時代錯誤・極端な断定・無関係な概念が複数あり、消去法で正答を特定しやすい。選択肢の再設計が必要。"
+        "設問・選択肢・正答位置・解説・選択肢別解説を修正（source 54a2617b76d8cfbdd0de40046b0a75f944361e3f）。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -150,12 +148,12 @@
       "id": "q008",
       "file": "questionBank.ts",
       "topic": "教師あり学習",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "choiceNotesが正答説明の反復を中心としており、各誤答が不適切な理由の個別説明が不足。"
+        "設問・選択肢・正答位置・解説・選択肢別解説を修正（source 54a2617b76d8cfbdd0de40046b0a75f944361e3f）。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -202,12 +200,12 @@
       "id": "q012",
       "file": "questionBank.ts",
       "topic": "強化学習",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "choiceNotesが正答説明の反復を中心としており、各誤答が不適切な理由の個別説明が不足。"
+        "設問・選択肢・正答位置・解説・選択肢別解説を修正（source 54a2617b76d8cfbdd0de40046b0a75f944361e3f）。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -215,12 +213,12 @@
       "id": "q013",
       "file": "questionBank.ts",
       "topic": "ディープラーニング",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "誤答選択肢に時代錯誤・極端な断定・無関係な概念が複数あり、消去法で正答を特定しやすい。選択肢の再設計が必要。"
+        "設問・選択肢・正答位置・解説・選択肢別解説を修正（source 54a2617b76d8cfbdd0de40046b0a75f944361e3f）。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -228,12 +226,12 @@
       "id": "q014",
       "file": "questionBank.ts",
       "topic": "ディープラーニング",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "誤答選択肢に時代錯誤・極端な断定・無関係な概念が複数あり、消去法で正答を特定しやすい。選択肢の再設計が必要。"
+        "設問・選択肢・正答位置・解説・選択肢別解説を修正（source 54a2617b76d8cfbdd0de40046b0a75f944361e3f）。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -241,12 +239,12 @@
       "id": "q015",
       "file": "questionBank.ts",
       "topic": "過学習",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "誤答選択肢に時代錯誤・極端な断定・無関係な概念が複数あり、消去法で正答を特定しやすい。選択肢の再設計が必要。"
+        "設問・選択肢・正答位置・解説・選択肢別解説を修正（source 54a2617b76d8cfbdd0de40046b0a75f944361e3f）。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -254,12 +252,12 @@
       "id": "q016",
       "file": "questionBank.ts",
       "topic": "過学習",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "誤答選択肢に時代錯誤・極端な断定・無関係な概念が複数あり、消去法で正答を特定しやすい。選択肢の再設計が必要。"
+        "設問・選択肢・正答位置・解説・選択肢別解説を修正（source 54a2617b76d8cfbdd0de40046b0a75f944361e3f）。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -267,12 +265,12 @@
       "id": "q017",
       "file": "questionBank.ts",
       "topic": "データ品質",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "choiceNotesが正答説明の反復を中心としており、各誤答が不適切な理由の個別説明が不足。"
+        "設問・選択肢・正答位置・解説・選択肢別解説を修正（source 54a2617b76d8cfbdd0de40046b0a75f944361e3f）。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -280,12 +278,12 @@
       "id": "q018",
       "file": "questionBank.ts",
       "topic": "バイアス",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "choiceNotesが正答説明の反復を中心としており、各誤答が不適切な理由の個別説明が不足。"
+        "設問・選択肢・正答位置・解説・選択肢別解説を修正（source 54a2617b76d8cfbdd0de40046b0a75f944361e3f）。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
