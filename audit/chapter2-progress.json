@@ -73,7 +73,7 @@
     "src/data/applied2027Questions.ts"
   ],
   "source_blob_shas": {
-    "src/data/questionBank.ts": "49b049c44e8f773115a6cd03d6832dbe4f6b0b0a",
+    "src/data/questionBank.ts": "950ebd774ef70173139278d107b70baaa4ac3fe3",
     "src/data/syllabus2027Questions.ts": "071600cfa4f85af7785c65466768103935f01073",
     "src/data/expansion2027Questions.ts": "5c445426ecb4481c7af71f10a5968f324f605abd",
     "src/data/advanced2027Questions.ts": "94eac33cd7b07ae27b6d1ddbb32308fb347559ce",
@@ -84,8 +84,8 @@
   "checkpoint": {
     "last_completed_id": "q120",
     "next_question_id": null,
-    "next_action": "Perform finite independent audit of all 300 chapter-2 questions for correctness, plausibility, repetition, and syllabus alignment; mark accepted only after audit",
-    "last_verified_commit": "797c43e3be79012ace5577343e5ec3fae2377269",
+    "next_action": "Review 59 short explanations and semantic plausibility of 300 items, correct confirmed defects; apply finite exit criteria",
+    "last_verified_commit": "58d6e82e64fe5deb33b6e454fa6b8c67b9ccfe09",
     "chapter_accepted": false
   },
   "exit_criteria": [
@@ -233,5 +233,26 @@
     "independent_quality_approved": 0,
     "status": "all_31_allocation_targets_met_independent_audit_pending",
     "source_commit": "797c43e3be79012ace5577343e5ec3fae2377269"
+  },
+  "chapter2_audit": {
+    "stage": "structural_and_explanation_screening",
+    "checked": 300,
+    "allocation_matched": 31,
+    "missing_topic_or_prompt": 0,
+    "invalid_answer_indices": 0,
+    "normalized_duplicate_prompts": 0,
+    "duplicate_explanations": 0,
+    "short_explanations_under_22_chars": 59,
+    "short_explanations_note": "Screening flags only; length is not an independent proof of wrong explanation",
+    "multi_answer_questions": [
+      "q068",
+      "q075"
+    ],
+    "confirmed_defects_fixed": [
+      "q068 malformed Japanese wording"
+    ],
+    "independent_semantic_review_complete": false,
+    "accepted": 0,
+    "source_commit": "58d6e82e64fe5deb33b6e454fa6b8c67b9ccfe09"
   }
 }
