@@ -1785,25 +1785,22 @@ export const questionBank: Question[] = [
     id: 'q068',
     chapter: '第2章 生成AI',
     topic: "Gemini（Google）",
-    prompt: '主要生成AIサービスとして適切なものを2つ選んでください。',
+    prompt: 'GoogleのGeminiと他社の生成AIサービスを区別する説明として適切なのはどれか。',
     choices: [
-      'Gemini',
-      'Claude',
-      'SMTPによるメール送信プロトコル',
-      'FTPによるファイル転送プロトコル'
+      'GeminiはGoogleが提供する生成AIモデル・サービス群である',
+      'GeminiはAnthropicが提供するClaudeの旧称である',
+      'GeminiはMicrosoft 365 Copilotの別名である',
+      'Geminiは生成AIではなくメール転送専用の通信規格である'
     ],
-    answers: [
-      0,
-      1
-    ],
-    explanation: 'GeminiとClaudeは代表的な生成AIサービスです。',
-    reviewSection: 'テキスト第2章（生成AI・主要モデル・プロンプト） → 「主要モデル」',
-    examTrap: '「主要モデル」は定義・目的・限界をセットで覚えると混同しにくいです。',
+    answers: [0],
+    explanation: 'GeminiはGoogleの生成AIモデル・サービス群を指す。ClaudeはAnthropic、Microsoft 365 CopilotはMicrosoftの製品であり、提供元と用途を混同しない。',
+    reviewSection: '2027年公式シラバス第2章 → Gemini（Google）',
+    examTrap: '生成AIの製品名・モデル名と提供企業を区別する。',
     choiceNotes: [
-      'GeminiとClaudeは代表的な生成AIサービスです。',
-      'GeminiとClaudeは代表的な生成AIサービスです。',
-      '「SMTPによるメール送信プロトコル」はこの設問の正答ではありません。GeminiとClaudeは代表的な生成AIサービスです。',
-      '「FTPによるファイル転送プロトコル」はこの設問の正答ではありません。GeminiとClaudeは代表的な生成AIサービスです。'
+      '正解。GeminiはGoogleが開発・提供する生成AIモデルおよび関連サービスの名称。',
+      '誤り。ClaudeはAnthropicが提供する別の生成AIで、Geminiの旧称ではない。',
+      '誤り。Microsoft 365 CopilotはMicrosoftの業務支援製品で、Geminiとは別の製品。',
+      '誤り。Geminiは生成AIに関する名称であり、メール転送プロトコルではない。'
     ]
   },
   {
