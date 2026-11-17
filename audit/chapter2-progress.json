@@ -78,13 +78,13 @@
     "src/data/expansion2027Questions.ts": "5c445426ecb4481c7af71f10a5968f324f605abd",
     "src/data/advanced2027Questions.ts": "94eac33cd7b07ae27b6d1ddbb32308fb347559ce",
     "src/data/practice2027Questions.ts": "08cf5035884532d6eab98ed7fbb8628c7656b4e2",
-    "src/data/applied2027Questions.ts": "17c597a5a733c847ba80f9d0e36e259eabea9564"
+    "src/data/applied2027Questions.ts": "76a7cb61c91475d3cd2c1d0bb381e2235031022d"
   },
   "items": [],
   "checkpoint": {
     "last_completed_id": "q120",
     "next_question_id": null,
-    "next_action": "Reconcile all 300 against 31-topic allocation and perform independent QA; do not mark accepted until validated",
+    "next_action": "Rebalance 29 small-topic count mismatches with semantic rewrites, then independent question audit",
     "last_verified_commit": "0fa7e0a28fba4dc5371deee31645801a8dc647d4",
     "chapter_accepted": false
   },
@@ -223,5 +223,15 @@
     "completed": 171,
     "total": 171,
     "remaining": 0
+  },
+  "chapter2_reconciliation": {
+    "total": 300,
+    "mapped": 300,
+    "unknown_topics": 0,
+    "exact_duplicate_prompts_after_fix": 0,
+    "allocation_mismatched_topics": 29,
+    "independent_quality_approved": 0,
+    "status": "allocation_rebalance_and_independent_audit_pending",
+    "source_commit": "0382314594314a23848b618e349ed78d53eac4ba"
   }
 }
