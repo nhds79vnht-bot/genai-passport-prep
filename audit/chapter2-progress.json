@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "chapter": "第2章",
+  "phase": "syllabus-source-verification",
+  "status": "in_progress",
+  "target_question_count": null,
+  "existing_question_count": null,
+  "official_syllabus": {
+    "exam_version": "2027年2月試験以降",
+    "verified_announcement": "https://guga.or.jp/2026-10-01-1100-2",
+    "warning": "https://guga.or.jp/assets/syllabus.pdf returned a document headed 2026年2月試験より適用 at inspection; do not treat it as the verified 2027 detailed syllabus.",
+    "middle_topics": [],
+    "small_topics": []
+  },
+  "source_files": [
+    "src/data/questionBank.ts",
+    "src/data/syllabus2027Questions.ts",
+    "src/data/expansion2027Questions.ts",
+    "src/data/advanced2027Questions.ts",
+    "src/data/practice2027Questions.ts",
+    "src/data/applied2027Questions.ts"
+  ],
+  "source_blob_shas": {
+    "src/data/questionBank.ts": "49b049c44e8f773115a6cd03d6832dbe4f6b0b0a",
+    "src/data/syllabus2027Questions.ts": "071600cfa4f85af7785c65466768103935f01073",
+    "src/data/expansion2027Questions.ts": "5c445426ecb4481c7af71f10a5968f324f605abd",
+    "src/data/advanced2027Questions.ts": "94eac33cd7b07ae27b6d1ddbb32308fb347559ce",
+    "src/data/practice2027Questions.ts": "08cf5035884532d6eab98ed7fbb8628c7656b4e2",
+    "src/data/applied2027Questions.ts": "882ef4603802e42b10ab08b5fb3d3491d7391723"
+  },
+  "items": [],
+  "checkpoint": {
+    "last_completed_id": null,
+    "next_question_id": null,
+    "next_action": "Locate and verify actual 2027 detailed official syllabus; enumerate chapter 2 items across all six source files; map and set fixed target before edits.",
+    "last_verified_commit": null,
+    "chapter_accepted": false
+  },
+  "exit_criteria": [
+    "verified syllabus coverage",
+    "single unambiguous correct answer",
+    "plausible distractors and coherent explanations",
+    "no effectively duplicate judgments",
+    "full final audit with zero major findings"
+  ],
+  "rules": {
+    "github_actions": false,
+    "unbounded_reaudit": false,
+    "source_and_ledger_persist_required": true
+  }
+}
