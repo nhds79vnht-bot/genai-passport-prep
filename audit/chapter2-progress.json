@@ -84,7 +84,7 @@
   "checkpoint": {
     "last_completed_id": null,
     "next_question_id": null,
-    "next_action": "Semantically review all 358 preliminary candidates and scan remaining items for synonyms; assign each retained question to exactly one of 31 official small topics; move off-topic questions out of chapter 2, then fix target count and edit. Keyword misses do not imply noncoverage.",
+    "next_action": "Review 260 unmatched items semantically; map and repurpose suitable questions, confirm 10 uncovered topics, decide fixed target count, then edit source files. Do not count keyword mapping as audited.",
     "last_verified_commit": null,
     "chapter_accepted": false
   },
@@ -116,5 +116,13 @@
     "legacy_chapter2": 300,
     "cross_chapter_keyword_candidates": 58,
     "legacy_chapter2_without_keyword_hit": 253
+  },
+  "mapping_file": "audit/chapter2-topic-mapping.json",
+  "mapping_commit": "6f774679cb171ddebf20e3fa9b1b4bb91f192296",
+  "mapping_summary": {
+    "preliminary_candidates": 358,
+    "topic_candidates": 98,
+    "manual_review": 260,
+    "zero_candidate_small_topics": 10
   }
 }
