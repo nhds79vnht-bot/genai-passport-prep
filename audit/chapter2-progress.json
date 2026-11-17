@@ -78,14 +78,14 @@
     "src/data/expansion2027Questions.ts": "5c445426ecb4481c7af71f10a5968f324f605abd",
     "src/data/advanced2027Questions.ts": "94eac33cd7b07ae27b6d1ddbb32308fb347559ce",
     "src/data/practice2027Questions.ts": "08cf5035884532d6eab98ed7fbb8628c7656b4e2",
-    "src/data/applied2027Questions.ts": "76a7cb61c91475d3cd2c1d0bb381e2235031022d"
+    "src/data/applied2027Questions.ts": "31a8eea7ee65683ca82c261eb664b541c54c65f8"
   },
   "items": [],
   "checkpoint": {
     "last_completed_id": "q120",
     "next_question_id": null,
-    "next_action": "Rebalance 29 small-topic count mismatches with semantic rewrites, then independent question audit",
-    "last_verified_commit": "0fa7e0a28fba4dc5371deee31645801a8dc647d4",
+    "next_action": "Perform finite independent audit of all 300 chapter-2 questions for correctness, plausibility, repetition, and syllabus alignment; mark accepted only after audit",
+    "last_verified_commit": "797c43e3be79012ace5577343e5ec3fae2377269",
     "chapter_accepted": false
   },
   "exit_criteria": [
@@ -229,9 +229,9 @@
     "mapped": 300,
     "unknown_topics": 0,
     "exact_duplicate_prompts_after_fix": 0,
-    "allocation_mismatched_topics": 29,
+    "allocation_mismatched_topics": 0,
     "independent_quality_approved": 0,
-    "status": "allocation_rebalance_and_independent_audit_pending",
-    "source_commit": "0382314594314a23848b618e349ed78d53eac4ba"
+    "status": "all_31_allocation_targets_met_independent_audit_pending",
+    "source_commit": "797c43e3be79012ace5577343e5ec3fae2377269"
   }
 }
