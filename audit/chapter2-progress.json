@@ -84,8 +84,8 @@
   "checkpoint": {
     "last_completed_id": "q120",
     "next_question_id": null,
-    "next_action": "Conduct finite final audit of revised 300 questions, check distractor plausibility and explanation accuracy, then decide chapter-2 acceptance",
-    "last_verified_commit": "e42f4f1f8300db083497bfabaac7682ac856b996",
+    "next_action": "Verify runtime shuffle and audit correctness/plausibility for all 300 questions, then decide finite chapter acceptance",
+    "last_verified_commit": "e9a2fafb062a11f1f5cf73868e305a47d2c25e38",
     "chapter_accepted": false
   },
   "exit_criteria": [
@@ -235,7 +235,7 @@
     "source_commit": "797c43e3be79012ace5577343e5ec3fae2377269"
   },
   "chapter2_audit": {
-    "stage": "explanation_and_similarity_screening_completed",
+    "stage": "answer_structure_and_distractor_review_in_progress",
     "checked": 300,
     "allocation_matched": 31,
     "missing_topic_or_prompt": 0,
@@ -262,6 +262,18 @@
     "explanation_expanded": 48,
     "near_duplicate_prompt_pairs_flagged_by_character_bigrams_before_corrections": 15,
     "near_duplicate_questions_rewritten": 7,
-    "remaining_work": "Verify revised distractor rationale, semantic uniqueness, and full final quality acceptance; automated similarity screening is not a substitute for human-like content audit"
+    "remaining_work": "Verify revised distractor rationale, semantic uniqueness, and full final quality acceptance; automated similarity screening is not a substitute for human-like content audit",
+    "mechanical_explanation_templates_revised": 46,
+    "base_question_answer_indices_checked": 60,
+    "base_question_invalid_answer_indices": 0,
+    "base_question_multi_answer_count": 2,
+    "extra_question_duplicate_choices_checked": 69,
+    "extra_question_duplicate_choices": 0,
+    "applied_question_duplicate_choices_checked": 171,
+    "applied_question_duplicate_choices": 0,
+    "blocking_issues": [
+      "Full 300-question semantic verification of unique correct answer and distractor plausibility remains incomplete",
+      "Runtime answer-choice shuffling for 240 row-based questions has not been verified"
+    ]
   }
 }
