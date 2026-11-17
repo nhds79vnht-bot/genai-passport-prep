@@ -84,8 +84,8 @@
   "checkpoint": {
     "last_completed_id": "q120",
     "next_question_id": null,
-    "next_action": "Continue first-pass basic and applied choice-level audit, focus on remaining weak distractors and check explanatory consistency",
-    "last_verified_commit": "cf7cdddac4b0cb226beb46b9d2d0341882d71752",
+    "next_action": "Continue first-pass q101-q120 and remaining applied choice-level checks; complete finite first-pass then second-pass corrected-item review",
+    "last_verified_commit": "31727f70af56ee3d2999669dc10afee46cb33033",
     "chapter_accepted": false
   },
   "exit_criteria": [
@@ -338,6 +338,31 @@
       "q079",
       "q080"
     ],
-    "base_choice_notes_synchronized": true
+    "base_choice_notes_synchronized": true,
+    "base_distractor_sets_rewritten_latest_batch": 20,
+    "base_distractor_ids_latest_batch": [
+      "q081",
+      "q082",
+      "q083",
+      "q084",
+      "q085",
+      "q086",
+      "q087",
+      "q088",
+      "q089",
+      "q090",
+      "q091",
+      "q092",
+      "q093",
+      "q094",
+      "q095",
+      "q096",
+      "q097",
+      "q098",
+      "q099",
+      "q100"
+    ],
+    "post_edit_question_count_verified": 300,
+    "post_edit_choice_array_structure_errors": 0
   }
 }
