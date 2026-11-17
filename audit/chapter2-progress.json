@@ -73,7 +73,7 @@
     "src/data/applied2027Questions.ts"
   ],
   "source_blob_shas": {
-    "src/data/questionBank.ts": "950ebd774ef70173139278d107b70baaa4ac3fe3",
+    "src/data/questionBank.ts": "b76b380ae223674ca439333c49cb07f97770d1e5",
     "src/data/syllabus2027Questions.ts": "071600cfa4f85af7785c65466768103935f01073",
     "src/data/expansion2027Questions.ts": "5c445426ecb4481c7af71f10a5968f324f605abd",
     "src/data/advanced2027Questions.ts": "94eac33cd7b07ae27b6d1ddbb32308fb347559ce",
@@ -85,7 +85,7 @@
   "checkpoint": {
     "last_completed_id": "q120",
     "next_question_id": null,
-    "next_action": "Review remaining highest-risk same-topic semantic overlaps, then build and Safari smoke test; do not use GitHub Actions",
+    "next_action": "Continue bounded semantic review of high-similarity pairs; verify compile and Safari after Cursor deployment; do not equate similarity screen with 112 defects",
     "last_verified_commit": "1a1a089d18cc89905f985aecc52c0daf3f006408",
     "chapter_accepted": false
   },
@@ -456,15 +456,14 @@
     },
     "semantic_similarity_screen": {
       "date": "2026-11-18",
-      "method": "Same-topic character trigram overlap; candidate detection only, not proof of semantic duplication",
-      "candidate_pairs_over_threshold_0_48": 112,
-      "reviewed_examples": [
-        "q066/ap27-095",
-        "q118/adv27-017"
+      "method": "Within-topic Japanese character trigram similarity of all 300 prompts; candidates only, not proof of duplication",
+      "pairs_above_0_48": 112,
+      "reviewed_example": "q066/q119 overlapping ChatGPT service definition",
+      "fixed": [
+        "q066 rewritten as post-update business regression evaluation"
       ],
-      "confirmed_revision": "ap27-095 changed from repeated ChatGPT definition to distinct service governance judgment",
-      "source_commit": "b621adac47283594c4241297f39da75673152916",
-      "remaining": "Bounded review of high-overlap pairs and fact checking; no endless optimization"
+      "commit": "13f92beb1da7bbff75e85eb30b80e7a14c9ddac5",
+      "remaining": "Other flagged pairs require judgment of answer intent, not automated deletion"
     },
     "build_status": "Not executed: GitHub source inspected and updated; no local dependency-backed build or Safari execution in this turn"
   }
