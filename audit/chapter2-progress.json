@@ -84,7 +84,7 @@
   "checkpoint": {
     "last_completed_id": "q120",
     "next_question_id": null,
-    "next_action": "Continue advanced2027Questions.ts and practice2027Questions.ts with substantive content-based mapping and rewrite; then applied2027Questions.ts.",
+    "next_action": "Continue practice2027Questions.ts then applied2027Questions.ts. Audit content, answer uniqueness, distractors and distribution before acceptance.",
     "last_verified_commit": null,
     "chapter_accepted": false
   },
@@ -162,6 +162,14 @@
       "rewritten": 2,
       "retagged": 7,
       "commit": "de8d94984dacf64448ae750cd453d785a646bfd2",
+      "status": "source_updated_pending_independent_audit"
+    },
+    {
+      "file": "src/data/advanced2027Questions.ts",
+      "count": 20,
+      "rewritten": 9,
+      "retagged": 11,
+      "commit": "11cb77cec77f59fde72402bc33d57a08899057e5",
       "status": "source_updated_pending_independent_audit"
     }
   ],
