@@ -40,12 +40,12 @@
   },
   "checkpoint": {
     "phase": "round1-repair",
-    "last_completed_id": "adv27-090",
-    "next_action": "Continue round1-repair at next needs_fix in applied2027Questions.ts",
+    "last_completed_id": "ap27-051",
+    "next_action": "Continue round1-repair at ap27-052",
     "last_verified_commit": null,
     "round1_passed": 0,
-    "round1_needs_fix": 156,
-    "round1_recheck": 144,
+    "round1_needs_fix": 146,
+    "round1_recheck": 154,
     "round1_unverified": 0,
     "round2_passed": 0,
     "chapter_accepted": false,
@@ -1827,12 +1827,13 @@
       "id": "ap27-001",
       "file": "applied2027Questions.ts",
       "topic": "AIの基本的な仕組み・推論の限界",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "q002と需要予測の誤差・環境変化を監視する理解が重複。業務上の誤差コストを計算させるなど差別化が必要。"
+        "q002と需要予測の誤差・環境変化を監視する理解が重複。業務上の誤差コストを計算させるなど差別化が必要。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -1840,12 +1841,13 @@
       "id": "ap27-002",
       "file": "applied2027Questions.ts",
       "topic": "AIの歴史・第二次AIブーム",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "知識ベースの更新負担を問う良い応用題材だが、誤答3つが全て『検査不要・更新不要』に偏る。ex27-002と重複比較。"
+        "知識ベースの更新負担を問う良い応用題材だが、誤答3つが全て『検査不要・更新不要』に偏る。ex27-002と重複比較。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -1853,12 +1855,13 @@
       "id": "ap27-011",
       "file": "applied2027Questions.ts",
       "topic": "AIの基本・ルールベース",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "閾値制御と学習型の併用を問うが、他の選択肢が『評価不要』など極端。実際の制御条件で比較させる。"
+        "閾値制御と学習型の併用を問うが、他の選択肢が『評価不要』など極端。実際の制御条件で比較させる。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -1879,12 +1882,13 @@
       "id": "ap27-021",
       "file": "applied2027Questions.ts",
       "topic": "機械学習・学習と推論",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "推論と再学習の違いは妥当だが、誤答が『評価除外』『自動適応』など明白。検証データの独立性を問う比較へ改善。"
+        "推論と再学習の違いは妥当だが、誤答が『評価除外』『自動適応』など明白。検証データの独立性を問う比較へ改善。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -1892,12 +1896,13 @@
       "id": "ap27-022",
       "file": "applied2027Questions.ts",
       "topic": "AIの基本・データ分布の変化",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "時間帯別誤差と道路開通の分布変化は妥当。誤答がすべて検証省略に偏り、選択肢の識別力が弱い。"
+        "時間帯別誤差と道路開通の分布変化は妥当。誤答がすべて検証省略に偏り、選択肢の識別力が弱い。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -1905,12 +1910,13 @@
       "id": "ap27-031",
       "file": "applied2027Questions.ts",
       "topic": "AIの基本・ルールベースと機械学習",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "ルールベースと学習型分類の差は妥当だが、q023/q037と類似。誤答が検証不要・規則の逆転で容易に除外。"
+        "ルールベースと学習型分類の差は妥当だが、q023/q037と類似。誤答が検証不要・規則の逆転で容易に除外。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -1918,12 +1924,13 @@
       "id": "ap27-032",
       "file": "applied2027Questions.ts",
       "topic": "AIの基本・判断支援",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "採用推薦の偏り・人の判断はq018と同じ理解を問う。公平性指標を比較する別設問への差し替え候補。"
+        "採用推薦の偏り・人の判断はq018と同じ理解を問う。公平性指標を比較する別設問への差し替え候補。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -1931,12 +1938,13 @@
       "id": "ap27-041",
       "file": "applied2027Questions.ts",
       "topic": "機械学習・分布外データ",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "昼夜の分布外評価は有用だが、誤答が全て夜間の独立評価を省略する選択肢で識別が容易。"
+        "昼夜の分布外評価は有用だが、誤答が全て夜間の独立評価を省略する選択肢で識別が容易。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -1944,12 +1952,13 @@
       "id": "ap27-042",
       "file": "applied2027Questions.ts",
       "topic": "識別系AI・文章分類",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "皮肉を含む分類の評価は有用。誤答が『ラベル入替』『全て肯定』など明白で改善対象。"
+        "皮肉を含む分類の評価は有用。誤答が『ラベル入替』『全て肯定』など明白で改善対象。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -1957,12 +1966,13 @@
       "id": "ap27-051",
       "file": "applied2027Questions.ts",
       "topic": "過学習・学習曲線",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "訓練損失低下・検証損失上昇はq015/pr27-025/adv27-003と重複。学習曲線の具体的数値比較などに差し替え。"
+        "訓練損失低下・検証損失上昇はq015/pr27-025/adv27-003と重複。学習曲線の具体的数値比較などに差し替え。",
+        "設問・選択肢・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
