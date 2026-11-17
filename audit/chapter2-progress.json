@@ -84,7 +84,7 @@
   "checkpoint": {
     "last_completed_id": null,
     "next_question_id": null,
-    "next_action": "Review 260 unmatched items semantically; map and repurpose suitable questions, confirm 10 uncovered topics, decide fixed target count, then edit source files. Do not count keyword mapping as audited.",
+    "next_action": "Review question prompts and choices for 151 topic/reuse candidates; decide and persist final target allocation across 31 small topics, then rewrite 202 off-scope items or reassign to proper chapter. Do not modify chapter 1 accepted items blindly.",
     "last_verified_commit": null,
     "chapter_accepted": false
   },
@@ -118,11 +118,13 @@
     "legacy_chapter2_without_keyword_hit": 253
   },
   "mapping_file": "audit/chapter2-topic-mapping.json",
-  "mapping_commit": "6f774679cb171ddebf20e3fa9b1b4bb91f192296",
+  "mapping_commit": "e0d45a842c99804817b6b326cf578b94c6ba7249",
   "mapping_summary": {
     "preliminary_candidates": 358,
     "topic_candidates": 98,
-    "manual_review": 260,
-    "zero_candidate_small_topics": 10
+    "provisional_reuse": 53,
+    "retain_other_chapter": 5,
+    "off_scope_or_rewrite": 202,
+    "semantic_approval_count": 0
   }
 }
