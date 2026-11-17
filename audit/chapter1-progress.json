@@ -40,12 +40,12 @@
   },
   "checkpoint": {
     "phase": "round1-repair",
-    "last_completed_id": "q036",
-    "next_action": "Continue round1-repair at q037",
+    "last_completed_id": "q044",
+    "next_action": "Continue round1-repair at q045",
     "last_verified_commit": null,
     "round1_passed": 0,
-    "round1_needs_fix": 229,
-    "round1_recheck": 71,
+    "round1_needs_fix": 221,
+    "round1_recheck": 79,
     "round1_unverified": 0,
     "round2_passed": 0,
     "chapter_accepted": false,
@@ -545,12 +545,13 @@
       "id": "q037",
       "file": "questionBank.ts",
       "topic": "ルールベースの限界",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "ルールベースの限界で『言葉を扱えない』『条件分岐を使わない』など無関係・明白な誤答が複数。"
+        "ルールベースの限界で『言葉を扱えない』『条件分岐を使わない』など無関係・明白な誤答が複数。",
+        "選択肢の妥当性と解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -558,12 +559,13 @@
       "id": "q038",
       "file": "questionBank.ts",
       "topic": "学習済みモデル",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "推論に対して収集・ラベル作成・損失関数設定という工程名だけを並べており識別が容易。"
+        "推論に対して収集・ラベル作成・損失関数設定という工程名だけを並べており識別が容易。",
+        "選択肢の妥当性と解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -571,12 +573,13 @@
       "id": "q039",
       "file": "questionBank.ts",
       "topic": "AI限界",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "『一切監視不要』『必ず正しい』という極端な誤答が2件。"
+        "『一切監視不要』『必ず正しい』という極端な誤答が2件。",
+        "選択肢の妥当性と解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -584,12 +587,13 @@
       "id": "q040",
       "file": "questionBank.ts",
       "topic": "誤差逆伝播法",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "誤差逆伝播法に対し『ラベル削除』『画像生成』『全重み固定』は容易に除外可能。"
+        "誤差逆伝播法に対し『ラベル削除』『画像生成』『全重み固定』は容易に除外可能。",
+        "選択肢の妥当性と解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -597,12 +601,13 @@
       "id": "q041",
       "file": "questionBank.ts",
       "topic": "データラベリング",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "ラベル品質の選択肢が『検討を省く』『すべて削除』『基準を別にする』と明白に不適切。"
+        "ラベル品質の選択肢が『検討を省く』『すべて削除』『基準を別にする』と明白に不適切。",
+        "選択肢の妥当性と解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -610,12 +615,13 @@
       "id": "q042",
       "file": "questionBank.ts",
       "topic": "AIと人間協調",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "人間の確認工程について誤答が『すべて省く』『記録せず』等の極端な操作に偏る。"
+        "人間の確認工程について誤答が『すべて省く』『記録せず』等の極端な操作に偏る。",
+        "選択肢の妥当性と解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -623,12 +629,13 @@
       "id": "q043",
       "file": "questionBank.ts",
       "topic": "モデル更新",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "モデル更新で『評価省略』『履歴を残さず』という明白な誤答が2件。"
+        "モデル更新で『評価省略』『履歴を残さず』という明白な誤答が2件。",
+        "選択肢の妥当性と解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -636,12 +643,13 @@
       "id": "q044",
       "file": "questionBank.ts",
       "topic": "AIリスク",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "リスク評価に対しGPUメーカー・チーム人数・表示速度『だけ』の無関係選択肢。章境界も要照合。"
+        "リスク評価に対しGPUメーカー・チーム人数・表示速度『だけ』の無関係選択肢。章境界も要照合。",
+        "選択肢の妥当性と解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
