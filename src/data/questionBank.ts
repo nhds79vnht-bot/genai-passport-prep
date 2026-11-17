@@ -1796,14 +1796,14 @@ export const questionBank: Question[] = [
       0,
       1
     ],
-    explanation: 'GeminiとClaudeは代表的服务です。',
+    explanation: 'GeminiとClaudeは代表的な生成AIサービスです。',
     reviewSection: 'テキスト第2章（生成AI・主要モデル・プロンプト） → 「主要モデル」',
     examTrap: '「主要モデル」は定義・目的・限界をセットで覚えると混同しにくいです。',
     choiceNotes: [
-      'GeminiとClaudeは代表的服务です。',
-      'GeminiとClaudeは代表的服务です。',
-      '「SMTPによるメール送信プロトコル」はこの設問の正答ではありません。GeminiとClaudeは代表的服务です。',
-      '「FTPによるファイル転送プロトコル」はこの設問の正答ではありません。GeminiとClaudeは代表的服务です。'
+      'GeminiとClaudeは代表的な生成AIサービスです。',
+      'GeminiとClaudeは代表的な生成AIサービスです。',
+      '「SMTPによるメール送信プロトコル」はこの設問の正答ではありません。GeminiとClaudeは代表的な生成AIサービスです。',
+      '「FTPによるファイル転送プロトコル」はこの設問の正答ではありません。GeminiとClaudeは代表的な生成AIサービスです。'
     ]
   },
   {
