@@ -40,16 +40,16 @@
   },
   "checkpoint": {
     "phase": "round1",
-    "last_completed_id": "q020",
-    "next_action": "Continue round1 from q021; q001-q020 have recorded specific distractor/explanation findings. Verify official small-topic mapping before assigning; preserve existing edits. Fix flagged items in durable batch, then recheck.",
+    "last_completed_id": "q060",
+    "next_action": "Continue round1 from sy27-013 in ledger order. q001-q060 have recorded first-pass findings; official small-topic mapping and full cross-bank duplicate audit remain pending. Fix and recheck without discarding prior edits.",
     "last_verified_commit": null,
     "round1_passed": 0,
-    "round1_needs_fix": 20,
+    "round1_needs_fix": 60,
     "round1_recheck": 0,
-    "round1_unverified": 280,
+    "round1_unverified": 240,
     "round2_passed": 0,
     "chapter_accepted": false,
-    "next_question_id": "q021",
+    "next_question_id": "sy27-013",
     "cursor_basis": "No individually evidenced passed question; start at first unverified item in ledger order. NONE means no completed audit ID, not no previous editing."
   },
   "items": [
@@ -319,440 +319,520 @@
       "id": "q021",
       "file": "questionBank.ts",
       "topic": "機械学習の分類",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "多値分類の選択肢に回帰・クラスタリングが混在し、比較対象が離れている。誤答別解説も同じ正答定義の反復。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q022",
       "file": "questionBank.ts",
       "topic": "正解率",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "再現率の計算は正答80%だが、誤答85%・15%・20%の導出理由を個別に説明できるよう改善余地。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q023",
       "file": "questionBank.ts",
       "topic": "ルールベース",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "ルールベースと画像生成AIなどの対比が容易すぎ、誤答理由が正答定義の反復。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q024",
       "file": "questionBank.ts",
       "topic": "ニューラルネットワーク",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "入力層・出力層に対し『知識ベースだけ』『報酬だけ』が容易に除外可能。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q025",
       "file": "questionBank.ts",
       "topic": "教師データ",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "教師データの正解ラベルに対し、価値・損失関数・潜在ベクトルが文脈上離れすぎている。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q026",
       "file": "questionBank.ts",
       "topic": "ノーフリーランチ定理",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "『必ず最良』『比較不要』など極端な断定が複数あり、消去が容易。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q027",
       "file": "questionBank.ts",
       "topic": "AIの歴史",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "第二次AIブームの選択肢に拡散モデル・Transformerが混在し、時代錯誤で消去が容易。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q028",
       "file": "questionBank.ts",
       "topic": "過学習",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "過学習の識別に対し、転移・半教師あり・強化学習が異なる分類の用語で消去が容易。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q029",
       "file": "questionBank.ts",
       "topic": "識別系AIと生成系AI",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "識別系と生成系の対比は妥当だが、全300問でq058との実質重複を比較する必要。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q030",
       "file": "questionBank.ts",
       "topic": "ディープフェイク",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "ディープフェイクの誤答3件が『できない』『必ず』等の極端な断定で容易に除外可能。章境界も要照合。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q031",
       "file": "questionBank.ts",
       "topic": "学習率",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "学習率の振動対策で、ログ除外・検証データ混入等の明白な誤答が複数。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q032",
       "file": "questionBank.ts",
       "topic": "正則化",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "L2正則化の誤答に『データ自動削除』『ラベル追加』など無関係な機能が含まれる。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q033",
       "file": "questionBank.ts",
       "topic": "AIの歴史",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "深層学習普及の要因で『AI研究の全面停止』等が容易に除外可能。q004との重複比較が必要。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q034",
       "file": "questionBank.ts",
       "topic": "AIの歴史・探索",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "第一次AIブームの探索に対し拡散モデル・RLHF等が時代錯誤で容易に除外可能。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q035",
       "file": "questionBank.ts",
       "topic": "転移学習",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "転移学習の選択肢が『評価対象から除く』『ラベル確認せず』等の明白な不適切操作に偏る。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q036",
       "file": "questionBank.ts",
       "topic": "AIの基本的な仕組み",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "AIとロボットの違いを問う誤答3件が『必ず』『物理的な腕』等の極端な断定。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q037",
       "file": "questionBank.ts",
       "topic": "ルールベースの限界",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "ルールベースの限界で『言葉を扱えない』『条件分岐を使わない』など無関係・明白な誤答が複数。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q038",
       "file": "questionBank.ts",
       "topic": "学習済みモデル",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "推論に対して収集・ラベル作成・損失関数設定という工程名だけを並べており識別が容易。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q039",
       "file": "questionBank.ts",
       "topic": "AI限界",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "『一切監視不要』『必ず正しい』という極端な誤答が2件。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q040",
       "file": "questionBank.ts",
       "topic": "誤差逆伝播法",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "誤差逆伝播法に対し『ラベル削除』『画像生成』『全重み固定』は容易に除外可能。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q041",
       "file": "questionBank.ts",
       "topic": "データラベリング",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "ラベル品質の選択肢が『検討を省く』『すべて削除』『基準を別にする』と明白に不適切。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q042",
       "file": "questionBank.ts",
       "topic": "AIと人間協調",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "人間の確認工程について誤答が『すべて省く』『記録せず』等の極端な操作に偏る。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q043",
       "file": "questionBank.ts",
       "topic": "モデル更新",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "モデル更新で『評価省略』『履歴を残さず』という明白な誤答が2件。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q044",
       "file": "questionBank.ts",
       "topic": "AIリスク",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "リスク評価に対しGPUメーカー・チーム人数・表示速度『だけ』の無関係選択肢。章境界も要照合。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q045",
       "file": "questionBank.ts",
       "topic": "強化学習・探索と活用",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "探索と活用の定義は妥当だが、誤答が両概念の単純な逆転・極端な無作為化で識別が容易。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q046",
       "file": "questionBank.ts",
       "topic": "エキスパートシステム",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "エキスパートシステムに対し画像生成・拡散モデル等の時代の違う用語が並ぶ。q027との重複比較。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q047",
       "file": "questionBank.ts",
       "topic": "再現性",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "再現性の記録に対し『勤務時間だけ』『ファイル名だけ』など無関係な誤答が複数。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q048",
       "file": "questionBank.ts",
       "topic": "転移学習",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "転移学習の再評価で『性能保証』『ラベル削除』など明白な誤答が複数。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q049",
       "file": "questionBank.ts",
       "topic": "教師なし学習",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "クラスタ妥当性の選択肢で『必ず増やす』『検証せず削除』など極端な誤答が複数。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q050",
       "file": "questionBank.ts",
       "topic": "ニューラルネットワーク",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "入力層・出力層の二つを選ぶ設問で『重みは調整できない』『隠れ層は常に存在しない』の極端な誤答。q024と重複比較。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q051",
       "file": "questionBank.ts",
       "topic": "推論と学習",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "推論運用で『毎回全重み再学習』『毎回初期化』など明白な誤答が複数。q038との重複比較。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q052",
       "file": "questionBank.ts",
       "topic": "AIの歴史・AIの冬",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "AIの冬の誤答が『全世界で法律により禁止』『全AIが人間超え』等の極端な断定。q059と重複比較。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q053",
       "file": "questionBank.ts",
       "topic": "ディープラーニング",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "深層学習の特徴で『人が全規則を書く』『推論時に必ず正解入力』など明白な誤答。q013との重複比較。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q054",
       "file": "questionBank.ts",
       "topic": "AIの歴史",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "第一次・第二次AIブームの設問でTransformer・拡散モデルの時代錯誤選択肢が複数。q027・q034と重複比較。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q055",
       "file": "questionBank.ts",
       "topic": "正解率",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "正解率の比較で『正解件数が多い方が必ず高い』など単純な誤答が含まれ、他の誤答の妥当性も検討。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q056",
       "file": "questionBank.ts",
       "topic": "ニューラルネットワーク",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "損失関数の役割に対し著作権判断・画像生成・ラベル削除など無関係な誤答が複数。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q057",
       "file": "questionBank.ts",
       "topic": "強化学習",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "行動価値に対し『画像解像度で決まる』『将来報酬を含めない』など明白な誤答が複数。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q058",
       "file": "questionBank.ts",
       "topic": "識別系AIと生成系AI",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "識別系と生成系の用途対比はq029と実質的に同一の理解を問う可能性が高い。差し替え候補。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q059",
       "file": "questionBank.ts",
       "topic": "AIの歴史",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "AIの冬の原因を問う内容がq052と重複傾向。極端な誤答も含まれる。"
+      ],
       "verified_at_commit": null
     },
     {
       "id": "q060",
       "file": "questionBank.ts",
       "topic": "シンギュラリティ",
-      "status": "unverified",
+      "status": "needs_fix",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
-      "findings": [],
+      "findings": [
+        "シンギュラリティの誤答が『到来日確定』『第一次ブームの別名』『層の名称』など容易に除外可能。"
+      ],
       "verified_at_commit": null
     },
     {
