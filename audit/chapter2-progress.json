@@ -78,14 +78,14 @@
     "src/data/expansion2027Questions.ts": "5c445426ecb4481c7af71f10a5968f324f605abd",
     "src/data/advanced2027Questions.ts": "94eac33cd7b07ae27b6d1ddbb32308fb347559ce",
     "src/data/practice2027Questions.ts": "08cf5035884532d6eab98ed7fbb8628c7656b4e2",
-    "src/data/applied2027Questions.ts": "21cd541cb081e60c6830c1489ed251ba65105262",
+    "src/data/applied2027Questions.ts": "587ef062d47e5e8ceeaf750257ab5ac306f01977",
     "src/App.tsx": "0b4ceec8b0564871ad478f19733d7277542f8517"
   },
   "items": [],
   "checkpoint": {
     "last_completed_id": "q120",
     "next_question_id": null,
-    "next_action": "Run build/browser tests for standalone full-bank integration; bounded semantic review of chapter 2; separately plan embedded server score expansion",
+    "next_action": "Review remaining highest-risk same-topic semantic overlaps, then build and Safari smoke test; do not use GitHub Actions",
     "last_verified_commit": "1a1a089d18cc89905f985aecc52c0daf3f006408",
     "chapter_accepted": false
   },
@@ -453,6 +453,19 @@
       "standalone": "daily, chapter study, mock now use activeQuestionBank",
       "embedded": "retains canonical questionBank to preserve server score validation; added explicit user notice",
       "remaining": "server-side canonical scoring integration for expanded items; browser smoke test"
-    }
+    },
+    "semantic_similarity_screen": {
+      "date": "2026-11-18",
+      "method": "Same-topic character trigram overlap; candidate detection only, not proof of semantic duplication",
+      "candidate_pairs_over_threshold_0_48": 112,
+      "reviewed_examples": [
+        "q066/ap27-095",
+        "q118/adv27-017"
+      ],
+      "confirmed_revision": "ap27-095 changed from repeated ChatGPT definition to distinct service governance judgment",
+      "source_commit": "b621adac47283594c4241297f39da75673152916",
+      "remaining": "Bounded review of high-overlap pairs and fact checking; no endless optimization"
+    },
+    "build_status": "Not executed: GitHub source inspected and updated; no local dependency-backed build or Safari execution in this turn"
   }
 }
