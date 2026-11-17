@@ -84,7 +84,7 @@
   "checkpoint": {
     "last_completed_id": "q120",
     "next_question_id": null,
-    "next_action": "Independently audit q081-q120, then redistribute and rewrite remaining chapter 2 questions across six source files against 31-topic targets; avoid counting unverified questions as accepted.",
+    "next_action": "Reconcile other source files and migrate chapter 2 questions to 31-topic targets; audit q061-q120 before accepting quality.",
     "last_verified_commit": null,
     "chapter_accepted": false
   },
@@ -141,9 +141,16 @@
       "commit": "8a17ca7782e6dc0ae8a018b835dd0efe11f411a8",
       "status": "source_updated_pending_independent_audit",
       "purpose": "Reallocate twenty former prompt/API/security items to 2027 chapter 2 technical syllabus"
+    },
+    {
+      "ids": "q061-q080",
+      "count": 20,
+      "commit": "38c7063b3d81bd6e8f4957641451b5ef405ae42a",
+      "status": "topic_aligned_pending_independent_audit",
+      "purpose": "Rewrite five off-syllabus prompts and retag fifteen existing chapter-2 questions"
     }
   ],
   "allocation_file": "audit/chapter2-allocation-2027.json",
-  "allocation_commit": "24fe4f36ef0535179941b7ffeaf807cf0a60a71c",
+  "allocation_commit": "d54ad11df85489f73c538451542b4e9b4433c9dc",
   "allocation_status": "fixed_31_small_topics"
 }
