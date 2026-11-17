@@ -40,12 +40,12 @@
   },
   "checkpoint": {
     "phase": "round1-repair",
-    "last_completed_id": "q052",
-    "next_action": "Continue round1-repair at q053",
+    "last_completed_id": "q060",
+    "next_action": "All questionBank.ts needs_fix addressed; continue round1-repair in next source file in ledger order",
     "last_verified_commit": null,
     "round1_passed": 0,
-    "round1_needs_fix": 213,
-    "round1_recheck": 87,
+    "round1_needs_fix": 205,
+    "round1_recheck": 95,
     "round1_unverified": 0,
     "round2_passed": 0,
     "chapter_accepted": false,
@@ -769,12 +769,13 @@
       "id": "q053",
       "file": "questionBank.ts",
       "topic": "ディープラーニング",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "深層学習の特徴で『人が全規則を書く』『推論時に必ず正解入力』など明白な誤答。q013との重複比較。"
+        "深層学習の特徴で『人が全規則を書く』『推論時に必ず正解入力』など明白な誤答。q013との重複比較。",
+        "設問・選択肢・正答・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -782,12 +783,13 @@
       "id": "q054",
       "file": "questionBank.ts",
       "topic": "AIの歴史",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "第一次・第二次AIブームの設問でTransformer・拡散モデルの時代錯誤選択肢が複数。q027・q034と重複比較。"
+        "第一次・第二次AIブームの設問でTransformer・拡散モデルの時代錯誤選択肢が複数。q027・q034と重複比較。",
+        "設問・選択肢・正答・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -795,12 +797,13 @@
       "id": "q055",
       "file": "questionBank.ts",
       "topic": "正解率",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "正解率の比較で『正解件数が多い方が必ず高い』など単純な誤答が含まれ、他の誤答の妥当性も検討。"
+        "正解率の比較で『正解件数が多い方が必ず高い』など単純な誤答が含まれ、他の誤答の妥当性も検討。",
+        "設問・選択肢・正答・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -808,12 +811,13 @@
       "id": "q056",
       "file": "questionBank.ts",
       "topic": "ニューラルネットワーク",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "損失関数の役割に対し著作権判断・画像生成・ラベル削除など無関係な誤答が複数。"
+        "損失関数の役割に対し著作権判断・画像生成・ラベル削除など無関係な誤答が複数。",
+        "設問・選択肢・正答・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -821,12 +825,13 @@
       "id": "q057",
       "file": "questionBank.ts",
       "topic": "強化学習",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "行動価値に対し『画像解像度で決まる』『将来報酬を含めない』など明白な誤答が複数。"
+        "行動価値に対し『画像解像度で決まる』『将来報酬を含めない』など明白な誤答が複数。",
+        "設問・選択肢・正答・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -834,12 +839,13 @@
       "id": "q058",
       "file": "questionBank.ts",
       "topic": "識別系AIと生成系AI",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "識別系と生成系の用途対比はq029と実質的に同一の理解を問う可能性が高い。差し替え候補。"
+        "識別系と生成系の用途対比はq029と実質的に同一の理解を問う可能性が高い。差し替え候補。",
+        "設問・選択肢・正答・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -847,12 +853,13 @@
       "id": "q059",
       "file": "questionBank.ts",
       "topic": "AIの歴史",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "AIの冬の原因を問う内容がq052と重複傾向。極端な誤答も含まれる。"
+        "AIの冬の原因を問う内容がq052と重複傾向。極端な誤答も含まれる。",
+        "設問・選択肢・正答・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
@@ -860,12 +867,13 @@
       "id": "q060",
       "file": "questionBank.ts",
       "topic": "シンギュラリティ",
-      "status": "needs_fix",
+      "status": "recheck",
       "syllabus_middle": null,
       "syllabus_small": null,
       "difficulty": null,
       "findings": [
-        "シンギュラリティの誤答が『到来日確定』『第一次ブームの別名』『層の名称』など容易に除外可能。"
+        "シンギュラリティの誤答が『到来日確定』『第一次ブームの別名』『層の名称』など容易に除外可能。",
+        "設問・選択肢・正答・解説を改稿。独立再検査待ち。"
       ],
       "verified_at_commit": null
     },
