@@ -84,7 +84,7 @@
   "checkpoint": {
     "last_completed_id": "q120",
     "next_question_id": null,
-    "next_action": "Verify exam UI support for q075 multi-select and conduct bounded independent semantic correctness review; do not accept chapter solely from structural pass",
+    "next_action": "Resolve chapter-2 study/mock bank integration with score submission contract; then bounded semantic audit and Safari device test",
     "last_verified_commit": "1a1a089d18cc89905f985aecc52c0daf3f006408",
     "chapter_accepted": false
   },
@@ -235,7 +235,7 @@
     "source_commit": "797c43e3be79012ace5577343e5ec3fae2377269"
   },
   "chapter2_audit": {
-    "stage": "second_pass_semantic_and_runtime_verification_pending",
+    "stage": "integration_blocker_and_bounded_semantic_review_pending",
     "checked": 300,
     "allocation_matched": 31,
     "missing_topic_or_prompt": 0,
@@ -431,6 +431,20 @@
       ],
       "method": "GitHub source text static inspection; q061-q120 choice parsing verified with quote-aware matching",
       "limitations": "Does not prove runtime multiple-choice behavior, semantic uniqueness, or explanation correctness"
+    },
+    "q075_runtime_static_verification": {
+      "multi_select_ui": "implemented in App.tsx toggleChoice and multi-select label",
+      "choice_shuffle": "implemented in studyEngine.ts randomizeChoices",
+      "scoring": "implemented in scoring.ts isCorrect via sorted exact answer sets",
+      "device_test": "not performed",
+      "status": "static code path verified; Safari test outstanding"
+    },
+    "integration_finding": {
+      "severity": "high",
+      "finding": "App.tsx startDaily/startStudy/startMock use questionBank (base 300) rather than activeQuestionBank (all sources); thus chapter 2 expansion items are excluded from these scored study modes",
+      "affected": "chapter study, daily study, 60-question mock",
+      "weak_drill": "buildWeakDrill uses activeQuestionBank but requires wrong-question stats; newly added items not routinely reachable",
+      "decision": "Do not mark 300-item chapter as delivered until integration is resolved or explicitly scoped"
     }
   }
 }
