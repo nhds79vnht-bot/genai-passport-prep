@@ -78,13 +78,13 @@
     "src/data/expansion2027Questions.ts": "5c445426ecb4481c7af71f10a5968f324f605abd",
     "src/data/advanced2027Questions.ts": "94eac33cd7b07ae27b6d1ddbb32308fb347559ce",
     "src/data/practice2027Questions.ts": "08cf5035884532d6eab98ed7fbb8628c7656b4e2",
-    "src/data/applied2027Questions.ts": "81717d76d39f42c081f8fa10ecfbfc614f268e83"
+    "src/data/applied2027Questions.ts": "21cd541cb081e60c6830c1489ed251ba65105262"
   },
   "items": [],
   "checkpoint": {
     "last_completed_id": "q120",
     "next_question_id": null,
-    "next_action": "Review remaining applied question distractors ap27-631 onward and close finite first-pass audit; run structure and semantic acceptance checks",
+    "next_action": "Run full 300 question structure, allocation, semantic duplication and q075 multi-select runtime verification",
     "last_verified_commit": "1a1a089d18cc89905f985aecc52c0daf3f006408",
     "chapter_accepted": false
   },
@@ -235,7 +235,7 @@
     "source_commit": "797c43e3be79012ace5577343e5ec3fae2377269"
   },
   "chapter2_audit": {
-    "stage": "first_pass_applied_choice_semantics_in_progress",
+    "stage": "first_pass_closure_checks_pending",
     "checked": 300,
     "allocation_matched": 31,
     "missing_topic_or_prompt": 0,
@@ -395,14 +395,20 @@
     "applied_distractor_choices_rewritten_latest_batch": 93,
     "applied_latest_batch_ids": "ap27-409, ap27-410, ap27-481–490, ap27-531–539, ap27-581–590",
     "first_pass_followup": {
-      "reviewed_scope": "ap27-631 onward targeted review",
+      "reviewed_scope": "all 46 chapter 2 applied items with IDs 631 onward",
       "distractor_revisions": [
         "ap27-633",
         "ap27-636",
+        "ap27-640",
+        "ap27-734",
+        "ap27-736",
+        "ap27-794",
+        "ap27-798",
         "ap27-800"
       ],
-      "note": "Three targeted distractor edits; first pass and independent semantic acceptance remain open",
-      "source_commit": "e01154187870b2553b3eec820b8911c893f5d94d"
+      "confirmed_defect": "ap27-640 had three additional true choices despite single-answer format; revised to one defensible answer",
+      "first_pass_applied_tail_review_complete": true,
+      "source_commit": "45bb806269be5cd8fa90698de326de568bca617a"
     }
   }
 }
