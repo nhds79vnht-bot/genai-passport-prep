@@ -42,7 +42,7 @@
       "small_topic": "Transformerモデルの革命",
       "target": 14,
       "accepted": 0,
-      "source_updated_pending_audit": 2
+      "source_updated_pending_audit": 14
     },
     {
       "code": "2-1-2",
@@ -50,7 +50,7 @@
       "small_topic": "Transformer登場以後の派生モデルの系譜",
       "target": 10,
       "accepted": 0,
-      "source_updated_pending_audit": 2
+      "source_updated_pending_audit": 10
     },
     {
       "code": "2-1-3",
@@ -58,7 +58,7 @@
       "small_topic": "拡散モデルの登場",
       "target": 11,
       "accepted": 0,
-      "source_updated_pending_audit": 2
+      "source_updated_pending_audit": 11
     },
     {
       "code": "2-1-4",
@@ -66,7 +66,7 @@
       "small_topic": "基盤モデルとマルチモーダルモデル",
       "target": 10,
       "accepted": 0,
-      "source_updated_pending_audit": 3
+      "source_updated_pending_audit": 10
     },
     {
       "code": "2-2-1",
@@ -74,7 +74,7 @@
       "small_topic": "事前学習",
       "target": 10,
       "accepted": 0,
-      "source_updated_pending_audit": 2
+      "source_updated_pending_audit": 10
     },
     {
       "code": "2-2-2",
@@ -82,7 +82,7 @@
       "small_topic": "ファインチューニング",
       "target": 10,
       "accepted": 0,
-      "source_updated_pending_audit": 3
+      "source_updated_pending_audit": 10
     },
     {
       "code": "2-2-3",
@@ -90,7 +90,7 @@
       "small_topic": "RLHF",
       "target": 9,
       "accepted": 0,
-      "source_updated_pending_audit": 2
+      "source_updated_pending_audit": 9
     },
     {
       "code": "2-2-4",
@@ -98,7 +98,7 @@
       "small_topic": "学習データの規模と課題",
       "target": 9,
       "accepted": 0,
-      "source_updated_pending_audit": 3
+      "source_updated_pending_audit": 9
     },
     {
       "code": "2-2-5",
@@ -106,7 +106,7 @@
       "small_topic": "スケーリング則",
       "target": 7,
       "accepted": 0,
-      "source_updated_pending_audit": 2
+      "source_updated_pending_audit": 7
     },
     {
       "code": "2-3-1",
@@ -114,7 +114,7 @@
       "small_topic": "トークン化",
       "target": 12,
       "accepted": 0,
-      "source_updated_pending_audit": 3
+      "source_updated_pending_audit": 12
     },
     {
       "code": "2-3-2",
@@ -122,7 +122,7 @@
       "small_topic": "埋め込みとベクトル表現",
       "target": 12,
       "accepted": 0,
-      "source_updated_pending_audit": 2
+      "source_updated_pending_audit": 12
     },
     {
       "code": "2-3-3",
@@ -130,7 +130,7 @@
       "small_topic": "確率的な次トークン予測",
       "target": 14,
       "accepted": 0,
-      "source_updated_pending_audit": 2
+      "source_updated_pending_audit": 14
     },
     {
       "code": "2-3-4",
@@ -138,7 +138,7 @@
       "small_topic": "ハルシネーション",
       "target": 14,
       "accepted": 0,
-      "source_updated_pending_audit": 3
+      "source_updated_pending_audit": 14
     },
     {
       "code": "2-3-5",
@@ -146,7 +146,7 @@
       "small_topic": "生成パラメータ（Temperature・Top-p）",
       "target": 12,
       "accepted": 0,
-      "source_updated_pending_audit": 3
+      "source_updated_pending_audit": 12
     },
     {
       "code": "2-3-6",
@@ -154,7 +154,7 @@
       "small_topic": "コンテキストウィンドウ",
       "target": 11,
       "accepted": 0,
-      "source_updated_pending_audit": 2
+      "source_updated_pending_audit": 11
     },
     {
       "code": "2-4-1",
@@ -162,7 +162,7 @@
       "small_topic": "LM（言語モデル）とは",
       "target": 8,
       "accepted": 0,
-      "source_updated_pending_audit": 2
+      "source_updated_pending_audit": 8
     },
     {
       "code": "2-4-2",
@@ -170,7 +170,7 @@
       "small_topic": "LLM（大規模言語モデル）とは",
       "target": 14,
       "accepted": 0,
-      "source_updated_pending_audit": 2
+      "source_updated_pending_audit": 14
     },
     {
       "code": "2-4-3",
@@ -178,7 +178,7 @@
       "small_topic": "オンプレミス／オープンソースLLM",
       "target": 8,
       "accepted": 0,
-      "source_updated_pending_audit": 2
+      "source_updated_pending_audit": 8
     },
     {
       "code": "2-5-1",
@@ -186,7 +186,7 @@
       "small_topic": "ChatGPTとは",
       "target": 9,
       "accepted": 0,
-      "source_updated_pending_audit": 2
+      "source_updated_pending_audit": 9
     },
     {
       "code": "2-5-2",
@@ -194,7 +194,7 @@
       "small_topic": "ChatGPT登場までの歴史（GPT-1〜GPT-3.5）",
       "target": 8,
       "accepted": 0,
-      "source_updated_pending_audit": 1
+      "source_updated_pending_audit": 8
     },
     {
       "code": "2-5-3",
@@ -202,7 +202,7 @@
       "small_topic": "GPTモデルの進化（GPT-4〜GPT-6 Astra）",
       "target": 9,
       "accepted": 0,
-      "source_updated_pending_audit": 2
+      "source_updated_pending_audit": 9
     },
     {
       "code": "2-5-4",
@@ -210,7 +210,7 @@
       "small_topic": "マルチモーダルモデルへの展開",
       "target": 8,
       "accepted": 0,
-      "source_updated_pending_audit": 1
+      "source_updated_pending_audit": 8
     },
     {
       "code": "2-5-5",
@@ -218,7 +218,7 @@
       "small_topic": "推論モデルと推論時の計算",
       "target": 9,
       "accepted": 0,
-      "source_updated_pending_audit": 3
+      "source_updated_pending_audit": 9
     },
     {
       "code": "2-5-6",
@@ -226,7 +226,7 @@
       "small_topic": "Operator / Codex / Image Generation",
       "target": 8,
       "accepted": 0,
-      "source_updated_pending_audit": 1
+      "source_updated_pending_audit": 8
     },
     {
       "code": "2-5-7",
@@ -234,7 +234,7 @@
       "small_topic": "Gemini（Google）",
       "target": 8,
       "accepted": 0,
-      "source_updated_pending_audit": 2
+      "source_updated_pending_audit": 8
     },
     {
       "code": "2-5-8",
@@ -242,7 +242,7 @@
       "small_topic": "Claude（Anthropic）",
       "target": 8,
       "accepted": 0,
-      "source_updated_pending_audit": 1
+      "source_updated_pending_audit": 8
     },
     {
       "code": "2-5-9",
@@ -250,7 +250,7 @@
       "small_topic": "Copilot（Microsoft）",
       "target": 8,
       "accepted": 0,
-      "source_updated_pending_audit": 1
+      "source_updated_pending_audit": 8
     },
     {
       "code": "2-6-1",
@@ -258,7 +258,7 @@
       "small_topic": "画像生成AI",
       "target": 9,
       "accepted": 0,
-      "source_updated_pending_audit": 0
+      "source_updated_pending_audit": 9
     },
     {
       "code": "2-6-2",
@@ -266,7 +266,7 @@
       "small_topic": "音楽生成AI",
       "target": 7,
       "accepted": 0,
-      "source_updated_pending_audit": 1
+      "source_updated_pending_audit": 7
     },
     {
       "code": "2-6-3",
@@ -274,7 +274,7 @@
       "small_topic": "音声生成AI",
       "target": 7,
       "accepted": 0,
-      "source_updated_pending_audit": 1
+      "source_updated_pending_audit": 7
     },
     {
       "code": "2-6-4",
@@ -282,7 +282,7 @@
       "small_topic": "動画生成AI",
       "target": 7,
       "accepted": 0,
-      "source_updated_pending_audit": 2
+      "source_updated_pending_audit": 7
     }
   ],
   "allocation_rules": [
@@ -293,14 +293,14 @@
     "Adjust targets only through an explicit documented allocation revision."
   ],
   "pending_question_audit": [
-    "q081-q100"
+    "第2章300問全件"
   ],
   "reconciliation": {
-    "range": "q061-q120",
-    "mapped": 60,
+    "range": "all chapter 2 question sources",
+    "mapped": 300,
     "unmapped": 0,
     "accepted": 0,
-    "source_commit": "38c7063b3d81bd6e8f4957641451b5ef405ae42a",
-    "note": "Topic labels aligned; prompt-level independent audit not completed."
+    "source_commit": "797c43e3be79012ace5577343e5ec3fae2377269",
+    "note": "All 31 subtopic counts exactly match editorial targets; independent content-quality audit pending."
   }
 }
