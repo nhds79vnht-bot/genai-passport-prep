@@ -1,0 +1,71 @@
+{
+  "chapter": "第3章 AIエージェント",
+  "status": "independent_second_pass_screening_in_progress",
+  "audit_source_commit": "dfff5b97f96e558a11f831f2dd2a74f6c3b54960",
+  "source_version": "2027年2月試験から適用",
+  "source_url": "https://guga.or.jp/assets/syllabus.pdf",
+  "first_pass": {
+    "reviewed": 300,
+    "source_files": 6,
+    "coverage": "34/34 small topics, all 6 group target counts matched at audit_source_commit"
+  },
+  "second_pass": {
+    "structural_screened": 300,
+    "unique_question_ids": 300,
+    "invalid_question_contracts": 0,
+    "correct_note_wrong_polarity": 0,
+    "wrong_note_correct_polarity": 0,
+    "placeholder_prompts": 0,
+    "short_explanation_screen_flags": 32,
+    "short_explanations_are_not_automatic_failures": true,
+    "closely_similar_same_topic_prompt_pairs": [
+      [
+        "q129",
+        "s27-001"
+      ],
+      [
+        "q171",
+        "s27-020"
+      ]
+    ],
+    "identical_correct_judgment_candidates": [
+      [
+        "q130",
+        "pr27-009",
+        "ap27-130",
+        "ap27-326",
+        "ap27-427",
+        "ap27-593"
+      ],
+      [
+        "s27-019",
+        "ap27-421",
+        "ap27-549"
+      ],
+      [
+        "q150",
+        "ap27-318"
+      ],
+      [
+        "ex27-057",
+        "ap27-649"
+      ],
+      [
+        "pr27-056",
+        "ap27-693"
+      ],
+      [
+        "pr27-061",
+        "ap27-123"
+      ]
+    ],
+    "content_judgment_independently_passed": 0,
+    "critical_findings_unresolved": [
+      "Repeatedly testing the same judgment in workflow vs autonomous agent questions must be evaluated semantically",
+      "Some very short explanations require a qualitative check",
+      "Correct answer/distractor truth conditions need full independent content audit"
+    ],
+    "accepted": false
+  },
+  "note": "This report is a version-pinned screening snapshot, not a pass declaration. Newer commits that improve explanations and rename the chapter are not included. Before acceptance, re-evaluate the latest source and reconcile the progress ledger."
+}
