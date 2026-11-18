@@ -679,9 +679,9 @@ button:disabled {
 .review-answer-user { border-left: 3px solid var(--neon-pink); }
 .review-answer-user h4 { color: #ff94e8; }
 .review-answer-correct {
+  border-color: rgba(52, 211, 153, 0.35);
   border-left: 3px solid var(--success);
   background: rgba(52, 211, 153, 0.1);
-  border-color: rgba(52, 211, 153, 0.35);
 }
 .review-answer-correct h4 { color: #69f0b8; }
 .review-answer-correct p { color: #f1fff8; font-weight: 700; }
