@@ -1,6 +1,6 @@
 {
   "chapter": 3,
-  "status": "inventory_reviewed_mapping_pending",
+  "status": "full_inventory_saved_preliminary_mapping",
   "source_files": {
     "src/data/questionBank.ts": 60,
     "src/data/syllabus2027Questions.ts": 13,
@@ -53,6 +53,13 @@
       "最小権限"
     ],
     "mapping_status": "全件の小項目別確定分類は未実施",
-    "next_action": "全300問を内容で34小項目へ分類し、旧範囲問題を差し替えて第一巡を開始"
-  }
+    "next_action": "全300問を内容で34小項目へ分類し、旧範囲問題を差し替えて第一巡を開始",
+    "verified_source_ids": 300,
+    "preliminary_classified": 246,
+    "unclassified": 54,
+    "final_mapping_verified": false,
+    "first_pass_ready": false
+  },
+  "inventory_file": "audit/chapter3-inventory-2027.json",
+  "next_action": "54件の未分類と246件の暫定分類を内容審査し、配分を確定後に第一巡の問題改稿を開始"
 }
