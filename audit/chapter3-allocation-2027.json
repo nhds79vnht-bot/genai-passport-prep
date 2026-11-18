@@ -2,7 +2,7 @@
   "source": "https://guga.or.jp/assets/syllabus.pdf",
   "source_version": "2027年2月試験より適用",
   "chapter": "第3章 AIエージェント",
-  "status": "second_pass_targets_confirmed",
+  "status": "accepted_for_current_development_pass",
   "target_total": 300,
   "method": "第3章公式34学習項目へ均衡を考慮して設計した学習用配分（公式出題比率ではない）。内容を基準として300問を是正する。",
   "groups": [
@@ -14,37 +14,37 @@
           "name": "AIエージェントの定義",
           "target": 10,
           "mapped_current": 10,
-          "mapping_status": "second_pass_checked"
+          "mapping_status": "accepted"
         },
         {
           "name": "従来の生成AIとの違い",
           "target": 9,
           "mapped_current": 9,
-          "mapping_status": "second_pass_checked"
+          "mapping_status": "accepted"
         },
         {
           "name": "ワークフロー型エージェントと自律型エージェント",
           "target": 9,
           "mapped_current": 9,
-          "mapping_status": "second_pass_checked"
+          "mapping_status": "accepted"
         },
         {
           "name": "AIエージェントが注目される背景",
           "target": 9,
           "mapped_current": 9,
-          "mapping_status": "second_pass_checked"
+          "mapping_status": "accepted"
         },
         {
           "name": "自律性のレベル",
           "target": 9,
           "mapped_current": 9,
-          "mapping_status": "second_pass_checked"
+          "mapping_status": "accepted"
         },
         {
           "name": "AIエージェントの役割",
           "target": 9,
           "mapped_current": 9,
-          "mapping_status": "second_pass_checked"
+          "mapping_status": "accepted"
         }
       ]
     },
@@ -56,37 +56,37 @@
           "name": "RAGとは",
           "target": 10,
           "mapped_current": 10,
-          "mapping_status": "second_pass_checked"
+          "mapping_status": "accepted"
         },
         {
           "name": "RAGが必要とされる理由",
           "target": 9,
           "mapped_current": 9,
-          "mapping_status": "second_pass_checked"
+          "mapping_status": "accepted"
         },
         {
           "name": "RAGの仕組み",
           "target": 9,
           "mapped_current": 9,
-          "mapping_status": "second_pass_checked"
+          "mapping_status": "accepted"
         },
         {
           "name": "RAGの発展",
           "target": 9,
           "mapped_current": 9,
-          "mapping_status": "second_pass_checked"
+          "mapping_status": "accepted"
         },
         {
           "name": "RAGのユースケース",
           "target": 9,
           "mapped_current": 9,
-          "mapping_status": "second_pass_checked"
+          "mapping_status": "accepted"
         },
         {
           "name": "主なRAGツール・フレームワーク",
           "target": 9,
           "mapped_current": 9,
-          "mapping_status": "second_pass_checked"
+          "mapping_status": "accepted"
         }
       ]
     },
@@ -98,37 +98,37 @@
           "name": "LLMを中核とした構成",
           "target": 10,
           "mapped_current": 10,
-          "mapping_status": "second_pass_checked"
+          "mapping_status": "accepted"
         },
         {
           "name": "タスク分解と計画",
           "target": 9,
           "mapped_current": 9,
-          "mapping_status": "second_pass_checked"
+          "mapping_status": "accepted"
         },
         {
           "name": "ツール実行",
           "target": 9,
           "mapped_current": 9,
-          "mapping_status": "second_pass_checked"
+          "mapping_status": "accepted"
         },
         {
           "name": "記憶（メモリ）とコンテキスト管理",
           "target": 9,
           "mapped_current": 9,
-          "mapping_status": "second_pass_checked"
+          "mapping_status": "accepted"
         },
         {
           "name": "コンテキストエンジニアリング",
           "target": 9,
           "mapped_current": 9,
-          "mapping_status": "second_pass_checked"
+          "mapping_status": "accepted"
         },
         {
           "name": "推論と行動のフィードバックループ",
           "target": 9,
           "mapped_current": 9,
-          "mapping_status": "second_pass_checked"
+          "mapping_status": "accepted"
         }
       ]
     },
@@ -140,31 +140,31 @@
           "name": "MCP（Model Context Protocol）とは",
           "target": 9,
           "mapped_current": 9,
-          "mapping_status": "second_pass_checked"
+          "mapping_status": "accepted"
         },
         {
           "name": "外部ツール・データソースとの連携",
           "target": 9,
           "mapped_current": 9,
-          "mapping_status": "second_pass_checked"
+          "mapping_status": "accepted"
         },
         {
           "name": "マルチエージェント・エージェント間連携",
           "target": 9,
           "mapped_current": 9,
-          "mapping_status": "second_pass_checked"
+          "mapping_status": "accepted"
         },
         {
           "name": "A2A（Agent-to-Agent）連携プロトコル",
           "target": 9,
           "mapped_current": 9,
-          "mapping_status": "second_pass_checked"
+          "mapping_status": "accepted"
         },
         {
           "name": "Agent Skills（エージェントスキル）とは",
           "target": 9,
           "mapped_current": 9,
-          "mapping_status": "second_pass_checked"
+          "mapping_status": "accepted"
         }
       ]
     },
@@ -176,31 +176,31 @@
           "name": "コーディングエージェント",
           "target": 8,
           "mapped_current": 8,
-          "mapping_status": "second_pass_checked"
+          "mapping_status": "accepted"
         },
         {
           "name": "ハーネスエンジニアリング",
           "target": 8,
           "mapped_current": 8,
-          "mapping_status": "second_pass_checked"
+          "mapping_status": "accepted"
         },
         {
           "name": "ブラウザ操作・PC操作エージェント",
           "target": 8,
           "mapped_current": 8,
-          "mapping_status": "second_pass_checked"
+          "mapping_status": "accepted"
         },
         {
           "name": "リサーチ・業務自動化エージェント",
           "target": 8,
           "mapped_current": 8,
-          "mapping_status": "second_pass_checked"
+          "mapping_status": "accepted"
         },
         {
           "name": "業務への導入事例",
           "target": 8,
           "mapped_current": 8,
-          "mapping_status": "second_pass_checked"
+          "mapping_status": "accepted"
         }
       ]
     },
@@ -212,37 +212,37 @@
           "name": "権限の過剰付与のリスク",
           "target": 9,
           "mapped_current": 9,
-          "mapping_status": "second_pass_checked"
+          "mapping_status": "accepted"
         },
         {
           "name": "連鎖的なエラーの拡大",
           "target": 9,
           "mapped_current": 9,
-          "mapping_status": "second_pass_checked"
+          "mapping_status": "accepted"
         },
         {
           "name": "プロンプトインジェクション",
           "target": 8,
           "mapped_current": 8,
-          "mapping_status": "second_pass_checked"
+          "mapping_status": "accepted"
         },
         {
           "name": "具体的なトラブル事例",
           "target": 8,
           "mapped_current": 8,
-          "mapping_status": "second_pass_checked"
+          "mapping_status": "accepted"
         },
         {
           "name": "安全に使うための原則",
           "target": 8,
           "mapped_current": 8,
-          "mapping_status": "second_pass_checked"
+          "mapping_status": "accepted"
         },
         {
           "name": "AIエージェントの評価",
           "target": 8,
           "mapped_current": 8,
-          "mapping_status": "second_pass_checked"
+          "mapping_status": "accepted"
         }
       ]
     }
@@ -274,5 +274,31 @@
       "blob_sha": "94360069ea966eafd3b46f2b140d19ee38797cf7"
     }
   },
-  "distribution_checked_at": "2026-11-18"
+  "distribution_checked_at": "2026-11-18",
+  "accepted_source_blobs": {
+    "src/data/questionBank.ts": {
+      "count": 60,
+      "blob_sha": "0f2c04c87234d500edcc084117934dae2497ee3d"
+    },
+    "src/data/syllabus2027Questions.ts": {
+      "count": 13,
+      "blob_sha": "07bc69aed4bacefa572cdbfae3c702fc9c58605e"
+    },
+    "src/data/expansion2027Questions.ts": {
+      "count": 20,
+      "blob_sha": "c26bf8beb0367af4a4cc816793e2e78fdb80a87a"
+    },
+    "src/data/advanced2027Questions.ts": {
+      "count": 20,
+      "blob_sha": "3e75de66d98b0ba3c3df9e3730d577c475537fe6"
+    },
+    "src/data/practice2027Questions.ts": {
+      "count": 20,
+      "blob_sha": "caaa44d9205569b1854b4654da6b3a693a928f39"
+    },
+    "src/data/applied2027Questions.ts": {
+      "count": 167,
+      "blob_sha": "419b34747f3487614853252ff3695b66a3aa9f43"
+    }
+  }
 }
