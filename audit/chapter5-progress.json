@@ -5,7 +5,7 @@
   "official_title": "第5章 生成AIの実践と活用事例",
   "syllabus_url": "https://guga.or.jp/assets/syllabus.pdf",
   "syllabus_version": "2027年2月試験から適用",
-  "status": "official_mapping_and_allocation_established_first_pass_pending",
+  "status": "first_pass_in_progress",
   "target_question_count": 300,
   "existing_question_count": 300,
   "unique_effective_ids_verified": true,
@@ -20,10 +20,10 @@
   "inventory_file": "audit/chapter5-inventory-2027.json",
   "allocation_status": "created_target_only",
   "first_pass": {
-    "reviewed": 0,
-    "revised": 0,
-    "last_completed_id": null,
-    "next_id": "q241"
+    "reviewed": 12,
+    "revised": 12,
+    "last_completed_id": "q252",
+    "next_id": "q253"
   },
   "second_pass": {
     "reviewed": 0,
@@ -38,9 +38,9 @@
     "unbounded_quality_loop": false,
     "source_and_ledger_persist_required": true
   },
-  "next_action": "Inspect existing source question and all answer/explanation fields against 38 official learning items, revise and persist first-pass batches. Do not count allocation alone as reviewed.",
+  "next_action": "Resume at q253; continue chapter-5 official mapping and substantive question-body revisions, preserving total 300.",
   "source_blob_shas": {
-    "src/data/questionBank.ts": "d01984f78a2bb9a956c10dbf089268e42319d70f",
+    "src/data/questionBank.ts": "c63ee5941fe0d009aa6fabafdc495099b9c49574",
     "src/data/syllabus2027Questions.ts": "8ccfcf45ead1fe263ebc074fc84c8c68b32d182e",
     "src/data/expansion2027Questions.ts": "a96c08983e94db5ead3a61be0ec09e844fb1f812",
     "src/data/advanced2027Questions.ts": "3fcc925e6c66a5c9b5a6729f382bbf7cce0186b4",
