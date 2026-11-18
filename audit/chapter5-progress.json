@@ -20,11 +20,11 @@
   "inventory_file": "audit/chapter5-inventory-2027.json",
   "allocation_status": "created_target_only",
   "first_pass": {
-    "reviewed": 133,
-    "revised": 68,
-    "last_completed_id": "pr27-100",
-    "next_id": "ap27-009",
-    "reclassified": 65
+    "reviewed": 213,
+    "revised": 141,
+    "last_completed_id": "ap27-456",
+    "next_id": "ap27-457",
+    "reclassified": 72
   },
   "second_pass": {
     "reviewed": 0,
@@ -39,14 +39,14 @@
     "unbounded_quality_loop": false,
     "source_and_ledger_persist_required": true
   },
-  "next_action": "Continue applied2027Questions.ts starting ap27-009; replace repetitive old PoC/ROI/incident items with distinct official 2027 learning item content.",
+  "next_action": "Continue applied2027Questions.ts at ap27-457; 87 remain. Rebalance earlier 7 overallocated catch-all items before declaring allocation compliance.",
   "source_blob_shas": {
     "src/data/questionBank.ts": "fdb31d7eefd6220a481158ea7f271e290e913bda",
     "src/data/syllabus2027Questions.ts": "66ea76b74ef9bf349dfb8844588cc333eebd196d",
     "src/data/expansion2027Questions.ts": "1d9bfe9988cf2f8a2549056c505fb784b9bcd8b5",
     "src/data/advanced2027Questions.ts": "c5198cad09c444d32d38c16ff4b0775f39218960",
     "src/data/practice2027Questions.ts": "6d86b1a7760a1faec0983df3dcc4b0eabafa1a5a",
-    "src/data/applied2027Questions.ts": "ffb8a64543db44488f226eafe386eb1dfa36dc90"
+    "src/data/applied2027Questions.ts": "17b96743d2ae7a3725647e8b15c027b3cdd7c894"
   },
   "allocation_file": "audit/chapter5-allocation-2027.json",
   "official_middle_item_count": 7,
