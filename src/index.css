@@ -652,3 +652,87 @@ button:disabled {
     white-space: nowrap;
   }
 }
+
+
+/* ── Clear answer/explanation hierarchy (preserves existing neon glass theme) ── */
+.review-answer-panel {
+  margin-top: 12px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--glass-border);
+  background: rgba(6, 10, 24, 0.38);
+}
+.review-answer-panel h4,
+.review-explanation-panel h4 {
+  margin: 0 0 7px;
+  font-family: var(--font-body);
+  font-size: 0.98rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+.review-answer-panel p {
+  margin: 0;
+  font-size: 0.96rem;
+  line-height: 1.75;
+  overflow-wrap: anywhere;
+}
+.review-answer-user { border-left: 3px solid var(--neon-pink); }
+.review-answer-user h4 { color: #ff94e8; }
+.review-answer-correct {
+  border-left: 3px solid var(--success);
+  background: rgba(52, 211, 153, 0.1);
+  border-color: rgba(52, 211, 153, 0.35);
+}
+.review-answer-correct h4 { color: #69f0b8; }
+.review-answer-correct p { color: #f1fff8; font-weight: 700; }
+.review-explanation-panel {
+  margin-top: 16px;
+  padding: 15px 4px 4px;
+  border-top: 2px solid rgba(0, 229, 255, 0.5);
+}
+.review-explanation-panel h4 {
+  color: var(--neon-cyan);
+  font-size: 1.06rem;
+}
+.review-item .review-explanation-text {
+  margin: 0;
+  color: #f0f4ff;
+  font-size: 1rem;
+  line-height: 1.85;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+.review-gemini-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+.review-gemini-actions .secondary { margin-left: 0; flex: 1 1 150px; }
+.review-copy-feedback { margin-top: 8px !important; color: #8df7e9; }
+.review-copy-fallback {
+  display: block;
+  width: 100%;
+  min-height: 130px;
+  margin-top: 8px;
+  border: 1px solid var(--neon-cyan);
+  border-radius: 8px;
+  background: rgba(6, 10, 24, 0.8);
+  color: var(--text-primary);
+  font: inherit;
+  padding: 8px;
+}
+.recent-wrong-toggle { margin-top: 10px; margin-left: 0; }
+.recent-wrong-list { margin-top: 14px; }
+.recent-wrong-date {
+  margin: 14px 0 8px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid rgba(0, 229, 255, 0.35);
+  color: var(--neon-cyan);
+  font-size: 0.96rem;
+}
+.recent-wrong-time {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin: 5px 0 8px;
+}

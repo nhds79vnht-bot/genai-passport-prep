@@ -1,41 +1,79 @@
+import { useState } from 'react'
 import type { Question } from '../lib/types'
 import { chapterDisplayName } from '../lib/chapters'
-import { formatCorrectChoices, formatSelectedChoices } from '../lib/review'
+import { buildGeminiReviewPrompt, formatCorrectChoices, formatSelectedChoices } from '../lib/review'
 import { isCorrect } from '../lib/scoring'
 
 type Props = {
   question: Question
-  selected: number[]
+  // null means legacy history: old attempts did not store the shuffled choices.
+  selected: number[] | null
   showHeader?: boolean
 }
 
 export function ReviewCard({ question, selected, showHeader = true }: Props) {
-  const correct = isCorrect(question, selected)
-  const researchText = `生成AIパスポート試験の次の問題を初学者向けに説明してください。問題：${question.prompt} 選択肢：${question.choices.join(' / ')} 正解：${formatCorrectChoices(question)}`
+  const [copyStatus, setCopyStatus] = useState<'idle' | 'copied' | 'error'>('idle')
+  const correct = selected !== null && isCorrect(question, selected)
+  const researchText = buildGeminiReviewPrompt(question, selected)
+
+  async function copyForGemini() {
+    try {
+      if (!navigator.clipboard?.writeText) throw new Error('Clipboard unavailable')
+      await navigator.clipboard.writeText(researchText)
+      setCopyStatus('copied')
+    } catch {
+      setCopyStatus('error')
+    }
+  }
 
   function openGemini() {
-    // The official Gemini website does not guarantee prompt prefill through a URL.
-    // Copy the context when clipboard access is available; always open the official website.
     window.open('https://gemini.google.com/app', '_blank', 'noopener,noreferrer')
-    if (navigator.clipboard?.writeText) {
-      void navigator.clipboard.writeText(researchText).catch(() => {})
-    }
   }
 
   return (
     <article className={`review-item ${correct ? 'review-correct' : 'review-wrong'}`}>
       {showHeader && (
         <>
-          <div className="review-status">{correct ? '正解' : '不正解'}</div>
+          <div className="review-status">
+            {selected === null ? '以前の間違い' : correct ? '正解' : '不正解'}
+          </div>
           <h3>{question.prompt}</h3>
           <p className="hint">{chapterDisplayName(question.chapter)} / {question.topic}</p>
         </>
       )}
-      <p><strong>あなたの回答:</strong> {formatSelectedChoices(question, selected)}</p>
-      <p><strong>正解:</strong> {formatCorrectChoices(question)}</p>
-      <p><strong>解説:</strong> {question.explanation}</p>
-      <button type="button" className="secondary" onClick={openGemini}>Geminiで詳しく調べる</button>
-      <p className="hint">質問文をコピーできた場合は、Geminiに貼り付けてください。</p>
+      <div className="review-answer-panel review-answer-user">
+        <h4>あなたの回答</h4>
+        {selected === null ? (
+          <p>当時の選択肢の並び順が保存されていないため、回答は復元できません。</p>
+        ) : (
+          <p>{formatSelectedChoices(question, selected)}</p>
+        )}
+      </div>
+      <div className="review-answer-panel review-answer-correct">
+        <h4>正解</h4>
+        <p>{formatCorrectChoices(question)}</p>
+      </div>
+      <div className="review-explanation-panel">
+        <h4>解説</h4>
+        <p className="review-explanation-text">{question.explanation}</p>
+      </div>
+      <div className="review-gemini-actions">
+        <button type="button" className="secondary" onClick={() => void copyForGemini()}>
+          Gemini用にコピー
+        </button>
+        <button type="button" className="secondary" onClick={openGemini}>
+          Geminiを開く
+        </button>
+      </div>
+      {copyStatus === 'copied' && (
+        <p className="review-copy-feedback" role="status">コピーしました。Geminiに貼り付けてください。</p>
+      )}
+      {copyStatus === 'error' && (
+        <div className="review-copy-feedback" role="status">
+          <p>自動コピーできませんでした。下の文章を長押ししてコピーしてください。</p>
+          <textarea className="review-copy-fallback" readOnly value={researchText} aria-label="Geminiに貼り付ける文章" />
+        </div>
+      )}
     </article>
   )
 }

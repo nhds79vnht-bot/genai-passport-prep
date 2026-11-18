@@ -49,3 +49,20 @@ export function getCorrectChoiceNotes(question: Question): Array<{ label: string
     text: question.choiceNotes[index] ?? question.explanation,
   }))
 }
+
+export function buildGeminiReviewPrompt(question: Question, selected: number[] | null): string {
+  const choices = question.choices.map((choice, index) =>
+    `${['A', 'B', 'C', 'D'][index]}. ${choice}`).join('\n')
+  const answered = selected === null
+    ? '以前の回答は保存されていません'
+    : formatSelectedChoices(question, selected)
+  return [
+    '生成AIパスポートの次の問題を、専門用語の意味と身近な例から分かりやすく解説してください。なぜ正解なのか、他の選択肢が不適切な理由も教えてください。',
+    `【分野】${question.chapter} / ${question.topic}`,
+    `【問題】\n${question.prompt}`,
+    `【選択肢】\n${choices}`,
+    `【私の回答】${answered}`,
+    `【正解】${formatCorrectChoices(question)}`,
+    `【アプリの解説】${question.explanation}`,
+  ].join('\n\n')
+}

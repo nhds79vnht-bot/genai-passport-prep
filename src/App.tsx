@@ -3,6 +3,14 @@ import { AppShell } from './components/AppShell'
 import { QuestionNavigator } from './components/QuestionNavigator'
 import { ReviewCard } from './components/ReviewCard'
 import {
+  combineRecentWrongReviews,
+  loadWrongReviews,
+  makeWrongReviews,
+  pruneWrongReviews,
+  saveWrongReviews,
+} from './lib/wrongReviewHistory'
+import type { WrongReviewRecord } from './lib/wrongReviewHistory'
+import {
   APP_NAME,
   CHAPTERS,
   chapterDisplayName,
@@ -73,6 +81,8 @@ export default function App() {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [showUnansweredOnly, setShowUnansweredOnly] = useState(false)
   const [resultFilter, setResultFilter] = useState<'wrong' | 'all'>('wrong')
+  const [wrongReviews, setWrongReviews] = useState<WrongReviewRecord[]>(() => loadWrongReviews(learnerScope))
+  const [showRecentWrong, setShowRecentWrong] = useState(false)
 
   useEffect(() => {
     try { localStorage.setItem(progressKey, JSON.stringify(progress)) } catch { /* storage unavailable */ }
@@ -81,6 +91,10 @@ export default function App() {
   useEffect(() => {
     saveResults(results, learnerScope)
   }, [results, learnerScope])
+
+  useEffect(() => {
+    try { saveWrongReviews(wrongReviews, learnerScope) } catch { /* local storage may be full or unavailable */ }
+  }, [wrongReviews, learnerScope])
 
   // Embedded in the signed-in くろ先生 app: submit answers through the parent frame.
   // Standalone use remains local-only; no credentials or claimed scores cross frames.
@@ -149,6 +163,8 @@ export default function App() {
     }
     setLatestResult(result)
     setResults((prev) => [result, ...prev].slice(0, 50))
+    const wrongSnapshots = makeWrongReviews(result, questions)
+    setWrongReviews((prev) => pruneWrongReviews([...wrongSnapshots, ...prev]))
     setProgress((prev) => questions.reduce((state, q) => recordAnswer(state, q.id, !wrongQuestionIds.includes(q.id)), prev))
     setStats((prev) =>
       updateStatsAfterSession(
@@ -185,6 +201,10 @@ export default function App() {
   )
 
   const statsByChapter = useMemo(() => chapterStats(stats), [stats])
+  const recentWrong = useMemo(
+    () => combineRecentWrongReviews(wrongReviews, results, activeQuestionBank),
+    [wrongReviews, results],
+  )
   const questionIds = useMemo(() => questions.map((q) => q.id), [questions])
 
   // Parent-server scoring currently accepts canonical q001-q300 IDs only.
@@ -347,6 +367,40 @@ export default function App() {
                 </li>
               ))}
             </ul>
+          )}
+        </section>
+
+        <section className="card">
+          <h2>直近48時間の間違い（${recentWrong.length}問）</h2>
+          <p className="hint">今日・昨日を中心とした過去48時間の不正解・未回答を見返せます。データはこの端末にのみ保存されます。</p>
+          <button
+            type="button"
+            className="secondary recent-wrong-toggle"
+            onClick={() => setShowRecentWrong((prev) => !prev)}
+            disabled={recentWrong.length === 0}
+            aria-expanded={showRecentWrong}
+          >
+            {showRecentWrong ? '間違い履歴を閉じる' : '過去の間違いを見る'}
+          </button>
+          {recentWrong.length === 0 && <p className="hint">直近48時間の間違いはありません。</p>}
+          {showRecentWrong && (
+            <div className="review-list recent-wrong-list">
+              {recentWrong.map((entry, index) => {
+                const date = new Date(entry.completedAt).toLocaleDateString('ja-JP', { month: 'numeric', day: 'numeric', weekday: 'short' })
+                const previous = index > 0
+                  ? new Date(recentWrong[index - 1].completedAt).toLocaleDateString('ja-JP', { month: 'numeric', day: 'numeric', weekday: 'short' })
+                  : null
+                return (
+                  <div key={entry.key}>
+                    {date !== previous && <h3 className="recent-wrong-date">{date}</h3>}
+                    <p className="recent-wrong-time">
+                      {new Date(entry.completedAt).toLocaleTimeString('ja-JP', { hour: '2-digit', minute: '2-digit' })}
+                    </p>
+                    <ReviewCard question={entry.question} selected={entry.selected} />
+                  </div>
+                )
+              })}
+            </div>
           )}
         </section>
 
