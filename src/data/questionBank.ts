@@ -2397,7 +2397,7 @@ export const questionBank: Question[] = [
   {
     id: 'q121',
     chapter: '第3章 生成AIの技術',
-    topic: 'RAG',
+    topic: "RAGとは",
     prompt: 'RAG（Retrieval-Augmented Generation）の目的として最も適切なのはどれですか。',
     choices: [
       '学習済み重みを毎回書き換える',
@@ -2409,7 +2409,7 @@ export const questionBank: Question[] = [
       3
     ],
     explanation: 'RAGは推論時に関連情報を検索し、回答の根拠と正確性を補強します。',
-    reviewSection: 'テキスト第3章（RAG・AIエージェント・MCP ほか） → 「RAG」',
+    reviewSection: "2027年公式シラバス 第3章「RAGとは」",
     examTrap: '「再学習」と混同しやすい。RAGは推論時に外部検索で知識を補完する仕組みです。',
     choiceNotes: [
       '「学習済み重みを毎回書き換える」はRAGの正解条件を満たしません。RAGは推論時に関連情報を検索し、回答の根拠と正確性を補強します。',
@@ -2421,7 +2421,7 @@ export const questionBank: Question[] = [
   {
     id: 'q122',
     chapter: '第3章 生成AIの技術',
-    topic: 'RAG',
+    topic: "RAGの仕組み",
     prompt: 'RAGの流れとして正しい順序に近いのはどれですか。',
     choices: [
       '学習→削除→圧縮→再起動',
@@ -2433,7 +2433,7 @@ export const questionBank: Question[] = [
       2
     ],
     explanation: '検索で根拠を集めてから生成するのが基本です。',
-    reviewSection: 'テキスト第3章（RAG・AIエージェント・MCP ほか） → 「RAG」',
+    reviewSection: "2027年公式シラバス 第3章「RAGの仕組み」",
     examTrap: '「再学習」と混同しやすい。RAGは推論時に外部検索で知識を補完する仕組みです。',
     choiceNotes: [
       '「学習→削除→圧縮→再起動」はRAGの正解条件を満たしません。検索で根拠を集めてから生成するのが基本です。',
@@ -2467,7 +2467,7 @@ export const questionBank: Question[] = [
   {
     id: 'q124',
     chapter: '第3章 生成AIの技術',
-    topic: 'チャンク',
+    topic: "RAGの仕組み",
     prompt: 'チャンク分割の目的として適切なのはどれですか。',
     choices: [
       '検索精度と文脈適合を両立するため適切な長さに分割する',
@@ -2479,7 +2479,7 @@ export const questionBank: Question[] = [
       0
     ],
     explanation: '長すぎ/短すぎを避け、検索しやすい単位に分割します。',
-    reviewSection: 'テキスト第3章（RAG・AIエージェント・MCP ほか） → 「チャンク」',
+    reviewSection: "2027年公式シラバス 第3章「RAGの仕組み」",
     examTrap: 'サイズ固定が正解という問題に注意。文脈と検索精度のバランスがポイントです。',
     choiceNotes: [
       'この選択肢が正解です。長すぎ/短すぎを避け、検索しやすい単位に分割します。',
@@ -2513,7 +2513,7 @@ export const questionBank: Question[] = [
   {
     id: 'q126',
     chapter: '第3章 生成AIの技術',
-    topic: 'Embedding',
+    topic: "RAGの仕組み",
     prompt: 'Embedding（埋め込み）の説明として正しいのはどれですか。',
     choices: [
       'CPU温度を下げる',
@@ -2525,7 +2525,7 @@ export const questionBank: Question[] = [
       2
     ],
     explanation: '意味空間上の距離で類似検索に使います。',
-    reviewSection: 'テキスト第3章（RAG・AIエージェント・MCP ほか） → 「Embedding」',
+    reviewSection: "2027年公式シラバス 第3章「RAGの仕組み」",
     examTrap: '「文字列検索」と混同されがち。意味ベクトルによる類似度計算が本質です。',
     choiceNotes: [
       '「CPU温度を下げる」はEmbeddingの正解条件を満たしません。意味空間上の距離で類似検索に使います。',
@@ -2709,7 +2709,7 @@ export const questionBank: Question[] = [
   {
     id: 'q138',
     chapter: '第3章 生成AIの技術',
-    topic: 'RAG',
+    topic: "RAGが必要とされる理由",
     prompt: 'RAGとFine-tuningの違いとして正しいのはどれですか。',
     choices: [
       'RAGはGPU不要',
@@ -2721,7 +2721,7 @@ export const questionBank: Question[] = [
       2
     ],
     explanation: '更新方法とコスト構造が異なります。',
-    reviewSection: 'テキスト第3章（RAG・AIエージェント・MCP ほか） → 「RAG」',
+    reviewSection: "2027年公式シラバス 第3章「RAGが必要とされる理由」",
     examTrap: '「再学習」と混同しやすい。RAGは推論時に外部検索で知識を補完する仕組みです。',
     choiceNotes: [
       '「必ず」「不要」「無制限」などの極端表現は、生成AIパスポート試験では誤答になりやすい典型パターンです。',
@@ -2981,7 +2981,7 @@ export const questionBank: Question[] = [
   {
     id: 'q152',
     chapter: '第3章 生成AIの技術',
-    topic: 'コンテキスト長',
+    topic: "記憶（メモリ）とコンテキスト管理",
     prompt: 'LLMに大量の資料を一度に渡す際に確認すべき制約は何か。',
     choices: [
       '入力と出力に利用できるコンテキストの上限',
@@ -2993,7 +2993,7 @@ export const questionBank: Question[] = [
       0
     ],
     explanation: 'コンテキスト長には上限があり、入力資料と出力に必要なトークンを考慮する。',
-    reviewSection: 'テキスト第3章 生成AIの技術 → 「コンテキスト長」',
+    reviewSection: "2027年公式シラバス 第3章「記憶（メモリ）とコンテキスト管理」",
     examTrap: '用語の定義・前提・例外を区別して判断しましょう。',
     choiceNotes: [
       '正解：コンテキスト長には上限があり、入力資料と出力に必要なトークンを考慮する。',
@@ -3061,7 +3061,7 @@ export const questionBank: Question[] = [
   {
     id: 'q156',
     chapter: '第3章 生成AIの技術',
-    topic: 'コサイン類似度',
+    topic: "RAGの仕組み",
     prompt: '二つの文書ベクトルの方向の近さを測る代表的な指標は何か。',
     choices: [
       'コサイン類似度',
@@ -3073,7 +3073,7 @@ export const questionBank: Question[] = [
       0
     ],
     explanation: 'コサイン類似度はベクトルのなす角に基づく類似度指標。',
-    reviewSection: 'テキスト第3章 生成AIの技術 → 「コサイン類似度」',
+    reviewSection: "2027年公式シラバス 第3章「RAGの仕組み」",
     examTrap: '用語の定義・前提・例外を区別して判断しましょう。',
     choiceNotes: [
       '正解：コサイン類似度はベクトルのなす角に基づく類似度指標。',
@@ -3085,7 +3085,7 @@ export const questionBank: Question[] = [
   {
     id: 'q157',
     chapter: '第3章 生成AIの技術',
-    topic: 'RAG',
+    topic: "RAGのユースケース",
     prompt: '社内規程の最新版に基づきLLMが回答する構成として適切なのは何か。',
     choices: [
       '学習済みの記憶だけで更新日を推測する',
@@ -3097,7 +3097,7 @@ export const questionBank: Question[] = [
       3
     ],
     explanation: 'RAGでは外部資料を検索して生成時に参照できるが、版管理が必要。',
-    reviewSection: 'テキスト第3章 生成AIの技術 → 「RAG」',
+    reviewSection: "2027年公式シラバス 第3章「RAGのユースケース」",
     examTrap: '用語の定義・前提・例外を区別して判断しましょう。',
     choiceNotes: [
       '不正解：「学習済みの記憶だけで更新日を推測する」。RAGでは外部資料を検索して生成時に参照できるが、版管理が必要。',
@@ -3121,7 +3121,7 @@ export const questionBank: Question[] = [
   {
     id: 'q159',
     chapter: '第3章 生成AIの技術',
-    topic: 'ハイブリッド検索',
+    topic: "RAGの仕組み",
     prompt: '型番の完全一致と説明文の意味検索を併用したい。適切な方法は何か。',
     choices: [
       '検索せず型番を生成して照合する',
@@ -3133,7 +3133,7 @@ export const questionBank: Question[] = [
       1
     ],
     explanation: '文字列の厳密一致と意味的な類似は異なる検索方式で補完できる。',
-    reviewSection: 'テキスト第3章 生成AIの技術 → 「ハイブリッド検索」',
+    reviewSection: "2027年公式シラバス 第3章「RAGの仕組み」",
     examTrap: '用語の定義・前提・例外を区別して判断しましょう。',
     choiceNotes: [
       '不正解：「検索せず型番を生成して照合する」。文字列の厳密一致と意味的な類似は異なる検索方式で補完できる。',
@@ -3145,7 +3145,7 @@ export const questionBank: Question[] = [
   {
     id: 'q160',
     chapter: '第3章 生成AIの技術',
-    topic: '再ランキング',
+    topic: "RAGの仕組み",
     prompt: 'RAGで初期検索の候補を関連度順に並べ直す工程は何か。',
     choices: [
       '再ランキング',
@@ -3157,7 +3157,7 @@ export const questionBank: Question[] = [
       0
     ],
     explanation: '再ランキングは取得済み候補の関連性を評価し順位を調整する。',
-    reviewSection: 'テキスト第3章 生成AIの技術 → 「再ランキング」',
+    reviewSection: "2027年公式シラバス 第3章「RAGの仕組み」",
     examTrap: '用語の定義・前提・例外を区別して判断しましょう。',
     choiceNotes: [
       '正解：再ランキングは取得済み候補の関連性を評価し順位を調整する。',
@@ -3169,7 +3169,7 @@ export const questionBank: Question[] = [
   {
     id: 'q161',
     chapter: '第3章 生成AIの技術',
-    topic: 'チャンク設計',
+    topic: "RAGの仕組み",
     prompt: '規程の条件と例外が別チャンクに分かれ誤答した。改善策は何か。',
     choices: [
       '例外条項を検索対象から削除する',
@@ -3181,7 +3181,7 @@ export const questionBank: Question[] = [
       3
     ],
     explanation: '文書構造を踏まえたチャンク分割は検索後の文脈保持に重要。',
-    reviewSection: 'テキスト第3章 生成AIの技術 → 「チャンク設計」',
+    reviewSection: "2027年公式シラバス 第3章「RAGの仕組み」",
     examTrap: '用語の定義・前提・例外を区別して判断しましょう。',
     choiceNotes: [
       '不正解：「例外条項を検索対象から削除する」。文書構造を踏まえたチャンク分割は検索後の文脈保持に重要。',
@@ -3193,7 +3193,7 @@ export const questionBank: Question[] = [
   {
     id: 'q162',
     chapter: '第3章 生成AIの技術',
-    topic: '検索の再現率',
+    topic: "RAGの仕組み",
     prompt: '関連資料が10件あり検索で8件を取得した。再現率は何%か。',
     choices: [
       '125%',
@@ -3205,7 +3205,7 @@ export const questionBank: Question[] = [
       2
     ],
     explanation: '再現率は取得した関連資料8件÷全関連資料10件=80%。',
-    reviewSection: 'テキスト第3章 生成AIの技術 → 「検索の再現率」',
+    reviewSection: "2027年公式シラバス 第3章「RAGの仕組み」",
     examTrap: '用語の定義・前提・例外を区別して判断しましょう。',
     choiceNotes: [
       '不正解：「125%」。再現率は取得した関連資料8件÷全関連資料10件=80%。',
@@ -3217,7 +3217,7 @@ export const questionBank: Question[] = [
   {
     id: 'q163',
     chapter: '第3章 生成AIの技術',
-    topic: '検索の適合率',
+    topic: "RAGの仕組み",
     prompt: '検索結果12件のうち関連資料が9件だった。適合率は何%か。',
     choices: [
       '9%',
@@ -3229,7 +3229,7 @@ export const questionBank: Question[] = [
       1
     ],
     explanation: '適合率は関連資料9件÷取得資料12件=75%。',
-    reviewSection: 'テキスト第3章 生成AIの技術 → 「検索の適合率」',
+    reviewSection: "2027年公式シラバス 第3章「RAGの仕組み」",
     examTrap: '用語の定義・前提・例外を区別して判断しましょう。',
     choiceNotes: [
       '不正解：「9%」。適合率は関連資料9件÷取得資料12件=75%。',
@@ -3363,7 +3363,7 @@ export const questionBank: Question[] = [
   {
     id: 'q170',
     chapter: '第3章 生成AIの技術',
-    topic: 'MCP',
+    topic: "MCP（Model Context Protocol）とは",
     prompt: 'MCPの役割として適切なものは何か。',
     choices: [
       '個人情報の利用目的を自動的に変更する',
@@ -3375,7 +3375,7 @@ export const questionBank: Question[] = [
       2
     ],
     explanation: 'MCPは連携のための共通仕様であり、安全な権限設定は別途必要。',
-    reviewSection: 'テキスト第3章 生成AIの技術 → 「MCP」',
+    reviewSection: "2027年公式シラバス 第3章「MCP（Model Context Protocol）とは」",
     examTrap: '用語の定義・前提・例外を区別して判断しましょう。',
     choiceNotes: [
       '不正解：「個人情報の利用目的を自動的に変更する」。MCPは連携のための共通仕様であり、安全な権限設定は別途必要。',
@@ -3471,7 +3471,7 @@ export const questionBank: Question[] = [
   {
     id: 'q176',
     chapter: '第3章 生成AIの技術',
-    topic: 'モデル更新',
+    topic: "RAGの仕組み",
     prompt: '埋め込みモデルを変更した後、旧索引の検索精度が落ちた。原因候補は何か。',
     choices: [
       '質問と文書のベクトル表現が不整合になった',
@@ -3483,7 +3483,7 @@ export const questionBank: Question[] = [
       0
     ],
     explanation: '埋め込みモデル変更時は索引の再生成と評価が必要になる場合がある。',
-    reviewSection: 'テキスト第3章 生成AIの技術 → 「モデル更新」',
+    reviewSection: "2027年公式シラバス 第3章「RAGの仕組み」",
     examTrap: '用語の定義・前提・例外を区別して判断しましょう。',
     choiceNotes: [
       '正解：埋め込みモデル変更時は索引の再生成と評価が必要になる場合がある。',
@@ -3495,7 +3495,7 @@ export const questionBank: Question[] = [
   {
     id: 'q177',
     chapter: '第3章 生成AIの技術',
-    topic: 'キャッシュ更新',
+    topic: "RAGのユースケース",
     prompt: 'RAGで改訂済み規程の旧回答が返る。調査対象は何か。',
     choices: [
       '利用者の画面解像度',
@@ -3507,7 +3507,7 @@ export const questionBank: Question[] = [
       3
     ],
     explanation: '索引やキャッシュの古い内容が回答に使われる可能性がある。',
-    reviewSection: 'テキスト第3章 生成AIの技術 → 「キャッシュ更新」',
+    reviewSection: "2027年公式シラバス 第3章「RAGのユースケース」",
     examTrap: '用語の定義・前提・例外を区別して判断しましょう。',
     choiceNotes: [
       '不正解：「利用者の画面解像度」。索引やキャッシュの古い内容が回答に使われる可能性がある。',
@@ -3563,7 +3563,7 @@ export const questionBank: Question[] = [
   {
     id: 'q180',
     chapter: '第3章 生成AIの技術',
-    topic: '技術の使い分け',
+    topic: "RAGのユースケース",
     prompt: '最新規程の検索と文章の書式統一を同時に改善したい。適切な設計は何か。',
     choices: [
       'RAGで根拠を取得し出力形式を別途制御する',
@@ -3575,7 +3575,7 @@ export const questionBank: Question[] = [
       0
     ],
     explanation: '根拠取得と出力制御は異なる課題。目的に応じて組み合わせる。',
-    reviewSection: 'テキスト第3章 生成AIの技術 → 「技術の使い分け」',
+    reviewSection: "2027年公式シラバス 第3章「RAGのユースケース」",
     examTrap: '用語の定義・前提・例外を区別して判断しましょう。',
     choiceNotes: [
       '正解：根拠取得と出力制御は異なる課題。目的に応じて組み合わせる。',
