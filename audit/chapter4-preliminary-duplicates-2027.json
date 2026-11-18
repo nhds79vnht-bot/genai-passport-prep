@@ -1,0 +1,33 @@
+{
+  "chapter": 4,
+  "status": "preliminary_static_similarity_screen_not_second_pass",
+  "total_questions": 300,
+  "unique_ids": 300,
+  "invalid_choices": [],
+  "threshold_char_trigram_jaccard": 0.46,
+  "pairs_over_046": 2,
+  "pairs_over_063": 1,
+  "top_pairs": [
+    {
+      "a": "ap27-139",
+      "b": "ap27-238",
+      "similarity": 0.8,
+      "a_prompt": "生成画像に他社ロゴがある。対応は。",
+      "b_prompt": "広告生成画像に他社ロゴがある。対応は。"
+    },
+    {
+      "a": "ap27-137",
+      "b": "ap27-820",
+      "similarity": 0.571,
+      "a_prompt": "生成画像が既存作品に酷似する。対応は。",
+      "b_prompt": "生成画像が既存作品に酷似する場合の確認は。"
+    }
+  ],
+  "source_blob_shas": {
+    "src/data/syllabus2027Questions.ts": "8ccfcf45ead1fe263ebc074fc84c8c68b32d182e",
+    "src/data/expansion2027Questions.ts": "e791f3de98ff2c32957a450ed6a729d0af604b4d",
+    "src/data/advanced2027Questions.ts": "ee0cd597db12399a765e482bd27998f465a78d13",
+    "src/data/practice2027Questions.ts": "9b34f83d0d0e056182d782d13652c3d46c252a4d",
+    "src/data/applied2027Questions.ts": "419b34747f3487614853252ff3695b66a3aa9f43"
+  }
+}
