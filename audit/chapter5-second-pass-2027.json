@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "chapter": 5,
+  "official_title": "第5章 生成AIの実践と活用事例",
+  "syllabus_url": "https://guga.or.jp/assets/syllabus.pdf",
+  "effective_from": "2027年2月試験",
+  "audit_date": "2026-11-18",
+  "audit_type": "bounded_second_pass_static_review",
+  "first_pass": {
+    "reviewed": 300,
+    "revised_or_replaced": 237,
+    "reclassified_preserved": 63
+  },
+  "second_pass": {
+    "reviewed": 300,
+    "records": 300,
+    "unique_ids": 300,
+    "official_learning_items": 38,
+    "official_middle_items": 7,
+    "allocation_match": true,
+    "empty_or_invalid_choices": 0,
+    "invalid_answers": 0,
+    "missing_explanations": 0,
+    "missing_choice_notes": 0,
+    "exact_or_normalized_duplicate_prompts": 0,
+    "same_topic_near_duplicates_ge_038_trigram_jaccard": 0,
+    "second_pass_corrected_items": [
+      "pr27-018",
+      "pr27-096"
+    ],
+    "passed": true
+  },
+  "sources": {
+    "src/data/questionBank.ts": {
+      "count": 60,
+      "blob_sha": "fdb31d7eefd6220a481158ea7f271e290e913bda"
+    },
+    "src/data/syllabus2027Questions.ts": {
+      "count": 13,
+      "blob_sha": "898a284dc40984ba32e22bccb674b124d44fb965"
+    },
+    "src/data/expansion2027Questions.ts": {
+      "count": 20,
+      "blob_sha": "4a1bd58a5f2bcd9e55c08cae65b02a4f9dbaa773"
+    },
+    "src/data/advanced2027Questions.ts": {
+      "count": 20,
+      "blob_sha": "c5198cad09c444d32d38c16ff4b0775f39218960"
+    },
+    "src/data/practice2027Questions.ts": {
+      "count": 20,
+      "blob_sha": "7e1e4c9ae34dc16fef37c23204adae9425f9464c"
+    },
+    "src/data/applied2027Questions.ts": {
+      "count": 167,
+      "blob_sha": "b77ac10ab54a380eedac6b3e1d005fb358b5f409"
+    }
+  },
+  "conclusion": "一旦完成",
+  "limitations": [
+    "静的・構造検査であり、外部の専門家による全問独立審査ではない。",
+    "iPhone Safari実機での出題・UIの動作テストは実施していない。",
+    "三文字連続部分列の類似度チェックは意味的重複を網羅する保証ではない。",
+    "終了条件の追加はしない。実機テストで具体的問題が見つかった場合に該当箇所を修正する。"
+  ],
+  "next_phase": "全章の実機テスト"
+}
