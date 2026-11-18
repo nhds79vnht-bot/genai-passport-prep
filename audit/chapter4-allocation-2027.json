@@ -15,17 +15,17 @@
         {
           "name": "生成AIを安全に使うための基本姿勢",
           "target": 5,
-          "assigned": 0
+          "assigned": 1
         },
         {
           "name": "検索エンジンと生成AIの違い",
           "target": 5,
-          "assigned": 0
+          "assigned": 1
         },
         {
           "name": "AIは補助者であり、最終責任は人間にある",
           "target": 4,
-          "assigned": 0
+          "assigned": 1
         },
         {
           "name": "AIの出力を鵜呑みにしてはいけない理由",
@@ -35,17 +35,17 @@
         {
           "name": "生成AIを使ってよい場面・慎重に使う場面・避けるべき場面",
           "target": 4,
-          "assigned": 0
+          "assigned": 1
         },
         {
           "name": "AIを使うリスクと、AIを使わないリスク",
           "target": 4,
-          "assigned": 0
+          "assigned": 1
         },
         {
           "name": "AI時代に求められる人間の役割",
           "target": 4,
-          "assigned": 0
+          "assigned": 1
         }
       ]
     },
@@ -92,7 +92,7 @@
         {
           "name": "差別・偏見・バイアスのリスク",
           "target": 4,
-          "assigned": 0
+          "assigned": 1
         },
         {
           "name": "ディープフェイクによるなりすましリスク",
@@ -102,12 +102,12 @@
         {
           "name": "フィッシング・詐欺・サイバー攻撃への悪用",
           "target": 3,
-          "assigned": 0
+          "assigned": 1
         },
         {
           "name": "自律型AIエージェントの想定外の挙動・プロンプトインジェクション",
           "target": 3,
-          "assigned": 0
+          "assigned": 1
         }
       ]
     },
@@ -129,7 +129,7 @@
         {
           "name": "シャドーAIの具体例",
           "target": 4,
-          "assigned": 0
+          "assigned": 1
         },
         {
           "name": "承認されていないAIツールを業務利用する危険性",
@@ -144,7 +144,7 @@
         {
           "name": "従業員が守るべき利用ルール",
           "target": 3,
-          "assigned": 0
+          "assigned": 1
         },
         {
           "name": "生成AIを安全に使うための会社と従業員の役割",
@@ -171,12 +171,12 @@
         {
           "name": "ファクトチェック：事実・数値・出典・最新情報の確認",
           "target": 6,
-          "assigned": 0
+          "assigned": 2
         },
         {
           "name": "妥当性レビュー：前提・論理・抜け漏れの確認",
           "target": 6,
-          "assigned": 0
+          "assigned": 2
         },
         {
           "name": "表現・権利・個人情報・機密情報の確認",
@@ -223,7 +223,7 @@
         {
           "name": "個人情報の利用目的・本人同意・第三者提供",
           "target": 4,
-          "assigned": 0
+          "assigned": 2
         },
         {
           "name": "個人情報は加工すれば生成AIに入力できるのか",
@@ -238,7 +238,7 @@
         {
           "name": "企業機密・秘密情報を生成AIに入力するリスク",
           "target": 4,
-          "assigned": 0
+          "assigned": 1
         },
         {
           "name": "AIの出力・要約・共有に情報が残るリスク",
@@ -265,17 +265,17 @@
         {
           "name": "著作権と著作物の基本",
           "target": 4,
-          "assigned": 0
+          "assigned": 1
         },
         {
           "name": "著作者人格権とは",
           "target": 4,
-          "assigned": 0
+          "assigned": 1
         },
         {
           "name": "著作権侵害とAI生成物の類似リスク",
           "target": 4,
-          "assigned": 0
+          "assigned": 1
         },
         {
           "name": "AI学習と著作権",
@@ -290,22 +290,22 @@
         {
           "name": "引用・転載・要約・翻案の違い",
           "target": 3,
-          "assigned": 0
+          "assigned": 1
         },
         {
           "name": "商標権・意匠権・特許権",
           "target": 3,
-          "assigned": 0
+          "assigned": 1
         },
         {
           "name": "肖像権・パブリシティ権",
           "target": 3,
-          "assigned": 0
+          "assigned": 1
         },
         {
           "name": "AIサービスの利用規約・ライセンス・透明性",
           "target": 3,
-          "assigned": 0
+          "assigned": 1
         },
         {
           "name": "商用利用・社外公開前に確認すべきこと",
@@ -327,7 +327,7 @@
         {
           "name": "AI倫理・ELSIとは",
           "target": 4,
-          "assigned": 0
+          "assigned": 1
         },
         {
           "name": "AI事業者ガイドラインと人間中心のAI",
@@ -337,7 +337,7 @@
         {
           "name": "安全性・公平性：人への不利益を防ぐ",
           "target": 4,
-          "assigned": 0
+          "assigned": 1
         },
         {
           "name": "プライバシー保護とセキュリティ確保",
@@ -389,7 +389,7 @@
         {
           "name": "社内ガイドラインに盛り込む基本項目",
           "target": 4,
-          "assigned": 0
+          "assigned": 1
         },
         {
           "name": "AIツールを選定する際の確認項目",
@@ -409,12 +409,12 @@
         {
           "name": "AIが出力したデータの取り扱い",
           "target": 3,
-          "assigned": 0
+          "assigned": 1
         },
         {
           "name": "API・AIエージェント利用時のコスト・利用量の管理",
           "target": 3,
-          "assigned": 0
+          "assigned": 1
         },
         {
           "name": "社内ルールを定着させる体制と教育",
