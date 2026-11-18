@@ -3,7 +3,7 @@ import type { Chapter } from './types'
 export const CHAPTERS: Chapter[] = [
   '第1章 AIの基礎',
   '第2章 生成AI',
-  '第3章 生成AIの技術',
+  '第3章 AIエージェント',
   '第4章 法律と倫理',
   '第5章 活用実務',
 ]
@@ -11,7 +11,7 @@ export const CHAPTERS: Chapter[] = [
 export const CHAPTER_SHORT: Record<Chapter, string> = {
   '第1章 AIの基礎': '第1章',
   '第2章 生成AI': '第2章',
-  '第3章 生成AIの技術': '第3章',
+  '第3章 AIエージェント': '第3章',
   '第4章 法律と倫理': '第4章',
   '第5章 活用実務': '第5章',
 }
