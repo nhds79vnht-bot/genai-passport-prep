@@ -15,12 +15,12 @@
         {
           "name": "生成AIを安全に使うための基本姿勢",
           "target": 5,
-          "assigned": 1
+          "assigned": 4
         },
         {
           "name": "検索エンジンと生成AIの違い",
           "target": 5,
-          "assigned": 3
+          "assigned": 5
         },
         {
           "name": "AIは補助者であり、最終責任は人間にある",
@@ -30,22 +30,22 @@
         {
           "name": "AIの出力を鵜呑みにしてはいけない理由",
           "target": 4,
-          "assigned": 2
+          "assigned": 4
         },
         {
           "name": "生成AIを使ってよい場面・慎重に使う場面・避けるべき場面",
           "target": 4,
-          "assigned": 3
+          "assigned": 4
         },
         {
           "name": "AIを使うリスクと、AIを使わないリスク",
           "target": 4,
-          "assigned": 3
+          "assigned": 4
         },
         {
           "name": "AI時代に求められる人間の役割",
           "target": 4,
-          "assigned": 2
+          "assigned": 4
         }
       ]
     },
@@ -57,37 +57,37 @@
         {
           "name": "生成AIに潜むリスクの全体像",
           "target": 4,
-          "assigned": 1
+          "assigned": 3
         },
         {
           "name": "ハルシネーション",
           "target": 4,
-          "assigned": 2
+          "assigned": 4
         },
         {
           "name": "情報漏えいリスク",
           "target": 4,
-          "assigned": 2
+          "assigned": 4
         },
         {
           "name": "個人情報・プライバシー侵害リスク",
           "target": 4,
-          "assigned": 1
+          "assigned": 3
         },
         {
           "name": "著作権・知的財産権侵害リスク",
           "target": 4,
-          "assigned": 1
+          "assigned": 3
         },
         {
           "name": "肖像権・パブリシティ権侵害リスク",
           "target": 4,
-          "assigned": 1
+          "assigned": 3
         },
         {
           "name": "名誉毀損・信用毀損・炎上リスク",
           "target": 4,
-          "assigned": 2
+          "assigned": 4
         },
         {
           "name": "差別・偏見・バイアスのリスク",
@@ -97,7 +97,7 @@
         {
           "name": "ディープフェイクによるなりすましリスク",
           "target": 4,
-          "assigned": 2
+          "assigned": 3
         },
         {
           "name": "フィッシング・詐欺・サイバー攻撃への悪用",
@@ -119,37 +119,37 @@
         {
           "name": "シャドーAIとは",
           "target": 4,
-          "assigned": 1
+          "assigned": 3
         },
         {
           "name": "シャドーAIが発生する理由",
           "target": 4,
-          "assigned": 2
+          "assigned": 4
         },
         {
           "name": "シャドーAIの具体例",
           "target": 4,
-          "assigned": 3
+          "assigned": 5
         },
         {
           "name": "承認されていないAIツールを業務利用する危険性",
           "target": 3,
-          "assigned": 1
+          "assigned": 3
         },
         {
           "name": "シャドーAIが組織と従業員にもたらす影響",
           "target": 3,
-          "assigned": 2
+          "assigned": 3
         },
         {
           "name": "従業員が守るべき利用ルール",
           "target": 3,
-          "assigned": 2
+          "assigned": 3
         },
         {
           "name": "生成AIを安全に使うための会社と従業員の役割",
           "target": 3,
-          "assigned": 1
+          "assigned": 3
         }
       ]
     },
@@ -161,7 +161,7 @@
         {
           "name": "承認されたAIでも出力確認が必要な理由",
           "target": 6,
-          "assigned": 3
+          "assigned": 5
         },
         {
           "name": "用途と影響度に応じた検証レベル",
