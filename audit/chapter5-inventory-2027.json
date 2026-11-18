@@ -1048,9 +1048,9 @@
       "source": "src/data/practice2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "PoC",
-      "prompt": "生成AIの試験導入で評価すべき組み合わせはどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "顧客の自由記述を、例文を示さずに『配送』『返品』『その他』に分類したい。Zero-Shotの指示として適切なのはどれか。",
+      "syllabus_2027_item": "Zero-Shotプロンプティング",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "pr27-018",
@@ -1058,8 +1058,8 @@
       "chapter": "第5章 活用実務",
       "legacy_topic": "グラフ検証",
       "prompt": "AIが作成したグラフで縦軸が途中から始まっていた。注意点はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "表・データの集計と可視化",
+      "review_status": "mapped_and_reclassified_first_pass"
     },
     {
       "id": "pr27-019",
@@ -1067,53 +1067,53 @@
       "chapter": "第5章 活用実務",
       "legacy_topic": "評価設計",
       "prompt": "プロンプトの改善効果を測る方法として適切なのはどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "プロンプトの基本構成要素",
+      "review_status": "mapped_and_reclassified_first_pass"
     },
     {
       "id": "pr27-020",
       "source": "src/data/practice2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "費用管理",
-      "prompt": "AI APIの利用料が予算を超えた。適切な対応はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "生成AIで毎週の営業報告書を自動生成する。前週比の誤計算を避ける設計はどれか。",
+      "syllabus_2027_item": "定例レポートの自動生成",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "pr27-085",
       "source": "src/data/practice2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "業務選定",
-      "prompt": "生成AI導入の初期対象としてリスクを管理しやすいのはどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "生成AIが作成したWebアプリに権限を超えて閲覧できるAPIが含まれた。公開前の適切な対応はどれか。",
+      "syllabus_2027_item": "コーディング・アプリ開発",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "pr27-086",
       "source": "src/data/practice2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "要件定義",
-      "prompt": "AI導入前に定めるべき最重要事項はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIに部門別の問い合わせ結果をシステム入力用JSONにまとめさせる。適切な指示はどれか。",
+      "syllabus_2027_item": "役割設定・出力形式の指定",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "pr27-087",
       "source": "src/data/practice2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "PoC",
-      "prompt": "生成AIの試験導入で確認すべきことはどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "広告用画像をAIで生成し製品にない操作ボタンが描かれた。利用前の対応はどれか。",
+      "syllabus_2027_item": "画像・ビジュアル素材の生成",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "pr27-088",
       "source": "src/data/practice2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "ROI",
-      "prompt": "AI導入の費用対効果を判断する際に必要なのはどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "商品案内のAIナレーションが『15日』を『50日』と読んだ。最も適切なのはどれか。",
+      "syllabus_2027_item": "ナレーション・音声・BGMの生成",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "pr27-089",
@@ -1121,8 +1121,8 @@
       "chapter": "第5章 活用実務",
       "legacy_topic": "議事録",
       "prompt": "AI要約が未決事項を決定事項とした。対応はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "議事録の作成・要点抽出",
+      "review_status": "mapped_and_reclassified_first_pass"
     },
     {
       "id": "pr27-090",
@@ -1130,8 +1130,8 @@
       "chapter": "第5章 活用実務",
       "legacy_topic": "対外メール",
       "prompt": "AIが顧客に存在しない返金条件を約束した。対応はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "ビジネスメール・各種ビジネス文書の作成",
+      "review_status": "mapped_and_reclassified_first_pass"
     },
     {
       "id": "pr27-091",
@@ -1139,8 +1139,8 @@
       "chapter": "第5章 活用実務",
       "legacy_topic": "翻訳",
       "prompt": "AI翻訳が安全マニュアルの「禁止」を「許可」と訳した。対応はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "翻訳・多言語コミュニケーション",
+      "review_status": "mapped_and_reclassified_first_pass"
     },
     {
       "id": "pr27-092",
@@ -1148,8 +1148,8 @@
       "chapter": "第5章 活用実務",
       "legacy_topic": "数値検証",
       "prompt": "AIが売上の合計を示した。必要な確認はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "表・データの集計と可視化",
+      "review_status": "mapped_and_reclassified_first_pass"
     },
     {
       "id": "pr27-093",
@@ -1157,8 +1157,8 @@
       "chapter": "第5章 活用実務",
       "legacy_topic": "統計",
       "prompt": "AIが提示した統計値を報告書に使う。適切なのはどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "ディープリサーチ：複数ソースを横断調査",
+      "review_status": "mapped_and_reclassified_first_pass"
     },
     {
       "id": "pr27-094",
@@ -1166,8 +1166,8 @@
       "chapter": "第5章 活用実務",
       "legacy_topic": "価格調査",
       "prompt": "AIが提示した競合製品価格を利用する前に必要なのはどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "市場・競合リサーチ",
+      "review_status": "mapped_and_reclassified_first_pass"
     },
     {
       "id": "pr27-095",
@@ -1175,8 +1175,8 @@
       "chapter": "第5章 活用実務",
       "legacy_topic": "データ品質",
       "prompt": "売上表に円とドルが混在する。適切な前処理はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "データの整形・分類",
+      "review_status": "mapped_and_reclassified_first_pass"
     },
     {
       "id": "pr27-096",
@@ -1184,8 +1184,8 @@
       "chapter": "第5章 活用実務",
       "legacy_topic": "欠損値",
       "prompt": "アンケート未回答を全て「不満」として扱う問題はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "アンケートの設計と分析",
+      "review_status": "mapped_and_reclassified_first_pass"
     },
     {
       "id": "pr27-097",
@@ -1193,8 +1193,8 @@
       "chapter": "第5章 活用実務",
       "legacy_topic": "FAQ",
       "prompt": "AIが廃止済み社内規程を引用した。改善策はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "大量文書からの情報抽出・要約",
+      "review_status": "mapped_and_reclassified_first_pass"
     },
     {
       "id": "pr27-098",
@@ -1202,26 +1202,26 @@
       "chapter": "第5章 活用実務",
       "legacy_topic": "エスカレーション",
       "prompt": "AIが回答できない顧客質問を受けた。適切なのはどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "顧客接点・コンテンツ制作の業種",
+      "review_status": "mapped_and_reclassified_first_pass"
     },
     {
       "id": "pr27-099",
       "source": "src/data/practice2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "費用管理",
-      "prompt": "AI APIの費用が予算超過した。対応はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIで作った操作説明動画で危険な作業手順が1工程抜けていた。適切な対応はどれか。",
+      "syllabus_2027_item": "動画コンテンツの生成・編集",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "pr27-100",
       "source": "src/data/practice2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "事故対応",
-      "prompt": "AIが誤った案内を大量送信した。初動はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIエージェントに顧客情報の変更を伴うWeb申請を行わせる。適切な設計はどれか。",
+      "syllabus_2027_item": "ブラウザ操作・Web上の手続きの自動化",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-009",
