@@ -85,7 +85,7 @@
   "checkpoint": {
     "last_completed_id": "q120",
     "next_question_id": null,
-    "next_action": "Final acceptance gate, not indefinite similarity rewrites: verify source validity and answer/explanation consistency, document untested runtime; decide chapter completion",
+    "next_action": "Finish targeted final audit of base 60 explanations/choiceNotes, then explicit acceptance decision; runtime device test separate",
     "last_verified_commit": "1a1a089d18cc89905f985aecc52c0daf3f006408",
     "chapter_accepted": false
   },
@@ -530,6 +530,20 @@
         "remaining": "Other candidate pairs not individually validated; no build/device testing"
       }
     },
-    "build_status": "Not executed in this pass; source and ledger updates only"
+    "build_status": "Not executed in this pass; source and ledger updates only",
+    "final_acceptance_gate_20261118": {
+      "status": "in_progress",
+      "chapter_question_count": 300,
+      "extra_question_rows_checked": 240,
+      "extra_row_structure_issues": 0,
+      "base_question_count_previously_checked": 60,
+      "base_explanation_choice_note_mismatches_repaired": [
+        "q062",
+        "q063",
+        "q069"
+      ],
+      "source_commit": "73def49fa6a7e2ec25c2421759186931ad89a72c",
+      "remaining": "Complete base 60 explanation-choice-note consistency check and semantic acceptance; no build/device test. Do not assert accepted yet."
+    }
   }
 }
