@@ -161,32 +161,32 @@
         {
           "name": "承認されたAIでも出力確認が必要な理由",
           "target": 6,
-          "assigned": 5
+          "assigned": 7
         },
         {
           "name": "用途と影響度に応じた検証レベル",
           "target": 6,
-          "assigned": 4
+          "assigned": 6
         },
         {
           "name": "ファクトチェック：事実・数値・出典・最新情報の確認",
           "target": 6,
-          "assigned": 5
+          "assigned": 6
         },
         {
           "name": "妥当性レビュー：前提・論理・抜け漏れの確認",
           "target": 6,
-          "assigned": 4
+          "assigned": 6
         },
         {
           "name": "表現・権利・個人情報・機密情報の確認",
           "target": 6,
-          "assigned": 2
+          "assigned": 5
         },
         {
           "name": "採用・修正・破棄・専門家確認の判断",
           "target": 6,
-          "assigned": 5
+          "assigned": 6
         }
       ]
     },
@@ -213,12 +213,12 @@
         {
           "name": "個人識別符号",
           "target": 4,
-          "assigned": 2
+          "assigned": 3
         },
         {
           "name": "要配慮個人情報と機微情報",
           "target": 4,
-          "assigned": 2
+          "assigned": 3
         },
         {
           "name": "個人情報の利用目的・本人同意・第三者提供",
@@ -260,17 +260,17 @@
         {
           "name": "生成AIと知的財産権の全体像",
           "target": 4,
-          "assigned": 2
+          "assigned": 3
         },
         {
           "name": "著作権と著作物の基本",
           "target": 4,
-          "assigned": 2
+          "assigned": 3
         },
         {
           "name": "著作者人格権とは",
           "target": 4,
-          "assigned": 2
+          "assigned": 3
         },
         {
           "name": "著作権侵害とAI生成物の類似リスク",
@@ -280,17 +280,17 @@
         {
           "name": "AI学習と著作権",
           "target": 4,
-          "assigned": 3
+          "assigned": 4
         },
         {
           "name": "第三者コンテンツをAIに入力するリスク",
           "target": 4,
-          "assigned": 2
+          "assigned": 3
         },
         {
           "name": "引用・転載・要約・翻案の違い",
           "target": 3,
-          "assigned": 2
+          "assigned": 3
         },
         {
           "name": "商標権・意匠権・特許権",
@@ -310,12 +310,12 @@
         {
           "name": "商用利用・社外公開前に確認すべきこと",
           "target": 3,
-          "assigned": 2
+          "assigned": 3
         },
         {
           "name": "AI生成物の権利帰属と人の創作的関与",
           "target": 3,
-          "assigned": 1
+          "assigned": 2
         }
       ]
     },
@@ -327,7 +327,7 @@
         {
           "name": "AI倫理・ELSIとは",
           "target": 4,
-          "assigned": 2
+          "assigned": 3
         },
         {
           "name": "AI事業者ガイドラインと人間中心のAI",
@@ -352,12 +352,12 @@
         {
           "name": "教育・リテラシー：AIを適切に使うために",
           "target": 4,
-          "assigned": 1
+          "assigned": 3
         },
         {
           "name": "公正競争とイノベーション",
           "target": 3,
-          "assigned": 1
+          "assigned": 2
         },
         {
           "name": "高度なAIシステムと影響に応じたリスク管理",
@@ -367,12 +367,12 @@
         {
           "name": "偽情報・偏りと情報拡散のリスク",
           "target": 3,
-          "assigned": 1
+          "assigned": 2
         },
         {
           "name": "雇用・教育・格差・環境への影響",
           "target": 3,
-          "assigned": 1
+          "assigned": 2
         }
       ]
     },
@@ -384,7 +384,7 @@
         {
           "name": "AIガバナンスとは",
           "target": 4,
-          "assigned": 3
+          "assigned": 4
         },
         {
           "name": "社内ガイドラインに盛り込む基本項目",
@@ -436,22 +436,22 @@
         {
           "name": "AI法とは：制定の背景と基本構造",
           "target": 3,
-          "assigned": 2
+          "assigned": 3
         },
         {
           "name": "AI基本計画と国・事業者・利用者の役割",
           "target": 3,
-          "assigned": 2
+          "assigned": 3
         },
         {
           "name": "イノベーション促進とリスク対応の両立",
           "target": 2,
-          "assigned": 1
+          "assigned": 2
         },
         {
           "name": "AI法・ガイドライン・既存法令の関係",
           "target": 2,
-          "assigned": 1
+          "assigned": 2
         },
         {
           "name": "G7広島AIプロセスと海外のAI規制動向",
@@ -471,7 +471,7 @@
         {
           "name": "継続的な情報収集とリスキリングの重要性",
           "target": 2,
-          "assigned": 1
+          "assigned": 2
         }
       ]
     }
