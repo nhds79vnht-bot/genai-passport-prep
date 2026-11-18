@@ -1,64 +1,49 @@
 {
   "chapter": 3,
   "source_syllabus": "https://guga.or.jp/assets/syllabus.pdf",
-  "mapping_status": "provisional_requires_semantic_review",
+  "mapping_status": "provisional_content_candidate_mapping",
   "total": 300,
-  "rewritten": 100,
-  "classified_candidate": 285,
-  "unclassified": 15,
-  "unclassified_ids": [
-    "q176",
-    "q180",
-    "ex27-056",
-    "adv27-025",
-    "pr27-064",
-    "pr27-065",
-    "ap27-026",
-    "ap27-066",
-    "ap27-116",
-    "ap27-125",
-    "ap27-325",
-    "ap27-330",
-    "ap27-429",
-    "ap27-430",
-    "ap27-749"
-  ],
+  "rewritten": 152,
+  "classified_candidate": 300,
+  "unclassified": 0,
+  "unclassified_ids": [],
   "per_item_candidate_counts": {
-    "RAGとは": 10,
-    "自律性のレベル": 5,
-    "RAGの仕組み": 53,
-    "ワークフロー型エージェントと自律型エージェント": 2,
-    "AIエージェントの役割": 3,
-    "AIエージェントが注目される背景": 2,
+    "RAGとは": 5,
+    "自律性のレベル": 7,
+    "RAGの仕組み": 19,
+    "ワークフロー型エージェントと自律型エージェント": 5,
+    "AIエージェントの役割": 6,
+    "AIエージェントが注目される背景": 3,
     "AIエージェントの定義": 18,
-    "MCP（Model Context Protocol）とは": 10,
-    "ツール実行": 23,
+    "MCP（Model Context Protocol）とは": 12,
+    "ツール実行": 28,
     "プロンプトインジェクション": 14,
-    "コーディングエージェント": 4,
+    "コーディングエージェント": 7,
     "AIエージェントの評価": 18,
-    "RAGの発展": 5,
-    "Agent Skills（エージェントスキル）とは": 7,
-    "ハーネスエンジニアリング": 5,
-    "ブラウザ操作・PC操作エージェント": 5,
-    "リサーチ・業務自動化エージェント": 3,
-    "A2A（Agent-to-Agent）連携プロトコル": 6,
-    "LLMを中核とした構成": 3,
+    "RAGの発展": 6,
+    "Agent Skills（エージェントスキル）とは": 11,
+    "ハーネスエンジニアリング": 8,
+    "ブラウザ操作・PC操作エージェント": 7,
+    "リサーチ・業務自動化エージェント": 6,
+    "A2A（Agent-to-Agent）連携プロトコル": 7,
+    "LLMを中核とした構成": 5,
     "記憶（メモリ）とコンテキスト管理": 8,
-    "タスク分解と計画": 6,
-    "推論と行動のフィードバックループ": 5,
-    "外部ツール・データソースとの連携": 4,
-    "マルチエージェント・エージェント間連携": 6,
-    "業務への導入事例": 5,
+    "タスク分解と計画": 8,
+    "推論と行動のフィードバックループ": 7,
+    "外部ツール・データソースとの連携": 7,
+    "マルチエージェント・エージェント間連携": 8,
+    "業務への導入事例": 8,
     "連鎖的なエラーの拡大": 18,
     "権限の過剰付与のリスク": 15,
-    "RAGのユースケース": 8,
-    "コンテキストエンジニアリング": 5,
+    "RAGのユースケース": 5,
+    "コンテキストエンジニアリング": 8,
     "具体的なトラブル事例": 4,
-    "RAGが必要とされる理由": 2,
-    "従来の生成AIとの違い": 1,
-    "主なRAGツール・フレームワーク": 1,
-    "安全に使うための原則": 1
+    "主なRAGツール・フレームワーク": 2,
+    "安全に使うための原則": 5,
+    "従来の生成AIとの違い": 3,
+    "RAGが必要とされる理由": 2
   },
+  "exact_duplicate_prompt_groups": [],
   "items": [
     {
       "id": "q121",
@@ -561,8 +546,8 @@
       "prompt": "埋め込みモデルを変更した後、旧索引の検索精度が落ちた。原因候補は何か。",
       "source": "src/data/questionBank.ts",
       "rewritten": false,
-      "candidate_item": null,
-      "mapping_status": "needs_manual_review"
+      "candidate_item": "RAGの仕組み",
+      "mapping_status": "provisional"
     },
     {
       "id": "q177",
@@ -597,8 +582,8 @@
       "prompt": "最新規程の検索と文章の書式統一を同時に改善したい。適切な設計は何か。",
       "source": "src/data/questionBank.ts",
       "rewritten": false,
-      "candidate_item": null,
-      "mapping_status": "needs_manual_review"
+      "candidate_item": "RAGのユースケース",
+      "mapping_status": "provisional"
     },
     {
       "id": "s27-001",
@@ -638,11 +623,11 @@
     },
     {
       "id": "s27-019",
-      "topic": "RAGの限界",
-      "prompt": "RAGを導入した後も誤回答が生じた。まず確認すべき点として適切なのはどれか。",
+      "topic": "RAGの発展",
+      "prompt": "RAGで最初の検索では根拠が不足した。エージェントが質問を書き換え再検索する方式として適切なのはどれか。",
       "source": "src/data/syllabus2027Questions.ts",
-      "rewritten": false,
-      "candidate_item": "RAGとは",
+      "rewritten": true,
+      "candidate_item": "RAGの発展",
       "mapping_status": "provisional"
     },
     {
@@ -665,29 +650,29 @@
     },
     {
       "id": "s27-040",
-      "topic": "埋め込み",
-      "prompt": "意味の近い文章を検索するため、文章を数値ベクトルに変換する技術はどれか。",
+      "topic": "自律性のレベル",
+      "prompt": "AIが旅行案を作成するが予約の確定は利用者の承認後に行う。適切な説明はどれか。",
       "source": "src/data/syllabus2027Questions.ts",
-      "rewritten": false,
-      "candidate_item": "RAGの仕組み",
+      "rewritten": true,
+      "candidate_item": "自律性のレベル",
       "mapping_status": "provisional"
     },
     {
       "id": "s27-041",
-      "topic": "ベクトル検索",
-      "prompt": "社内FAQで質問文と意味の近い項目を探す際に適した方法はどれか。",
+      "topic": "業務への導入事例",
+      "prompt": "社内FAQの検索と回答案作成を行うAIエージェントを導入する際、最初の段階として適切なのはどれか。",
       "source": "src/data/syllabus2027Questions.ts",
-      "rewritten": false,
-      "candidate_item": "RAGの仕組み",
+      "rewritten": true,
+      "candidate_item": "業務への導入事例",
       "mapping_status": "provisional"
     },
     {
       "id": "s27-042",
-      "topic": "チャンク分割",
-      "prompt": "RAGの検索対象文書を適切な単位に分割する目的はどれか。",
+      "topic": "主なRAGツール・フレームワーク",
+      "prompt": "RAG基盤の候補を比較する際、要件への適合性を判断する項目として重要なのはどれか。",
       "source": "src/data/syllabus2027Questions.ts",
-      "rewritten": false,
-      "candidate_item": "RAGの仕組み",
+      "rewritten": true,
+      "candidate_item": "主なRAGツール・フレームワーク",
       "mapping_status": "provisional"
     },
     {
@@ -701,11 +686,11 @@
     },
     {
       "id": "s27-044",
-      "topic": "検索結果の扱い",
-      "prompt": "検索結果に書かれた「これまでの指示を無視せよ」という文をAIが受け取った。適切なのはどれか。",
+      "topic": "安全に使うための原則",
+      "prompt": "社外サイトを閲覧するエージェントに社内ファイルの操作も許可する。安全対策として適切なのはどれか。",
       "source": "src/data/syllabus2027Questions.ts",
-      "rewritten": false,
-      "candidate_item": "RAGの仕組み",
+      "rewritten": true,
+      "candidate_item": "安全に使うための原則",
       "mapping_status": "provisional"
     },
     {
@@ -737,38 +722,38 @@
     },
     {
       "id": "ex27-043",
-      "topic": "埋め込み",
-      "prompt": "文章の意味的な近さを計算する際に利用できる表現はどれか。",
+      "topic": "AIエージェントの役割",
+      "prompt": "採用支援エージェントが応募者情報を要約して面接案を提示する。最終判断を含めた設計として適切なのはどれか。",
       "source": "src/data/expansion2027Questions.ts",
-      "rewritten": false,
-      "candidate_item": "RAGの仕組み",
+      "rewritten": true,
+      "candidate_item": "AIエージェントの役割",
       "mapping_status": "provisional"
     },
     {
       "id": "ex27-044",
-      "topic": "RAG",
-      "prompt": "RAGで参照文書が古い場合に生じ得る問題はどれか。",
+      "topic": "ブラウザ操作・PC操作エージェント",
+      "prompt": "AIにブラウザで申請フォームを入力させるとき、安全に操作するにはどれが適切か。",
       "source": "src/data/expansion2027Questions.ts",
-      "rewritten": false,
-      "candidate_item": "RAGとは",
+      "rewritten": true,
+      "candidate_item": "ブラウザ操作・PC操作エージェント",
       "mapping_status": "provisional"
     },
     {
       "id": "ex27-045",
-      "topic": "RAG",
-      "prompt": "RAGの検索で質問と無関係な文書ばかり取得された。最も直接的な改善対象はどれか。",
+      "topic": "マルチエージェント・エージェント間連携",
+      "prompt": "調査役と評価役のエージェントが別々に作業する。結果を統合する際に適切なのはどれか。",
       "source": "src/data/expansion2027Questions.ts",
-      "rewritten": false,
-      "candidate_item": "RAGとは",
+      "rewritten": true,
+      "candidate_item": "マルチエージェント・エージェント間連携",
       "mapping_status": "provisional"
     },
     {
       "id": "ex27-046",
-      "topic": "RAG",
-      "prompt": "検索で取得した文書を生成AIの入力に含める目的はどれか。",
+      "topic": "コンテキストエンジニアリング",
+      "prompt": "エージェントに複数の長文資料と業務上の制約を提示する際に優先する設計はどれか。",
       "source": "src/data/expansion2027Questions.ts",
-      "rewritten": false,
-      "candidate_item": "RAGとは",
+      "rewritten": true,
+      "candidate_item": "コンテキストエンジニアリング",
       "mapping_status": "provisional"
     },
     {
@@ -858,8 +843,8 @@
       "prompt": "生成AIシステムの変更前後で品質を比較する方法として適切なのはどれか。",
       "source": "src/data/expansion2027Questions.ts",
       "rewritten": false,
-      "candidate_item": null,
-      "mapping_status": "needs_manual_review"
+      "candidate_item": "AIエージェントの評価",
+      "mapping_status": "provisional"
     },
     {
       "id": "ex27-057",
@@ -899,38 +884,38 @@
     },
     {
       "id": "adv27-021",
-      "topic": "検索精度",
-      "prompt": "RAGで必要な資料が検索上位に出てこない。最初に検証する対象はどれか。",
+      "topic": "AIエージェントの役割",
+      "prompt": "業務AIが契約条項のリスクを抽出した。利用者とAIの役割分担で重要なのはどれか。",
       "source": "src/data/advanced2027Questions.ts",
-      "rewritten": false,
-      "candidate_item": "RAGの仕組み",
+      "rewritten": true,
+      "candidate_item": "AIエージェントの役割",
       "mapping_status": "provisional"
     },
     {
       "id": "adv27-022",
-      "topic": "再ランキング",
-      "prompt": "RAGで検索候補を取得後に関連度順へ並べ直す処理はどれか。",
+      "topic": "Agent Skills（エージェントスキル）とは",
+      "prompt": "社内のコードレビュー規程が改定された。エージェント用Skillの運用として適切なのはどれか。",
       "source": "src/data/advanced2027Questions.ts",
-      "rewritten": false,
-      "candidate_item": "RAGの仕組み",
+      "rewritten": true,
+      "candidate_item": "Agent Skills（エージェントスキル）とは",
       "mapping_status": "provisional"
     },
     {
       "id": "adv27-023",
-      "topic": "ハイブリッド検索",
-      "prompt": "キーワード一致と意味検索を組み合わせる方式はどれか。",
+      "topic": "コーディングエージェント",
+      "prompt": "コード修正AIが修正と同時にテストを削除した。プルリクエストをレビューする際に適切なのはどれか。",
       "source": "src/data/advanced2027Questions.ts",
-      "rewritten": false,
-      "candidate_item": "RAGの仕組み",
+      "rewritten": true,
+      "candidate_item": "コーディングエージェント",
       "mapping_status": "provisional"
     },
     {
       "id": "adv27-024",
-      "topic": "検索評価",
-      "prompt": "検索結果に正しい資料が含まれる割合を確認する目的はどれか。",
+      "topic": "タスク分解と計画",
+      "prompt": "注文処理エージェントが在庫確認と顧客承認を終えてから発注する場合、適切な実行計画はどれか。",
       "source": "src/data/advanced2027Questions.ts",
-      "rewritten": false,
-      "candidate_item": "RAGの仕組み",
+      "rewritten": true,
+      "candidate_item": "タスク分解と計画",
       "mapping_status": "provisional"
     },
     {
@@ -939,8 +924,8 @@
       "prompt": "AIが参照資料にない数字を回答へ追加した。適切な対応はどれか。",
       "source": "src/data/advanced2027Questions.ts",
       "rewritten": false,
-      "candidate_item": null,
-      "mapping_status": "needs_manual_review"
+      "candidate_item": "RAGの仕組み",
+      "mapping_status": "provisional"
     },
     {
       "id": "adv27-026",
@@ -1043,11 +1028,11 @@
     },
     {
       "id": "adv27-037",
-      "topic": "評価指標",
-      "prompt": "RAGの回答が検索資料に忠実かを確認する観点はどれか。",
+      "topic": "ハーネスエンジニアリング",
+      "prompt": "エージェントがコードの実行を伴う分析をする。作業環境で必須の安全な設計はどれか。",
       "source": "src/data/advanced2027Questions.ts",
-      "rewritten": false,
-      "candidate_item": "AIエージェントの評価",
+      "rewritten": true,
+      "candidate_item": "ハーネスエンジニアリング",
       "mapping_status": "provisional"
     },
     {
@@ -1079,11 +1064,11 @@
     },
     {
       "id": "pr27-009",
-      "topic": "ハイブリッド検索",
-      "prompt": "社内文書検索でキーワード一致と意味検索を併用する方式はどれか。",
+      "topic": "ワークフロー型エージェントと自律型エージェント",
+      "prompt": "定義済み手順に従う申請確認と状況に応じ次の調査を選ぶ申請確認の違いはどれか。",
       "source": "src/data/practice2027Questions.ts",
-      "rewritten": false,
-      "candidate_item": "RAGの仕組み",
+      "rewritten": true,
+      "candidate_item": "ワークフロー型エージェントと自律型エージェント",
       "mapping_status": "provisional"
     },
     {
@@ -1115,38 +1100,38 @@
     },
     {
       "id": "pr27-053",
-      "topic": "RAG",
-      "prompt": "RAGの検索で古い版の規程が上位に出た。対策はどれか。",
+      "topic": "コーディングエージェント",
+      "prompt": "AIが生成した修正コードを本番に反映する前に重要な確認はどれか。",
       "source": "src/data/practice2027Questions.ts",
-      "rewritten": false,
-      "candidate_item": "RAGとは",
+      "rewritten": true,
+      "candidate_item": "コーディングエージェント",
       "mapping_status": "provisional"
     },
     {
       "id": "pr27-054",
-      "topic": "ベクトル検索",
-      "prompt": "質問と表現が違うが意味が近い文書を探す方法はどれか。",
+      "topic": "外部ツール・データソースとの連携",
+      "prompt": "RAGの社内文書をエージェントのツールから取得する。最初に必要な安全確認はどれか。",
       "source": "src/data/practice2027Questions.ts",
-      "rewritten": false,
-      "candidate_item": "RAGの仕組み",
+      "rewritten": true,
+      "candidate_item": "外部ツール・データソースとの連携",
       "mapping_status": "provisional"
     },
     {
       "id": "pr27-055",
-      "topic": "チャンク分割",
-      "prompt": "検索対象を極端に細かく分割する際の懸念はどれか。",
+      "topic": "リサーチ・業務自動化エージェント",
+      "prompt": "AIの自動調査レポートに統計値が載っているが参照元の調査年が異なる。適切な対応はどれか。",
       "source": "src/data/practice2027Questions.ts",
-      "rewritten": false,
-      "candidate_item": "RAGの仕組み",
+      "rewritten": true,
+      "candidate_item": "リサーチ・業務自動化エージェント",
       "mapping_status": "provisional"
     },
     {
       "id": "pr27-056",
-      "topic": "再ランキング",
-      "prompt": "検索結果の候補を関連度に基づき再評価する目的はどれか。",
+      "topic": "MCP（Model Context Protocol）とは",
+      "prompt": "エージェントが複数の検索・予定管理ツールと接続するため共通の接続方式を選ぶ。該当するのはどれか。",
       "source": "src/data/practice2027Questions.ts",
-      "rewritten": false,
-      "candidate_item": "RAGの仕組み",
+      "rewritten": true,
+      "candidate_item": "MCP（Model Context Protocol）とは",
       "mapping_status": "provisional"
     },
     {
@@ -1218,8 +1203,8 @@
       "prompt": "RAGが誤答したときの切り分けで最初に調べるのはどれか。",
       "source": "src/data/practice2027Questions.ts",
       "rewritten": false,
-      "candidate_item": null,
-      "mapping_status": "needs_manual_review"
+      "candidate_item": "RAGの仕組み",
+      "mapping_status": "provisional"
     },
     {
       "id": "pr27-065",
@@ -1227,8 +1212,8 @@
       "prompt": "AIの回答に資料にない数字が含まれた。適切なのはどれか。",
       "source": "src/data/practice2027Questions.ts",
       "rewritten": false,
-      "candidate_item": null,
-      "mapping_status": "needs_manual_review"
+      "candidate_item": "RAGの仕組み",
+      "mapping_status": "provisional"
     },
     {
       "id": "pr27-066",
@@ -1277,11 +1262,11 @@
     },
     {
       "id": "ap27-015",
-      "topic": "RAG評価",
-      "prompt": "RAGの回答が誤っていた。検索文書は正しかったが回答が文書に反していた。改善対象はどれか。",
+      "topic": "従来の生成AIとの違い",
+      "prompt": "問い合わせチャットは利用者の質問に答えるだけだが、業務AIは申請内容を確認し、必要なツールを呼び出して結果を照合する。後者を説明するものは。",
       "source": "src/data/applied2027Questions.ts",
-      "rewritten": false,
-      "candidate_item": "RAGの仕組み",
+      "rewritten": true,
+      "candidate_item": "従来の生成AIとの違い",
       "mapping_status": "provisional"
     },
     {
@@ -1308,16 +1293,16 @@
       "prompt": "外部ツールが返した金額が負数だったが仕様上は非負である。適切な処理はどれか。",
       "source": "src/data/applied2027Questions.ts",
       "rewritten": false,
-      "candidate_item": null,
-      "mapping_status": "needs_manual_review"
+      "candidate_item": "ツール実行",
+      "mapping_status": "provisional"
     },
     {
       "id": "ap27-035",
-      "topic": "ベクトル検索",
-      "prompt": "ベクトル検索で距離が近い文書が必ず事実として正しいとは限らない理由はどれか。",
+      "topic": "ワークフロー型エージェントと自律型エージェント",
+      "prompt": "社内の請求書処理を固定ルールで順に実行する方式と、例外発見時に必要な調査手順をAIが選び直す方式を区別するには。",
       "source": "src/data/applied2027Questions.ts",
-      "rewritten": false,
-      "candidate_item": "RAGの仕組み",
+      "rewritten": true,
+      "candidate_item": "ワークフロー型エージェントと自律型エージェント",
       "mapping_status": "provisional"
     },
     {
@@ -1331,11 +1316,11 @@
     },
     {
       "id": "ap27-045",
-      "topic": "検索と生成の切分け",
-      "prompt": "RAGの回答に誤りがあるが検索結果には正しい根拠が含まれる。優先的に確認するのはどれか。",
+      "topic": "AIエージェントが注目される背景",
+      "prompt": "営業担当者が見積依頼を受けた際に、規程確認、在庫照会、見積案作成を順次支援するAIに期待する価値は。",
       "source": "src/data/applied2027Questions.ts",
-      "rewritten": false,
-      "candidate_item": "RAGの仕組み",
+      "rewritten": true,
+      "candidate_item": "AIエージェントが注目される背景",
       "mapping_status": "provisional"
     },
     {
@@ -1358,11 +1343,11 @@
     },
     {
       "id": "ap27-056",
-      "topic": "RAGの更新",
-      "prompt": "社内規程が改定されたがRAGの回答が旧版を引用した。優先すべき対策はどれか。",
+      "topic": "AIエージェントの役割",
+      "prompt": "契約書レビューAIに「問題箇所の抽出」を任せ、契約締結は人間が判断する。最も適切な責任分担は。",
       "source": "src/data/applied2027Questions.ts",
-      "rewritten": false,
-      "candidate_item": "RAGのユースケース",
+      "rewritten": true,
+      "candidate_item": "AIエージェントの役割",
       "mapping_status": "provisional"
     },
     {
@@ -1380,8 +1365,8 @@
       "prompt": "AIが外部APIへ送る引数に必須項目が欠けていた。適切な処理はどれか。",
       "source": "src/data/applied2027Questions.ts",
       "rewritten": false,
-      "candidate_item": null,
-      "mapping_status": "needs_manual_review"
+      "candidate_item": "ツール実行",
+      "mapping_status": "provisional"
     },
     {
       "id": "ap27-111",
@@ -1403,11 +1388,11 @@
     },
     {
       "id": "ap27-113",
-      "topic": "類似度",
-      "prompt": "意味的に近い文書の注意点は。",
+      "topic": "自律性のレベル",
+      "prompt": "AIが航空券を検索して候補を提示し、利用者の承認後だけ予約を確定する。該当する設計は。",
       "source": "src/data/applied2027Questions.ts",
-      "rewritten": false,
-      "candidate_item": "RAGの仕組み",
+      "rewritten": true,
+      "candidate_item": "自律性のレベル",
       "mapping_status": "provisional"
     },
     {
@@ -1434,8 +1419,8 @@
       "prompt": "分割境界で説明が切れる。対策は。",
       "source": "src/data/applied2027Questions.ts",
       "rewritten": false,
-      "candidate_item": null,
-      "mapping_status": "needs_manual_review"
+      "candidate_item": "RAGの仕組み",
+      "mapping_status": "provisional"
     },
     {
       "id": "ap27-117",
@@ -1466,11 +1451,11 @@
     },
     {
       "id": "ap27-120",
-      "topic": "引用追跡",
-      "prompt": "RAG回答の根拠を追えるようにするには。",
+      "topic": "LLMを中核とした構成",
+      "prompt": "AIエージェントでLLM、ツール、記憶、実行制御を組み合わせる説明として正しいものは。",
       "source": "src/data/applied2027Questions.ts",
-      "rewritten": false,
-      "candidate_item": "RAGの仕組み",
+      "rewritten": true,
+      "candidate_item": "LLMを中核とした構成",
       "mapping_status": "provisional"
     },
     {
@@ -1515,8 +1500,8 @@
       "prompt": "AIがメール送信APIを使う。安全策は。",
       "source": "src/data/applied2027Questions.ts",
       "rewritten": false,
-      "candidate_item": null,
-      "mapping_status": "needs_manual_review"
+      "candidate_item": "ツール実行",
+      "mapping_status": "provisional"
     },
     {
       "id": "ap27-126",
@@ -1538,20 +1523,20 @@
     },
     {
       "id": "ap27-128",
-      "topic": "キャッシュ",
-      "prompt": "固定の長い指示を繰り返し送る。効率化候補は。",
+      "topic": "タスク分解と計画",
+      "prompt": "採用業務のエージェントに、応募者へ面接候補を通知し、承諾後に会議室を確定する仕事を任せる。適切な計画は。",
       "source": "src/data/applied2027Questions.ts",
-      "rewritten": false,
-      "candidate_item": "RAGのユースケース",
+      "rewritten": true,
+      "candidate_item": "タスク分解と計画",
       "mapping_status": "provisional"
     },
     {
       "id": "ap27-129",
-      "topic": "比較評価",
-      "prompt": "検索変更前後の精度比較で必要なのは。",
+      "topic": "推論と行動のフィードバックループ",
+      "prompt": "調査エージェントが必要な文書を検索したが関連度の低い結果しか得られなかった。次の行動は。",
       "source": "src/data/applied2027Questions.ts",
-      "rewritten": false,
-      "candidate_item": "AIエージェントの評価",
+      "rewritten": true,
+      "candidate_item": "推論と行動のフィードバックループ",
       "mapping_status": "provisional"
     },
     {
@@ -1592,20 +1577,20 @@
     },
     {
       "id": "ap27-214",
-      "topic": "メタデータ",
-      "prompt": "部署ごとに参照できる文書が違う。必要な設計は。",
+      "topic": "外部ツール・データソースとの連携",
+      "prompt": "MCPサーバーを通じて人事データベースを参照するAIエージェントを導入する。注意すべき設計は。",
       "source": "src/data/applied2027Questions.ts",
-      "rewritten": false,
-      "candidate_item": "RAGの仕組み",
+      "rewritten": true,
+      "candidate_item": "外部ツール・データソースとの連携",
       "mapping_status": "provisional"
     },
     {
       "id": "ap27-215",
-      "topic": "チャンク境界",
-      "prompt": "契約条項が分割で途切れた。対策は。",
+      "topic": "コーディングエージェント",
+      "prompt": "コーディングエージェントが修正したプログラムはテストに合格したが、関係ない設定ファイルも変更していた。採用判断は。",
       "source": "src/data/applied2027Questions.ts",
-      "rewritten": false,
-      "candidate_item": "RAGの仕組み",
+      "rewritten": true,
+      "candidate_item": "コーディングエージェント",
       "mapping_status": "provisional"
     },
     {
@@ -1628,20 +1613,20 @@
     },
     {
       "id": "ap27-218",
-      "topic": "引用の整合",
-      "prompt": "回答の引用番号が別の文書を指している。対応は。",
+      "topic": "Agent Skills（エージェントスキル）とは",
+      "prompt": "複数のエージェントで請求書チェックの手順が一致していない。組織の標準手順を再利用するには。",
       "source": "src/data/applied2027Questions.ts",
-      "rewritten": false,
-      "candidate_item": "RAGの仕組み",
+      "rewritten": true,
+      "candidate_item": "Agent Skills（エージェントスキル）とは",
       "mapping_status": "provisional"
     },
     {
       "id": "ap27-219",
-      "topic": "検索ログ",
-      "prompt": "検索結果が不安定で再現できない。必要なのは。",
+      "topic": "ハーネスエンジニアリング",
+      "prompt": "コード修正AIが本番DBへ接続できないようにし、テスト環境で変更を検証したい。該当する対策は。",
       "source": "src/data/applied2027Questions.ts",
-      "rewritten": false,
-      "candidate_item": "RAGの仕組み",
+      "rewritten": true,
+      "candidate_item": "ハーネスエンジニアリング",
       "mapping_status": "provisional"
     },
     {
@@ -1808,11 +1793,11 @@
     },
     {
       "id": "ap27-318",
-      "topic": "RAG評価",
-      "prompt": "検索で正解資料を取得できたが回答が誤った。切り分けは。",
+      "topic": "A2A（Agent-to-Agent）連携プロトコル",
+      "prompt": "旅行計画エージェントが別会社の予約専門エージェントへ空席照会を依頼する。主に関係する連携は。",
       "source": "src/data/applied2027Questions.ts",
-      "rewritten": false,
-      "candidate_item": "RAGの仕組み",
+      "rewritten": true,
+      "candidate_item": "A2A（Agent-to-Agent）連携プロトコル",
       "mapping_status": "provisional"
     },
     {
@@ -1826,11 +1811,11 @@
     },
     {
       "id": "ap27-320",
-      "topic": "コンテキスト圧縮",
-      "prompt": "長い資料を短くしてRAGへ渡す。リスクは。",
+      "topic": "リサーチ・業務自動化エージェント",
+      "prompt": "市場調査エージェントが最新の売上予測を提示したが参考文献は3年前だった。最も重要な確認は。",
       "source": "src/data/applied2027Questions.ts",
-      "rewritten": false,
-      "candidate_item": "記憶（メモリ）とコンテキスト管理",
+      "rewritten": true,
+      "candidate_item": "リサーチ・業務自動化エージェント",
       "mapping_status": "provisional"
     },
     {
@@ -1875,8 +1860,8 @@
       "prompt": "AIが同じ発注APIを二度呼び出した。対策は。",
       "source": "src/data/applied2027Questions.ts",
       "rewritten": false,
-      "candidate_item": null,
-      "mapping_status": "needs_manual_review"
+      "candidate_item": "ツール実行",
+      "mapping_status": "provisional"
     },
     {
       "id": "ap27-326",
@@ -1898,11 +1883,11 @@
     },
     {
       "id": "ap27-328",
-      "topic": "キャッシュの更新",
-      "prompt": "RAGで古い回答がキャッシュから返る。対策は。",
+      "topic": "業務への導入事例",
+      "prompt": "購買申請エージェントを部署内で試したところ、例外的な申請を誤って自動承認した。導入拡大前に必要なことは。",
       "source": "src/data/applied2027Questions.ts",
-      "rewritten": false,
-      "candidate_item": "RAGのユースケース",
+      "rewritten": true,
+      "candidate_item": "業務への導入事例",
       "mapping_status": "provisional"
     },
     {
@@ -1920,8 +1905,8 @@
       "prompt": "生成ログに顧客の住所が残っていた。対策は。",
       "source": "src/data/applied2027Questions.ts",
       "rewritten": false,
-      "candidate_item": null,
-      "mapping_status": "needs_manual_review"
+      "candidate_item": "安全に使うための原則",
+      "mapping_status": "provisional"
     },
     {
       "id": "ap27-411",
@@ -1934,29 +1919,29 @@
     },
     {
       "id": "ap27-412",
-      "topic": "埋め込み",
-      "prompt": "社内規程で「休暇」と「有給休暇」のように表現が異なる文書も検索したい。適切な技術は。",
+      "topic": "記憶（メモリ）とコンテキスト管理",
+      "prompt": "長期間の顧客対応で前回の合意事項を引き継ぎたい。適切な設計は。",
       "source": "src/data/applied2027Questions.ts",
-      "rewritten": false,
-      "candidate_item": "RAGの仕組み",
+      "rewritten": true,
+      "candidate_item": "記憶（メモリ）とコンテキスト管理",
       "mapping_status": "provisional"
     },
     {
       "id": "ap27-413",
-      "topic": "ハイブリッド検索",
-      "prompt": "製品型番「AB-104」と「接続が途切れる」の両方でFAQを探す。検索構成として適切なのは。",
+      "topic": "コンテキストエンジニアリング",
+      "prompt": "長文の業務手順、最新規程、利用者の質問をエージェントへ渡す際、重要な制約を見落としにくくする設計は。",
       "source": "src/data/applied2027Questions.ts",
-      "rewritten": false,
-      "candidate_item": "RAGの仕組み",
+      "rewritten": true,
+      "candidate_item": "コンテキストエンジニアリング",
       "mapping_status": "provisional"
     },
     {
       "id": "ap27-414",
-      "topic": "RAGの版",
-      "prompt": "RAGで2025年版と2027年版の就業規則が同時に見つかった。2027年の規程について答えるには。",
+      "topic": "推論と行動のフィードバックループ",
+      "prompt": "在庫調査エージェントがAPIで在庫数0を取得した。利用者が別候補を希望する場合の適切な動作は。",
       "source": "src/data/applied2027Questions.ts",
-      "rewritten": false,
-      "candidate_item": "RAGのユースケース",
+      "rewritten": true,
+      "candidate_item": "推論と行動のフィードバックループ",
       "mapping_status": "provisional"
     },
     {
@@ -1970,11 +1955,11 @@
     },
     {
       "id": "ap27-416",
-      "topic": "チャンク",
-      "prompt": "契約書を一文字ずつ区切って検索索引に登録した。起こりやすい問題は。",
+      "topic": "ブラウザ操作・PC操作エージェント",
+      "prompt": "PC操作AIが請求画面のレイアウト変更により誤ったボタンを押しそうになっている。安全な対応は。",
       "source": "src/data/applied2027Questions.ts",
-      "rewritten": false,
-      "candidate_item": "RAGの仕組み",
+      "rewritten": true,
+      "candidate_item": "ブラウザ操作・PC操作エージェント",
       "mapping_status": "provisional"
     },
     {
@@ -2091,8 +2076,8 @@
       "prompt": "検索システムの改修で回答品質が改善したかを比較する。評価方法は。",
       "source": "src/data/applied2027Questions.ts",
       "rewritten": false,
-      "candidate_item": null,
-      "mapping_status": "needs_manual_review"
+      "candidate_item": "AIエージェントの評価",
+      "mapping_status": "provisional"
     },
     {
       "id": "ap27-430",
@@ -2100,8 +2085,8 @@
       "prompt": "RAGの検索ログに顧客住所が保存されている。監査を維持しつつ取るべき対策は。",
       "source": "src/data/applied2027Questions.ts",
       "rewritten": false,
-      "candidate_item": null,
-      "mapping_status": "needs_manual_review"
+      "candidate_item": "安全に使うための原則",
+      "mapping_status": "provisional"
     },
     {
       "id": "ap27-491",
@@ -2132,11 +2117,11 @@
     },
     {
       "id": "ap27-494",
-      "topic": "ベクトル更新",
-      "prompt": "商品説明の埋め込みモデルを変更した後、古い検索索引をそのまま使った。問題は。",
+      "topic": "MCP（Model Context Protocol）とは",
+      "prompt": "エージェントが社内検索と予定表の両ツールを共通した接続方式で扱いたい。適した仕組みは。",
       "source": "src/data/applied2027Questions.ts",
-      "rewritten": false,
-      "candidate_item": "RAGの仕組み",
+      "rewritten": true,
+      "candidate_item": "MCP（Model Context Protocol）とは",
       "mapping_status": "provisional"
     },
     {
@@ -2177,11 +2162,11 @@
     },
     {
       "id": "ap27-499",
-      "topic": "リランキングの限界",
-      "prompt": "RAGの検索候補に正解文書が一件もない。再ランキングだけで改善できるか。",
+      "topic": "LLMを中核とした構成",
+      "prompt": "AIエージェントがLLMで次の操作を選んだ後、実際にAPIを実行する段階の適切な責任分離は。",
       "source": "src/data/applied2027Questions.ts",
-      "rewritten": false,
-      "candidate_item": "RAGの仕組み",
+      "rewritten": true,
+      "candidate_item": "LLMを中核とした構成",
       "mapping_status": "provisional"
     },
     {
@@ -2285,11 +2270,11 @@
     },
     {
       "id": "ap27-591",
-      "topic": "チャンク分割",
-      "prompt": "RAGで表の見出しと数値が別チャンクになり誤読した。改善策は。",
+      "topic": "業務への導入事例",
+      "prompt": "議事録作成からフォローアップ通知まで行うAIを社内で試験導入した。段階的に拡大する前に確認すべきことは。",
       "source": "src/data/applied2027Questions.ts",
-      "rewritten": false,
-      "candidate_item": "RAGの仕組み",
+      "rewritten": true,
+      "candidate_item": "業務への導入事例",
       "mapping_status": "provisional"
     },
     {
@@ -2303,11 +2288,11 @@
     },
     {
       "id": "ap27-593",
-      "topic": "Embeddingの限界",
-      "prompt": "意味検索で似た文章が見つかったが、製品型番が異なっていた。対策は。",
+      "topic": "ワークフロー型エージェントと自律型エージェント",
+      "prompt": "社内規程チェックの決められた順序をたどる処理と、追加の情報源をAIが自ら選ぶ処理について適切なのは。",
       "source": "src/data/applied2027Questions.ts",
-      "rewritten": false,
-      "candidate_item": "RAGの仕組み",
+      "rewritten": true,
+      "candidate_item": "ワークフロー型エージェントと自律型エージェント",
       "mapping_status": "provisional"
     },
     {
@@ -2366,11 +2351,11 @@
     },
     {
       "id": "ap27-600",
-      "topic": "検索精度と網羅性",
-      "prompt": "検索上位5件の関連文書が4件でも重要な例外条項が取得できなかった。評価は。",
+      "topic": "ハーネスエンジニアリング",
+      "prompt": "コード修正AIの作業で本番環境へのアクセスを防ぎつつ必要なツールだけ使用させたい。該当する設計は。",
       "source": "src/data/applied2027Questions.ts",
-      "rewritten": false,
-      "candidate_item": "RAGの仕組み",
+      "rewritten": true,
+      "candidate_item": "ハーネスエンジニアリング",
       "mapping_status": "provisional"
     },
     {
@@ -2384,29 +2369,29 @@
     },
     {
       "id": "ap27-642",
-      "topic": "検索と生成の分離",
-      "prompt": "RAGで根拠文書は取得できたが回答が反対の意味になった。改善対象は。",
+      "topic": "ツール実行",
+      "prompt": "発注エージェントが発注APIの数量に負数を指定した。ツール実行前にすべきことは。",
       "source": "src/data/applied2027Questions.ts",
-      "rewritten": false,
-      "candidate_item": "RAGの仕組み",
+      "rewritten": true,
+      "candidate_item": "ツール実行",
       "mapping_status": "provisional"
     },
     {
       "id": "ap27-643",
-      "topic": "ハイブリッド検索",
-      "prompt": "製品コードの完全一致と説明文の意味的類似を両方使いたい。候補は。",
+      "topic": "外部ツール・データソースとの連携",
+      "prompt": "AIが社内検索ツールを使って規程を参照する。ユーザーごとに閲覧許可が異なる場合の設計は。",
       "source": "src/data/applied2027Questions.ts",
-      "rewritten": false,
-      "candidate_item": "RAGの仕組み",
+      "rewritten": true,
+      "candidate_item": "外部ツール・データソースとの連携",
       "mapping_status": "provisional"
     },
     {
       "id": "ap27-644",
-      "topic": "再ランキング",
-      "prompt": "検索候補20件から関連性の高い5件を選ぶ工程は。",
+      "topic": "Agent Skills（エージェントスキル）とは",
+      "prompt": "異なる部署のエージェントが共通のレビュー手順を使うが部署ごとに承認条件が違う。Agent Skillsでの適切な設計は。",
       "source": "src/data/applied2027Questions.ts",
-      "rewritten": false,
-      "candidate_item": "RAGの仕組み",
+      "rewritten": true,
+      "candidate_item": "Agent Skills（エージェントスキル）とは",
       "mapping_status": "provisional"
     },
     {
@@ -2492,29 +2477,29 @@
     },
     {
       "id": "ap27-694",
-      "topic": "RAGの出典",
-      "prompt": "RAGの回答に引用を付ける目的として適切なのは。",
+      "topic": "リサーチ・業務自動化エージェント",
+      "prompt": "エージェントが自動収集した統計資料の数値に食い違いがあった。最も適切な対応は。",
       "source": "src/data/applied2027Questions.ts",
-      "rewritten": false,
-      "candidate_item": "RAGの仕組み",
+      "rewritten": true,
+      "candidate_item": "リサーチ・業務自動化エージェント",
       "mapping_status": "provisional"
     },
     {
       "id": "ap27-695",
-      "topic": "埋め込み",
-      "prompt": "意味検索で用いる埋め込みベクトルの役割は。",
+      "topic": "従来の生成AIとの違い",
+      "prompt": "利用者が「来週の空き時間を探して候補を知らせて」と依頼したとき、単なる回答生成を超えてエージェントが行う処理は。",
       "source": "src/data/applied2027Questions.ts",
-      "rewritten": false,
-      "candidate_item": "RAGの仕組み",
+      "rewritten": true,
+      "candidate_item": "従来の生成AIとの違い",
       "mapping_status": "provisional"
     },
     {
       "id": "ap27-696",
-      "topic": "RAGの分割",
-      "prompt": "規程の本文と例外条件が別々に検索され回答が不完全になった。改善は。",
+      "topic": "コンテキストエンジニアリング",
+      "prompt": "業務AIへ過去の大量の作業記録を渡したら重要な安全制約が埋もれた。改善策は。",
       "source": "src/data/applied2027Questions.ts",
-      "rewritten": false,
-      "candidate_item": "RAGの仕組み",
+      "rewritten": true,
+      "candidate_item": "コンテキストエンジニアリング",
       "mapping_status": "provisional"
     },
     {
@@ -2564,11 +2549,11 @@
     },
     {
       "id": "ap27-742",
-      "topic": "チャンクサイズ",
-      "prompt": "RAGで細かく分割しすぎたため規程の例外が抜けた。改善は。",
+      "topic": "マルチエージェント・エージェント間連携",
+      "prompt": "調査エージェントと分析エージェントを分けるとき、情報の受け渡しで重要なのは。",
       "source": "src/data/applied2027Questions.ts",
-      "rewritten": false,
-      "candidate_item": "RAGの仕組み",
+      "rewritten": true,
+      "candidate_item": "マルチエージェント・エージェント間連携",
       "mapping_status": "provisional"
     },
     {
@@ -2591,11 +2576,11 @@
     },
     {
       "id": "ap27-745",
-      "topic": "RAGの誤答",
-      "prompt": "検索結果に正解資料が含まれているのにAIが誤答した。確認は。",
+      "topic": "Agent Skills（エージェントスキル）とは",
+      "prompt": "エージェントが利用する社内業務Skillの手順が変更になった。安全に更新するには。",
       "source": "src/data/applied2027Questions.ts",
-      "rewritten": false,
-      "candidate_item": "RAGの仕組み",
+      "rewritten": true,
+      "candidate_item": "Agent Skills（エージェントスキル）とは",
       "mapping_status": "provisional"
     },
     {
@@ -2631,8 +2616,8 @@
       "prompt": "埋め込みモデルを変更したが旧索引を使い続けた。問題は。",
       "source": "src/data/applied2027Questions.ts",
       "rewritten": false,
-      "candidate_item": null,
-      "mapping_status": "needs_manual_review"
+      "candidate_item": "RAGの仕組み",
+      "mapping_status": "provisional"
     },
     {
       "id": "ap27-750",
@@ -2735,11 +2720,11 @@
     },
     {
       "id": "ap27-815",
-      "topic": "チャンク",
-      "prompt": "表の見出しと値が別々に分割され誤回答した。対策は。",
+      "topic": "安全に使うための原則",
+      "prompt": "ファイル編集AIへアクセスを与えるときの基本原則として適切なのは。",
       "source": "src/data/applied2027Questions.ts",
-      "rewritten": false,
-      "candidate_item": "RAGの仕組み",
+      "rewritten": true,
+      "candidate_item": "安全に使うための原則",
       "mapping_status": "provisional"
     },
     {
