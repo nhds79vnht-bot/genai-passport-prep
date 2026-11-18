@@ -85,7 +85,7 @@
   "checkpoint": {
     "last_completed_id": "q120",
     "next_question_id": null,
-    "next_action": "Conclude bounded Chapter 2 semantic acceptance gate, then start Chapter 3; separate runtime testing pending",
+    "next_action": "Review remaining materially similar judgments and choice-by-choice semantic correctness; acceptance only after major findings cleared; device test separately pending",
     "last_verified_commit": "1a1a089d18cc89905f985aecc52c0daf3f006408",
     "chapter_accepted": false
   },
@@ -532,7 +532,7 @@
     },
     "build_status": "Not executed in this pass; source and ledger updates only",
     "final_acceptance_gate_20261118": {
-      "status": "pending_final_semantic_gate",
+      "status": "pending_independent_semantic_and_runtime_checks",
       "chapter_question_count": 300,
       "extra_question_rows_checked": 240,
       "extra_row_structure_issues": 0,
@@ -548,7 +548,14 @@
       "additional_stale_explanation_fixed": [
         "q080"
       ],
-      "additional_source_commit": "996a994db55853e428ccf0116bb14a30d6c1ce73"
+      "additional_source_commit": "996a994db55853e428ccf0116bb14a30d6c1ce73",
+      "additional_duplicate_rewrite": {
+        "id": "q088",
+        "reason": "Same provider-identification judgment as q068",
+        "replacement": "Gemini image-query evaluation",
+        "commit": "90be8d6a402207e6463e338104b361b2b10abd11"
+      },
+      "decision": "not_accepted_yet"
     }
   }
 }
