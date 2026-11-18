@@ -2913,7 +2913,7 @@ export const questionBank: Question[] = [
   {
     id: 'q149',
     chapter: '第3章 生成AIの技術',
-    topic: 'AIエージェント',
+    topic: "従来の生成AIとの違い",
     prompt: 'AIエージェントと通常Chatの違いとして正しいのはどれですか。',
     choices: [
       '1回の回答で必ず完了',
@@ -2925,7 +2925,7 @@ export const questionBank: Question[] = [
       3
     ],
     explanation: '段階実行とツール連携が特徴です。',
-    reviewSection: 'テキスト第3章（RAG・AIエージェント・MCP ほか） → 「AIエージェント」',
+    reviewSection: "2027年版公式シラバス 第3章「従来の生成AIとの違い」",
     examTrap: '単発Chatと混同注意。計画→実行→ツール利用の反復が特徴です。',
     choiceNotes: [
       '「必ず」「不要」「無制限」などの極端表現は、生成AIパスポート試験では誤答になりやすい典型パターンです。',
@@ -3387,7 +3387,7 @@ export const questionBank: Question[] = [
   {
     id: 'q171',
     chapter: '第3章 生成AIの技術',
-    topic: 'AIエージェント',
+    topic: "安全に使うための原則",
     prompt: 'AIエージェントの運用でループによる費用増大を防ぐ方法は何か。',
     choices: [
       '失敗履歴を削除して実行を続ける',
@@ -3399,7 +3399,7 @@ export const questionBank: Question[] = [
       1
     ],
     explanation: '自律的な処理には停止条件と予算管理を組み込む。',
-    reviewSection: 'テキスト第3章 生成AIの技術 → 「AIエージェント」',
+    reviewSection: "2027年版公式シラバス 第3章「安全に使うための原則」",
     examTrap: '用語の定義・前提・例外を区別して判断しましょう。',
     choiceNotes: [
       '不正解：「失敗履歴を削除して実行を続ける」。自律的な処理には停止条件と予算管理を組み込む。',
