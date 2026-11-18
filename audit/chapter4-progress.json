@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "chapter": 4,
+  "official_title": "第4章 生成AIのリスク予防・AI倫理・ガバナンス",
+  "legacy_title": "第4章 法律と倫理",
+  "syllabus_url": "https://guga.or.jp/assets/syllabus.pdf",
+  "syllabus_version": "2027年2月試験より適用",
+  "status": "initial_inventory_complete_mapping_pending",
+  "target_question_count": 300,
+  "existing_question_count": 300,
+  "unique_effective_ids_verified": true,
+  "source_counts": {
+    "src/data/questionBank.ts": 60,
+    "src/data/syllabus2027Questions.ts": 13,
+    "src/data/expansion2027Questions.ts": 20,
+    "src/data/advanced2027Questions.ts": 20,
+    "src/data/practice2027Questions.ts": 20,
+    "src/data/applied2027Questions.ts": 167
+  },
+  "inventory_file": "audit/chapter4-inventory-2027.json",
+  "allocation_status": "not_yet_created",
+  "first_pass": {
+    "reviewed": 0,
+    "revised": 0,
+    "last_completed_id": null,
+    "next_id": "q181"
+  },
+  "second_pass": {
+    "reviewed": 0,
+    "last_completed_id": null,
+    "next_id": null
+  },
+  "accepted": false,
+  "completion": false,
+  "exit_criteria": [
+    "verify and allocate all official 2027 subtopics against 300 legacy items",
+    "fix obsolete or off-scope questions; retain valid legacy items",
+    "validate unique correct answer and plausible distractors with coherent explanations",
+    "resolve effectively duplicated judgments and structural errors",
+    "finish bounded second pass with no major unresolved findings; user runtime test not required"
+  ],
+  "operating_rules": {
+    "github_actions": false,
+    "small_batch_approval": false,
+    "unbounded_quality_loop": false,
+    "source_and_ledger_persist_required": true
+  },
+  "next_action": "Extract complete official chapter 4 small topic list from authoritative PDF (covers multiple PDF pages), establish content-based 300-question allocation, and begin high-volume first-pass remediations.",
+  "note": "Chapter 3 was accepted. Chapter 4 is a separate old-to-new syllabus correction, not a new question generation request."
+}
