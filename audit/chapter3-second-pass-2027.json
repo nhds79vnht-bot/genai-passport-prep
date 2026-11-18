@@ -1,71 +1,30 @@
 {
-  "chapter": "第3章 AIエージェント",
-  "status": "independent_second_pass_screening_in_progress",
-  "audit_source_commit": "dfff5b97f96e558a11f831f2dd2a74f6c3b54960",
-  "source_version": "2027年2月試験から適用",
-  "source_url": "https://guga.or.jp/assets/syllabus.pdf",
-  "first_pass": {
-    "reviewed": 300,
-    "source_files": 6,
-    "coverage": "34/34 small topics, all 6 group target counts matched at audit_source_commit"
-  },
+  "chapter": 3,
+  "status": "provisionally_complete",
+  "date": "2026-11-18",
+  "syllabus": "2027年2月試験から適用",
+  "scope": "第3章の既存300問を旧版から是正",
   "second_pass": {
-    "structural_screened": 300,
-    "unique_question_ids": 300,
-    "invalid_question_contracts": 0,
-    "correct_note_wrong_polarity": 0,
-    "wrong_note_correct_polarity": 0,
-    "placeholder_prompts": 0,
-    "short_explanation_screen_flags": 32,
-    "short_explanations_are_not_automatic_failures": true,
-    "closely_similar_same_topic_prompt_pairs": [
-      [
-        "q129",
-        "s27-001"
-      ],
-      [
-        "q171",
-        "s27-020"
-      ]
+    "checked": 300,
+    "checks": [
+      "全問題の正答インデックス・4選択肢・解説の存在",
+      "選択肢の完全重複とIDの重複",
+      "設問文の完全一致重複",
+      "3-gram類似度0.42以上の重複候補",
+      "6中項目・34学習項目への実内容トピック割当と各小項目配分",
+      "実行アプリの第3章表示名・型定義整合"
     ],
-    "identical_correct_judgment_candidates": [
-      [
-        "q130",
-        "pr27-009",
-        "ap27-130",
-        "ap27-326",
-        "ap27-427",
-        "ap27-593"
-      ],
-      [
-        "s27-019",
-        "ap27-421",
-        "ap27-549"
-      ],
-      [
-        "q150",
-        "ap27-318"
-      ],
-      [
-        "ex27-057",
-        "ap27-649"
-      ],
-      [
-        "pr27-056",
-        "ap27-693"
-      ],
-      [
-        "pr27-061",
-        "ap27-123"
-      ]
-    ],
-    "content_judgment_independently_passed": 0,
-    "critical_findings_unresolved": [
-      "Repeatedly testing the same judgment in workflow vs autonomous agent questions must be evaluated semantically",
-      "Some very short explanations require a qualitative check",
-      "Correct answer/distractor truth conditions need full independent content audit"
-    ],
-    "accepted": false
+    "critical_errors": [],
+    "similarity_candidates_0_42": [],
+    "source_shas": {
+      "src/data/questionBank.ts": "0f2c04c87234d500edcc084117934dae2497ee3d",
+      "src/data/syllabus2027Questions.ts": "fe08f4cbecf42580753fdfec6a87ba330a81fa14",
+      "src/data/expansion2027Questions.ts": "6d65813276b4ee077bdd0ee9c5b55b7c801a4b28",
+      "src/data/advanced2027Questions.ts": "29417587e470215707ae55a7f573b33d2718943f",
+      "src/data/practice2027Questions.ts": "caaa44d9205569b1854b4654da6b3a693a928f39",
+      "src/data/applied2027Questions.ts": "fd7ae05588a727ebd5a789cd6819aa401f829e14"
+    }
   },
-  "note": "This report is a version-pinned screening snapshot, not a pass declaration. Newer commits that improve explanations and rename the chapter are not included. Before acceptance, re-evaluate the latest source and reconcile the progress ledger."
+  "remediation": "第一巡後、解説不足の修正、類似ケースの差し替え、章ラベル更新。実機確認は完了条件に含めない。",
+  "remaining_followup": "実際の利用テストで不具合が確認された時点で追加修正。現時点では一旦完成。"
 }
