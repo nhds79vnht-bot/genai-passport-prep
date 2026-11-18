@@ -6,7 +6,7 @@ function choiceLabel(index: number): string {
 
 export function formatSelectedChoices(question: Question, selected: number[]): string {
   if (selected.length === 0) return '未回答'
-  return selected
+  return [...selected]
     .sort((a, b) => a - b)
     .map((index) => `${choiceLabel(index)}. ${question.choices[index]}`)
     .join(' / ')

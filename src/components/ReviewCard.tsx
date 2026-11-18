@@ -44,7 +44,7 @@ export function ReviewCard({ question, selected, showHeader = true }: Props) {
       <div className="review-answer-panel review-answer-user">
         <h4>あなたの回答</h4>
         {selected === null ? (
-          <p>当時の選択肢の並び順が保存されていないため、回答は復元できません。</p>
+          <p>当時の選択肢の並び順が残っていないため、回答は復元できません。問題文・正解は現在の登録内容です。</p>
         ) : (
           <p>{formatSelectedChoices(question, selected)}</p>
         )}
