@@ -1,6 +1,6 @@
 {
   "chapter": "第3章 AIエージェント",
-  "status": "provisionally_complete",
+  "status": "accepted",
   "source_files": {
     "src/data/questionBank.ts": 60,
     "src/data/syllabus2027Questions.ts": 13,
@@ -13,26 +13,24 @@
   "unique_effective_questions_verified": true,
   "syllabus_items": 34,
   "target_questions": 300,
-  "allocation_status": "34_items_verified_targets_match",
+  "allocation_status": "accepted_exact_34_topic_target",
   "first_pass": {
     "completed": 300,
     "total": 300,
-    "method": "content-level syllabus mapping and source structural audit; independent second-pass semantic review pending",
+    "method": "2027 syllabus coverage and first-pass revision",
     "last_completed_id": "ap27-817",
     "next_id": null,
-    "rewritten_or_reclassified": 295,
-    "content_rewritten": 248,
+    "rewritten_or_reclassified": 296,
+    "content_rewritten": 253,
     "reclassified": 295,
-    "retained_original": 5,
-    "counts_note": "既存台帳の252改稿/48維持は旧時点のスナップショットであり、最新ソースの実質改稿件数ではない。"
+    "retained_original": 4
   },
   "second_pass": {
-    "status": "complete",
     "completed": 300,
     "last_completed_id": "ap27-817",
     "next_id": null,
-    "report": "audit/chapter3-second-pass-2027.json",
-    "critical_errors": 0
+    "method": "full-source static QA (choices, indices, explanations, topics, counts) plus targeted near-duplicate semantic review; NOT independent 300-item human semantic certification",
+    "accepted": true
   },
   "modified_ids": [
     "q121",
@@ -86,6 +84,7 @@
     "q169",
     "q170",
     "q171",
+    "q172",
     "q173",
     "q174",
     "q175",
@@ -338,8 +337,8 @@
     "checked_rows": 300,
     "files_checked": 6,
     "verified_source_ids": 300,
-    "rewritten_items": 295,
-    "unmodified_items": 5,
+    "rewritten_items": 296,
+    "unmodified_items": 4,
     "preliminary_classified": 300,
     "unclassified": 0,
     "final_mapping_verified": true,
@@ -347,10 +346,10 @@
     "first_pass_ready": true
   },
   "inventory_file": "audit/chapter3-inventory-2027.json",
-  "next_action": "第4章へ進む。第3章は実利用で不具合が発見された場合のみ再開。",
-  "inventory_file_status": "first_pass_snapshot",
+  "next_action": "第3章は一旦完成。第4章の2027シラバス照合・是正へ進む。実機確認で具体的な不具合が見つかった場合のみ再開。",
+  "inventory_file_status": "up_to_date",
   "first_pass_report": "audit/chapter3-first-pass-2027.json",
-  "phase": "second_pass_pending",
+  "phase": "completed_pending_user_runtime_test",
   "exit_criteria": [
     "verified 2027 syllabus coverage (300 of 300; 34 subtopics)",
     "one defensible correct answer per question",
@@ -378,5 +377,67 @@
   },
   "second_pass_report": "audit/chapter3-second-pass-2027.json",
   "completion_stage": "一旦完成",
-  "completion_note": "第二巡の終了基準到達。これ以上の無期限監査は実施しない。実機確認による不具合は発見時に修正する。"
+  "completion_note": "第二巡の終了基準到達。これ以上の無期限監査は実施しない。実機確認による不具合は発見時に修正する。",
+  "checkpoint": {
+    "last_completed_id": "ap27-817",
+    "next_question_id": null,
+    "next_action": "第3章は一旦完成。第4章の2027シラバス照合・是正へ進む。実機確認で具体的な不具合が見つかった場合のみ再開。",
+    "chapter_accepted": true,
+    "source_blob_shas": {
+      "src/data/questionBank.ts": "0f2c04c87234d500edcc084117934dae2497ee3d",
+      "src/data/syllabus2027Questions.ts": "07bc69aed4bacefa572cdbfae3c702fc9c58605e",
+      "src/data/expansion2027Questions.ts": "c26bf8beb0367af4a4cc816793e2e78fdb80a87a",
+      "src/data/advanced2027Questions.ts": "3e75de66d98b0ba3c3df9e3730d577c475537fe6",
+      "src/data/practice2027Questions.ts": "caaa44d9205569b1854b4654da6b3a693a928f39",
+      "src/data/applied2027Questions.ts": "419b34747f3487614853252ff3695b66a3aa9f43"
+    }
+  },
+  "chapter3_audit": {
+    "stage": "accepted_for_current_development_pass",
+    "checked": 300,
+    "mapped": 300,
+    "small_topics": 34,
+    "allocation_mismatched": 0,
+    "invalid_answer_indices": 0,
+    "choice_structure_issues": 0,
+    "duplicate_choice_sets": 0,
+    "normalized_duplicate_prompts": 0,
+    "short_explanations_under_23_chars": 0,
+    "near_duplicate_pairs_within_topic_over_0_43": 0,
+    "second_pass_issues_revised": [
+      "q122",
+      "q140",
+      "q167",
+      "q171",
+      "q172",
+      "q177",
+      "s27-001",
+      "ex27-049",
+      "ex27-051",
+      "ex27-057",
+      "adv27-035",
+      "ap27-222",
+      "ap27-327",
+      "ap27-496",
+      "ap27-500",
+      "ap27-643",
+      "ap27-691",
+      "ap27-743",
+      "ap27-744",
+      "ap27-809"
+    ],
+    "independent_semantic_review_complete": false,
+    "runtime_visual_test_verified": false,
+    "embedding_mode_note": "App.tsx limits scored questions to base questionBank when learnerScope is set; this predates chapter 3 remediation, and does not block content acceptance per chapter 2 scope",
+    "source_blob_shas": {
+      "src/data/questionBank.ts": "0f2c04c87234d500edcc084117934dae2497ee3d",
+      "src/data/syllabus2027Questions.ts": "07bc69aed4bacefa572cdbfae3c702fc9c58605e",
+      "src/data/expansion2027Questions.ts": "c26bf8beb0367af4a4cc816793e2e78fdb80a87a",
+      "src/data/advanced2027Questions.ts": "3e75de66d98b0ba3c3df9e3730d577c475537fe6",
+      "src/data/practice2027Questions.ts": "caaa44d9205569b1854b4654da6b3a693a928f39",
+      "src/data/applied2027Questions.ts": "419b34747f3487614853252ff3695b66a3aa9f43"
+    },
+    "blocking_issues": [],
+    "accepted": true
+  }
 }
