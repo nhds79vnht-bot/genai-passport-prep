@@ -139,252 +139,252 @@
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "テンプレート",
-      "prompt": "複数部署で使うプロンプトテンプレートを配布する。適切な管理はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "経営会議向けに調査資料からスライド案を作る。生成AIへの指示として最も適切なのはどれか。",
+      "syllabus_2027_item": "プレゼンテーションスライドの作成",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q254",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "テンプレート",
-      "prompt": "全社で同じプロンプトを使うが部署ごとに必要な項目が違う。改善策はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "新商品の広告文をAIに考案させる。根拠のない性能表示を避ける手順はどれか。",
+      "syllabus_2027_item": "キャッチコピー・広告コピーの作成",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q255",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "テンプレート",
-      "prompt": "プロンプトの出力項目が変更され下流システムでエラーが発生した。対策はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "新サービスの企画で生成AIから似た案ばかり出る。改善として適切なのはどれか。",
+      "syllabus_2027_item": "企画立案・ブレインストーミング・壁打ち",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q256",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "テンプレート",
-      "prompt": "個人情報を含む例文が共有テンプレートに保存されていた。適切なのはどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "購入動機を調べるアンケートをAIで作成した。『この素晴らしい新商品を買いたいですか』という質問の問題はどれか。",
+      "syllabus_2027_item": "アンケートの設計と分析",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q257",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "テンプレート",
-      "prompt": "テンプレートに矛盾する指示が2つあった。改善策はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AI生成のSNS投稿案を複数媒体で使う。運用前に最も適切な確認はどれか。",
+      "syllabus_2027_item": "SNS投稿・コンテンツ制作",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q258",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "テンプレート",
-      "prompt": "回答テンプレートを改善した効果を測る方法はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "生成AIが作成したLP案を公開する前の確認として適切なのはどれか。",
+      "syllabus_2027_item": "ランディングページの作成",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q259",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "教育",
-      "prompt": "生成AI研修の効果を確認する方法として最も適切なのはどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIが競合3社の価格表を提示したが調査日と出典がない。適切な扱いはどれか。",
+      "syllabus_2027_item": "市場・競合リサーチ",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q260",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "教育",
-      "prompt": "社員研修後も機密情報の誤入力が続く。改善策はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "製品写真に近い宣伝画像をAI生成する。公開用画像で重要な確認はどれか。",
+      "syllabus_2027_item": "画像・ビジュアル素材の生成",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q261",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "教育",
-      "prompt": "AI研修の理解度を確かめる方法はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AI動画で研修用の手順を示す。映像では手順が1工程抜けていた。正しい対応はどれか。",
+      "syllabus_2027_item": "動画コンテンツの生成・編集",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q262",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "教育",
-      "prompt": "AIが示した架空の出典を社員が信じた。研修で優先すべき内容はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "顧客向け音声案内にAI音声を使う。適切な公開前対応はどれか。",
+      "syllabus_2027_item": "ナレーション・音声・BGMの生成",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q263",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "教育",
-      "prompt": "新入社員と管理者に同じ研修だけを提供した。改善策はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "生成AIで新サービスのロゴ案を作る。最も適切な採用手順はどれか。",
+      "syllabus_2027_item": "ロゴ・デザイン案・モックアップの作成",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q264",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "教育",
-      "prompt": "研修を一度実施してからAI利用規程が変更された。適切なのはどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "日本語の販促画像を多言語展開する。適切な方法はどれか。",
+      "syllabus_2027_item": "既存素材のバリエーション展開・多言語ローカライズ",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q265",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "運用",
-      "prompt": "AIサービスの運用監視で障害の早期検知に役立つ組合せはどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "部署別の顧客データで住所表記が揺れている。AI支援による適切な整形はどれか。",
+      "syllabus_2027_item": "データの整形・分類",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q266",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "運用",
-      "prompt": "モデル更新後に回答品質が低下した。適切な運用はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "売上表からAIが棒グラフを作成したが、月別合計が元データと合わない。対策はどれか。",
+      "syllabus_2027_item": "表・データの集計と可視化",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q267",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "運用",
-      "prompt": "利用者が急増しAPI応答が遅くなった。対策はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "数百件の契約書から更新期限を抽出したい。AI出力の信頼性を高める方法はどれか。",
+      "syllabus_2027_item": "大量文書からの情報抽出・要約",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q268",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "運用",
-      "prompt": "外部AIサービスが停止した。事前に用意すべきものはどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "新規市場についてAIが複数サイトを要約した。信頼性を上げる方法はどれか。",
+      "syllabus_2027_item": "ディープリサーチ：複数ソースを横断調査",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q269",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "運用",
-      "prompt": "社内FAQの参照文書が古くなった。適切な管理はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIで毎月の営業レポート作成を自動化する。前月比の誤計算を防ぐにはどれか。",
+      "syllabus_2027_item": "定例レポートの自動生成",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q270",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "運用",
-      "prompt": "回答エラーが増えたが原因が不明。初めに確認する情報はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIが生成したAPI接続コードを本番投入する。適切な手順はどれか。",
+      "syllabus_2027_item": "コーディング・アプリ開発",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q271",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "インシデント",
-      "prompt": "AIが誤った内容を外部送信した事故で最初に重視することはどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIエージェントに古いコードの整理を任せる。既存動作を守るために必要なのはどれか。",
+      "syllabus_2027_item": "既存システム・コードベースの調査とリファクタリング",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q272",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "インシデント",
-      "prompt": "AIが誤った契約条件を顧客へ一斉送信した。初動はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "定型請求書の入力をAIで自動化する。誤処理を減らす設計はどれか。",
+      "syllabus_2027_item": "定型業務の自動化",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q273",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "インシデント",
-      "prompt": "AIサービスへ秘密鍵を誤送信した。必要な対応はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIエージェントに経費申請のブラウザ操作を依頼する。安全な設計はどれか。",
+      "syllabus_2027_item": "ブラウザ操作・Web上の手続きの自動化",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q274",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "インシデント",
-      "prompt": "AIが誤った数値を社外公開した。訂正時に必要なのはどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIが顧客情報を集計し、資料作成後にメール送信する。失敗時の安全な設計はどれか。",
+      "syllabus_2027_item": "複数ツール・複数ステップを横断する複合タスクの自動化",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q275",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "インシデント",
-      "prompt": "同種のAI誤回答が繰り返されている。再発防止として適切なのはどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "医療機関がAIで患者向け説明文の草案を作成する。適切な運用はどれか。",
+      "syllabus_2027_item": "規制・機密性が重視される業種",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q276",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "インシデント",
-      "prompt": "誤情報配信事故後に確認すべき監査情報はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "製造現場でAIに作業標準書の改善案を出させる。採用判断として適切なのはどれか。",
+      "syllabus_2027_item": "現場・ものづくりを支える業種",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q277",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "ベンダー選定",
-      "prompt": "生成AIサービスの調達でベンダー間比較の前提として適切なのはどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "小売業のFAQボットが返品期限について誤案内した。適切な改善はどれか。",
+      "syllabus_2027_item": "顧客接点・コンテンツ制作の業種",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q278",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "ベンダー選定",
-      "prompt": "候補Aは安価だが入力データの取扱条件が不明。優先する確認はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "複数部署で生成AIを導入する。継続的な成果を得るために最も適切な方針はどれか。",
+      "syllabus_2027_item": "業種を問わず共通する成功のポイント",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q279",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "ベンダー選定",
-      "prompt": "候補Bは高精度だが障害時の復旧条件が示されない。確認すべきことはどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "技術サポートの回答で禁止事項を無視する例が出た。プロンプト改善として適切なのはどれか。",
+      "syllabus_2027_item": "プロンプトの基本構成要素",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q280",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "ベンダー選定",
-      "prompt": "ベンダーのデータ保存地域が不明。確認する理由はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "問合せを「要対応」「情報提供」に分類するAIが指定形式を守らない。Few-Shot改善として適切なのはどれか。",
+      "syllabus_2027_item": "Few-Shotプロンプティング",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q281",
