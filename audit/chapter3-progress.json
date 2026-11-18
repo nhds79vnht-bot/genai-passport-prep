@@ -1,0 +1,31 @@
+{
+  "chapter": 3,
+  "status": "initial_inventory",
+  "source_files": {
+    "src/data/questionBank.ts": 60,
+    "src/data/syllabus2027Questions.ts": 13,
+    "src/data/expansion2027Questions.ts": 20,
+    "src/data/advanced2027Questions.ts": 20,
+    "src/data/practice2027Questions.ts": 20,
+    "src/data/applied2027Questions.ts": 167
+  },
+  "raw_chapter3_rows": 300,
+  "unique_effective_questions_verified": false,
+  "syllabus_items": 34,
+  "target_questions": 300,
+  "allocation_status": "provisional",
+  "first_pass": {
+    "completed": 0,
+    "last_completed_id": null,
+    "next_id": null
+  },
+  "second_pass": {
+    "completed": 0,
+    "last_completed_id": null,
+    "next_id": null
+  },
+  "modified_ids": [],
+  "unresolved_critical_issues": [],
+  "completion": false,
+  "note": "旧シラバス問題を2027年版へ是正。内容に基づく全件マッピングと実効ID確認が済むまで第一巡を進めない。"
+}
