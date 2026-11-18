@@ -38,6 +38,12 @@ run('npm', ['run', 'audit:questions'])
 run('npm', ['run', 'build'], { env: { ...process.env, VITE_BASE: base } })
 
 if (!existsSync(join(dist, 'index.html'))) throw new Error('Built index.html not found')
+const requiredAssets = ['backgrounds', 'apple-touch-icon-v2.png', 'icon-512-v2.png']
+for (const asset of requiredAssets) {
+  if (!existsSync(join(dist, asset))) {
+    throw new Error(`Refusing to publish: missing protected asset in dist/${asset}`)
+  }
+}
 const temp = mkdtempSync(join(tmpdir(), 'genai-passport-pages-'))
 const site = join(temp, 'site')
 let worktreeAdded = false
