@@ -85,7 +85,7 @@
   "checkpoint": {
     "last_completed_id": "q120",
     "next_question_id": null,
-    "next_action": "Finish bounded second-pass quality gate: review remaining candidate pairs, validate explanations/choices, then chapter acceptance decision; build/device tests remain",
+    "next_action": "Final acceptance gate, not indefinite similarity rewrites: verify source validity and answer/explanation consistency, document untested runtime; decide chapter completion",
     "last_verified_commit": "1a1a089d18cc89905f985aecc52c0daf3f006408",
     "chapter_accepted": false
   },
@@ -516,6 +516,18 @@
           "applied2027 GPT generation comparison -> accuracy-cost-latency tradeoff scenario"
         ],
         "remaining": "Not all candidates individually adjudicated; original 112 candidate methodology differs; no build or device test"
+      },
+      "sixth_pass_followup": {
+        "date": "2026-11-18",
+        "screened_questions": 300,
+        "candidate_pairs_before_fix": 34,
+        "confirmed_rewrites": 2,
+        "source_commit": "148d2a7e035f8a1daf09e312d3e6d8bcb6a48190",
+        "fixes": [
+          "few-shot duplicate changed to prompt-format troubleshooting",
+          "Self-Attention QKV duplicate changed to quadratic scaling"
+        ],
+        "remaining": "Other candidate pairs not individually validated; no build/device testing"
       }
     },
     "build_status": "Not executed in this pass; source and ledger updates only"
