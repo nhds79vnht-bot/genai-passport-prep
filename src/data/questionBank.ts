@@ -2002,13 +2002,13 @@ export const questionBank: Question[] = [
     id: 'q088',
     chapter: '第2章 生成AI',
     topic: "Gemini（Google）",
-    prompt: "GoogleのGeminiを説明するものとして適切なのはどれか。",
-    choices: ["Googleが提供する生成AIモデル・サービスの名称","GeminiはGoogleの検索順位を決めるアルゴリズムだけの名称","GeminiはAnthropicのClaudeをGoogle向けに改名したものである","GeminiはGoogleの生成AIとは別のMicrosoft製モデルである"],
+    prompt: "Geminiを使って画像付きの問い合わせを処理する場合、適切な評価方法はどれか。",
+    choices: ["画像の内容理解と回答の正確性を、実際の問い合わせ例で別々に確認する","Geminiという名称だけで画像理解の正確性を保証できる","画像を入力できるなら画像中の数値や文字の読み取りミスは起こらない","文章回答が自然なら画像の認識結果を検証する必要はない"],
     answers: [0],
-    explanation: "GeminiはGoogleの生成AI関連モデル・サービス。提供主体と機能を区別する。",
+    explanation: "画像を扱えるマルチモーダルモデルでも、画像中の文字や数値の読み取り、内容の解釈、回答の正確性はそれぞれ検証が必要である。",
     reviewSection: "2027年公式シラバス第2章 → Gemini（Google）",
-    examTrap: "定義・目的・限界を区別し、選択肢の断定表現に注意する。",
-    choiceNotes: ["正解。GeminiはGoogleの生成AI関連モデル・サービス。提供主体と機能を区別する。","誤り。「GeminiはGoogleの検索順位を決めるアルゴリズムだけの名称」は設問で問う原理・条件と一致しない。GeminiはGoogleの生成AI関連モデル・サービス。提供主体と機能を区別する。","誤り。「GeminiはAnthropicのClaudeをGoogle向けに改名したものである」は設問で問う原理・条件と一致しない。GeminiはGoogleの生成AI関連モデル・サービス。提供主体と機能を区別する。","誤り。「GeminiはGoogleの生成AIとは別のMicrosoft製モデルである」は設問で問う原理・条件と一致しない。GeminiはGoogleの生成AI関連モデル・サービス。提供主体と機能を区別する。"]
+    examTrap: "モデル名と個別タスクの精度保証を混同しない。",
+    choiceNotes: ["正解。画像理解と回答内容の両方を代表例で検証する。","誤り。モデル名や提供企業だけでは画像理解の精度は保証されない。","誤り。画像内の文字・数値の認識には誤りが生じ得る。","誤り。文章の流暢さは画像認識の正確性を示さない。"]
   },
   {
     id: 'q089',
