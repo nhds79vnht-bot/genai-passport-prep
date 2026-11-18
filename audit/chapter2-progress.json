@@ -85,7 +85,7 @@
   "checkpoint": {
     "last_completed_id": "q120",
     "next_question_id": null,
-    "next_action": "Bounded final semantic review of remaining candidate pairs and acceptance gate; build and device test pending",
+    "next_action": "Finalize bounded second-pass candidate adjudication; validate source integrity and chapter acceptance gate; build/device tests pending",
     "last_verified_commit": "1a1a089d18cc89905f985aecc52c0daf3f006408",
     "chapter_accepted": false
   },
@@ -492,6 +492,18 @@
         ],
         "source_commit": "3113076b95dbe80f315b8d98787221a73388e0ce",
         "limitations": "41 is a screening count, not number of actual duplicates; remaining pairs not all adjudicated; no build/device run"
+      },
+      "fourth_pass_followup": {
+        "date": "2026-11-18",
+        "method": "all 300 chapter-2 prompts, within-topic character bigram Jaccard >=0.40",
+        "candidate_pairs_before_rewrite": 39,
+        "confirmed_duplicates_rewritten": [
+          "applied2027: stochastic sampling explanation -> probability calculation",
+          "applied2027: Copilot enterprise onboarding permissions -> unexpected document access remediation",
+          "applied2027: RLHF human preferences -> evaluator disagreement mitigation"
+        ],
+        "source_commit": "c815cf6de2c2e39317ab4595a3a2b5d0efcd01f1",
+        "limitations": "screening candidates not confirmed duplicates; original 112 pair screen not exhausted; no runtime build/device test"
       }
     },
     "build_status": "Not executed in this pass; source and ledger updates only"
