@@ -22,7 +22,7 @@
   },
   "total": 300,
   "unique_ids": 300,
-  "classification_status": "133_reviewed_167_applied_pending",
+  "classification_status": "first_187_reviewed",
   "note": "133 items reviewed and mapped in GitHub; 167 applied questions pending. Metadata and source verified at this checkpoint.",
   "items": [
     {
@@ -1627,8 +1627,11 @@
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "生成物の利用",
       "prompt": "生成画像が既存作品に非常によく似ていると指摘された。公開前の対応はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "著作権侵害とAI生成物の類似リスク",
+      "review_status": "first_pass_revised",
+      "new_section": "著作権・知的財産・生成物の権利",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-008",
@@ -1636,8 +1639,11 @@
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "説明可能性",
       "prompt": "AIが採用候補者の不採用を推薦したが理由が不明だった。適切な対応はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "安全性・公平性：人への不利益を防ぐ",
+      "review_status": "first_pass_revised",
+      "new_section": "AI倫理とAI事業者ガイドライン",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-017",
@@ -1645,8 +1651,11 @@
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "個人情報の最小化",
       "prompt": "問い合わせ分類だけが目的なのに氏名と住所を外部AIに送っている。改善策はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "業務で注意すべき個人情報の具体例",
+      "review_status": "first_pass_revised",
+      "new_section": "個人情報・プライバシー・秘密保持",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-018",
@@ -1654,8 +1663,11 @@
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "公平性評価",
       "prompt": "採用支援AIの全体精度は高いが特定集団で誤判定が多い。適切なのはどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "安全性・公平性：人への不利益を防ぐ",
+      "review_status": "first_pass_revised",
+      "new_section": "AI倫理とAI事業者ガイドライン",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-027",
@@ -1663,8 +1675,11 @@
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "目的外利用",
       "prompt": "問い合わせ対応用に取得した顧客情報を別目的の広告分析へ使いたい。適切なのはどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "個人情報の利用目的・本人同意・第三者提供",
+      "review_status": "first_pass_revised",
+      "new_section": "個人情報・プライバシー・秘密保持",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-028",
@@ -1672,8 +1687,11 @@
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "説明責任",
       "prompt": "AIによる審査判断に苦情が出た。事後確認に必要なものはどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "透明性・アカウンタビリティ：説明と責任",
+      "review_status": "first_pass_revised",
+      "new_section": "AI倫理とAI事業者ガイドライン",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-037",
@@ -1681,8 +1699,11 @@
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "個人情報の仮名化",
       "prompt": "氏名を社内番号に置き換えたが対応表が残っている。適切な理解はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "個人情報は加工すれば生成AIに入力できるのか",
+      "review_status": "first_pass_revised",
+      "new_section": "個人情報・プライバシー・秘密保持",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-038",
@@ -1690,8 +1711,11 @@
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "著作物の類似性",
       "prompt": "生成AIの画像が既存作品に似ていると指摘された。確認すべき点はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "著作権侵害とAI生成物の類似リスク",
+      "review_status": "first_pass_revised",
+      "new_section": "著作権・知的財産・生成物の権利",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-047",
@@ -1699,8 +1723,11 @@
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "出典の透明性",
       "prompt": "AI生成の報告書に実在しない調査結果が引用された。公開前の対応はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "ファクトチェック：事実・数値・出典・最新情報の確認",
+      "review_status": "first_pass_revised",
+      "new_section": "AI出力の評価と検証",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-048",
@@ -1708,8 +1735,11 @@
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "データ保存",
       "prompt": "AIサービスが入力内容を長期間保存する契約だった。機密文書の送信前に必要なのはどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "企業機密・秘密情報を生成AIに入力するリスク",
+      "review_status": "first_pass_revised",
+      "new_section": "個人情報・プライバシー・秘密保持",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-057",
@@ -1717,8 +1747,11 @@
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "権利確認",
       "prompt": "広告用の生成画像に第三者の商標が目立つ形で含まれている。適切なのはどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "商標権・意匠権・特許権",
+      "review_status": "first_pass_revised",
+      "new_section": "著作権・知的財産・生成物の権利",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-058",
@@ -1726,8 +1759,11 @@
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "個人データの共有",
       "prompt": "外部委託先へ個人データを渡す前に必要な確認はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "個人情報の利用目的・本人同意・第三者提供",
+      "review_status": "first_pass_revised",
+      "new_section": "個人情報・プライバシー・秘密保持",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-067",
@@ -1735,8 +1771,11 @@
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "説明の検証",
       "prompt": "AIの判定理由として示された特徴量の寄与を利用する際の注意点はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "透明性・アカウンタビリティ：説明と責任",
+      "review_status": "first_pass_revised",
+      "new_section": "AI倫理とAI事業者ガイドライン",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-068",
@@ -1744,35 +1783,47 @@
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "人間の監督",
       "prompt": "AIによる与信審査で誤判定が発生した。改善として適切なのはどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "AIは補助者であり、最終責任は人間にある",
+      "review_status": "first_pass_revised",
+      "new_section": "生成AI利用者の基本マインドセット",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-131",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "個人情報",
-      "prompt": "氏名住所を外部AIへ送る前に確認するのは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "営業部の社員が会社未承認の個人向けAIで業務の顧客メールを処理していた。この状況を表す概念は。",
+      "syllabus_2027_item": "シャドーAIとは",
+      "review_status": "first_pass_revised",
+      "new_section": "シャドーAIと企業コンプライアンス",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-132",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "目的外利用",
-      "prompt": "配送用住所を別の分析に使う。検討するのは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "生成AIが『2026年度の最新人口統計は○○』と説明した。公開資料を使う前の判断は。",
+      "syllabus_2027_item": "検索エンジンと生成AIの違い",
+      "review_status": "first_pass_revised",
+      "new_section": "生成AI利用者の基本マインドセット",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-133",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "最小化",
-      "prompt": "分類業務に氏名が不要。適切なのは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIが社外向け案内文に取引先担当者の個人電話番号と社外秘の料金を含めた。公開前の対応は。",
+      "syllabus_2027_item": "表現・権利・個人情報・機密情報の確認",
+      "review_status": "first_pass_revised",
+      "new_section": "AI出力の評価と検証",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-134",
@@ -1780,17 +1831,23 @@
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "再識別",
       "prompt": "氏名を消した移動履歴を扱う。注意点は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "個人情報・プライバシー侵害リスク",
+      "review_status": "first_pass_revised",
+      "new_section": "生成AIの代表的リスク",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-135",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "委託管理",
-      "prompt": "顧客データ処理を外部委託する。必要なのは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "公開用に作ったAIの議事録要約に、原文の未発表製品コードが残った。適切な対応は。",
+      "syllabus_2027_item": "AIの出力・要約・共有に情報が残るリスク",
+      "review_status": "first_pass_revised",
+      "new_section": "個人情報・プライバシー・秘密保持",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-136",
@@ -1798,8 +1855,11 @@
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "AIと安全保障",
       "prompt": "機密性の高い防衛関連情報を生成AIで扱う場合の判断として適切なのは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "AIと安全保障",
+      "review_status": "first_pass_revised",
+      "new_section": "AI法・国際ルール・AI安全保障",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-137",
@@ -1807,8 +1867,11 @@
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "著作権",
       "prompt": "生成画像が既存作品に酷似する。対応は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "著作権・知的財産権侵害リスク",
+      "review_status": "first_pass_revised",
+      "new_section": "生成AIの代表的リスク",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-138",
@@ -1816,8 +1879,11 @@
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "学習利用",
       "prompt": "学習用資料の権利確認で適切なのは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "AI学習と著作権",
+      "review_status": "first_pass_revised",
+      "new_section": "著作権・知的財産・生成物の権利",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-139",
@@ -1825,8 +1891,11 @@
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "商標",
       "prompt": "生成画像に他社ロゴがある。対応は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "商標権・意匠権・特許権",
+      "review_status": "first_pass_revised",
+      "new_section": "著作権・知的財産・生成物の権利",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-140",
@@ -1834,8 +1903,11 @@
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "肖像",
       "prompt": "生成画像が実在人物に酷似する。注意点は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "肖像権・パブリシティ権侵害リスク",
+      "review_status": "first_pass_revised",
+      "new_section": "生成AIの代表的リスク",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-141",
@@ -1843,26 +1915,35 @@
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "公平性",
       "prompt": "特定集団の誤判定が多い。対応は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "差別・偏見・バイアスのリスク",
+      "review_status": "first_pass_revised",
+      "new_section": "生成AIの代表的リスク",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-142",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "透明性",
-      "prompt": "AIが顧客へ自動返信する。適切なのは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "承認外AIを使った社員の入力資料が外部に保存されていた。組織への影響として重要なのは。",
+      "syllabus_2027_item": "シャドーAIが組織と従業員にもたらす影響",
+      "review_status": "first_pass_revised",
+      "new_section": "シャドーAIと企業コンプライアンス",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-143",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "説明責任",
-      "prompt": "AI審査の理由を求められた。対応は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIが旅行計画で存在しない列車時刻を確信を持って回答した。適切な認識は。",
+      "syllabus_2027_item": "AIの出力を鵜呑みにしてはいけない理由",
+      "review_status": "first_pass_revised",
+      "new_section": "生成AI利用者の基本マインドセット",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-144",
@@ -1870,26 +1951,35 @@
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "安全性",
       "prompt": "AIの誤案内が身体の安全に影響する。必要なのは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "用途と影響度に応じた検証レベル",
+      "review_status": "first_pass_revised",
+      "new_section": "AI出力の評価と検証",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-145",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "人の監督",
-      "prompt": "AIが不採用判定を提案する。適切なのは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIが健康相談に具体的な投薬変更を提案したが、対象者の服薬歴が不足している。適切な判断は。",
+      "syllabus_2027_item": "採用・修正・破棄・専門家確認の判断",
+      "review_status": "first_pass_revised",
+      "new_section": "AI出力の評価と検証",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-146",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "引用確認",
-      "prompt": "報告書に存在しない引用先がある。対応は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIが架空の判例を事件番号付きで提示した。この現象の呼び方と対応は。",
+      "syllabus_2027_item": "ハルシネーション",
+      "review_status": "first_pass_revised",
+      "new_section": "生成AIの代表的リスク",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-147",
@@ -1897,8 +1987,11 @@
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "規約",
       "prompt": "入力データの再利用条件が不明。対応は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "AIツールを選定する際の確認項目",
+      "review_status": "first_pass_revised",
+      "new_section": "AIガバナンスと社内ガイドライン",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-148",
@@ -1906,8 +1999,11 @@
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "保存期間",
       "prompt": "不要になった個人データの管理は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "モニタリングと継続的な見直し",
+      "review_status": "first_pass_revised",
+      "new_section": "AIガバナンスと社内ガイドライン",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-149",
@@ -1915,8 +2011,11 @@
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "監査ログ",
       "prompt": "AIが顧客情報を変更する。必要なのは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "AIが出力したデータの取り扱い",
+      "review_status": "first_pass_revised",
+      "new_section": "AIガバナンスと社内ガイドライン",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-150",
@@ -1924,17 +2023,23 @@
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "注入攻撃",
       "prompt": "外部資料に秘密を送信せよとある。対応は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "自律型AIエージェントの想定外の挙動・プロンプトインジェクション",
+      "review_status": "first_pass_revised",
+      "new_section": "生成AIの代表的リスク",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-231",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "目的限定",
-      "prompt": "採用用に集めた情報を広告に使いたい。検討するのは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "新規AIの導入で社員の生産性を高めたい一方、情報漏えいの懸念がある。適切な進め方は。",
+      "syllabus_2027_item": "イノベーション促進とリスク対応の両立",
+      "review_status": "first_pass_revised",
+      "new_section": "AI法・国際ルール・AI安全保障",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-232",
@@ -1942,26 +2047,35 @@
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "個人データ",
       "prompt": "AIへ顧客氏名を送る必要がない。適切なのは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "個人情報とは何か",
+      "review_status": "first_pass_revised",
+      "new_section": "個人情報・プライバシー・秘密保持",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-233",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "再識別",
-      "prompt": "仮名化したデータに対応表が残る。注意点は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "社員番号だけを削除したが、顔認証用の特徴量データを外部AIへ送ろうとしている。適切な理解は。",
+      "syllabus_2027_item": "個人識別符号",
+      "review_status": "first_pass_revised",
+      "new_section": "個人情報・プライバシー・秘密保持",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-234",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "委託先",
-      "prompt": "個人データを外部業者に処理させる。確認するのは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "社内AI利用規程は配布されたが社員が入力禁止情報を理解していない。改善は。",
+      "syllabus_2027_item": "社内ルールを定着させる体制と教育",
+      "review_status": "first_pass_revised",
+      "new_section": "AIガバナンスと社内ガイドライン",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-235",
@@ -1969,17 +2083,23 @@
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "国外移転",
       "prompt": "海外のAIサービスに個人データを送る。確認するのは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "個人情報の利用目的・本人同意・第三者提供",
+      "review_status": "first_pass_revised",
+      "new_section": "個人情報・プライバシー・秘密保持",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-236",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "著作物",
-      "prompt": "生成物が既存作品に類似する。検討するのは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AI生成の製品パッケージに他者のイラスト、商標に似たマーク、特許技術を使った説明が含まれる。適切な対応は。",
+      "syllabus_2027_item": "生成AIと知的財産権の全体像",
+      "review_status": "first_pass_revised",
+      "new_section": "著作権・知的財産・生成物の権利",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-237",
@@ -1987,17 +2107,23 @@
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "ライセンス",
       "prompt": "公開ソースを学習資料に使う。適切なのは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "AIサービスの利用規約・ライセンス・透明性",
+      "review_status": "first_pass_revised",
+      "new_section": "著作権・知的財産・生成物の権利",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-238",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "商標",
-      "prompt": "広告生成画像に他社ロゴがある。対応は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AI生成画像を商品サイトのメイン画像に採用する。公開前に重要なのは。",
+      "syllabus_2027_item": "商用利用・社外公開前に確認すべきこと",
+      "review_status": "first_pass_revised",
+      "new_section": "著作権・知的財産・生成物の権利",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-239",
@@ -2005,8 +2131,11 @@
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "肖像",
       "prompt": "実在人物に似た画像を広告へ使う。確認するのは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "肖像権・パブリシティ権",
+      "review_status": "first_pass_revised",
+      "new_section": "著作権・知的財産・生成物の権利",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-240",
@@ -2014,53 +2143,71 @@
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "差別",
       "prompt": "審査AIで一部集団だけ誤判定が多い。対策は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "安全性・公平性：人への不利益を防ぐ",
+      "review_status": "first_pass_revised",
+      "new_section": "AI倫理とAI事業者ガイドライン",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-241",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "透明性",
-      "prompt": "AIが顧客へ自動応答する。適切なのは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIによる与信審査で利用者が不採用理由を尋ねた。適切な体制は。",
+      "syllabus_2027_item": "透明性・アカウンタビリティ：説明と責任",
+      "review_status": "first_pass_revised",
+      "new_section": "AI倫理とAI事業者ガイドライン",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-242",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "説明可能性",
-      "prompt": "AIの特徴量重要度を示した。注意点は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIが売上減少の原因を天候だけと推定した。検証の手順として適切なのは。",
+      "syllabus_2027_item": "妥当性レビュー：前提・論理・抜け漏れの確認",
+      "review_status": "first_pass_revised",
+      "new_section": "AI出力の評価と検証",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-243",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "人の監督",
-      "prompt": "AIが融資否決を提案する。必要なのは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIが候補者の評価を自動で作成した。人に残る重要な役割は。",
+      "syllabus_2027_item": "AI時代に求められる人間の役割",
+      "review_status": "first_pass_revised",
+      "new_section": "生成AI利用者の基本マインドセット",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-244",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "安全設計",
-      "prompt": "AIの誤案内が事故につながる。対応は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIによる問い合わせ対応導入で誤案内リスクと担当者の長時間労働が懸念される。適切な判断は。",
+      "syllabus_2027_item": "AIを使うリスクと、AIを使わないリスク",
+      "review_status": "first_pass_revised",
+      "new_section": "生成AI利用者の基本マインドセット",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-245",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "監査",
-      "prompt": "AIが顧客データを変更する。必要なのは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "部門ごとにAI利用の承認者・事故報告先が異なり対応が遅れた。改善は。",
+      "syllabus_2027_item": "AIガバナンスとは",
+      "review_status": "first_pass_revised",
+      "new_section": "AIガバナンスと社内ガイドライン",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-246",
@@ -2068,8 +2215,11 @@
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "漏えい対応",
       "prompt": "機密情報を誤って外部へ送信した。初動は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "情報漏えい等が起きたときの対応",
+      "review_status": "first_pass_revised",
+      "new_section": "個人情報・プライバシー・秘密保持",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-247",
@@ -2077,26 +2227,35 @@
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "出典",
       "prompt": "AIの引用文献が見つからない。対応は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "ファクトチェック：事実・数値・出典・最新情報の確認",
+      "review_status": "first_pass_revised",
+      "new_section": "AI出力の評価と検証",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-248",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "保存",
-      "prompt": "個人データの保存期間を決めるには。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIが要約した会議メモに、別部門に公開できない未発表価格が残った。対応は。",
+      "syllabus_2027_item": "AIの出力・要約・共有に情報が残るリスク",
+      "review_status": "first_pass_revised",
+      "new_section": "個人情報・プライバシー・秘密保持",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-249",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "利用規約",
-      "prompt": "入力の学習利用条件が不明なAIサービス。対応は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIツールを公開型と社内管理型に区分した。データ入力の運用として適切なのは。",
+      "syllabus_2027_item": "AIツールのレベル分けと入力情報のルール",
+      "review_status": "first_pass_revised",
+      "new_section": "AIガバナンスと社内ガイドライン",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-250",
@@ -2104,8 +2263,11 @@
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "指示注入",
       "prompt": "外部資料が秘密情報の送信を要求した。対応は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "自律型AIエージェントの想定外の挙動・プロンプトインジェクション",
+      "review_status": "first_pass_revised",
+      "new_section": "生成AIの代表的リスク",
+      "decision": "REVISE",
+      "reason": "2027年小項目への割当。重複度の高い判断は場面型に改稿し正答・選択肢・解説を確認。"
     },
     {
       "id": "ap27-331",
