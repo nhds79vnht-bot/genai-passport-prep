@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "chapter": "第2章 生成AI",
-  "phase": "question-rewrite",
-  "status": "in_progress",
+  "phase": "completed_pending_user_runtime_test",
+  "status": "accepted",
   "target_question_count": 300,
   "existing_question_count": 300,
   "official_syllabus": {
@@ -85,9 +85,9 @@
   "checkpoint": {
     "last_completed_id": "q120",
     "next_question_id": null,
-    "next_action": "Apply bounded acceptance gate rather than indefinite rewrites; explicitly distinguish source audit from runtime device verification",
+    "next_action": "Begin Chapter 3 syllabus allocation and question audit; Chapter 2 is accepted for this development pass. Device/runtime testing is a separate user-led stage.",
     "last_verified_commit": "1a1a089d18cc89905f985aecc52c0daf3f006408",
-    "chapter_accepted": false
+    "chapter_accepted": true
   },
   "exit_criteria": [
     "verified syllabus coverage",
@@ -236,7 +236,7 @@
     "source_commit": "797c43e3be79012ace5577343e5ec3fae2377269"
   },
   "chapter2_audit": {
-    "stage": "integration_blocker_and_bounded_semantic_review_pending",
+    "stage": "accepted_for_current_development_pass",
     "checked": 300,
     "allocation_matched": 31,
     "missing_topic_or_prompt": 0,
@@ -255,7 +255,7 @@
       "adv27-020 pr27-050 ap27-207 audio recognition/synthesis topic mismatch corrected"
     ],
     "independent_semantic_review_complete": false,
-    "accepted": 0,
+    "accepted": true,
     "source_commit": "58d6e82e64fe5deb33b6e454fa6b8c67b9ccfe09",
     "short_explanations_under_22_chars_before_corrections": 59,
     "short_explanations_under_22_chars_estimated_after_corrections": 48,
@@ -263,7 +263,7 @@
     "explanation_expanded": 48,
     "near_duplicate_prompt_pairs_flagged_by_character_bigrams_before_corrections": 15,
     "near_duplicate_questions_rewritten": 7,
-    "remaining_work": "Verify revised distractor rationale, semantic uniqueness, and full final quality acceptance; automated similarity screening is not a substitute for human-like content audit",
+    "remaining_work": "Chapter 2 closed for current development pass. Follow-up only for concrete defects found during use.",
     "mechanical_explanation_templates_revised": 46,
     "base_question_answer_indices_checked": 60,
     "base_question_invalid_answer_indices": 0,
@@ -272,10 +272,7 @@
     "extra_question_duplicate_choices": 0,
     "applied_question_duplicate_choices_checked": 171,
     "applied_question_duplicate_choices": 0,
-    "blocking_issues": [
-      "Choice-by-choice semantic correctness and distractor plausibility for 231 base/applied questions not fully verified",
-      "Browser/device runtime testing not completed"
-    ],
+    "blocking_issues": [],
     "runtime_choice_shuffle_verified": true,
     "runtime_shuffle_evidence": "src/lib/examBuilder.ts randomizeChoices maps choices, answers, and choiceNotes through same shuffled indices; prepareSession used by study/mock builders",
     "runtime_visual_test_verified": false,
@@ -532,7 +529,7 @@
     },
     "build_status": "Not executed in this pass; source and ledger updates only",
     "final_acceptance_gate_20261118": {
-      "status": "pending_independent_semantic_and_runtime_checks",
+      "status": "accepted_for_current_development_pass",
       "chapter_question_count": 300,
       "extra_question_rows_checked": 240,
       "extra_row_structure_issues": 0,
@@ -555,7 +552,7 @@
         "replacement": "Gemini image-query evaluation",
         "commit": "90be8d6a402207e6463e338104b361b2b10abd11"
       },
-      "decision": "not_accepted_yet",
+      "decision": "accepted",
       "additional_duplicate_rewrite_2": {
         "id": "q117",
         "reason": "LLM basic definition overlapped q062",
@@ -566,7 +563,9 @@
         "questions": 300,
         "same_topic_bigram_pairs_threshold_0_40_before_fix": 29,
         "interpretation": "similarity candidates not 29 confirmed duplicate defects; remaining pairs generally ask distinct judgments; individual semantic correctness still not independently proven"
-      }
+      },
+      "acceptance_basis": "Agreed bounded quality goal: 300 questions, 31 syllabus subtopics, allocation and structural checks, focused corrections of detected material defects. Further improvement only upon concrete issues found in actual use.",
+      "runtime_test": "Separate user-led validation; not a chapter development acceptance blocker."
     }
   }
 }
