@@ -5,7 +5,7 @@
   "legacy_title": "第4章 法律と倫理",
   "syllabus_url": "https://guga.or.jp/assets/syllabus.pdf",
   "syllabus_version": "2027年2月試験より適用",
-  "status": "first_pass_in_progress",
+  "status": "first_pass_complete_second_pass_pending",
   "target_question_count": 300,
   "existing_question_count": 300,
   "unique_effective_ids_verified": true,
@@ -20,16 +20,16 @@
   "inventory_file": "audit/chapter4-inventory-2027.json",
   "allocation_status": "saved_9_sections_81_topics",
   "first_pass": {
-    "reviewed": 267,
-    "revised": 243,
+    "reviewed": 300,
+    "revised": 276,
     "retained": 24,
-    "last_completed_id": "ap27-660",
-    "next_id": "ap27-701"
+    "last_completed_id": "ap27-830",
+    "next_id": null
   },
   "second_pass": {
     "reviewed": 0,
     "last_completed_id": null,
-    "next_id": null
+    "next_id": "q181"
   },
   "accepted": false,
   "completion": false,
@@ -46,8 +46,8 @@
     "unbounded_quality_loop": false,
     "source_and_ledger_persist_required": true
   },
-  "next_action": "Finish final 33 applied questions (ap27-701 through ap27-830), then bounded independent second-pass review.",
-  "note": "First 54 applied mapped; all existing 133 source items retained and not reprocessed.",
+  "next_action": "Run bounded full 300-item second pass for correctness, duplicates, schema and content distribution. Accept chapter when zero major unresolved defects.",
+  "note": "First pass complete 300/300; all 81 official learning items nonempty and exact 9-section allocation. Second pass pending, not chapter accepted.",
   "allocation_file": "audit/chapter4-allocation-2027.json",
   "source_blob_shas": {
     "src/data/questionBank.ts": "d01984f78a2bb9a956c10dbf089268e42319d70f",
@@ -55,6 +55,6 @@
     "src/data/expansion2027Questions.ts": "e791f3de98ff2c32957a450ed6a729d0af604b4d",
     "src/data/advanced2027Questions.ts": "ee0cd597db12399a765e482bd27998f465a78d13",
     "src/data/practice2027Questions.ts": "9b34f83d0d0e056182d782d13652c3d46c252a4d",
-    "src/data/applied2027Questions.ts": "ed3516f75e4b71454f924f6bbc28c201513ceb47"
+    "src/data/applied2027Questions.ts": "5ff8085b38dc704442476555c75c52d2ee7032be"
   }
 }
