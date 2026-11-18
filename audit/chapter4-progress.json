@@ -20,10 +20,11 @@
   "inventory_file": "audit/chapter4-inventory-2027.json",
   "allocation_status": "saved_9_sections_81_topics",
   "first_pass": {
-    "reviewed": 73,
-    "revised": 73,
-    "last_completed_id": "s27-051",
-    "next_id": "ex27-061"
+    "reviewed": 93,
+    "revised": 91,
+    "retained": 2,
+    "last_completed_id": "ex27-080",
+    "next_id": "adv27-041"
   },
   "second_pass": {
     "reviewed": 0,
@@ -45,11 +46,12 @@
     "unbounded_quality_loop": false,
     "source_and_ledger_persist_required": true
   },
-  "next_action": "Continue from ex27-061 (20 expansion questions), then advanced, practice, applied; perform bounded second pass",
-  "note": "q181-q240 60 revised and s27 13 revised in GitHub. Chapter not yet accepted.",
+  "next_action": "Continue advanced2027Questions.ts from adv27-041 (20 rows), followed by practice and applied.",
+  "note": "First pass 93/300 (60 base,13 syllabus,20 expansion). 91 revised, 2 retained. No second pass acceptance.",
   "allocation_file": "audit/chapter4-allocation-2027.json",
   "source_blob_shas": {
     "src/data/questionBank.ts": "d01984f78a2bb9a956c10dbf089268e42319d70f",
-    "src/data/syllabus2027Questions.ts": "8ccfcf45ead1fe263ebc074fc84c8c68b32d182e"
+    "src/data/syllabus2027Questions.ts": "8ccfcf45ead1fe263ebc074fc84c8c68b32d182e",
+    "src/data/expansion2027Questions.ts": "e791f3de98ff2c32957a450ed6a729d0af604b4d"
   }
 }
