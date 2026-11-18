@@ -37,7 +37,13 @@ npm run build
 
 埋め込み画面では、従来のサーバー採点に対応する基本300問を初期設定にしています。チェックボックスで全1,500問の学習に切り替えられますが、追加問題を含む回の成績は端末内のみの保存です。連携先サーバーへの追加問題の採点・記録は別途サーバー対応が必要です。
 
-GitHubへの反映と公開サイトのデプロイは別工程です。公開環境の反映はデプロイ状態を別途確認してください。
+GitHubへのソース保存と公開サイトのデプロイは別工程です。公開URLは https://nhds79vnht-bot.github.io/genai-passport-prep/ です。GitHub Pagesの gh-pages ブランチにはビルド済み成果物のみを配置します。
+
+## GitHub Pagesへの手動公開（GitHub Actions不使用）
+
+Node.js 22とGit認証が利用できる作業環境で、mainをチェックアウトして `npm run deploy:pages` を実行してください。監査、依存関係の取得、`VITE_BASE=/genai-passport-prep/` 指定ビルド、`gh-pages` ブランチへの非強制pushを一括実行します。監査・ビルドが失敗した場合は公開しません。GitHub Actionsは使いません。
+
+公開後は、公開URLで全5章・各300問、章別学習、模試、苦手ドリルを実機確認します。`main` の更新だけでは `gh-pages` は自動更新されません。
 
 ## 注意
 

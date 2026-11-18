@@ -10,7 +10,8 @@
     "test": "node --experimental-strip-types --test src/lib/scoreOutbox.test.mjs",
     "lint": "oxlint",
     "audit:questions": "node scripts/validate-question-bank.mjs",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy:pages": "node scripts/deploy-gh-pages.mjs"
   },
   "dependencies": {
     "react": "^19.2.8",

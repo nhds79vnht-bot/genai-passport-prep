@@ -1,7 +1,7 @@
 {
   "name": "くろ先生 生成AIパスポート対策",
   "short_name": "AIパスポート",
-  "description": "生成AIパスポート第4版シラバス対応の学習アプリ",
+  "description": "生成AIパスポート2027年2月試験適用シラバス対応の非公式学習アプリ",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
