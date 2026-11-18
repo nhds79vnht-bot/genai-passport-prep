@@ -5,7 +5,7 @@
   "official_title": "第5章 生成AIの実践と活用事例",
   "syllabus_url": "https://guga.or.jp/assets/syllabus.pdf",
   "syllabus_version": "2027年2月試験から適用",
-  "status": "second_pass_final_verification",
+  "status": "temporarily_completed",
   "target_question_count": 300,
   "existing_question_count": 300,
   "unique_effective_ids_verified": true,
@@ -18,7 +18,7 @@
     "src/data/applied2027Questions.ts": 167
   },
   "inventory_file": "audit/chapter5-inventory-2027.json",
-  "allocation_status": "matched_300_of_300",
+  "allocation_status": "verified_300_of_300",
   "first_pass": {
     "reviewed": 300,
     "revised": 237,
@@ -27,20 +27,29 @@
     "reclassified": 63
   },
   "second_pass": {
-    "reviewed": 0,
-    "last_completed_id": null,
+    "reviewed": 300,
+    "last_completed_id": "ap27-843",
     "next_id": null,
-    "corrections": 2
+    "corrections": 2,
+    "unique_ids": 300,
+    "exact_prompt_duplicates": 0,
+    "normalized_prompt_duplicates": 0,
+    "same_topic_trigram_jaccard_ge_038_duplicates": 0,
+    "all_38_learning_item_targets_matched": true,
+    "source_counts_verified": true,
+    "choice_and_answer_structure_verified": true,
+    "source_ledger_consistency_verified": true,
+    "audit_file": "audit/chapter5-second-pass-2027.json"
   },
-  "accepted": false,
-  "completion": false,
+  "accepted": true,
+  "completion": true,
   "operating_rules": {
     "github_actions": false,
     "small_batch_approval": false,
     "unbounded_quality_loop": false,
     "source_and_ledger_persist_required": true
   },
-  "next_action": "Run bounded second pass on all 300 source items: IDs, official mapping, 38-item quotas, prompts, options, correct answer and explanation; fix specific defects only; then accept.",
+  "next_action": "Proceed to all-chapter real-device testing; reopen chapter5 only if an actionable issue appears during testing.",
   "source_blob_shas": {
     "src/data/questionBank.ts": "fdb31d7eefd6220a481158ea7f271e290e913bda",
     "src/data/syllabus2027Questions.ts": "898a284dc40984ba32e22bccb674b124d44fb965",
@@ -51,5 +60,6 @@
   },
   "allocation_file": "audit/chapter5-allocation-2027.json",
   "official_middle_item_count": 7,
-  "official_learning_item_count": 38
+  "official_learning_item_count": 38,
+  "completion_judgment": "一旦完成"
 }
