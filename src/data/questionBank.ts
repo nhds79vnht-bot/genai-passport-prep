@@ -2524,7 +2524,7 @@ export const questionBank: Question[] = [
     answers: [
       2
     ],
-    explanation: '意味空間上の距離で類似検索に使います。',
+    explanation: "埋め込みは文章を数値ベクトルで表現し、意味的な類似性を計算しやすくする技術。RAGの検索に利用できるが、類似度の高さは事実の正確性を保証しない。",
     reviewSection: "2027年公式シラバス 第3章「RAGの仕組み」",
     examTrap: '「文字列検索」と混同されがち。意味ベクトルによる類似度計算が本質です。',
     choiceNotes: [
@@ -2720,7 +2720,7 @@ export const questionBank: Question[] = [
     answers: [
       2
     ],
-    explanation: '更新方法とコスト構造が異なります。',
+    explanation: "RAGは推論時に取得した情報を回答の根拠として利用する。一方、ファインチューニングは学習によってモデルのパラメータを調整するため、更新方法と目的が異なる。",
     reviewSection: "2027年公式シラバス 第3章「RAGが必要とされる理由」",
     examTrap: '「再学習」と混同しやすい。RAGは推論時に外部検索で知識を補完する仕組みです。',
     choiceNotes: [
@@ -2924,7 +2924,7 @@ export const questionBank: Question[] = [
     answers: [
       3
     ],
-    explanation: '段階実行とツール連携が特徴です。',
+    explanation: "通常の単発チャット応答と異なり、AIエージェントは目的達成のために外部ツールで情報を取得し、その結果を確認しながら複数段階の処理を進められる。",
     reviewSection: "2027年版公式シラバス 第3章「従来の生成AIとの違い」",
     examTrap: '単発Chatと混同注意。計画→実行→ツール利用の反復が特徴です。',
     choiceNotes: [
