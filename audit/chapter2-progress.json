@@ -85,7 +85,7 @@
   "checkpoint": {
     "last_completed_id": "q120",
     "next_question_id": null,
-    "next_action": "Continue bounded semantic audit of original similarity candidates; independent final audit and runtime build",
+    "next_action": "Bounded final semantic review of remaining candidate pairs and acceptance gate; build and device test pending",
     "last_verified_commit": "1a1a089d18cc89905f985aecc52c0daf3f006408",
     "chapter_accepted": false
   },
@@ -480,6 +480,18 @@
         ],
         "source_commit": "cfbebb3c61aabc65f33ccb323d1752436c6037ed",
         "remaining": "Original 112 candidate pairs not exhaustively adjudicated; independent final audit and build/device tests pending"
+      },
+      "third_pass_followup": {
+        "date": "2026-11-18",
+        "method": "within-topic character bigram Jaccard >=0.40 on all 300 chapter-2 prompts across six sources",
+        "screened_questions": 300,
+        "candidate_pairs": 41,
+        "confirmed_redundancies_fixed": [
+          "practice2027: stochastic generation reason duplicated advanced/applied; replaced with greedy decoding limitation",
+          "practice2027: over-context-limit document splitting duplicated advanced; replaced with persistence of important conditions across chunks"
+        ],
+        "source_commit": "3113076b95dbe80f315b8d98787221a73388e0ce",
+        "limitations": "41 is a screening count, not number of actual duplicates; remaining pairs not all adjudicated; no build/device run"
       }
     },
     "build_status": "Not executed in this pass; source and ledger updates only"
