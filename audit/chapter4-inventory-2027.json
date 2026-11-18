@@ -22,7 +22,7 @@
   },
   "total": 300,
   "unique_ids": 300,
-  "classification_status": "first_pass_300_completed",
+  "classification_status": "first_300_content_reviewed",
   "note": "133 items reviewed and mapped in GitHub; 167 applied questions pending. Metadata and source verified at this checkpoint.",
   "items": [
     {
