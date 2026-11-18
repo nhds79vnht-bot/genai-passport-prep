@@ -22,278 +22,368 @@
   },
   "total": 300,
   "unique_ids": 300,
-  "classification_status": "not_started",
-  "note": "Existing legacy items are NOT yet verified against the new official syllabus. Do not infer coverage from legacy topic names.",
+  "classification_status": "first_30_content_reviewed",
+  "note": "q181-q210 were inspected and rewritten in source; remaining items are not yet fully classified. Exact 2027 mapping needs verified source and item content.",
   "items": [
     {
       "id": "q181",
       "source": "src/data/questionBank.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "個人情報",
-      "prompt": "個人情報保護の基本原則として適切なのはどれですか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "氏名を消しても社員番号から社内名簿と照合して本人を特定できる。どう扱うか。",
+      "syllabus_2027_item": "個人情報とは何か",
+      "review_status": "first_pass_revised",
+      "new_section": "個人情報・プライバシー・秘密保持",
+      "decision": "REVISE",
+      "reason": "2027年公式学習項目に合わせ問題本文・選択肢・解説・選択肢別解説を修正"
     },
     {
       "id": "q182",
       "source": "src/data/questionBank.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "個人情報",
-      "prompt": "生成AIに個人情報を入力する際の注意として正しいのはどれですか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "顧客対応履歴を外部AIで要約する前に確認すべきことは。",
+      "syllabus_2027_item": "個人情報保護法と生成AI利用の関係",
+      "review_status": "first_pass_revised",
+      "new_section": "個人情報・プライバシー・秘密保持",
+      "decision": "REVISE",
+      "reason": "2027年公式学習項目に合わせ問題本文・選択肢・解説・選択肢別解説を修正"
     },
     {
       "id": "q183",
       "source": "src/data/questionBank.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "個人情報",
-      "prompt": "匿名加工情報の扱いで重要なのはどれですか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "氏名を顧客コードに置き換え、対応表は社内で保持している。外部AIへの入力判断は。",
+      "syllabus_2027_item": "個人情報は加工すれば生成AIに入力できるのか",
+      "review_status": "first_pass_revised",
+      "new_section": "個人情報・プライバシー・秘密保持",
+      "decision": "REVISE",
+      "reason": "2027年公式学習項目に合わせ問題本文・選択肢・解説・選択肢別解説を修正"
     },
     {
       "id": "q184",
       "source": "src/data/questionBank.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "著作権",
-      "prompt": "生成AI出力物の著作権に関する基本姿勢として適切なのはどれですか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "短い指示だけで自動生成した画像の著作物性を考えるとき適切なのは。",
+      "syllabus_2027_item": "AI生成物の権利帰属と人の創作的関与",
+      "review_status": "first_pass_revised",
+      "new_section": "著作権・知的財産・生成物の権利",
+      "decision": "REVISE",
+      "reason": "2027年公式学習項目に合わせ問題本文・選択肢・解説・選択肢別解説を修正"
     },
     {
       "id": "q185",
       "source": "src/data/questionBank.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "著作権",
-      "prompt": "学習データと生成物の関係で確認すべき点として適切なものを2つ選んでください。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "日本の著作権法30条の4によるAI学習用の著作物利用で適切な理解は。",
+      "syllabus_2027_item": "AI学習と著作権",
+      "review_status": "first_pass_revised",
+      "new_section": "著作権・知的財産・生成物の権利",
+      "decision": "REVISE",
+      "reason": "2027年公式学習項目に合わせ問題本文・選択肢・解説・選択肢別解説を修正"
     },
     {
       "id": "q186",
       "source": "src/data/questionBank.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "AI新法",
-      "prompt": "2025年公布のAI関連法（AI新法）で重視される観点として近いのはどれですか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "日本のAI法の基本構造を説明したものは。",
+      "syllabus_2027_item": "AI法とは：制定の背景と基本構造",
+      "review_status": "first_pass_revised",
+      "new_section": "AI法・国際ルール・AI安全保障",
+      "decision": "REVISE",
+      "reason": "2027年公式学習項目に合わせ問題本文・選択肢・解説・選択肢別解説を修正"
     },
     {
       "id": "q187",
       "source": "src/data/questionBank.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "AI新法",
-      "prompt": "AI新法とガイドラインの関係として適切なのはどれですか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "企業のAI導入時、AI法・AI事業者ガイドライン・個人情報保護法の理解は。",
+      "syllabus_2027_item": "AI法・ガイドライン・既存法令の関係",
+      "review_status": "first_pass_revised",
+      "new_section": "AI法・国際ルール・AI安全保障",
+      "decision": "REVISE",
+      "reason": "2027年公式学習項目に合わせ問題本文・選択肢・解説・選択肢別解説を修正"
     },
     {
       "id": "q188",
       "source": "src/data/questionBank.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "ガイドライン",
-      "prompt": "AI事業者ガイドライン第1.1版で強化される内容として適切なものを2つ選んでください。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "人間中心のAI利用に適した運用は。",
+      "syllabus_2027_item": "AI事業者ガイドラインと人間中心のAI",
+      "review_status": "first_pass_revised",
+      "new_section": "AI倫理とAI事業者ガイドライン",
+      "decision": "REVISE",
+      "reason": "2027年公式学習項目に合わせ問題本文・選択肢・解説・選択肢別解説を修正"
     },
     {
       "id": "q189",
       "source": "src/data/questionBank.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "ガイドライン",
-      "prompt": "ガイドラインの位置づけとして正しいのはどれですか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIによる人事評価の説明責任を果たす仕組みとして適切なのは。",
+      "syllabus_2027_item": "透明性・アカウンタビリティ：説明と責任",
+      "review_status": "first_pass_revised",
+      "new_section": "AI倫理とAI事業者ガイドライン",
+      "decision": "REVISE",
+      "reason": "2027年公式学習項目に合わせ問題本文・選択肢・解説・選択肢別解説を修正"
     },
     {
       "id": "q190",
       "source": "src/data/questionBank.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "ガバナンス",
-      "prompt": "AIガバナンスで整備すべき要素として適切なものを2つ選んでください。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "複数部署で生成AIを利用する組織が先に整えるべきものは。",
+      "syllabus_2027_item": "AIガバナンスとは",
+      "review_status": "first_pass_revised",
+      "new_section": "AIガバナンスと社内ガイドライン",
+      "decision": "REVISE",
+      "reason": "2027年公式学習項目に合わせ問題本文・選択肢・解説・選択肢別解説を修正"
     },
     {
       "id": "q191",
       "source": "src/data/questionBank.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "ガバナンス",
-      "prompt": "AIガバナンスの目的として適切なのはどれですか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "承認済みAIが使いづらく、従業員が私用AIを業務に使っていた。実効的な対応は。",
+      "syllabus_2027_item": "シャドーAIが発生する理由",
+      "review_status": "first_pass_revised",
+      "new_section": "シャドーAIと企業コンプライアンス",
+      "decision": "REVISE",
+      "reason": "2027年公式学習項目に合わせ問題本文・選択肢・解説・選択肢別解説を修正"
     },
     {
       "id": "q192",
       "source": "src/data/questionBank.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "リスク管理",
-      "prompt": "高リスクAI利用で必須に近い運用として適切なのはどれですか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIの雑談用案内と服薬判断補助に同一の検証を適用してよいか。",
+      "syllabus_2027_item": "用途と影響度に応じた検証レベル",
+      "review_status": "first_pass_revised",
+      "new_section": "AI出力の評価と検証",
+      "decision": "REVISE",
+      "reason": "2027年公式学習項目に合わせ問題本文・選択肢・解説・選択肢別解説を修正"
     },
     {
       "id": "q193",
       "source": "src/data/questionBank.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "リスク管理",
-      "prompt": "AIリスク評価で確認すべき項目として適切なものを2つ選んでください。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIで広告文と広告画像を制作する場合、公開前に評価するリスクは。",
+      "syllabus_2027_item": "生成AIに潜むリスクの全体像",
+      "review_status": "first_pass_revised",
+      "new_section": "生成AIの代表的リスク",
+      "decision": "REVISE",
+      "reason": "2027年公式学習項目に合わせ問題本文・選択肢・解説・選択肢別解説を修正"
     },
     {
       "id": "q194",
       "source": "src/data/questionBank.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "ディープフェイク",
-      "prompt": "ディープフェイク対策として適切なのはどれですか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "社長の声に聞こえる音声で緊急送金指示があった。対応は。",
+      "syllabus_2027_item": "ディープフェイクによるなりすましリスク",
+      "review_status": "first_pass_revised",
+      "new_section": "生成AIの代表的リスク",
+      "decision": "REVISE",
+      "reason": "2027年公式学習項目に合わせ問題本文・選択肢・解説・選択肢別解説を修正"
     },
     {
       "id": "q195",
       "source": "src/data/questionBank.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "ディープフェイク",
-      "prompt": "ディープフェイクが問題となる理由として正しいのはどれですか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIが実在企業の未確認の不祥事を断定した。公開判断は。",
+      "syllabus_2027_item": "名誉毀損・信用毀損・炎上リスク",
+      "review_status": "first_pass_revised",
+      "new_section": "生成AIの代表的リスク",
+      "decision": "REVISE",
+      "reason": "2027年公式学習項目に合わせ問題本文・選択肢・解説・選択肢別解説を修正"
     },
     {
       "id": "q196",
       "source": "src/data/questionBank.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "セキュリティ",
-      "prompt": "生成AI利用時の情報セキュリティとして適切なものを2つ選んでください。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIが社内文書を検索する仕組みで必要なセキュリティ設計は。",
+      "syllabus_2027_item": "プライバシー保護とセキュリティ確保",
+      "review_status": "first_pass_revised",
+      "new_section": "AI倫理とAI事業者ガイドライン",
+      "decision": "REVISE",
+      "reason": "2027年公式学習項目に合わせ問題本文・選択肢・解説・選択肢別解説を修正"
     },
     {
       "id": "q197",
       "source": "src/data/questionBank.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "セキュリティ",
-      "prompt": "APIキー管理で避けるべき行為はどれですか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "業務用AIのAPIキーを管理する方法として適切なのは。",
+      "syllabus_2027_item": "AIツールを選定する際の確認項目",
+      "review_status": "first_pass_revised",
+      "new_section": "AIガバナンスと社内ガイドライン",
+      "decision": "REVISE",
+      "reason": "2027年公式学習項目に合わせ問題本文・選択肢・解説・選択肢別解説を修正"
     },
     {
       "id": "q198",
       "source": "src/data/questionBank.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "説明責任",
-      "prompt": "説明責任（アカウンタビリティ）の意味として適切なのはどれですか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIの審査推薦を人が採用した後、利用者が理由を求めた。対応は。",
+      "syllabus_2027_item": "透明性・アカウンタビリティ：説明と責任",
+      "review_status": "first_pass_revised",
+      "new_section": "AI倫理とAI事業者ガイドライン",
+      "decision": "REVISE",
+      "reason": "2027年公式学習項目に合わせ問題本文・選択肢・解説・選択肢別解説を修正"
     },
     {
       "id": "q199",
       "source": "src/data/questionBank.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "説明責任",
-      "prompt": "AI判断を説明できない場合の対応として適切なのはどれですか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIが契約書を『法令上問題なし』としたが条文根拠を示さない。採否判断は。",
+      "syllabus_2027_item": "採用・修正・破棄・専門家確認の判断",
+      "review_status": "first_pass_revised",
+      "new_section": "AI出力の評価と検証",
+      "decision": "REVISE",
+      "reason": "2027年公式学習項目に合わせ問題本文・選択肢・解説・選択肢別解説を修正"
     },
     {
       "id": "q200",
       "source": "src/data/questionBank.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "国際規制",
-      "prompt": "EU AI Actの特徴として近い説明はどれですか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "EU AI Actの特徴として適切なのは。",
+      "syllabus_2027_item": "G7広島AIプロセスと海外のAI規制動向",
+      "review_status": "first_pass_revised",
+      "new_section": "AI法・国際ルール・AI安全保障",
+      "decision": "REVISE",
+      "reason": "2027年公式学習項目に合わせ問題本文・選択肢・解説・選択肢別解説を修正"
     },
     {
       "id": "q201",
       "source": "src/data/questionBank.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "国際規制",
-      "prompt": "国際的AI規制を学ぶ目的として適切なのはどれですか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "企業がG7広島AIプロセスなど国際的な指針を学ぶ理由は。",
+      "syllabus_2027_item": "G7広島AIプロセスと海外のAI規制動向",
+      "review_status": "first_pass_revised",
+      "new_section": "AI法・国際ルール・AI安全保障",
+      "decision": "REVISE",
+      "reason": "2027年公式学習項目に合わせ問題本文・選択肢・解説・選択肢別解説を修正"
     },
     {
       "id": "q202",
       "source": "src/data/questionBank.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "AI新法",
-      "prompt": "AI新法対策で事業者が行うべきこととして適切なものを2つ選んでください。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "国のAI基本計画と企業のAI運用ルールの関係は。",
+      "syllabus_2027_item": "AI基本計画と国・事業者・利用者の役割",
+      "review_status": "first_pass_revised",
+      "new_section": "AI法・国際ルール・AI安全保障",
+      "decision": "REVISE",
+      "reason": "2027年公式学習項目に合わせ問題本文・選択肢・解説・選択肢別解説を修正"
     },
     {
       "id": "q203",
       "source": "src/data/questionBank.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "著作権",
-      "prompt": "他社データを学習に使う際の論点として適切なのはどれですか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "取引先の有料レポートを外部AIへ全文入力して要約したい。まず何をするか。",
+      "syllabus_2027_item": "第三者コンテンツをAIに入力するリスク",
+      "review_status": "first_pass_revised",
+      "new_section": "著作権・知的財産・生成物の権利",
+      "decision": "REVISE",
+      "reason": "2027年公式学習項目に合わせ問題本文・選択肢・解説・選択肢別解説を修正"
     },
     {
       "id": "q204",
       "source": "src/data/questionBank.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "個人情報",
-      "prompt": "要配慮個人情報をAI入力する際の原則として正しいのはどれですか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "病歴を含む人事記録をAIで分析する計画で適切なのは。",
+      "syllabus_2027_item": "要配慮個人情報と機微情報",
+      "review_status": "first_pass_revised",
+      "new_section": "個人情報・プライバシー・秘密保持",
+      "decision": "REVISE",
+      "reason": "2027年公式学習項目に合わせ問題本文・選択肢・解説・選択肢別解説を修正"
     },
     {
       "id": "q205",
       "source": "src/data/questionBank.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "ガイドライン",
-      "prompt": "ガイドライン第1.1版で更新される背景として近いのはどれですか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "機密情報を扱うAIベンダーの選定で最優先する確認事項は。",
+      "syllabus_2027_item": "AIツールを選定する際の確認項目",
+      "review_status": "first_pass_revised",
+      "new_section": "AIガバナンスと社内ガイドライン",
+      "decision": "REVISE",
+      "reason": "2027年公式学習項目に合わせ問題本文・選択肢・解説・選択肢別解説を修正"
     },
     {
       "id": "q206",
       "source": "src/data/questionBank.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "ガバナンス",
-      "prompt": "AI倫理委員会の役割として適切なのはどれですか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "重要業務にAIを導入する社内審査で初めに整理すべきことは。",
+      "syllabus_2027_item": "高度なAIシステムと影響に応じたリスク管理",
+      "review_status": "first_pass_revised",
+      "new_section": "AI倫理とAI事業者ガイドライン",
+      "decision": "REVISE",
+      "reason": "2027年公式学習項目に合わせ問題本文・選択肢・解説・選択肢別解説を修正"
     },
     {
       "id": "q207",
       "source": "src/data/questionBank.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "リスク管理",
-      "prompt": "AI事故発生時の初動として適切なものを2つ選んでください。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "社員が誤って顧客情報を外部AIに入力した際の初動は。",
+      "syllabus_2027_item": "情報漏えい等が起きたときの対応",
+      "review_status": "first_pass_revised",
+      "new_section": "個人情報・プライバシー・秘密保持",
+      "decision": "REVISE",
+      "reason": "2027年公式学習項目に合わせ問題本文・選択肢・解説・選択肢別解説を修正"
     },
     {
       "id": "q208",
       "source": "src/data/questionBank.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "セキュリティ",
-      "prompt": "プロンプトログ保存の目的として適切なのはどれですか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "個人情報を含み得るAI利用ログの適切な管理は。",
+      "syllabus_2027_item": "モニタリングと継続的な見直し",
+      "review_status": "first_pass_revised",
+      "new_section": "AIガバナンスと社内ガイドライン",
+      "decision": "REVISE",
+      "reason": "2027年公式学習項目に合わせ問題本文・選択肢・解説・選択肢別解説を修正"
     },
     {
       "id": "q209",
       "source": "src/data/questionBank.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "説明責任",
-      "prompt": "利用者への説明で含めるべき内容として適切なのはどれですか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "承認済み生成AIが作った会社説明文を公開する際の対応は。",
+      "syllabus_2027_item": "承認されたAIでも出力確認が必要な理由",
+      "review_status": "first_pass_revised",
+      "new_section": "AI出力の評価と検証",
+      "decision": "REVISE",
+      "reason": "2027年公式学習項目に合わせ問題本文・選択肢・解説・選択肢別解説を修正"
     },
     {
       "id": "q210",
       "source": "src/data/questionBank.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "AI新法",
-      "prompt": "AI新法学習で押さえるべきキーワードとして適切なものを2つ選んでください。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "国産AIや国内基盤モデルの意義を検討する視点として適切なのは。",
+      "syllabus_2027_item": "国産AI・国内基盤モデル・AI人材の重要性",
+      "review_status": "first_pass_revised",
+      "new_section": "AI法・国際ルール・AI安全保障",
+      "decision": "REVISE",
+      "reason": "2027年公式学習項目に合わせ問題本文・選択肢・解説・選択肢別解説を修正"
     },
     {
       "id": "q211",
