@@ -15,7 +15,10 @@ function readJson<T>(key: string, fallback: T): T {
 
 export function loadResults(scope?: string | null): SessionResult[] {
   const parsed = readJson<SessionResult[]>(scope ? `${RESULTS_KEY}:${scope}` : RESULTS_KEY, [])
-  return Array.isArray(parsed) ? parsed : []
+  return Array.isArray(parsed) ? parsed.map((result) => ({
+    ...result,
+    chapter: result.chapter === '第3章 生成AIの技術' as unknown ? '第3章 AIエージェント' : result.chapter,
+  })) : []
 }
 
 export function saveResults(results: SessionResult[], scope?: string | null): void {
@@ -24,7 +27,11 @@ export function saveResults(results: SessionResult[], scope?: string | null): vo
 
 export function loadStats(scope?: string | null): QuestionStats {
   const parsed = readJson<QuestionStats>(scope ? `${STATS_KEY}:${scope}` : STATS_KEY, {})
-  return parsed && typeof parsed === 'object' ? parsed : {}
+  if (!parsed || typeof parsed !== 'object') return {}
+  return Object.fromEntries(Object.entries(parsed).map(([id,record]) => [
+    id,
+    record?.chapter === '第3章 生成AIの技術' as unknown ? { ...record, chapter: '第3章 AIエージェント' as const } : record,
+  ])) as QuestionStats
 }
 
 export function saveStats(stats: QuestionStats, scope?: string | null): void {
