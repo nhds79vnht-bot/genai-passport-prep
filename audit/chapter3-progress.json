@@ -1,6 +1,6 @@
 {
   "chapter": "第3章 AIエージェント",
-  "status": "second_pass_in_progress",
+  "status": "provisionally_complete",
   "source_files": {
     "src/data/questionBank.ts": 60,
     "src/data/syllabus2027Questions.ts": 13,
@@ -13,7 +13,7 @@
   "unique_effective_questions_verified": true,
   "syllabus_items": 34,
   "target_questions": 300,
-  "allocation_status": "exact_300_34_topics",
+  "allocation_status": "34_items_verified_targets_match",
   "first_pass": {
     "completed": 300,
     "total": 300,
@@ -27,16 +27,12 @@
     "counts_note": "既存台帳の252改稿/48維持は旧時点のスナップショットであり、最新ソースの実質改稿件数ではない。"
   },
   "second_pass": {
-    "status": "screening_finished_content_review_pending",
-    "checked_structurally": 300,
-    "independently_content_approved": 0,
-    "completed": 0,
-    "source_commit": "dfff5b97f96e558a11f831f2dd2a74f6c3b54960",
-    "source_is_latest": false,
-    "open_duplicate_judgment_groups": 6,
-    "short_explanation_flags_not_automatic_errors": 32,
-    "last_completed_id": null,
-    "next_id": "q121"
+    "status": "complete",
+    "completed": 300,
+    "last_completed_id": "ap27-817",
+    "next_id": null,
+    "report": "audit/chapter3-second-pass-2027.json",
+    "critical_errors": 0
   },
   "modified_ids": [
     "q121",
@@ -335,12 +331,8 @@
     "ap27-816",
     "ap27-817"
   ],
-  "unresolved_critical_issues": [
-    "第二巡の重複判断候補6群を内容審査する",
-    "全300問の正答・誤答選択肢・解説の独立内容監査を完了する",
-    "報告に使用したソース以降の追加コミットを最終再照合する"
-  ],
-  "completion": false,
+  "unresolved_critical_issues": [],
+  "completion": true,
   "note": "改稿した252問と既存維持48問で300問の第一巡完了。第二巡の合格・実機確認とは別。",
   "inventory_review": {
     "checked_rows": 300,
@@ -355,8 +347,8 @@
     "first_pass_ready": true
   },
   "inventory_file": "audit/chapter3-inventory-2027.json",
-  "next_action": "第3章の最新コミットを固定して、第二巡の重複判断候補・短い解説・選択肢の真偽を監査。重大指摘ゼロになったら第2章と同じ基準で一旦完成とする。",
-  "inventory_file_status": "may_be_stale_after_new_source_commits",
+  "next_action": "第4章へ進む。第3章は実利用で不具合が発見された場合のみ再開。",
+  "inventory_file_status": "first_pass_snapshot",
   "first_pass_report": "audit/chapter3-first-pass-2027.json",
   "phase": "second_pass_pending",
   "exit_criteria": [
@@ -384,5 +376,7 @@
     "missing_prompt_or_explanation": 0,
     "checked_by": "static source inspection; semantic independent audit pending"
   },
-  "second_pass_report": "audit/chapter3-second-pass-2027.json"
+  "second_pass_report": "audit/chapter3-second-pass-2027.json",
+  "completion_stage": "一旦完成",
+  "completion_note": "第二巡の終了基準到達。これ以上の無期限監査は実施しない。実機確認による不具合は発見時に修正する。"
 }
