@@ -2,10 +2,10 @@
   "schema_version": 1,
   "chapter": 5,
   "legacy_chapter": "第5章 活用実務",
-  "official_chapter_title": null,
+  "official_chapter_title": "第5章 生成AIの実践と活用事例",
   "syllabus_url": "https://guga.or.jp/assets/syllabus.pdf",
   "syllabus_version": "2027年2月試験から適用",
-  "status": "legacy_inventory_only_official_2027_mapping_pending",
+  "status": "first_pass_in_progress",
   "total": 300,
   "unique_ids": 300,
   "source_counts": {
@@ -31,108 +31,108 @@
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "PoC",
-      "prompt": "PoCの実施前に合格基準を定める主な理由はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "社内FAQの回答が曖昧になりがちなため",
+      "syllabus_2027_item": "プロンプトエンジニアリングとは",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q242",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "PoC",
-      "prompt": "試験導入で既存業務より正答率が上がったが確認工数が倍増した。次に判断すべきことは何か。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "社内規程の要約を依頼する際",
+      "syllabus_2027_item": "プロンプトの基本構成要素",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q243",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "PoC",
-      "prompt": "実証実験で一部の成功事例だけを報告した。最も大きな問題は何か。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "苦情メールを『配送・品質・その他』へ分類したい",
+      "syllabus_2027_item": "Zero-Shotプロンプティング",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q244",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "PoC",
-      "prompt": "試験用データに本番の機密情報が混在していた。適切な対応はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "顧客の自由記述を指定した3分類",
+      "syllabus_2027_item": "Few-Shotプロンプティング",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q245",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "PoC",
-      "prompt": "PoCの終了基準として適切なのはどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "複雑な発注判断の補助",
+      "syllabus_2027_item": "Chain-of-Thought（思考の連鎖）",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q246",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "PoC",
-      "prompt": "試験では良好だったが繁忙期の実データでは失敗が増えた。対策はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "各部署から届く問い合わせ",
+      "syllabus_2027_item": "役割設定・出力形式の指定",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q247",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "KPI",
-      "prompt": "問い合わせ対応AIのKPIとして解決率を採用する際に必要なのはどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "企画案が抽象的すぎる",
+      "syllabus_2027_item": "具体度のコントロール",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q248",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "KPI",
-      "prompt": "FAQボットの利用回数が増えたが顧客の問題解決率は低下した。何を重視するか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "取引先へ納期変更",
+      "syllabus_2027_item": "ビジネスメール・各種ビジネス文書の作成",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q249",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "KPI",
-      "prompt": "誤案内が重大な業務で回答速度だけをKPIにした。問題は何か。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "社内通知の誤字",
+      "syllabus_2027_item": "文章の校正・添削・整形",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q250",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "KPI",
-      "prompt": "月ごとに解決率の定義を変更した。比較上の問題は何か。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "同じ製品説明を一般利用者向け",
+      "syllabus_2027_item": "文章の要約・対象読者やトーンの変更",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q251",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "KPI",
-      "prompt": "人が修正したAI回答の割合を追跡する目的はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "会議の文字起こし",
+      "syllabus_2027_item": "議事録の作成・要点抽出",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q252",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "KPI",
-      "prompt": "回答の平均時間は改善したが95パーセンタイルが悪化した。何が読み取れるか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "契約条件を含む海外向け案内",
+      "syllabus_2027_item": "翻訳・多言語コミュニケーション",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q253",
@@ -2726,5 +2726,6 @@
       "syllabus_2027_item": null,
       "review_status": "pending"
     }
-  ]
+  ],
+  "allocation_file": "audit/chapter5-allocation-2027.json"
 }
