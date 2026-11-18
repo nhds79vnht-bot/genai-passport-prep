@@ -2,10 +2,10 @@
   "schema_version": 1,
   "chapter": 5,
   "legacy_title": "第5章 活用実務",
-  "official_title": null,
+  "official_title": "第5章 生成AIの実践と活用事例",
   "syllabus_url": "https://guga.or.jp/assets/syllabus.pdf",
   "syllabus_version": "2027年2月試験から適用",
-  "status": "initial_inventory_complete_mapping_pending",
+  "status": "official_mapping_and_allocation_established_first_pass_pending",
   "target_question_count": 300,
   "existing_question_count": 300,
   "unique_effective_ids_verified": true,
@@ -18,7 +18,7 @@
     "src/data/applied2027Questions.ts": 167
   },
   "inventory_file": "audit/chapter5-inventory-2027.json",
-  "allocation_status": "not_yet_created",
+  "allocation_status": "created_target_only",
   "first_pass": {
     "reviewed": 0,
     "revised": 0,
@@ -38,7 +38,7 @@
     "unbounded_quality_loop": false,
     "source_and_ledger_persist_required": true
   },
-  "next_action": "Verify official 2027 Chapter 5 sections/learning items from GUGA PDF, create balanced 300-question allocation, then revise only needed existing items; bounded second pass and accept.",
+  "next_action": "Inspect existing source question and all answer/explanation fields against 38 official learning items, revise and persist first-pass batches. Do not count allocation alone as reviewed.",
   "source_blob_shas": {
     "src/data/questionBank.ts": "d01984f78a2bb9a956c10dbf089268e42319d70f",
     "src/data/syllabus2027Questions.ts": "8ccfcf45ead1fe263ebc074fc84c8c68b32d182e",
@@ -46,5 +46,8 @@
     "src/data/advanced2027Questions.ts": "3fcc925e6c66a5c9b5a6729f382bbf7cce0186b4",
     "src/data/practice2027Questions.ts": "9b34f83d0d0e056182d782d13652c3d46c252a4d",
     "src/data/applied2027Questions.ts": "ffb8a64543db44488f226eafe386eb1dfa36dc90"
-  }
+  },
+  "allocation_file": "audit/chapter5-allocation-2027.json",
+  "official_middle_item_count": 7,
+  "official_learning_item_count": 38
 }
