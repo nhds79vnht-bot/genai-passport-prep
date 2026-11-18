@@ -20,10 +20,10 @@
   "inventory_file": "audit/chapter5-inventory-2027.json",
   "allocation_status": "created_target_only",
   "first_pass": {
-    "reviewed": 12,
-    "revised": 12,
-    "last_completed_id": "q252",
-    "next_id": "q253"
+    "reviewed": 40,
+    "revised": 40,
+    "last_completed_id": "q280",
+    "next_id": "q281"
   },
   "second_pass": {
     "reviewed": 0,
@@ -38,9 +38,9 @@
     "unbounded_quality_loop": false,
     "source_and_ledger_persist_required": true
   },
-  "next_action": "Resume at q253; continue chapter-5 official mapping and substantive question-body revisions, preserving total 300.",
+  "next_action": "Continue first-pass q281 onward, revising/mapping against chapter5 official 38 learning items; finish bounded audit after all 300.",
   "source_blob_shas": {
-    "src/data/questionBank.ts": "c63ee5941fe0d009aa6fabafdc495099b9c49574",
+    "src/data/questionBank.ts": "dfb63aa6689c8bdf246a181322e804a71bccf40d",
     "src/data/syllabus2027Questions.ts": "8ccfcf45ead1fe263ebc074fc84c8c68b32d182e",
     "src/data/expansion2027Questions.ts": "a96c08983e94db5ead3a61be0ec09e844fb1f812",
     "src/data/advanced2027Questions.ts": "3fcc925e6c66a5c9b5a6729f382bbf7cce0186b4",
