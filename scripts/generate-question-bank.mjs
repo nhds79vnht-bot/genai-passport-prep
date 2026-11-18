@@ -7,6 +7,11 @@ import { enrichAll } from './question-enrich.mjs'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const outPath = join(__dirname, '../src/data/questionBank.ts')
 
+// The legacy generator is not aligned with the audited 2027 bank. Never overwrite it by accident.
+if (process.env.ALLOW_LEGACY_BANK_REGEN !== '1') {
+  throw new Error('旧問題バンク再生成は停止中です。監査済み2027年版の300問を上書きしないため、通常実行を禁止しています。')
+}
+
 function q(chapter, topic, prompt, correct, distractors, explanation, multi = false) {
   const choices = multi ? [...correct, ...distractors] : [correct[0], ...distractors]
   const answers = multi

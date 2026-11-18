@@ -56,6 +56,9 @@ export default function App() {
       return parsed?.version === 1 && parsed.items && typeof parsed.items === 'object' ? parsed : emptyProgress()
     } catch { return emptyProgress() }
   })
+  // Keep the server-compatible 300-question mode by default in the parent app.
+  // Full 1,500-question study is available by explicit opt-in; local scoring still works.
+  const [includeAdditionalQuestions, setIncludeAdditionalQuestions] = useState(!learnerScope)
   const [mode, setMode] = useState<StudyMode>('study')
   const [selectedChapter, setSelectedChapter] = useState<Chapter>(CHAPTERS[0])
   const [questions, setQuestions] = useState<Question[]>([])
@@ -179,8 +182,9 @@ export default function App() {
   const statsByChapter = useMemo(() => chapterStats(stats), [stats])
   const questionIds = useMemo(() => questions.map((q) => q.id), [questions])
 
-  // Embedded scoring accepts only canonical q001-q300 IDs; standalone study can use the full bank.
-  const scoredQuestionBank = learnerScope ? questionBank : activeQuestionBank
+  // Parent-server scoring currently accepts canonical q001-q300 IDs only.
+  // Keep that default in embedded mode; permit all 1,500 for local-score study.
+  const scoredQuestionBank = learnerScope && !includeAdditionalQuestions ? questionBank : activeQuestionBank
 
   function startDaily() {
     completionGuard.current = false
@@ -219,7 +223,7 @@ export default function App() {
   function startWeakDrill() {
     completionGuard.current = false
     setMode('weak')
-    setQuestions(buildWeakDrill(stats).map(randomizeChoices))
+    setQuestions(buildWeakDrill(stats, scoredQuestionBank).map(randomizeChoices))
     setAnswers({})
     setCurrentIndex(0)
     setShowUnansweredOnly(false)
@@ -267,7 +271,23 @@ export default function App() {
           <p>{SYLLABUS_NOTE}</p>
           <p className="hint">登録問題数: {questionCount}問（章あたり{chapterQuestionCount[CHAPTERS[0]]}問）</p>
           <p className="hint">スマホ向け：1問ずつ表示・下部ボタン操作・採点後に詳細解説</p>
-          {learnerScope && <p className="hint">連携学習ではサーバー採点対応の基本300問から出題します。追加問題は単独版で学習できます。</p>}
+          {learnerScope && (
+            <div className="hint">
+              <label>
+                <input
+                  type="checkbox"
+                  checked={includeAdditionalQuestions}
+                  onChange={(event) => setIncludeAdditionalQuestions(event.target.checked)}
+                />
+                {' '}追加問題を含む全{questionCount}問を出題対象にする
+              </label>
+              <p className="hint">
+                {includeAdditionalQuestions
+                  ? '全問を学習できます。追加問題を含む学習結果は端末内に保存され、連携先のサーバー採点には送信されません。'
+                  : '基本300問から出題します。連携先へのサーバー採点送信は従来の仕様を維持します。'}
+              </p>
+            </div>
+          )}
         </header>
 
         <section className="card">

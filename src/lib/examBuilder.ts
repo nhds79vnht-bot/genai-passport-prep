@@ -42,7 +42,10 @@ export function buildMockExam(): Question[] {
   return prepareSession(shuffle(picked).slice(0, MOCK_QUESTION_COUNT))
 }
 
-export function buildWeakDrill(stats: Record<string, { wrong: number; seen: number }>): Question[] {
+export function buildWeakDrill(
+  stats: Record<string, { wrong: number; seen: number }>,
+  bank: readonly Question[] = activeQuestionBank,
+): Question[] {
   const wrongIds = Object.entries(stats)
     .filter(([, value]) => value.wrong > 0)
     .sort((a, b) => {
@@ -52,7 +55,7 @@ export function buildWeakDrill(stats: Record<string, { wrong: number; seen: numb
     })
     .map(([id]) => id)
 
-  const byId = new Map(activeQuestionBank.map((q) => [q.id, q]))
+  const byId = new Map(bank.map((q) => [q.id, q]))
   const fromStats = wrongIds
     .map((id) => byId.get(id))
     .filter((q): q is Question => Boolean(q))
@@ -62,7 +65,7 @@ export function buildWeakDrill(stats: Record<string, { wrong: number; seen: numb
   }
 
   const selectedIds = new Set(fromStats.map((q) => q.id))
-  const fallback = shuffle(activeQuestionBank.filter((q) => !selectedIds.has(q.id))).slice(0, WEAK_DRILL_COUNT - fromStats.length)
+  const fallback = shuffle(bank.filter((q) => !selectedIds.has(q.id))).slice(0, WEAK_DRILL_COUNT - fromStats.length)
   return prepareSession(shuffle([...fromStats, ...fallback]))
 }
 

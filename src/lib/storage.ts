@@ -1,7 +1,18 @@
-import type { QuestionStats, SessionResult } from './types'
+import type { Chapter, QuestionStats, SessionResult } from './types'
 
 const RESULTS_KEY = 'genai-passport-prep:results'
 const STATS_KEY = 'genai-passport-prep:stats'
+
+// Preserve saved local results when chapters are renamed for the 2027 syllabus.
+const LEGACY_CHAPTERS: Record<string, Chapter> = {
+  '第3章 生成AIの技術': '第3章 AIエージェント',
+  '第4章 法律と倫理': '第4章 生成AIのリスク予防・AI倫理・ガバナンス',
+  '第5章 活用実務': '第5章 生成AIの実践と活用事例',
+}
+
+function migrateChapter(chapter: Chapter | undefined): Chapter | undefined {
+  return chapter ? LEGACY_CHAPTERS[chapter] ?? chapter : undefined
+}
 
 function readJson<T>(key: string, fallback: T): T {
   try {
@@ -17,7 +28,7 @@ export function loadResults(scope?: string | null): SessionResult[] {
   const parsed = readJson<SessionResult[]>(scope ? `${RESULTS_KEY}:${scope}` : RESULTS_KEY, [])
   return Array.isArray(parsed) ? parsed.map((result) => ({
     ...result,
-    chapter: String(result.chapter) === '第3章 生成AIの技術' ? '第3章 AIエージェント' : result.chapter,
+    chapter: migrateChapter(result.chapter),
   })) : []
 }
 
@@ -28,10 +39,10 @@ export function saveResults(results: SessionResult[], scope?: string | null): vo
 export function loadStats(scope?: string | null): QuestionStats {
   const parsed = readJson<QuestionStats>(scope ? `${STATS_KEY}:${scope}` : STATS_KEY, {})
   if (!parsed || typeof parsed !== 'object') return {}
-  return Object.fromEntries(Object.entries(parsed).map(([id,record]) => [
-    id,
-    String(record?.chapter) === '第3章 生成AIの技術' ? { ...record, chapter: '第3章 AIエージェント' as const } : record,
-  ])) as QuestionStats
+  return Object.fromEntries(Object.entries(parsed).map(([id, record]) => {
+    const chapter = migrateChapter(record?.chapter)
+    return [id, chapter ? { ...record, chapter } : record]
+  })) as QuestionStats
 }
 
 export function saveStats(stats: QuestionStats, scope?: string | null): void {

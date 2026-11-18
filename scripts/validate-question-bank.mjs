@@ -79,6 +79,21 @@ for (const [path, variable] of sources) {
     }
   })
 }
+const expectedChapters = [
+  '第1章 AIの基礎',
+  '第2章 生成AI',
+  '第3章 AIエージェント',
+  '第4章 生成AIのリスク予防・AI倫理・ガバナンス',
+  '第5章 生成AIの実践と活用事例',
+]
+if (all.length !== 1500) problems.push(`総問題数異常: ${all.length}/1500`)
+for (const chapter of expectedChapters) {
+  if (chapters.get(chapter) !== 300) problems.push(`章別問題数異常: ${chapter} ${chapters.get(chapter) ?? 0}/300`)
+}
+for (const chapter of chapters.keys()) {
+  if (!expectedChapters.includes(chapter)) problems.push(`旧・未知の章名が残存: ${chapter}`)
+}
+
 const report = {
   total: all.length,
   chapterCounts: Object.fromEntries(chapters),

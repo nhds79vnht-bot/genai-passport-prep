@@ -2,8 +2,8 @@ export type Chapter =
   | '第1章 AIの基礎'
   | '第2章 生成AI'
   | '第3章 AIエージェント'
-  | '第4章 法律と倫理'
-  | '第5章 活用実務'
+  | '第4章 生成AIのリスク予防・AI倫理・ガバナンス'
+  | '第5章 生成AIの実践と活用事例'
 
 export type StudyMode = 'study' | 'mock' | 'weak'
 
