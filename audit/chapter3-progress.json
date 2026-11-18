@@ -1,6 +1,6 @@
 {
   "chapter": 3,
-  "status": "initial_inventory",
+  "status": "inventory_reviewed_mapping_pending",
   "source_files": {
     "src/data/questionBank.ts": 60,
     "src/data/syllabus2027Questions.ts": 13,
@@ -27,5 +27,32 @@
   "modified_ids": [],
   "unresolved_critical_issues": [],
   "completion": false,
-  "note": "旧シラバス問題を2027年版へ是正。内容に基づく全件マッピングと実効ID確認が済むまで第一巡を進めない。"
+  "note": "旧シラバス問題を2027年版へ是正。内容に基づく全件マッピングと実効ID確認が済むまで第一巡を進めない。",
+  "inventory_review": {
+    "checked_rows": 300,
+    "files_checked": 6,
+    "legacy_out_of_scope_examples": [
+      "Transformer・自己注意機構",
+      "トークン化・位置エンコーディング",
+      "量子化・蒸留・RLHF",
+      "ファインチューニング一般"
+    ],
+    "new_syllabus_gap_candidates": [
+      "自律性のレベル",
+      "ワークフロー型と自律型",
+      "A2A",
+      "Agent Skills",
+      "ハーネスエンジニアリング",
+      "ブラウザ・PC操作エージェント"
+    ],
+    "overlap_candidates": [
+      "再ランキング",
+      "冪等性",
+      "検索の適合率・再現率",
+      "RAG更新",
+      "最小権限"
+    ],
+    "mapping_status": "全件の小項目別確定分類は未実施",
+    "next_action": "全300問を内容で34小項目へ分類し、旧範囲問題を差し替えて第一巡を開始"
+  }
 }
