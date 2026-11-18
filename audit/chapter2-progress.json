@@ -85,7 +85,7 @@
   "checkpoint": {
     "last_completed_id": "q120",
     "next_question_id": null,
-    "next_action": "Continue bounded final semantic audit; execute build and question validation when runnable checkout available",
+    "next_action": "Continue bounded semantic audit of original similarity candidates; independent final audit and runtime build",
     "last_verified_commit": "1a1a089d18cc89905f985aecc52c0daf3f006408",
     "chapter_accepted": false
   },
@@ -466,8 +466,22 @@
       ],
       "commit": "13f92beb1da7bbff75e85eb30b80e7a14c9ddac5",
       "remaining": "Other flagged pairs require judgment of answer intent, not automated deletion",
-      "latest_commit": "4b7c0f8d614612577be01829e22ce54592cca1f6"
+      "latest_commit": "4b7c0f8d614612577be01829e22ce54592cca1f6",
+      "second_pass_followup": {
+        "date": "2026-11-18",
+        "scope": "300 chapter-2 prompts re-screened from six GitHub sources with within-topic trigram Jaccard threshold 0.48; this is a separate narrower screen, not resolution of all 112 previously flagged pairs",
+        "candidate_pairs_in_this_screen": 3,
+        "confirmed_redundancy_fixed": [
+          "practice2027 Top-p definition duplicated q077; replaced with Top-p threshold-change application"
+        ],
+        "distinguished_not_duplicates": [
+          "q093 vs applied multimodal integration: foundation model vs image-text integration",
+          "q069 vs applied Copilot deployment: use case vs enterprise permission/configuration"
+        ],
+        "source_commit": "cfbebb3c61aabc65f33ccb323d1752436c6037ed",
+        "remaining": "Original 112 candidate pairs not exhaustively adjudicated; independent final audit and build/device tests pending"
+      }
     },
-    "build_status": "Not executed: GitHub source inspected and updated; no local dependency-backed build or Safari execution in this turn"
+    "build_status": "Not executed in this pass; source and ledger updates only"
   }
 }
