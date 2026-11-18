@@ -31,7 +31,7 @@
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "PoC",
-      "prompt": "社内FAQの回答が曖昧になりがちなため",
+      "prompt": "社内FAQの回答が曖昧になりがちなため、担当者が生成AIへの指示を改善したい。プロンプトエンジニアリングの取り組みとして最も適切なのはどれか。",
       "syllabus_2027_item": "プロンプトエンジニアリングとは",
       "review_status": "revised_first_pass"
     },
@@ -40,7 +40,7 @@
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "PoC",
-      "prompt": "社内規程の要約を依頼する際",
+      "prompt": "社内規程の要約を依頼する際、誤解を減らすプロンプトの組合せはどれか。",
       "syllabus_2027_item": "プロンプトの基本構成要素",
       "review_status": "revised_first_pass"
     },
@@ -49,7 +49,7 @@
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "PoC",
-      "prompt": "苦情メールを『配送・品質・その他』へ分類したい",
+      "prompt": "苦情メールを『配送・品質・その他』へ分類したい。Zero-Shotプロンプティングに当たる指示はどれか。",
       "syllabus_2027_item": "Zero-Shotプロンプティング",
       "review_status": "revised_first_pass"
     },
@@ -58,7 +58,7 @@
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "PoC",
-      "prompt": "顧客の自由記述を指定した3分類",
+      "prompt": "顧客の自由記述を指定した3分類へ安定して振り分けたい。Few-Shotの特徴を示す方法はどれか。",
       "syllabus_2027_item": "Few-Shotプロンプティング",
       "review_status": "revised_first_pass"
     },
@@ -67,7 +67,7 @@
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "PoC",
-      "prompt": "複雑な発注判断の補助",
+      "prompt": "複雑な発注判断の補助に生成AIを使う。Chain-of-Thoughtに関連する説明として適切なのはどれか。",
       "syllabus_2027_item": "Chain-of-Thought（思考の連鎖）",
       "review_status": "revised_first_pass"
     },
@@ -76,7 +76,7 @@
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "PoC",
-      "prompt": "各部署から届く問い合わせ",
+      "prompt": "各部署から届く問い合わせをシステムへ渡すため、生成AIの出力を機械処理しやすくしたい。最も適切な指定はどれか。",
       "syllabus_2027_item": "役割設定・出力形式の指定",
       "review_status": "revised_first_pass"
     },
@@ -85,7 +85,7 @@
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "KPI",
-      "prompt": "企画案が抽象的すぎる",
+      "prompt": "企画案が抽象的すぎる一方、最初から細部まで固定したくない。プロンプトの具体度の調整として適切なのはどれか。",
       "syllabus_2027_item": "具体度のコントロール",
       "review_status": "revised_first_pass"
     },
@@ -94,7 +94,7 @@
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "KPI",
-      "prompt": "取引先へ納期変更",
+      "prompt": "取引先へ納期変更のメール草案を生成AIに作らせる。送信前に担当者が確認すべき最重要事項はどれか。",
       "syllabus_2027_item": "ビジネスメール・各種ビジネス文書の作成",
       "review_status": "revised_first_pass"
     },
@@ -103,7 +103,7 @@
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "KPI",
-      "prompt": "社内通知の誤字",
+      "prompt": "社内通知の誤字と表記ゆれだけを修正したい。意味の改変を防ぐ指示はどれか。",
       "syllabus_2027_item": "文章の校正・添削・整形",
       "review_status": "revised_first_pass"
     },
@@ -112,7 +112,7 @@
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "KPI",
-      "prompt": "同じ製品説明を一般利用者向け",
+      "prompt": "同じ製品説明を一般利用者向けに平易にしたい。適切な利用方法はどれか。",
       "syllabus_2027_item": "文章の要約・対象読者やトーンの変更",
       "review_status": "revised_first_pass"
     },
@@ -121,7 +121,7 @@
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "KPI",
-      "prompt": "会議の文字起こし",
+      "prompt": "会議の文字起こしから議事録を作成する。AIが推定した担当者を誤って確定事項にしない手順はどれか。",
       "syllabus_2027_item": "議事録の作成・要点抽出",
       "review_status": "revised_first_pass"
     },
@@ -130,7 +130,7 @@
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "KPI",
-      "prompt": "契約条件を含む海外向け案内",
+      "prompt": "契約条件を含む海外向け案内をAI翻訳した。公開前の適切な確認はどれか。",
       "syllabus_2027_item": "翻訳・多言語コミュニケーション",
       "review_status": "revised_first_pass"
     },
