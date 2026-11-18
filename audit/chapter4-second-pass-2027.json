@@ -1,0 +1,80 @@
+{
+  "chapter": 4,
+  "phase": "bounded_second_pass_static",
+  "checked": 300,
+  "unique_ids": 300,
+  "full_source_files": 6,
+  "issues": [
+    {
+      "id": "ex27-065",
+      "error": "ledger_source_mismatch"
+    },
+    {
+      "id": "ex27-078",
+      "error": "ledger_source_mismatch"
+    },
+    {
+      "id": "adv27-050",
+      "error": "ledger_source_mismatch"
+    }
+  ],
+  "exact_duplicate_prompts": [],
+  "near_duplicate_pairs_over_044": 0,
+  "near_duplicate_candidates": [],
+  "section_counts": [
+    {
+      "name": "生成AI利用者の基本マインドセット",
+      "target": 30,
+      "actual": 30
+    },
+    {
+      "name": "生成AIの代表的リスク",
+      "target": 42,
+      "actual": 42
+    },
+    {
+      "name": "シャドーAIと企業コンプライアンス",
+      "target": 24,
+      "actual": 24
+    },
+    {
+      "name": "AI出力の評価と検証",
+      "target": 36,
+      "actual": 36
+    },
+    {
+      "name": "個人情報・プライバシー・秘密保持",
+      "target": 42,
+      "actual": 42
+    },
+    {
+      "name": "著作権・知的財産・生成物の権利",
+      "target": 42,
+      "actual": 42
+    },
+    {
+      "name": "AI倫理とAI事業者ガイドライン",
+      "target": 36,
+      "actual": 36
+    },
+    {
+      "name": "AIガバナンスと社内ガイドライン",
+      "target": 30,
+      "actual": 30
+    },
+    {
+      "name": "AI法・国際ルール・AI安全保障",
+      "target": 18,
+      "actual": 18
+    }
+  ],
+  "source_shas": {
+    "src/data/questionBank.ts": "d01984f78a2bb9a956c10dbf089268e42319d70f",
+    "src/data/syllabus2027Questions.ts": "8ccfcf45ead1fe263ebc074fc84c8c68b32d182e",
+    "src/data/expansion2027Questions.ts": "a96c08983e94db5ead3a61be0ec09e844fb1f812",
+    "src/data/advanced2027Questions.ts": "3fcc925e6c66a5c9b5a6729f382bbf7cce0186b4",
+    "src/data/practice2027Questions.ts": "9b34f83d0d0e056182d782d13652c3d46c252a4d",
+    "src/data/applied2027Questions.ts": "ffb8a64543db44488f226eafe386eb1dfa36dc90"
+  },
+  "method_limit": "Automated validation of rows/IDs/choices, ledger/source/section match, exact and trigram near-duplicate prompts. Not a human independent semantic verification of every explanation or legal rule."
+}
