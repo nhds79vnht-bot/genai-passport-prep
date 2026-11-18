@@ -16,6 +16,13 @@ export const CHAPTER_SHORT: Record<Chapter, string> = {
   '第5章 生成AIの実践と活用事例': '第5章',
 }
 
+
+// Only the user-facing label changes. Question-bank IDs, chapter keys and
+// score-sync contracts retain their existing canonical values.
+export function chapterDisplayName(chapter: Chapter): string {
+  return chapter === '第1章 AIの基礎' ? '第1章 AIの基礎と歴史' : chapter
+}
+
 export const MOCK_SECONDS = 60 * 60
 export const MOCK_QUESTION_COUNT = 60
 export const STUDY_QUESTION_COUNT = 10

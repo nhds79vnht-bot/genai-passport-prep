@@ -5,6 +5,7 @@ import { ReviewCard } from './components/ReviewCard'
 import {
   APP_NAME,
   CHAPTERS,
+  chapterDisplayName,
   MOCK_SECONDS,
   SYLLABUS_NOTE,
 } from './lib/chapters'
@@ -38,7 +39,7 @@ const chapterById = Object.fromEntries(activeQuestionBank.map((q) => [q.id, q.ch
 function modeLabel(mode: StudyMode, chapter?: Chapter): string {
   if (mode === 'mock') return '60問模試'
   if (mode === 'weak') return '苦手分野ドリル'
-  return `章別 (${chapter ?? ''})`
+  return `章別 (${chapter ? chapterDisplayName(chapter) : ''})`
 }
 
 export default function App() {
@@ -309,7 +310,7 @@ export default function App() {
           <div className="chapter-grid">
             {CHAPTERS.map((chapter) => (
               <button key={chapter} type="button" className="primary" onClick={() => startStudy(chapter)}>
-                {chapter}
+                {chapterDisplayName(chapter)}
                 <span className="sub">{chapterQuestionCount[chapter]}問収録</span>
               </button>
             ))}
@@ -339,7 +340,7 @@ export default function App() {
             <ul className="result-list">
               {statsByChapter.map((row) => (
                 <li key={row.chapter}>
-                  <strong>{row.chapter}</strong>
+                  <strong>{chapterDisplayName(row.chapter)}</strong>
                   <span>
                     ミス {row.wrong}/{row.seen}（{row.rate}%）
                   </span>
@@ -452,7 +453,7 @@ export default function App() {
           <div className="question-meta">
             <span className="badge">Q{currentIndex + 1}</span>
             <span className="hint">
-              {currentQuestion.chapter} / {currentQuestion.topic} /{' '}
+              {chapterDisplayName(currentQuestion.chapter)} / {currentQuestion.topic} /{' '}
               {currentQuestion.answers.length > 1 ? '複数選択' : '単一選択'}
             </span>
           </div>

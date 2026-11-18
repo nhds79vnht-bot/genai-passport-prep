@@ -1,4 +1,5 @@
 import type { Question } from '../lib/types'
+import { chapterDisplayName } from '../lib/chapters'
 import { formatCorrectChoices, formatSelectedChoices } from '../lib/review'
 import { isCorrect } from '../lib/scoring'
 
@@ -27,7 +28,7 @@ export function ReviewCard({ question, selected, showHeader = true }: Props) {
         <>
           <div className="review-status">{correct ? '正解' : '不正解'}</div>
           <h3>{question.prompt}</h3>
-          <p className="hint">{question.chapter} / {question.topic}</p>
+          <p className="hint">{chapterDisplayName(question.chapter)} / {question.topic}</p>
         </>
       )}
       <p><strong>あなたの回答:</strong> {formatSelectedChoices(question, selected)}</p>
