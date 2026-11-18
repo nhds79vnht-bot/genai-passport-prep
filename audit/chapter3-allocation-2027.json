@@ -1,0 +1,216 @@
+{
+  "source": "https://guga.or.jp/assets/syllabus.pdf",
+  "source_version": "2027年2月試験より適用",
+  "chapter": "第3章 AIエージェント",
+  "status": "baseline_pending_content_mapping",
+  "target_total": 300,
+  "method": "問題集独自の学習重要度に基づく配分。公式出題比率ではない。既存問題の内容照合後に確定する。",
+  "groups": [
+    {
+      "name": "AIエージェントとは",
+      "target": 55,
+      "items": [
+        {
+          "name": "AIエージェントの定義",
+          "target": 10,
+          "mapped_current": null
+        },
+        {
+          "name": "従来の生成AIとの違い",
+          "target": 9,
+          "mapped_current": null
+        },
+        {
+          "name": "ワークフロー型エージェントと自律型エージェント",
+          "target": 9,
+          "mapped_current": null
+        },
+        {
+          "name": "AIエージェントが注目される背景",
+          "target": 9,
+          "mapped_current": null
+        },
+        {
+          "name": "自律性のレベル",
+          "target": 9,
+          "mapped_current": null
+        },
+        {
+          "name": "AIエージェントの役割",
+          "target": 9,
+          "mapped_current": null
+        }
+      ]
+    },
+    {
+      "name": "RAG（検索拡張生成）",
+      "target": 55,
+      "items": [
+        {
+          "name": "RAGとは",
+          "target": 10,
+          "mapped_current": null
+        },
+        {
+          "name": "RAGが必要とされる理由",
+          "target": 9,
+          "mapped_current": null
+        },
+        {
+          "name": "RAGの仕組み",
+          "target": 9,
+          "mapped_current": null
+        },
+        {
+          "name": "RAGの発展",
+          "target": 9,
+          "mapped_current": null
+        },
+        {
+          "name": "RAGのユースケース",
+          "target": 9,
+          "mapped_current": null
+        },
+        {
+          "name": "主なRAGツール・フレームワーク",
+          "target": 9,
+          "mapped_current": null
+        }
+      ]
+    },
+    {
+      "name": "AIエージェントの仕組み",
+      "target": 55,
+      "items": [
+        {
+          "name": "LLMを中核とした構成",
+          "target": 10,
+          "mapped_current": null
+        },
+        {
+          "name": "タスク分解と計画",
+          "target": 9,
+          "mapped_current": null
+        },
+        {
+          "name": "ツール実行",
+          "target": 9,
+          "mapped_current": null
+        },
+        {
+          "name": "記憶（メモリ）とコンテキスト管理",
+          "target": 9,
+          "mapped_current": null
+        },
+        {
+          "name": "コンテキストエンジニアリング",
+          "target": 9,
+          "mapped_current": null
+        },
+        {
+          "name": "推論と行動のフィードバックループ",
+          "target": 9,
+          "mapped_current": null
+        }
+      ]
+    },
+    {
+      "name": "MCP・Agent Skills と外部連携",
+      "target": 45,
+      "items": [
+        {
+          "name": "MCP（Model Context Protocol）とは",
+          "target": 9,
+          "mapped_current": null
+        },
+        {
+          "name": "外部ツール・データソースとの連携",
+          "target": 9,
+          "mapped_current": null
+        },
+        {
+          "name": "マルチエージェント・エージェント間連携",
+          "target": 9,
+          "mapped_current": null
+        },
+        {
+          "name": "A2A（Agent-to-Agent）連携プロトコル",
+          "target": 9,
+          "mapped_current": null
+        },
+        {
+          "name": "Agent Skills（エージェントスキル）とは",
+          "target": 9,
+          "mapped_current": null
+        }
+      ]
+    },
+    {
+      "name": "AIエージェントのツールと活用事例",
+      "target": 40,
+      "items": [
+        {
+          "name": "コーディングエージェント",
+          "target": 8,
+          "mapped_current": null
+        },
+        {
+          "name": "ハーネスエンジニアリング",
+          "target": 8,
+          "mapped_current": null
+        },
+        {
+          "name": "ブラウザ操作・PC操作エージェント",
+          "target": 8,
+          "mapped_current": null
+        },
+        {
+          "name": "リサーチ・業務自動化エージェント",
+          "target": 8,
+          "mapped_current": null
+        },
+        {
+          "name": "業務への導入事例",
+          "target": 8,
+          "mapped_current": null
+        }
+      ]
+    },
+    {
+      "name": "AIエージェントのリスク・安全性・評価",
+      "target": 50,
+      "items": [
+        {
+          "name": "権限の過剰付与のリスク",
+          "target": 9,
+          "mapped_current": null
+        },
+        {
+          "name": "連鎖的なエラーの拡大",
+          "target": 9,
+          "mapped_current": null
+        },
+        {
+          "name": "プロンプトインジェクション",
+          "target": 8,
+          "mapped_current": null
+        },
+        {
+          "name": "具体的なトラブル事例",
+          "target": 8,
+          "mapped_current": null
+        },
+        {
+          "name": "安全に使うための原則",
+          "target": 8,
+          "mapped_current": null
+        },
+        {
+          "name": "AIエージェントの評価",
+          "target": 8,
+          "mapped_current": null
+        }
+      ]
+    }
+  ]
+}
