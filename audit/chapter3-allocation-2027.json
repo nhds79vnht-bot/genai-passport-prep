@@ -2,7 +2,7 @@
   "source": "https://guga.or.jp/assets/syllabus.pdf",
   "source_version": "2027年2月試験より適用",
   "chapter": "第3章 AIエージェント",
-  "status": "target_locked_mapping_provisional",
+  "status": "first_pass_distribution_reviewed",
   "target_total": 300,
   "method": "第3章公式34学習項目へ均衡を考慮して設計した学習用配分（公式出題比率ではない）。内容を基準として300問を是正する。",
   "groups": [
@@ -13,38 +13,38 @@
         {
           "name": "AIエージェントの定義",
           "target": 10,
-          "mapped_current": 18,
-          "mapping_status": "provisional"
+          "mapped_current": 3,
+          "mapping_status": "first_pass_reviewed"
         },
         {
           "name": "従来の生成AIとの違い",
           "target": 9,
-          "mapped_current": 3,
-          "mapping_status": "provisional"
+          "mapped_current": 12,
+          "mapping_status": "first_pass_reviewed"
         },
         {
           "name": "ワークフロー型エージェントと自律型エージェント",
           "target": 9,
-          "mapped_current": 5,
-          "mapping_status": "provisional"
+          "mapped_current": 11,
+          "mapping_status": "first_pass_reviewed"
         },
         {
           "name": "AIエージェントが注目される背景",
           "target": 9,
-          "mapped_current": 3,
-          "mapping_status": "provisional"
+          "mapped_current": 13,
+          "mapping_status": "first_pass_reviewed"
         },
         {
           "name": "自律性のレベル",
           "target": 9,
-          "mapped_current": 7,
-          "mapping_status": "provisional"
+          "mapped_current": 12,
+          "mapping_status": "first_pass_reviewed"
         },
         {
           "name": "AIエージェントの役割",
           "target": 9,
-          "mapped_current": 6,
-          "mapping_status": "provisional"
+          "mapped_current": 11,
+          "mapping_status": "first_pass_reviewed"
         }
       ]
     },
@@ -55,38 +55,38 @@
         {
           "name": "RAGとは",
           "target": 10,
-          "mapped_current": 5,
-          "mapping_status": "provisional"
+          "mapped_current": 12,
+          "mapping_status": "first_pass_reviewed"
         },
         {
           "name": "RAGが必要とされる理由",
           "target": 9,
-          "mapped_current": 2,
-          "mapping_status": "provisional"
+          "mapped_current": 12,
+          "mapping_status": "first_pass_reviewed"
         },
         {
           "name": "RAGの仕組み",
           "target": 9,
-          "mapped_current": 19,
-          "mapping_status": "provisional"
+          "mapped_current": 9,
+          "mapping_status": "first_pass_reviewed"
         },
         {
           "name": "RAGの発展",
           "target": 9,
-          "mapped_current": 6,
-          "mapping_status": "provisional"
+          "mapped_current": 9,
+          "mapping_status": "first_pass_reviewed"
         },
         {
           "name": "RAGのユースケース",
           "target": 9,
-          "mapped_current": 5,
-          "mapping_status": "provisional"
+          "mapped_current": 10,
+          "mapping_status": "first_pass_reviewed"
         },
         {
           "name": "主なRAGツール・フレームワーク",
           "target": 9,
-          "mapped_current": 2,
-          "mapping_status": "provisional"
+          "mapped_current": 12,
+          "mapping_status": "first_pass_reviewed"
         }
       ]
     },
@@ -97,38 +97,38 @@
         {
           "name": "LLMを中核とした構成",
           "target": 10,
-          "mapped_current": 5,
-          "mapping_status": "provisional"
+          "mapped_current": 10,
+          "mapping_status": "first_pass_reviewed"
         },
         {
           "name": "タスク分解と計画",
           "target": 9,
           "mapped_current": 8,
-          "mapping_status": "provisional"
+          "mapping_status": "first_pass_reviewed"
         },
         {
           "name": "ツール実行",
           "target": 9,
-          "mapped_current": 28,
-          "mapping_status": "provisional"
+          "mapped_current": 3,
+          "mapping_status": "first_pass_reviewed"
         },
         {
           "name": "記憶（メモリ）とコンテキスト管理",
           "target": 9,
-          "mapped_current": 8,
-          "mapping_status": "provisional"
+          "mapped_current": 10,
+          "mapping_status": "first_pass_reviewed"
         },
         {
           "name": "コンテキストエンジニアリング",
           "target": 9,
-          "mapped_current": 8,
-          "mapping_status": "provisional"
+          "mapped_current": 9,
+          "mapping_status": "first_pass_reviewed"
         },
         {
           "name": "推論と行動のフィードバックループ",
           "target": 9,
-          "mapped_current": 7,
-          "mapping_status": "provisional"
+          "mapped_current": 8,
+          "mapping_status": "first_pass_reviewed"
         }
       ]
     },
@@ -139,32 +139,32 @@
         {
           "name": "MCP（Model Context Protocol）とは",
           "target": 9,
-          "mapped_current": 12,
-          "mapping_status": "provisional"
+          "mapped_current": 9,
+          "mapping_status": "first_pass_reviewed"
         },
         {
           "name": "外部ツール・データソースとの連携",
           "target": 9,
-          "mapped_current": 7,
-          "mapping_status": "provisional"
+          "mapped_current": 9,
+          "mapping_status": "first_pass_reviewed"
         },
         {
           "name": "マルチエージェント・エージェント間連携",
           "target": 9,
-          "mapped_current": 8,
-          "mapping_status": "provisional"
+          "mapped_current": 9,
+          "mapping_status": "first_pass_reviewed"
         },
         {
           "name": "A2A（Agent-to-Agent）連携プロトコル",
           "target": 9,
-          "mapped_current": 7,
-          "mapping_status": "provisional"
+          "mapped_current": 9,
+          "mapping_status": "first_pass_reviewed"
         },
         {
           "name": "Agent Skills（エージェントスキル）とは",
           "target": 9,
-          "mapped_current": 11,
-          "mapping_status": "provisional"
+          "mapped_current": 9,
+          "mapping_status": "first_pass_reviewed"
         }
       ]
     },
@@ -175,32 +175,32 @@
         {
           "name": "コーディングエージェント",
           "target": 8,
-          "mapped_current": 7,
-          "mapping_status": "provisional"
+          "mapped_current": 8,
+          "mapping_status": "first_pass_reviewed"
         },
         {
           "name": "ハーネスエンジニアリング",
           "target": 8,
           "mapped_current": 8,
-          "mapping_status": "provisional"
+          "mapping_status": "first_pass_reviewed"
         },
         {
           "name": "ブラウザ操作・PC操作エージェント",
           "target": 8,
-          "mapped_current": 7,
-          "mapping_status": "provisional"
+          "mapped_current": 9,
+          "mapping_status": "first_pass_reviewed"
         },
         {
           "name": "リサーチ・業務自動化エージェント",
           "target": 8,
-          "mapped_current": 6,
-          "mapping_status": "provisional"
+          "mapped_current": 8,
+          "mapping_status": "first_pass_reviewed"
         },
         {
           "name": "業務への導入事例",
           "target": 8,
           "mapped_current": 8,
-          "mapping_status": "provisional"
+          "mapping_status": "first_pass_reviewed"
         }
       ]
     },
@@ -211,38 +211,38 @@
         {
           "name": "権限の過剰付与のリスク",
           "target": 9,
-          "mapped_current": 15,
-          "mapping_status": "provisional"
+          "mapped_current": 4,
+          "mapping_status": "first_pass_reviewed"
         },
         {
           "name": "連鎖的なエラーの拡大",
           "target": 9,
-          "mapped_current": 18,
-          "mapping_status": "provisional"
+          "mapped_current": 6,
+          "mapping_status": "first_pass_reviewed"
         },
         {
           "name": "プロンプトインジェクション",
           "target": 8,
-          "mapped_current": 14,
-          "mapping_status": "provisional"
+          "mapped_current": 5,
+          "mapping_status": "first_pass_reviewed"
         },
         {
           "name": "具体的なトラブル事例",
           "target": 8,
-          "mapped_current": 4,
-          "mapping_status": "provisional"
+          "mapped_current": 7,
+          "mapping_status": "first_pass_reviewed"
         },
         {
           "name": "安全に使うための原則",
           "target": 8,
-          "mapped_current": 5,
-          "mapping_status": "provisional"
+          "mapped_current": 11,
+          "mapping_status": "first_pass_reviewed"
         },
         {
           "name": "AIエージェントの評価",
           "target": 8,
-          "mapped_current": 18,
-          "mapping_status": "provisional"
+          "mapped_current": 7,
+          "mapping_status": "first_pass_reviewed"
         }
       ]
     }
