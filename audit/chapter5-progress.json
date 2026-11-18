@@ -5,7 +5,7 @@
   "official_title": "第5章 生成AIの実践と活用事例",
   "syllabus_url": "https://guga.or.jp/assets/syllabus.pdf",
   "syllabus_version": "2027年2月試験から適用",
-  "status": "first_pass_complete_second_pass_pending",
+  "status": "second_pass_final_verification",
   "target_question_count": 300,
   "existing_question_count": 300,
   "unique_effective_ids_verified": true,
@@ -21,15 +21,16 @@
   "allocation_status": "matched_300_of_300",
   "first_pass": {
     "reviewed": 300,
-    "revised": 235,
+    "revised": 237,
     "last_completed_id": "ap27-843",
     "next_id": null,
-    "reclassified": 65
+    "reclassified": 63
   },
   "second_pass": {
     "reviewed": 0,
     "last_completed_id": null,
-    "next_id": null
+    "next_id": null,
+    "corrections": 2
   },
   "accepted": false,
   "completion": false,
@@ -45,7 +46,7 @@
     "src/data/syllabus2027Questions.ts": "898a284dc40984ba32e22bccb674b124d44fb965",
     "src/data/expansion2027Questions.ts": "4a1bd58a5f2bcd9e55c08cae65b02a4f9dbaa773",
     "src/data/advanced2027Questions.ts": "c5198cad09c444d32d38c16ff4b0775f39218960",
-    "src/data/practice2027Questions.ts": "6d86b1a7760a1faec0983df3dcc4b0eabafa1a5a",
+    "src/data/practice2027Questions.ts": "7e1e4c9ae34dc16fef37c23204adae9425f9464c",
     "src/data/applied2027Questions.ts": "b77ac10ab54a380eedac6b3e1d005fb358b5f409"
   },
   "allocation_file": "audit/chapter5-allocation-2027.json",
