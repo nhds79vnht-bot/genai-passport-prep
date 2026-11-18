@@ -391,180 +391,180 @@
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "ベンダー選定",
-      "prompt": "モデル更新をベンダーが予告なく行う契約だった。懸念はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "製品レビューを良い・普通・悪いの3段階に分類する。例を提示しないZero-Shot方式として適切なのはどれか。",
+      "syllabus_2027_item": "Zero-Shotプロンプティング",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q282",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "ベンダー選定",
-      "prompt": "複数ベンダーの提案を比較する際に適切なのはどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "問い合わせの緊急度判定で少数例を加える。例示の選び方として適切なのはどれか。",
+      "syllabus_2027_item": "Few-Shotプロンプティング",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q283",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "ROI",
-      "prompt": "導入費100万円で年間純便益が25万円のAIシステム。単純回収期間はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "採用担当が候補者への面談案内の下書きを依頼する。役割設定で適切なのはどれか。",
+      "syllabus_2027_item": "役割設定・出力形式の指定",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q284",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "ROI",
-      "prompt": "月100時間削減できたが確認作業が月40時間増えた。純削減時間はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "イベント企画をAIと検討中、抽象案から実行計画へ移る。次に追加すべき条件はどれか。",
+      "syllabus_2027_item": "具体度のコントロール",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q285",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "ROI",
-      "prompt": "月間便益が20万円で運用費が8万円。月間純便益はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIが作成した取引先向け納品遅延メールで『昨日電話で了承を得た』と記されていたが事実でない。適切なのはどれか。",
+      "syllabus_2027_item": "ビジネスメール・各種ビジネス文書の作成",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q286",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "ROI",
-      "prompt": "導入費120万円で月間純便益20万円。単純回収期間はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "社内の契約条件一覧を読みやすく整形したい。AIでの校正時に避けるべきことはどれか。",
+      "syllabus_2027_item": "文章の校正・添削・整形",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q287",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "ROI",
-      "prompt": "費用対効果の算定から誤回答修正工数を除外した。問題はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "技術仕様の要約を営業担当向けに変換する。適切な指示はどれか。",
+      "syllabus_2027_item": "文章の要約・対象読者やトーンの変更",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q288",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "ROI",
-      "prompt": "売上増加が見込まれるが根拠が不確実な場合の試算はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "会議で『来月の開始を検討する』と発言した。AI議事録に『来月開始決定』と記載された場合はどれか。",
+      "syllabus_2027_item": "議事録の作成・要点抽出",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q289",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "品質保証",
-      "prompt": "生成AIの回答品質を検証する際に必要な評価対象はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "安全手順の『運転中は開けない』がAI翻訳で『運転中に開ける』になった。公開前にすべきことはどれか。",
+      "syllabus_2027_item": "翻訳・多言語コミュニケーション",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q290",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "品質保証",
-      "prompt": "AIのFAQ回答を検査する評価セットの作り方はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "生成AIが売上推移のスライドで縦軸を省略し、伸び率が過大に見える図を作った。対策はどれか。",
+      "syllabus_2027_item": "プレゼンテーションスライドの作成",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q291",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "品質保証",
-      "prompt": "出力JSONに必須キーが欠けた。適切な処理はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "販売ページに『必ず効果が出る』とAIが提案した。適切な対応はどれか。",
+      "syllabus_2027_item": "キャッチコピー・広告コピーの作成",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q292",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "品質保証",
-      "prompt": "正答は合っているが解説の計算過程が誤っていた。判定はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIの新規事業案を比較したい。発想段階と意思決定を適切に区別した方法はどれか。",
+      "syllabus_2027_item": "企画立案・ブレインストーミング・壁打ち",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q293",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "品質保証",
-      "prompt": "本番データでの誤回答が増加した。対策はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "満足度アンケートの未回答をすべて『不満』とAIに分類させた。主な問題はどれか。",
+      "syllabus_2027_item": "アンケートの設計と分析",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q294",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "品質保証",
-      "prompt": "同じ内容の問題を大量に追加した。品質上の問題はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIで店舗紹介を作った際に営業時間が昨年のものだった。適切な公開準備はどれか。",
+      "syllabus_2027_item": "SNS投稿・コンテンツ制作",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q295",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "継続改善",
-      "prompt": "AIの改善施策を優先順位付けする際に適切な判断軸はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AI生成のLPの申込ボタンが別商品のページへ遷移した。公開判定はどれか。",
+      "syllabus_2027_item": "ランディングページの作成",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q296",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "継続改善",
-      "prompt": "利用者から同じ誤案内が繰り返し報告された。最初に行うのはどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "競合サービスの月額料金を比較する際、片方は税別、他方は税込だった。適切な比較はどれか。",
+      "syllabus_2027_item": "市場・競合リサーチ",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q297",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "継続改善",
-      "prompt": "新しい社内規程が公開された。FAQ AIの改善として適切なのはどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIが商品の外観イメージを作ったが実製品にない機能が描かれた。適切な扱いはどれか。",
+      "syllabus_2027_item": "画像・ビジュアル素材の生成",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q298",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "継続改善",
-      "prompt": "改善後に一部の質問で品質が悪化した。適切なのはどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIで作った操作説明動画で字幕と映像の順番が食い違った。対応はどれか。",
+      "syllabus_2027_item": "動画コンテンツの生成・編集",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q299",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "継続改善",
-      "prompt": "毎月の改善会議で成功事例しか扱っていない。改善策はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIナレーションが製品名を誤読し、価格の桁も間違えた。正しい対応はどれか。",
+      "syllabus_2027_item": "ナレーション・音声・BGMの生成",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "q300",
       "source": "src/data/questionBank.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "継続改善",
-      "prompt": "AIの改善優先順位を決める基準として適切なのはどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIが提案したロゴが既存企業の商標に似ている。採用前の判断はどれか。",
+      "syllabus_2027_item": "ロゴ・デザイン案・モックアップの作成",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "s27-009",
