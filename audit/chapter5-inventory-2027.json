@@ -572,8 +572,8 @@
       "chapter": "第5章 活用実務",
       "legacy_topic": "出力の検証",
       "prompt": "生成AIが提示した統計値を社外向け資料に掲載する際の対応はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "ディープリサーチ：複数ソースを横断調査",
+      "review_status": "mapped_and_reclassified_first_pass"
     },
     {
       "id": "s27-010",
@@ -581,8 +581,8 @@
       "chapter": "第5章 活用実務",
       "legacy_topic": "業務改善",
       "prompt": "生成AIによる問い合わせ対応を導入する際、効果測定として適切なのはどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "業種を問わず共通する成功のポイント",
+      "review_status": "mapped_and_reclassified_first_pass"
     },
     {
       "id": "s27-011",
@@ -590,8 +590,8 @@
       "chapter": "第5章 活用実務",
       "legacy_topic": "データ分析",
       "prompt": "生成AIに売上分析を依頼する前に行うべきことはどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "データの整形・分類",
+      "review_status": "mapped_and_reclassified_first_pass"
     },
     {
       "id": "s27-012",
@@ -599,8 +599,8 @@
       "chapter": "第5章 活用実務",
       "legacy_topic": "AIエージェントの安全運用",
       "prompt": "AIエージェントに外部送金を伴う業務を任せる際に適切なのはどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "ブラウザ操作・Web上の手続きの自動化",
+      "review_status": "mapped_and_reclassified_first_pass"
     },
     {
       "id": "s27-025",
@@ -608,8 +608,8 @@
       "chapter": "第5章 活用実務",
       "legacy_topic": "データ分析の検証",
       "prompt": "生成AIが売上増加率を20%と回答した。報告前に行うべき確認はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "表・データの集計と可視化",
+      "review_status": "mapped_and_reclassified_first_pass"
     },
     {
       "id": "s27-026",
@@ -617,8 +617,8 @@
       "chapter": "第5章 活用実務",
       "legacy_topic": "評価指標",
       "prompt": "生成AIによる問い合わせ一次対応の効果を判断する指標として適切なのはどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "顧客接点・コンテンツ制作の業種",
+      "review_status": "mapped_and_reclassified_first_pass"
     },
     {
       "id": "s27-027",
@@ -626,8 +626,8 @@
       "chapter": "第5章 活用実務",
       "legacy_topic": "人間による確認",
       "prompt": "AIが作成した医療機関向け案内文を公開する前の対応として適切なのはどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "規制・機密性が重視される業種",
+      "review_status": "mapped_and_reclassified_first_pass"
     },
     {
       "id": "s27-052",
@@ -635,8 +635,8 @@
       "chapter": "第5章 活用実務",
       "legacy_topic": "プロンプト改善",
       "prompt": "生成AIの議事録要約が冗長だった。改善策として最も適切なのはどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "議事録の作成・要点抽出",
+      "review_status": "mapped_and_reclassified_first_pass"
     },
     {
       "id": "s27-053",
@@ -644,8 +644,8 @@
       "chapter": "第5章 活用実務",
       "legacy_topic": "業務フロー",
       "prompt": "生成AIで請求書の内容確認を支援する際に適切な運用はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "定型業務の自動化",
+      "review_status": "mapped_and_reclassified_first_pass"
     },
     {
       "id": "s27-054",
@@ -653,8 +653,8 @@
       "chapter": "第5章 活用実務",
       "legacy_topic": "根拠確認",
       "prompt": "AIが社内制度の説明文に出典らしいURLを付けた。適切な対応はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "大量文書からの情報抽出・要約",
+      "review_status": "mapped_and_reclassified_first_pass"
     },
     {
       "id": "s27-055",
@@ -662,8 +662,8 @@
       "chapter": "第5章 活用実務",
       "legacy_topic": "段階導入",
       "prompt": "生成AIの業務導入を安全に進める方法として適切なのはどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "業種を問わず共通する成功のポイント",
+      "review_status": "mapped_and_reclassified_first_pass"
     },
     {
       "id": "s27-056",
@@ -671,8 +671,8 @@
       "chapter": "第5章 活用実務",
       "legacy_topic": "レビュー手順",
       "prompt": "生成AIで作った対外文書のレビューで重要なのはどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "ビジネスメール・各種ビジネス文書の作成",
+      "review_status": "mapped_and_reclassified_first_pass"
     },
     {
       "id": "s27-057",
@@ -680,8 +680,8 @@
       "chapter": "第5章 活用実務",
       "legacy_topic": "継続改善",
       "prompt": "生成AIの回答品質を継続改善する際に有効な方法はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "業種を問わず共通する成功のポイント",
+      "review_status": "mapped_and_reclassified_first_pass"
     },
     {
       "id": "ex27-081",
@@ -689,8 +689,8 @@
       "chapter": "第5章 活用実務",
       "legacy_topic": "議事録",
       "prompt": "生成AIで議事録を整理する際に誤った決定事項を防ぐ方法はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "議事録の作成・要点抽出",
+      "review_status": "mapped_and_reclassified_first_pass"
     },
     {
       "id": "ex27-082",
@@ -698,8 +698,8 @@
       "chapter": "第5章 活用実務",
       "legacy_topic": "メール作成",
       "prompt": "顧客への謝罪メールをAIで下書きした。送信前に必要な確認はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "ビジネスメール・各種ビジネス文書の作成",
+      "review_status": "mapped_and_reclassified_first_pass"
     },
     {
       "id": "ex27-083",
@@ -707,8 +707,8 @@
       "chapter": "第5章 活用実務",
       "legacy_topic": "FAQ",
       "prompt": "社内FAQを生成AIで作成する際の品質確認として適切なのはどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "大量文書からの情報抽出・要約",
+      "review_status": "mapped_and_reclassified_first_pass"
     },
     {
       "id": "ex27-084",
@@ -716,8 +716,8 @@
       "chapter": "第5章 活用実務",
       "legacy_topic": "翻訳",
       "prompt": "製品マニュアルの翻訳で事故につながりやすい誤りはどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "翻訳・多言語コミュニケーション",
+      "review_status": "mapped_and_reclassified_first_pass"
     },
     {
       "id": "ex27-085",
@@ -725,8 +725,8 @@
       "chapter": "第5章 活用実務",
       "legacy_topic": "表計算",
       "prompt": "AIが作成した集計表の合計値を確認する方法として適切なのはどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "表・データの集計と可視化",
+      "review_status": "mapped_and_reclassified_first_pass"
     },
     {
       "id": "ex27-086",
@@ -734,8 +734,8 @@
       "chapter": "第5章 活用実務",
       "legacy_topic": "市場調査",
       "prompt": "AIが競合企業の価格を提示した場合の対応はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "市場・競合リサーチ",
+      "review_status": "mapped_and_reclassified_first_pass"
     },
     {
       "id": "ex27-087",
@@ -743,8 +743,8 @@
       "chapter": "第5章 活用実務",
       "legacy_topic": "企画案",
       "prompt": "AIが提案した企画を採用する前に必要な評価はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "企画立案・ブレインストーミング・壁打ち",
+      "review_status": "mapped_and_reclassified_first_pass"
     },
     {
       "id": "ex27-088",
@@ -752,8 +752,8 @@
       "chapter": "第5章 活用実務",
       "legacy_topic": "業務選定",
       "prompt": "生成AI導入の初期対象として比較的適した業務はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "業種を問わず共通する成功のポイント",
+      "review_status": "mapped_and_reclassified_first_pass"
     },
     {
       "id": "ex27-089",
@@ -761,8 +761,8 @@
       "chapter": "第5章 活用実務",
       "legacy_topic": "プロンプト",
       "prompt": "回答を箇条書きにしたい場合の指示として適切なのはどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "役割設定・出力形式の指定",
+      "review_status": "mapped_and_reclassified_first_pass"
     },
     {
       "id": "ex27-090",
@@ -770,8 +770,8 @@
       "chapter": "第5章 活用実務",
       "legacy_topic": "出典確認",
       "prompt": "AIが提示した統計値を資料に載せる前に確認することはどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "ディープリサーチ：複数ソースを横断調査",
+      "review_status": "mapped_and_reclassified_first_pass"
     },
     {
       "id": "ex27-091",
@@ -779,8 +779,8 @@
       "chapter": "第5章 活用実務",
       "legacy_topic": "個人情報",
       "prompt": "顧客アンケートをAIで要約する際の適切な準備はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "アンケートの設計と分析",
+      "review_status": "mapped_and_reclassified_first_pass"
     },
     {
       "id": "ex27-092",
@@ -788,8 +788,8 @@
       "chapter": "第5章 活用実務",
       "legacy_topic": "プロセス設計",
       "prompt": "AIの出力に誤りがある場合の業務フローとして適切なのはどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "定型業務の自動化",
+      "review_status": "mapped_and_reclassified_first_pass"
     },
     {
       "id": "ex27-093",
@@ -797,8 +797,8 @@
       "chapter": "第5章 活用実務",
       "legacy_topic": "効果測定",
       "prompt": "AI導入で作業時間が減ったが誤回答が増えた。評価として適切なのはどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "業種を問わず共通する成功のポイント",
+      "review_status": "mapped_and_reclassified_first_pass"
     },
     {
       "id": "ex27-094",
@@ -806,8 +806,8 @@
       "chapter": "第5章 活用実務",
       "legacy_topic": "A/B比較",
       "prompt": "AI導入前後の業務効率を比較する際に重要な条件はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "業種を問わず共通する成功のポイント",
+      "review_status": "mapped_and_reclassified_first_pass"
     },
     {
       "id": "ex27-095",
@@ -815,8 +815,8 @@
       "chapter": "第5章 活用実務",
       "legacy_topic": "品質管理",
       "prompt": "生成AIの誤回答を減らす改善活動として適切なのはどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "大量文書からの情報抽出・要約",
+      "review_status": "mapped_and_reclassified_first_pass"
     },
     {
       "id": "ex27-096",
@@ -824,8 +824,8 @@
       "chapter": "第5章 活用実務",
       "legacy_topic": "AIエージェント",
       "prompt": "AIエージェントにメール送信を任せる場合の初期運用として適切なのはどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "複数ツール・複数ステップを横断する複合タスクの自動化",
+      "review_status": "mapped_and_reclassified_first_pass"
     },
     {
       "id": "ex27-097",
@@ -833,8 +833,8 @@
       "chapter": "第5章 活用実務",
       "legacy_topic": "顧客対応",
       "prompt": "AIチャットボットが回答できない問い合わせへの対応はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "顧客接点・コンテンツ制作の業種",
+      "review_status": "mapped_and_reclassified_first_pass"
     },
     {
       "id": "ex27-098",
@@ -842,8 +842,8 @@
       "chapter": "第5章 活用実務",
       "legacy_topic": "ナレッジ管理",
       "prompt": "社内文書をAI検索に利用する際の運用として適切なのはどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "大量文書からの情報抽出・要約",
+      "review_status": "mapped_and_reclassified_first_pass"
     },
     {
       "id": "ex27-099",
@@ -851,8 +851,8 @@
       "chapter": "第5章 活用実務",
       "legacy_topic": "教育",
       "prompt": "社員に生成AIを導入する際の研修内容として適切なのはどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "業種を問わず共通する成功のポイント",
+      "review_status": "mapped_and_reclassified_first_pass"
     },
     {
       "id": "ex27-100",
@@ -860,8 +860,8 @@
       "chapter": "第5章 活用実務",
       "legacy_topic": "運用改善",
       "prompt": "生成AI導入後に業務ルールが変わった場合の対応はどれか。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "syllabus_2027_item": "業種を問わず共通する成功のポイント",
+      "review_status": "mapped_and_reclassified_first_pass"
     },
     {
       "id": "adv27-061",
