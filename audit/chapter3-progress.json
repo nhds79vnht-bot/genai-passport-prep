@@ -1,6 +1,6 @@
 {
   "chapter": "第3章 AIエージェント",
-  "status": "first_pass_completed_second_pass_pending",
+  "status": "second_pass_in_progress",
   "source_files": {
     "src/data/questionBank.ts": 60,
     "src/data/syllabus2027Questions.ts": 13,
@@ -23,10 +23,18 @@
     "rewritten_or_reclassified": 295,
     "content_rewritten": 248,
     "reclassified": 295,
-    "retained_original": 5
+    "retained_original": 5,
+    "counts_note": "既存台帳の252改稿/48維持は旧時点のスナップショットであり、最新ソースの実質改稿件数ではない。"
   },
   "second_pass": {
+    "status": "screening_finished_content_review_pending",
+    "checked_structurally": 300,
+    "independently_content_approved": 0,
     "completed": 0,
+    "source_commit": "dfff5b97f96e558a11f831f2dd2a74f6c3b54960",
+    "source_is_latest": false,
+    "open_duplicate_judgment_groups": 6,
+    "short_explanation_flags_not_automatic_errors": 32,
     "last_completed_id": null,
     "next_id": "q121"
   },
@@ -328,7 +336,9 @@
     "ap27-817"
   ],
   "unresolved_critical_issues": [
-    "第二巡の意味・正答・誤答選択肢・解説・類似問題の独立監査が未完了"
+    "第二巡の重複判断候補6群を内容審査する",
+    "全300問の正答・誤答選択肢・解説の独立内容監査を完了する",
+    "報告に使用したソース以降の追加コミットを最終再照合する"
   ],
   "completion": false,
   "note": "改稿した252問と既存維持48問で300問の第一巡完了。第二巡の合格・実機確認とは別。",
@@ -345,8 +355,8 @@
     "first_pass_ready": true
   },
   "inventory_file": "audit/chapter3-inventory-2027.json",
-  "next_action": "第二巡の独立監査を開始し、重大問題のみ是正、終了基準を満たしたら一旦完成。実機確認はユーザー工程。",
-  "inventory_file_status": "up_to_date",
+  "next_action": "第3章の最新コミットを固定して、第二巡の重複判断候補・短い解説・選択肢の真偽を監査。重大指摘ゼロになったら第2章と同じ基準で一旦完成とする。",
+  "inventory_file_status": "may_be_stale_after_new_source_commits",
   "first_pass_report": "audit/chapter3-first-pass-2027.json",
   "phase": "second_pass_pending",
   "exit_criteria": [
@@ -373,5 +383,6 @@
     "duplicate_prompts_normalized": 0,
     "missing_prompt_or_explanation": 0,
     "checked_by": "static source inspection; semantic independent audit pending"
-  }
+  },
+  "second_pass_report": "audit/chapter3-second-pass-2027.json"
 }
