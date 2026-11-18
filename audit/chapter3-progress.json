@@ -16,7 +16,7 @@
   "allocation_status": "provisional",
   "first_pass": {
     "completed": 32,
-    "last_completed_id": "ap27-817",
+    "last_completed_id": "ap27-812",
     "next_id": null
   },
   "second_pass": {
@@ -25,7 +25,6 @@
     "next_id": null
   },
   "modified_ids": [
-    "ap27-046",
     "ap27-111",
     "ap27-122",
     "ap27-123",
@@ -49,19 +48,15 @@
     "ap27-544",
     "ap27-548",
     "ap27-549",
-    "ap27-597",
-    "ap27-649",
     "ap27-691",
     "ap27-692",
     "ap27-693",
     "ap27-698",
     "ap27-699",
     "ap27-700",
-    "ap27-747",
     "ap27-805",
     "ap27-811",
-    "ap27-812",
-    "ap27-817"
+    "ap27-812"
   ],
   "unresolved_critical_issues": [],
   "completion": false,
