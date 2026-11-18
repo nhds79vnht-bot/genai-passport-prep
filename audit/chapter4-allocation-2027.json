@@ -1,0 +1,481 @@
+{
+  "version": 1,
+  "chapter": 4,
+  "syllabus_applies_from": "2027-02",
+  "source_url": "https://guga.or.jp/assets/syllabus.pdf",
+  "status": "target_allocation_defined_not_content_approved",
+  "note": "9中項目・81学習項目は2027年版公式範囲。件数配分は本教材の独自設計目標であり公式出題比率ではない。旧問題のタイトルだけでKEEP判定しない。",
+  "total_target": 300,
+  "sections": [
+    {
+      "section_id": "4-1",
+      "name": "生成AI利用者の基本マインドセット",
+      "planned_questions": 30,
+      "official_learning_items": [
+        {
+          "name": "生成AIを安全に使うための基本姿勢",
+          "target": 5,
+          "assigned": 0
+        },
+        {
+          "name": "検索エンジンと生成AIの違い",
+          "target": 5,
+          "assigned": 0
+        },
+        {
+          "name": "AIは補助者であり、最終責任は人間にある",
+          "target": 4,
+          "assigned": 0
+        },
+        {
+          "name": "AIの出力を鵜呑みにしてはいけない理由",
+          "target": 4,
+          "assigned": 0
+        },
+        {
+          "name": "生成AIを使ってよい場面・慎重に使う場面・避けるべき場面",
+          "target": 4,
+          "assigned": 0
+        },
+        {
+          "name": "AIを使うリスクと、AIを使わないリスク",
+          "target": 4,
+          "assigned": 0
+        },
+        {
+          "name": "AI時代に求められる人間の役割",
+          "target": 4,
+          "assigned": 0
+        }
+      ]
+    },
+    {
+      "section_id": "4-2",
+      "name": "生成AIの代表的リスク",
+      "planned_questions": 42,
+      "official_learning_items": [
+        {
+          "name": "生成AIに潜むリスクの全体像",
+          "target": 4,
+          "assigned": 0
+        },
+        {
+          "name": "ハルシネーション",
+          "target": 4,
+          "assigned": 0
+        },
+        {
+          "name": "情報漏えいリスク",
+          "target": 4,
+          "assigned": 0
+        },
+        {
+          "name": "個人情報・プライバシー侵害リスク",
+          "target": 4,
+          "assigned": 0
+        },
+        {
+          "name": "著作権・知的財産権侵害リスク",
+          "target": 4,
+          "assigned": 0
+        },
+        {
+          "name": "肖像権・パブリシティ権侵害リスク",
+          "target": 4,
+          "assigned": 0
+        },
+        {
+          "name": "名誉毀損・信用毀損・炎上リスク",
+          "target": 4,
+          "assigned": 0
+        },
+        {
+          "name": "差別・偏見・バイアスのリスク",
+          "target": 4,
+          "assigned": 0
+        },
+        {
+          "name": "ディープフェイクによるなりすましリスク",
+          "target": 4,
+          "assigned": 0
+        },
+        {
+          "name": "フィッシング・詐欺・サイバー攻撃への悪用",
+          "target": 3,
+          "assigned": 0
+        },
+        {
+          "name": "自律型AIエージェントの想定外の挙動・プロンプトインジェクション",
+          "target": 3,
+          "assigned": 0
+        }
+      ]
+    },
+    {
+      "section_id": "4-3",
+      "name": "シャドーAIと企業コンプライアンス",
+      "planned_questions": 24,
+      "official_learning_items": [
+        {
+          "name": "シャドーAIとは",
+          "target": 4,
+          "assigned": 0
+        },
+        {
+          "name": "シャドーAIが発生する理由",
+          "target": 4,
+          "assigned": 0
+        },
+        {
+          "name": "シャドーAIの具体例",
+          "target": 4,
+          "assigned": 0
+        },
+        {
+          "name": "承認されていないAIツールを業務利用する危険性",
+          "target": 3,
+          "assigned": 0
+        },
+        {
+          "name": "シャドーAIが組織と従業員にもたらす影響",
+          "target": 3,
+          "assigned": 0
+        },
+        {
+          "name": "従業員が守るべき利用ルール",
+          "target": 3,
+          "assigned": 0
+        },
+        {
+          "name": "生成AIを安全に使うための会社と従業員の役割",
+          "target": 3,
+          "assigned": 0
+        }
+      ]
+    },
+    {
+      "section_id": "4-4",
+      "name": "AI出力の評価と検証",
+      "planned_questions": 36,
+      "official_learning_items": [
+        {
+          "name": "承認されたAIでも出力確認が必要な理由",
+          "target": 6,
+          "assigned": 0
+        },
+        {
+          "name": "用途と影響度に応じた検証レベル",
+          "target": 6,
+          "assigned": 0
+        },
+        {
+          "name": "ファクトチェック：事実・数値・出典・最新情報の確認",
+          "target": 6,
+          "assigned": 0
+        },
+        {
+          "name": "妥当性レビュー：前提・論理・抜け漏れの確認",
+          "target": 6,
+          "assigned": 0
+        },
+        {
+          "name": "表現・権利・個人情報・機密情報の確認",
+          "target": 6,
+          "assigned": 0
+        },
+        {
+          "name": "採用・修正・破棄・専門家確認の判断",
+          "target": 6,
+          "assigned": 0
+        }
+      ]
+    },
+    {
+      "section_id": "4-5",
+      "name": "個人情報・プライバシー・秘密保持",
+      "planned_questions": 42,
+      "official_learning_items": [
+        {
+          "name": "個人情報・プライバシー・秘密保持の違い",
+          "target": 4,
+          "assigned": 0
+        },
+        {
+          "name": "個人情報保護法と生成AI利用の関係",
+          "target": 4,
+          "assigned": 0
+        },
+        {
+          "name": "個人情報とは何か",
+          "target": 4,
+          "assigned": 0
+        },
+        {
+          "name": "個人識別符号",
+          "target": 4,
+          "assigned": 0
+        },
+        {
+          "name": "要配慮個人情報と機微情報",
+          "target": 4,
+          "assigned": 0
+        },
+        {
+          "name": "個人情報の利用目的・本人同意・第三者提供",
+          "target": 4,
+          "assigned": 0
+        },
+        {
+          "name": "個人情報は加工すれば生成AIに入力できるのか",
+          "target": 4,
+          "assigned": 0
+        },
+        {
+          "name": "業務で注意すべき個人情報の具体例",
+          "target": 4,
+          "assigned": 0
+        },
+        {
+          "name": "企業機密・秘密情報を生成AIに入力するリスク",
+          "target": 4,
+          "assigned": 0
+        },
+        {
+          "name": "AIの出力・要約・共有に情報が残るリスク",
+          "target": 3,
+          "assigned": 0
+        },
+        {
+          "name": "情報漏えい等が起きたときの対応",
+          "target": 3,
+          "assigned": 0
+        }
+      ]
+    },
+    {
+      "section_id": "4-6",
+      "name": "著作権・知的財産・生成物の権利",
+      "planned_questions": 42,
+      "official_learning_items": [
+        {
+          "name": "生成AIと知的財産権の全体像",
+          "target": 4,
+          "assigned": 0
+        },
+        {
+          "name": "著作権と著作物の基本",
+          "target": 4,
+          "assigned": 0
+        },
+        {
+          "name": "著作者人格権とは",
+          "target": 4,
+          "assigned": 0
+        },
+        {
+          "name": "著作権侵害とAI生成物の類似リスク",
+          "target": 4,
+          "assigned": 0
+        },
+        {
+          "name": "AI学習と著作権",
+          "target": 4,
+          "assigned": 0
+        },
+        {
+          "name": "第三者コンテンツをAIに入力するリスク",
+          "target": 4,
+          "assigned": 0
+        },
+        {
+          "name": "引用・転載・要約・翻案の違い",
+          "target": 3,
+          "assigned": 0
+        },
+        {
+          "name": "商標権・意匠権・特許権",
+          "target": 3,
+          "assigned": 0
+        },
+        {
+          "name": "肖像権・パブリシティ権",
+          "target": 3,
+          "assigned": 0
+        },
+        {
+          "name": "AIサービスの利用規約・ライセンス・透明性",
+          "target": 3,
+          "assigned": 0
+        },
+        {
+          "name": "商用利用・社外公開前に確認すべきこと",
+          "target": 3,
+          "assigned": 0
+        },
+        {
+          "name": "AI生成物の権利帰属と人の創作的関与",
+          "target": 3,
+          "assigned": 0
+        }
+      ]
+    },
+    {
+      "section_id": "4-7",
+      "name": "AI倫理とAI事業者ガイドライン",
+      "planned_questions": 36,
+      "official_learning_items": [
+        {
+          "name": "AI倫理・ELSIとは",
+          "target": 4,
+          "assigned": 0
+        },
+        {
+          "name": "AI事業者ガイドラインと人間中心のAI",
+          "target": 4,
+          "assigned": 0
+        },
+        {
+          "name": "安全性・公平性：人への不利益を防ぐ",
+          "target": 4,
+          "assigned": 0
+        },
+        {
+          "name": "プライバシー保護とセキュリティ確保",
+          "target": 4,
+          "assigned": 0
+        },
+        {
+          "name": "透明性・アカウンタビリティ：説明と責任",
+          "target": 4,
+          "assigned": 0
+        },
+        {
+          "name": "教育・リテラシー：AIを適切に使うために",
+          "target": 4,
+          "assigned": 0
+        },
+        {
+          "name": "公正競争とイノベーション",
+          "target": 3,
+          "assigned": 0
+        },
+        {
+          "name": "高度なAIシステムと影響に応じたリスク管理",
+          "target": 3,
+          "assigned": 0
+        },
+        {
+          "name": "偽情報・偏りと情報拡散のリスク",
+          "target": 3,
+          "assigned": 0
+        },
+        {
+          "name": "雇用・教育・格差・環境への影響",
+          "target": 3,
+          "assigned": 0
+        }
+      ]
+    },
+    {
+      "section_id": "4-8",
+      "name": "AIガバナンスと社内ガイドライン",
+      "planned_questions": 30,
+      "official_learning_items": [
+        {
+          "name": "AIガバナンスとは",
+          "target": 4,
+          "assigned": 0
+        },
+        {
+          "name": "社内ガイドラインに盛り込む基本項目",
+          "target": 4,
+          "assigned": 0
+        },
+        {
+          "name": "AIツールを選定する際の確認項目",
+          "target": 4,
+          "assigned": 0
+        },
+        {
+          "name": "AIツールのレベル分けと入力情報のルール",
+          "target": 3,
+          "assigned": 0
+        },
+        {
+          "name": "新しいAIツールの申請と承認フロー",
+          "target": 3,
+          "assigned": 0
+        },
+        {
+          "name": "AIが出力したデータの取り扱い",
+          "target": 3,
+          "assigned": 0
+        },
+        {
+          "name": "API・AIエージェント利用時のコスト・利用量の管理",
+          "target": 3,
+          "assigned": 0
+        },
+        {
+          "name": "社内ルールを定着させる体制と教育",
+          "target": 3,
+          "assigned": 0
+        },
+        {
+          "name": "モニタリングと継続的な見直し",
+          "target": 3,
+          "assigned": 0
+        }
+      ]
+    },
+    {
+      "section_id": "4-9",
+      "name": "AI法・国際ルール・AI安全保障",
+      "planned_questions": 18,
+      "official_learning_items": [
+        {
+          "name": "AI法とは：制定の背景と基本構造",
+          "target": 3,
+          "assigned": 0
+        },
+        {
+          "name": "AI基本計画と国・事業者・利用者の役割",
+          "target": 3,
+          "assigned": 0
+        },
+        {
+          "name": "イノベーション促進とリスク対応の両立",
+          "target": 2,
+          "assigned": 0
+        },
+        {
+          "name": "AI法・ガイドライン・既存法令の関係",
+          "target": 2,
+          "assigned": 0
+        },
+        {
+          "name": "G7広島AIプロセスと海外のAI規制動向",
+          "target": 2,
+          "assigned": 0
+        },
+        {
+          "name": "AIと安全保障",
+          "target": 2,
+          "assigned": 0
+        },
+        {
+          "name": "国産AI・国内基盤モデル・AI人材の重要性",
+          "target": 2,
+          "assigned": 0
+        },
+        {
+          "name": "継続的な情報収集とリスキリングの重要性",
+          "target": 2,
+          "assigned": 0
+        }
+      ]
+    }
+  ],
+  "source_inventory": "audit/chapter4-inventory-2027.json",
+  "mapping_rule": "Read full prompt, choices, answer, explanation; map each to one primary official learning item. Retain only if accurate and non-duplicative; otherwise revise/replace."
+}
