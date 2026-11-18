@@ -85,7 +85,7 @@
   "checkpoint": {
     "last_completed_id": "q120",
     "next_question_id": null,
-    "next_action": "Review remaining materially similar judgments and choice-by-choice semantic correctness; acceptance only after major findings cleared; device test separately pending",
+    "next_action": "Apply bounded acceptance gate rather than indefinite rewrites; explicitly distinguish source audit from runtime device verification",
     "last_verified_commit": "1a1a089d18cc89905f985aecc52c0daf3f006408",
     "chapter_accepted": false
   },
@@ -555,7 +555,18 @@
         "replacement": "Gemini image-query evaluation",
         "commit": "90be8d6a402207e6463e338104b361b2b10abd11"
       },
-      "decision": "not_accepted_yet"
+      "decision": "not_accepted_yet",
+      "additional_duplicate_rewrite_2": {
+        "id": "q117",
+        "reason": "LLM basic definition overlapped q062",
+        "replacement": "fluency versus factual accuracy",
+        "commit": "3120d123f4a82cfebbc20cfddae06d1c7a0ed009"
+      },
+      "similarity_screen_20261118": {
+        "questions": 300,
+        "same_topic_bigram_pairs_threshold_0_40_before_fix": 29,
+        "interpretation": "similarity candidates not 29 confirmed duplicate defects; remaining pairs generally ask distinct judgments; individual semantic correctness still not independently proven"
+      }
     }
   }
 }
