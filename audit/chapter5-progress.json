@@ -20,11 +20,11 @@
   "inventory_file": "audit/chapter5-inventory-2027.json",
   "allocation_status": "created_target_only",
   "first_pass": {
-    "reviewed": 93,
+    "reviewed": 113,
     "revised": 60,
-    "last_completed_id": "ex27-100",
-    "next_id": "adv27-061",
-    "reclassified": 33
+    "last_completed_id": "adv27-080",
+    "next_id": "pr27-017",
+    "reclassified": 53
   },
   "second_pass": {
     "reviewed": 0,
@@ -39,12 +39,12 @@
     "unbounded_quality_loop": false,
     "source_and_ledger_persist_required": true
   },
-  "next_action": "Resume first-pass at adv27-061; prioritize deficient creative and practical application topics while preserving strong original questions.",
+  "next_action": "Continue at pr27-017 then applied question bank; finish content review and enforce allocation before second pass.",
   "source_blob_shas": {
     "src/data/questionBank.ts": "fdb31d7eefd6220a481158ea7f271e290e913bda",
     "src/data/syllabus2027Questions.ts": "66ea76b74ef9bf349dfb8844588cc333eebd196d",
     "src/data/expansion2027Questions.ts": "1d9bfe9988cf2f8a2549056c505fb784b9bcd8b5",
-    "src/data/advanced2027Questions.ts": "3fcc925e6c66a5c9b5a6729f382bbf7cce0186b4",
+    "src/data/advanced2027Questions.ts": "c5198cad09c444d32d38c16ff4b0775f39218960",
     "src/data/practice2027Questions.ts": "9b34f83d0d0e056182d782d13652c3d46c252a4d",
     "src/data/applied2027Questions.ts": "ffb8a64543db44488f226eafe386eb1dfa36dc90"
   },
