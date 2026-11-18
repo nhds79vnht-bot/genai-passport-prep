@@ -1948,783 +1948,783 @@
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "事前基準",
-      "prompt": "PoCの合格基準を実験結果を見た後で設定した。最も大きな懸念は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "契約条項の抽出用プロンプトを複数人が使う。改善前後を公平に比較する方法は。",
+      "syllabus_2027_item": "プロンプトエンジニアリングとは",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-458",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "段階公開",
-      "prompt": "顧客への返信を生成するAIを本番導入する。重大な誤送信の影響を抑える方法は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "顧客対応文のAI出力が部署ごとにばらつく。指示の改善でまず把握すべきことは。",
+      "syllabus_2027_item": "プロンプトエンジニアリングとは",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-459",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "緊急停止",
-      "prompt": "請求金額を案内するAIが、複数顧客へ連続して誤った金額を提示した。優先対応は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "プロンプト変更後に回答が短くなったが事実誤認も増えた。成功判定は。",
+      "syllabus_2027_item": "プロンプトエンジニアリングとは",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-460",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "変更管理",
-      "prompt": "プロンプト更新後、全体正解率は維持したが一部商品の回答だけ悪化した。適切な検証は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIに事故報告書のドラフトを作らせる。日時不明の事項を捏造させない指示は。",
+      "syllabus_2027_item": "プロンプトの基本構成要素",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-461",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "監視",
-      "prompt": "問い合わせAIの回答件数が前月比で倍増した。品質が維持されたかを確認するには。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "営業会議の資料から課題一覧を作る。プロンプトで欠かせない組合せは。",
+      "syllabus_2027_item": "プロンプトの基本構成要素",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-462",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "確認工数",
-      "prompt": "AIが月900件の回答を生成し、担当者が1件2分ずつ確認する。月間の確認工数は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIに校内掲示用のお知らせを作成させる。適切な出力条件は。",
+      "syllabus_2027_item": "プロンプトの基本構成要素",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-463",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "権限分離",
-      "prompt": "AIが請求書の作成から顧客への送付まで自動実行できる。誤送付の抑止策は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "例を示さず問い合わせ文を緊急・通常に振り分ける。どの指示が適切か。",
+      "syllabus_2027_item": "Zero-Shotプロンプティング",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-464",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "契約確認",
-      "prompt": "生成AIの委託先を選ぶ際、機密データの取扱いと停止時の業務継続を重視したい。確認項目は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "商品レビューを例示なしで品質・配送・価格に分類したい。最初に明示するのは。",
+      "syllabus_2027_item": "Zero-Shotプロンプティング",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-465",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "研修",
-      "prompt": "社員がAIの提示したURLを根拠として確認せず顧客に送っていた。研修で教えるべきことは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "Zero-Shotで文書の機密区分を判定したいが迷う文書がある。適切な設計は。",
+      "syllabus_2027_item": "Zero-Shotプロンプティング",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-466",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "費用増",
-      "prompt": "APIの処理件数は先月と同じなのに利用料が急増した。まず切り分けるべき要因は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIに請求書から取引先・金額・支払期限を抜き出させる。Few-Shotの使い方は。",
+      "syllabus_2027_item": "Few-Shotプロンプティング",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-467",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "再試行",
-      "prompt": "API障害で自動再試行が同時多発し、サービス側の負荷がさらに増えた。対策は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "サポート返信の『受付済』『追加質問』を少数例で学習させたい。適切なのは。",
+      "syllabus_2027_item": "Few-Shotプロンプティング",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-468",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "FAQ更新",
-      "prompt": "社内規程を改訂したが、RAGの回答は依然として旧版を引用する。適切な調査は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "Few-Shotで社内用短文の文体をそろえる。適切な方法は。",
+      "syllabus_2027_item": "Few-Shotプロンプティング",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-469",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "異議",
-      "prompt": "AIによる審査結果に顧客から異議申立てが届いた。適切な運用は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "複数条件で仕入れ案を比較するAIが計算過程を提示した。最終的な確認は。",
+      "syllabus_2027_item": "Chain-of-Thought（思考の連鎖）",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-470",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "継続改善",
-      "prompt": "問い合わせAIで同種の誤回答が毎週繰り返されている。継続改善として適切なのは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIが論理を段階的に説明したが最初の前提が古い規程だった。対策は。",
+      "syllabus_2027_item": "Chain-of-Thought（思考の連鎖）",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-511",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "導入費用",
-      "prompt": "AIの月額利用料8万円、確認担当の人件費12万円、従来業務の削減額30万円。月間純便益は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "段階的に判断させた在庫補充案で不足データがあった。適切な扱いは。",
+      "syllabus_2027_item": "Chain-of-Thought（思考の連鎖）",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-512",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "損益分岐",
-      "prompt": "AI利用の固定費が月2万円、1件当たり費用が30円。月1,000件の総費用は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIに品質検査担当として不良報告をJSONで作成させる。適切な設計は。",
+      "syllabus_2027_item": "役割設定・出力形式の指定",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-513",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "サンプリング検査",
-      "prompt": "AI回答2,000件から無作為に100件を監査し、誤回答が8件あった。監査標本の誤回答率は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "地域イベントの案を幅広く出した後に具体化する。追加すべき制約は。",
+      "syllabus_2027_item": "具体度のコントロール",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-514",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "KPI設計",
-      "prompt": "問い合わせAIの導入効果を評価する際、平均回答時間だけをKPIにした。懸念は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "広報文をAIに依頼したら専門家向けになった。具体度の調整は。",
+      "syllabus_2027_item": "具体度のコントロール",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-515",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "PoCの代表性",
-      "prompt": "PoCでは短い質問だけを試したが、本番では長い添付資料付きの質問が多い。問題は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIに『表にして』と頼んだが必要事項が欠けた。改善するのは。",
+      "syllabus_2027_item": "具体度のコントロール",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-516",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "エスカレーション",
-      "prompt": "顧客対応AIが回答の根拠を見つけられない場合の運用として適切なのは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIで謝罪メールを作ったが返金の約束が追加されていた。送信前に取る対応は。",
+      "syllabus_2027_item": "ビジネスメール・各種ビジネス文書の作成",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-517",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "障害時の切替",
-      "prompt": "AI APIが停止した際にも顧客からの問い合わせを受け付けたい。適切な備えは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AI校正後に見積書の『100万円』が『10万円』に変わった。正しい対応は。",
+      "syllabus_2027_item": "文章の校正・添削・整形",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-518",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "プロンプト変更管理",
-      "prompt": "本番のプロンプトを変更した後に特定の問い合わせだけ誤回答が増えた。まず行うのは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "統一表記を頼んだところ人名の漢字まで変わった。対応は。",
+      "syllabus_2027_item": "文章の校正・添削・整形",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-519",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "予算アラート",
-      "prompt": "API費用の月額上限が10万円で、20日時点で9万円を使用した。運用上適切なのは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "校正と事実確認を分けてAIに依頼する利点は。",
+      "syllabus_2027_item": "文章の校正・添削・整形",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-520",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "効果測定の対照",
-      "prompt": "AI導入後に業務時間が減ったが、同時期に問い合わせ件数も減少した。効果の評価は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "長い規程を新入社員に説明するAI要約で例外条件が抜けた。改善は。",
+      "syllabus_2027_item": "文章の要約・対象読者やトーンの変更",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-561",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "ROI計算",
-      "prompt": "AI導入の投資額が120万円、1年間の純利益が36万円だった。単純ROIは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "研究報告を役員向けに要約するとき優先すべき要素は。",
+      "syllabus_2027_item": "文章の要約・対象読者やトーンの変更",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-562",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "確認工数",
-      "prompt": "AI生成の報告書を月600件確認し、1件3分かかる。月間の確認時間は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "製品仕様書を利用者向けに書き換える際、制限事項が消えた。対処は。",
+      "syllabus_2027_item": "文章の要約・対象読者やトーンの変更",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-563",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "費用予測",
-      "prompt": "1件の平均入力が2,000トークン、出力が500トークン。100件処理したときの総トークン数は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "英語の利用規約をAIで日本語へ翻訳し、責任の主体が入れ替わっていた。対応は。",
+      "syllabus_2027_item": "翻訳・多言語コミュニケーション",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-564",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "品質ゲート",
-      "prompt": "AIが生成した請求書を自動送付する前の確認として適切なのは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIが作成した販売実績スライドで前年と今年の集計期間が異なった。修正は。",
+      "syllabus_2027_item": "プレゼンテーションスライドの作成",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-565",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "段階導入",
-      "prompt": "社内向けAIを全社展開する前に適した手順は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "技術者向けスライドを経営会議向けに変更する。適切な指示は。",
+      "syllabus_2027_item": "プレゼンテーションスライドの作成",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-566",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "障害対応",
-      "prompt": "生成AIのAPIが断続的に失敗する。適切な運用設計は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIが生成したスライドに架空の出典が付いていた。対応は。",
+      "syllabus_2027_item": "プレゼンテーションスライドの作成",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-567",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "KPIの分母",
-      "prompt": "AIの誤回答件数が10件から15件に増えたが、総回答数も100件から300件に増えた。誤回答率は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIが商品の広告に『利用者満足度99%』を追加したが調査記録がない。対応は。",
+      "syllabus_2027_item": "キャッチコピー・広告コピーの作成",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-568",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "教育とルール",
-      "prompt": "社員がAI回答を根拠確認なしで顧客に送っている。実務的な対策は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "法人向けと学生向けのコピーを作り分ける際、最適な指示は。",
+      "syllabus_2027_item": "キャッチコピー・広告コピーの作成",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-569",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "費用対効果",
-      "prompt": "AI導入で月40時間削減できたが月額費用が20万円かかる。評価に必要な追加情報は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "比較広告でAIが競合製品を一律に『低品質』とした。対応は。",
+      "syllabus_2027_item": "キャッチコピー・広告コピーの作成",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-570",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "評価の再現性",
-      "prompt": "AIの回答品質を改修前後で比較したい。適切な評価条件は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "限定販売のコピーでAIが『本日限り』と生成したが期限は未定だった。対応は。",
+      "syllabus_2027_item": "キャッチコピー・広告コピーの作成",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-611",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "工数削減",
-      "prompt": "AI導入で月200時間の作業が減り、確認に月70時間、保守に月30時間かかる。純削減時間は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "新サービス案をAIが10個出した。検討会で次に行うことは。",
+      "syllabus_2027_item": "企画立案・ブレインストーミング・壁打ち",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-612",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "費用見積",
-      "prompt": "APIの入力が月100万トークンで100万当たり200円、出力が月20万トークンで100万当たり800円。合計は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "企画の弱点を洗い出したい。AIとの壁打ちに適した依頼は。",
+      "syllabus_2027_item": "企画立案・ブレインストーミング・壁打ち",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-613",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "回収期間",
-      "prompt": "初期費用90万円、月間純便益15万円のAI導入。単純回収期間は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIが提案した地域振興企画に実在しない施設が含まれていた。対応は。",
+      "syllabus_2027_item": "企画立案・ブレインストーミング・壁打ち",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-614",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "品質監査",
-      "prompt": "AI回答500件の無作為標本50件で誤りが5件見つかった。標本誤回答率は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIに顧客アンケートを分析させたところ少数の自由記述を全顧客の意見と表現した。対応は。",
+      "syllabus_2027_item": "アンケートの設計と分析",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-615",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "費用対効果",
-      "prompt": "AI導入後の作業時間が減ったが顧客の再問い合わせが増えた。評価は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIが店舗のSNS告知に旧住所を記載した。公開前の確認は。",
+      "syllabus_2027_item": "SNS投稿・コンテンツ制作",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-616",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "業務の権限",
-      "prompt": "AIが取引先への支払先口座を変更できる。適切な制御は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIが投稿文に存在しない利用者の体験談を作成した。対応は。",
+      "syllabus_2027_item": "SNS投稿・コンテンツ制作",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-617",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "本番監視",
-      "prompt": "AIの全体正解率は変わらないが特定商品の苦情が増加した。確認は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "短文SNSとブログで同じ企画を告知する。AIの使い分けとして適切なのは。",
+      "syllabus_2027_item": "SNS投稿・コンテンツ制作",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-618",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "障害時の復旧",
-      "prompt": "AIサービスが停止した場合に顧客対応を継続したい。必要な備えは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "予約投稿したAI文に変更前の開催日時が残っていた。運用上必要なのは。",
+      "syllabus_2027_item": "SNS投稿・コンテンツ制作",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-619",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "検証の再現性",
-      "prompt": "AIの更新前後で回答品質を比較したい。公平な評価方法は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIがLPを作成したが申込フォームの必須欄が説明と食い違う。対応は。",
+      "syllabus_2027_item": "ランディングページの作成",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-620",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "コスト監視",
-      "prompt": "処理件数は一定だがAIの月額費用が増えた。まず調べるのは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIが作ったLPで割引額と最終請求額が一致しない。公開判断は。",
+      "syllabus_2027_item": "ランディングページの作成",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-661",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "削減率",
-      "prompt": "AI導入前の月間作業時間が400時間、導入後が280時間だった。削減率は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "生成AIでLPの2案を比較したい。適切な評価方法は。",
+      "syllabus_2027_item": "ランディングページの作成",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-662",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "純便益",
-      "prompt": "月間削減効果50万円、AI利用料12万円、確認作業費8万円だった。月間純便益は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIが2社のシェアを比較したが対象国が異なっていた。正しい対応は。",
+      "syllabus_2027_item": "市場・競合リサーチ",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-663",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "回収期間",
-      "prompt": "初期投資60万円で月間純便益が12万円のとき、単純回収期間は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIが新興企業の価格改定を発見したと述べたが出典がない。対応は。",
+      "syllabus_2027_item": "市場・競合リサーチ",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-664",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "処理量",
-      "prompt": "AIが1分に25件処理できる。停止なく2時間稼働した場合の処理件数は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIで作った説明用図に部品名の誤字があった。適切な対応は。",
+      "syllabus_2027_item": "画像・ビジュアル素材の生成",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-665",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "KPI",
-      "prompt": "AI導入で一次回答率は上がったが誤案内も増えた。評価として適切なのは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AI画像を商用パンフレットに使う前に確認すべきことは。",
+      "syllabus_2027_item": "画像・ビジュアル素材の生成",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-666",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "PoC",
-      "prompt": "AI導入試験で成功例だけを選んで発表した。問題は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIで作った防災説明動画に避難する順序の誤りがあった。対応は。",
+      "syllabus_2027_item": "動画コンテンツの生成・編集",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-667",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "業務継続",
-      "prompt": "AI APIが停止した場合の顧客対応に必要なのは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "海外支店向け研修動画をAIで編集する際の品質確認は。",
+      "syllabus_2027_item": "動画コンテンツの生成・編集",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-668",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "変更管理",
-      "prompt": "AIのプロンプト変更後に誤回答が増えた。最初に行うべきことは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AI音声案内が電話番号を誤って読み上げた。対策は。",
+      "syllabus_2027_item": "ナレーション・音声・BGMの生成",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-669",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "権限と承認",
-      "prompt": "AIが仕入れ先への発注金額を変更する場合に必要なのは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "動画向けにAIでBGMを作った。公開時にまず確認するのは。",
+      "syllabus_2027_item": "ナレーション・音声・BGMの生成",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-670",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "AX",
-      "prompt": "AIトランスフォーメーション（AX）の考え方として適切なのは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIが作ったロゴは背景が黒いと識別できない。採用前の対応は。",
+      "syllabus_2027_item": "ロゴ・デザイン案・モックアップの作成",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-711",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "ROI",
-      "prompt": "初期投資100万円、年間の純便益25万円だった。単純ROIは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "商品箱のAIモックアップで法定表示欄が欠けた。最も適切なのは。",
+      "syllabus_2027_item": "ロゴ・デザイン案・モックアップの作成",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-712",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "工数計算",
-      "prompt": "AIで月150時間削減し、検証に45時間、運用保守に15時間必要になった。純削減時間は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIのロゴ案が有名ブランドの印象に近い。使用前の確認は。",
+      "syllabus_2027_item": "ロゴ・デザイン案・モックアップの作成",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-713",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "費用計算",
-      "prompt": "AIの月額固定費が3万円、1回の変動費が20円。月500回の総費用は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIで商品案内を縦型ポスターへ変換すると注意文が切れた。対応は。",
+      "syllabus_2027_item": "既存素材のバリエーション展開・多言語ローカライズ",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-714",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "品質指標",
-      "prompt": "AI回答200件中、誤回答が12件だった。誤回答率は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "英語の広告バナーを日本向けにAIで編集した。適切なのは。",
+      "syllabus_2027_item": "既存素材のバリエーション展開・多言語ローカライズ",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-715",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "PoC設計",
-      "prompt": "本番では添付資料付きの質問が多いがPoCでは短文だけを試した。問題は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "同じ動画のSNS用15秒版をAIが作成し注意喚起部分を削除した。判断は。",
+      "syllabus_2027_item": "既存素材のバリエーション展開・多言語ローカライズ",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-716",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "変更管理",
-      "prompt": "AIの出力形式を変更した後、採点結果が不安定になった。対応は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIが顧客名の表記ゆれを統一したが異なる同姓同名を一件にまとめた。対応は。",
+      "syllabus_2027_item": "データの整形・分類",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-717",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "権限分離",
-      "prompt": "AIが請求書を作成し同時に支払いも実行できる。リスクを抑える方法は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIが作った売上表に返品額が二重計上されていた。正しい対応は。",
+      "syllabus_2027_item": "表・データの集計と可視化",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-718",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "障害復旧",
-      "prompt": "AI APIの停止中に受けた問い合わせを復旧後に処理する。必要なのは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIの海外制度調査で古い法令と改正案が混在した。対策は。",
+      "syllabus_2027_item": "ディープリサーチ：複数ソースを横断調査",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-719",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "費用監視",
-      "prompt": "AI利用料が急増したが処理件数は変わらない。調査対象は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "複数資料を要約したAIが同じ調査の転載記事を3本の独立証拠と数えた。対応は。",
+      "syllabus_2027_item": "ディープリサーチ：複数ソースを横断調査",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-720",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "効果検証",
-      "prompt": "AI導入後に平均対応時間が短縮したが顧客満足度が低下した。適切なのは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIの市場レポートに実在しない調査機関が引用された。判断は。",
+      "syllabus_2027_item": "ディープリサーチ：複数ソースを横断調査",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-761",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "削減工数",
-      "prompt": "AIで月180時間削減し、確認に60時間、保守に20時間かかる。純削減時間は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIが作成する週報で祝日週の処理件数が激減した。適切な解釈は。",
+      "syllabus_2027_item": "定例レポートの自動生成",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-762",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "費用計算",
-      "prompt": "月額固定費4万円、AI処理1件50円で月400件。総費用は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "月次レポートの自動生成でファイルの取得に失敗した。適切な処理は。",
+      "syllabus_2027_item": "定例レポートの自動生成",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-763",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "ROI",
-      "prompt": "初期費用80万円で年間純便益20万円だった。単純ROIは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIが作成したCSV取り込み処理で数式インジェクションの危険がある。対策は。",
+      "syllabus_2027_item": "コーディング・アプリ開発",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-764",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "回収期間",
-      "prompt": "初期費用75万円、月間純便益15万円。単純回収期間は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AI生成のファイルアップロード機能で容量制限がない。改善は。",
+      "syllabus_2027_item": "コーディング・アプリ開発",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-765",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "誤回答率",
-      "prompt": "AI回答250件のうち誤回答が15件だった。誤回答率は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIにAPI処理を書かせたが失敗時に処理を繰り返し二重登録した。対策は。",
+      "syllabus_2027_item": "コーディング・アプリ開発",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-766",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "運用監視",
-      "prompt": "AIの平均回答時間が短縮したが顧客からの再問い合わせが増えた。評価は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIが古いDBクエリを変更し特定条件で結果が変わった。最初に行うのは。",
+      "syllabus_2027_item": "既存システム・コードベースの調査とリファクタリング",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-767",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "PoC",
-      "prompt": "AIの試験で成功した質問だけを集めた。懸念は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIがコードの未使用判定で外部公開APIを削除しようとした。適切なのは。",
+      "syllabus_2027_item": "既存システム・コードベースの調査とリファクタリング",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-768",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "変更管理",
-      "prompt": "AIのモデル更新後に出力形式が崩れた。対応は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIが関数を共通化したが処理速度が落ちた。対応は。",
+      "syllabus_2027_item": "既存システム・コードベースの調査とリファクタリング",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-769",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "ディープリサーチ",
-      "prompt": "複数の情報源を調べて長い調査報告を作るディープリサーチ機能の利用で重要なのは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIで経費精算の領収書を読み取ったが日付が認識できなかった。処理は。",
+      "syllabus_2027_item": "定型業務の自動化",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-770",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "支払い承認",
-      "prompt": "AIが請求書を作成し支払いまで実行できる。適切な統制は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "顧客情報の自動転記で存在しない顧客コードが出た。対応は。",
+      "syllabus_2027_item": "定型業務の自動化",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-831",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "工数",
-      "prompt": "月200時間削減し確認50時間、保守30時間が増えた。純削減は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIで注文書の数量を抽出し在庫管理システムへ登録する。適切な制御は。",
+      "syllabus_2027_item": "定型業務の自動化",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-832",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "費用",
-      "prompt": "固定費2万円と1件30円の処理を月1,000件行う。月額合計は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIの請求書分類で例外案件が増えた。改善手順は。",
+      "syllabus_2027_item": "定型業務の自動化",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-833",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "ROI",
-      "prompt": "初期投資120万円で年間純便益30万円。単純ROIは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIが出張申請画面を操作し金額を入力した。提出前に必要なのは。",
+      "syllabus_2027_item": "ブラウザ操作・Web上の手続きの自動化",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-834",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "回収",
-      "prompt": "初期費用84万円、月間純便益14万円。回収期間は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIがブラウザ画面の改修後に取消ボタンを送信ボタンと誤認した。対処は。",
+      "syllabus_2027_item": "ブラウザ操作・Web上の手続きの自動化",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-835",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "品質",
-      "prompt": "AI回答400件のうち誤回答が24件だった。誤回答率は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIが取引先サイトの入力欄に秘密情報を転記しようとした。適切な対応は。",
+      "syllabus_2027_item": "ブラウザ操作・Web上の手続きの自動化",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-836",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "PoC",
-      "prompt": "本番では長文質問が多いのに短文だけで検証した。問題は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIに注文取消しまで任せたい。権限設計は。",
+      "syllabus_2027_item": "ブラウザ操作・Web上の手続きの自動化",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-837",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "運用監視",
-      "prompt": "AI導入後に一次回答時間が減ったが再問い合わせが増えた。対応は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIが顧客情報取得→見積書作成→メール下書きを実行した。送信時の制御は。",
+      "syllabus_2027_item": "複数ツール・複数ステップを横断する複合タスクの自動化",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-838",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "権限",
-      "prompt": "AIが支払先口座を変更できる。統制は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIが在庫確認ツールの失敗後に発注処理まで進めた。改善は。",
+      "syllabus_2027_item": "複数ツール・複数ステップを横断する複合タスクの自動化",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-839",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "障害",
-      "prompt": "AI API停止中の未処理案件を管理する方法は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "金融機関が生成AIで商品説明の草案を作る。公開前の確認は。",
+      "syllabus_2027_item": "規制・機密性が重視される業種",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-840",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "回帰テスト",
-      "prompt": "モデル更新後の品質を比較する条件は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "医療機関がAIで患者説明文を平易化する。必要な運用は。",
+      "syllabus_2027_item": "規制・機密性が重視される業種",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-841",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "費用分析",
-      "prompt": "利用件数が同じなのにAPI費用が増加した。確認するのは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "工場でAIが設備点検を簡略化する案を出した。導入前の確認は。",
+      "syllabus_2027_item": "現場・ものづくりを支える業種",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-842",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "業務承認",
-      "prompt": "AIが顧客へ正式な見積書を送る前に必要なのは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "建設現場のAI作業計画に大型機械と歩行者の動線の交差があった。対応は。",
+      "syllabus_2027_item": "現場・ものづくりを支える業種",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ap27-843",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "効果測定",
-      "prompt": "AI導入で対応件数は増えたが顧客満足度が下がった。判断は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "食品工場でAIが包装ラインの変更案を出した。判断前に必要なのは。",
+      "syllabus_2027_item": "現場・ものづくりを支える業種",
+      "review_status": "revised_first_pass"
     }
   ],
   "allocation_file": "audit/chapter5-allocation-2027.json"
