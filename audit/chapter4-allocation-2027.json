@@ -20,22 +20,22 @@
         {
           "name": "検索エンジンと生成AIの違い",
           "target": 5,
-          "assigned": 2
+          "assigned": 3
         },
         {
           "name": "AIは補助者であり、最終責任は人間にある",
           "target": 4,
-          "assigned": 4
+          "assigned": 5
         },
         {
           "name": "AIの出力を鵜呑みにしてはいけない理由",
           "target": 4,
-          "assigned": 1
+          "assigned": 2
         },
         {
           "name": "生成AIを使ってよい場面・慎重に使う場面・避けるべき場面",
           "target": 4,
-          "assigned": 2
+          "assigned": 3
         },
         {
           "name": "AIを使うリスクと、AIを使わないリスク",
@@ -62,12 +62,12 @@
         {
           "name": "ハルシネーション",
           "target": 4,
-          "assigned": 1
+          "assigned": 2
         },
         {
           "name": "情報漏えいリスク",
           "target": 4,
-          "assigned": 0
+          "assigned": 2
         },
         {
           "name": "個人情報・プライバシー侵害リスク",
@@ -87,7 +87,7 @@
         {
           "name": "名誉毀損・信用毀損・炎上リスク",
           "target": 4,
-          "assigned": 1
+          "assigned": 2
         },
         {
           "name": "差別・偏見・バイアスのリスク",
@@ -107,7 +107,7 @@
         {
           "name": "自律型AIエージェントの想定外の挙動・プロンプトインジェクション",
           "target": 3,
-          "assigned": 7
+          "assigned": 8
         }
       ]
     },
@@ -129,7 +129,7 @@
         {
           "name": "シャドーAIの具体例",
           "target": 4,
-          "assigned": 2
+          "assigned": 3
         },
         {
           "name": "承認されていないAIツールを業務利用する危険性",
@@ -161,12 +161,12 @@
         {
           "name": "承認されたAIでも出力確認が必要な理由",
           "target": 6,
-          "assigned": 2
+          "assigned": 3
         },
         {
           "name": "用途と影響度に応じた検証レベル",
           "target": 6,
-          "assigned": 3
+          "assigned": 4
         },
         {
           "name": "ファクトチェック：事実・数値・出典・最新情報の確認",
@@ -176,17 +176,17 @@
         {
           "name": "妥当性レビュー：前提・論理・抜け漏れの確認",
           "target": 6,
-          "assigned": 3
+          "assigned": 4
         },
         {
           "name": "表現・権利・個人情報・機密情報の確認",
           "target": 6,
-          "assigned": 1
+          "assigned": 2
         },
         {
           "name": "採用・修正・破棄・専門家確認の判断",
           "target": 6,
-          "assigned": 4
+          "assigned": 5
         }
       ]
     },
@@ -198,7 +198,7 @@
         {
           "name": "個人情報・プライバシー・秘密保持の違い",
           "target": 4,
-          "assigned": 1
+          "assigned": 3
         },
         {
           "name": "個人情報保護法と生成AI利用の関係",
@@ -208,22 +208,22 @@
         {
           "name": "個人情報とは何か",
           "target": 4,
-          "assigned": 2
+          "assigned": 3
         },
         {
           "name": "個人識別符号",
           "target": 4,
-          "assigned": 1
+          "assigned": 2
         },
         {
           "name": "要配慮個人情報と機微情報",
           "target": 4,
-          "assigned": 1
+          "assigned": 2
         },
         {
           "name": "個人情報の利用目的・本人同意・第三者提供",
           "target": 4,
-          "assigned": 7
+          "assigned": 8
         },
         {
           "name": "個人情報は加工すれば生成AIに入力できるのか",
@@ -243,12 +243,12 @@
         {
           "name": "AIの出力・要約・共有に情報が残るリスク",
           "target": 3,
-          "assigned": 3
+          "assigned": 4
         },
         {
           "name": "情報漏えい等が起きたときの対応",
           "target": 3,
-          "assigned": 3
+          "assigned": 4
         }
       ]
     },
@@ -260,17 +260,17 @@
         {
           "name": "生成AIと知的財産権の全体像",
           "target": 4,
-          "assigned": 1
+          "assigned": 2
         },
         {
           "name": "著作権と著作物の基本",
           "target": 4,
-          "assigned": 1
+          "assigned": 2
         },
         {
           "name": "著作者人格権とは",
           "target": 4,
-          "assigned": 1
+          "assigned": 2
         },
         {
           "name": "著作権侵害とAI生成物の類似リスク",
@@ -280,7 +280,7 @@
         {
           "name": "AI学習と著作権",
           "target": 4,
-          "assigned": 2
+          "assigned": 3
         },
         {
           "name": "第三者コンテンツをAIに入力するリスク",
@@ -327,7 +327,7 @@
         {
           "name": "AI倫理・ELSIとは",
           "target": 4,
-          "assigned": 1
+          "assigned": 2
         },
         {
           "name": "AI事業者ガイドラインと人間中心のAI",
@@ -342,22 +342,22 @@
         {
           "name": "プライバシー保護とセキュリティ確保",
           "target": 4,
-          "assigned": 1
+          "assigned": 2
         },
         {
           "name": "透明性・アカウンタビリティ：説明と責任",
           "target": 4,
-          "assigned": 8
+          "assigned": 9
         },
         {
           "name": "教育・リテラシー：AIを適切に使うために",
           "target": 4,
-          "assigned": 0
+          "assigned": 1
         },
         {
           "name": "公正競争とイノベーション",
           "target": 3,
-          "assigned": 0
+          "assigned": 1
         },
         {
           "name": "高度なAIシステムと影響に応じたリスク管理",
@@ -372,7 +372,7 @@
         {
           "name": "雇用・教育・格差・環境への影響",
           "target": 3,
-          "assigned": 0
+          "assigned": 1
         }
       ]
     },
@@ -389,7 +389,7 @@
         {
           "name": "社内ガイドラインに盛り込む基本項目",
           "target": 4,
-          "assigned": 3
+          "assigned": 4
         },
         {
           "name": "AIツールを選定する際の確認項目",
@@ -404,12 +404,12 @@
         {
           "name": "新しいAIツールの申請と承認フロー",
           "target": 3,
-          "assigned": 1
+          "assigned": 2
         },
         {
           "name": "AIが出力したデータの取り扱い",
           "target": 3,
-          "assigned": 3
+          "assigned": 4
         },
         {
           "name": "API・AIエージェント利用時のコスト・利用量の管理",
@@ -436,12 +436,12 @@
         {
           "name": "AI法とは：制定の背景と基本構造",
           "target": 3,
-          "assigned": 1
+          "assigned": 2
         },
         {
           "name": "AI基本計画と国・事業者・利用者の役割",
           "target": 3,
-          "assigned": 1
+          "assigned": 2
         },
         {
           "name": "イノベーション促進とリスク対応の両立",
@@ -466,12 +466,12 @@
         {
           "name": "国産AI・国内基盤モデル・AI人材の重要性",
           "target": 2,
-          "assigned": 1
+          "assigned": 2
         },
         {
           "name": "継続的な情報収集とリスキリングの重要性",
           "target": 2,
-          "assigned": 0
+          "assigned": 1
         }
       ]
     }
