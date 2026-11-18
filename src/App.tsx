@@ -371,7 +371,7 @@ export default function App() {
         </section>
 
         <section className="card">
-          <h2>直近48時間の間違い（${recentWrong.length}問）</h2>
+          <h2>直近48時間の間違い（{recentWrong.length}問）</h2>
           <p className="hint">今日・昨日を中心とした過去48時間の不正解・未回答を見返せます。データはこの端末にのみ保存されます。</p>
           <button
             type="button"
