@@ -17,7 +17,7 @@ export function loadResults(scope?: string | null): SessionResult[] {
   const parsed = readJson<SessionResult[]>(scope ? `${RESULTS_KEY}:${scope}` : RESULTS_KEY, [])
   return Array.isArray(parsed) ? parsed.map((result) => ({
     ...result,
-    chapter: result.chapter === '第3章 生成AIの技術' as unknown ? '第3章 AIエージェント' : result.chapter,
+    chapter: String(result.chapter) === '第3章 生成AIの技術' ? '第3章 AIエージェント' : result.chapter,
   })) : []
 }
 
@@ -30,7 +30,7 @@ export function loadStats(scope?: string | null): QuestionStats {
   if (!parsed || typeof parsed !== 'object') return {}
   return Object.fromEntries(Object.entries(parsed).map(([id,record]) => [
     id,
-    record?.chapter === '第3章 生成AIの技術' as unknown ? { ...record, chapter: '第3章 AIエージェント' as const } : record,
+    String(record?.chapter) === '第3章 生成AIの技術' ? { ...record, chapter: '第3章 AIエージェント' as const } : record,
   ])) as QuestionStats
 }
 
