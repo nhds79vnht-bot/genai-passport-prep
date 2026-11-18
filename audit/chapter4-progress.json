@@ -46,7 +46,7 @@
     "unbounded_quality_loop": false,
     "source_and_ledger_persist_required": true
   },
-  "next_action": "Bounded second-pass static and semantic duplicate checks; remediate blocking issues; accept chapter on exit criteria.",
+  "next_action": "Second pass static QA and substantive duplicate screen; bounded closure.",
   "note": "First pass complete 300/300; all 81 official learning items nonempty and exact 9-section allocation. Second pass pending, not chapter accepted.",
   "allocation_file": "audit/chapter4-allocation-2027.json",
   "source_blob_shas": {
@@ -55,6 +55,6 @@
     "src/data/expansion2027Questions.ts": "e791f3de98ff2c32957a450ed6a729d0af604b4d",
     "src/data/advanced2027Questions.ts": "ee0cd597db12399a765e482bd27998f465a78d13",
     "src/data/practice2027Questions.ts": "9b34f83d0d0e056182d782d13652c3d46c252a4d",
-    "src/data/applied2027Questions.ts": "8c9950c44e3602f5eae2d33761e82e3647691d94"
+    "src/data/applied2027Questions.ts": "ffb8a64543db44488f226eafe386eb1dfa36dc90"
   }
 }
