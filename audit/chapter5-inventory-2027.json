@@ -1057,9 +1057,9 @@
       "source": "src/data/practice2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "グラフ検証",
-      "prompt": "AIが作成したグラフで縦軸が途中から始まっていた。注意点はどれか。",
+      "prompt": "AIが作成した円グラフで区分別割合の合計が110%になった。適切な対応はどれか。",
       "syllabus_2027_item": "表・データの集計と可視化",
-      "review_status": "mapped_and_reclassified_first_pass"
+      "review_status": "revised_first_pass"
     },
     {
       "id": "pr27-019",
@@ -1183,9 +1183,9 @@
       "source": "src/data/practice2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "欠損値",
-      "prompt": "アンケート未回答を全て「不満」として扱う問題はどれか。",
+      "prompt": "製品の利用経験がない人にも使い勝手の満足度を必須回答させた。適切な改善はどれか。",
       "syllabus_2027_item": "アンケートの設計と分析",
-      "review_status": "mapped_and_reclassified_first_pass"
+      "review_status": "revised_first_pass"
     },
     {
       "id": "pr27-097",
