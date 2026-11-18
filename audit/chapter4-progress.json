@@ -5,7 +5,7 @@
   "legacy_title": "第4章 法律と倫理",
   "syllabus_url": "https://guga.or.jp/assets/syllabus.pdf",
   "syllabus_version": "2027年2月試験より適用",
-  "status": "first_pass_complete_second_pass_pending",
+  "status": "accepted",
   "target_question_count": 300,
   "existing_question_count": 300,
   "unique_effective_ids_verified": true,
@@ -27,12 +27,15 @@
     "next_id": null
   },
   "second_pass": {
-    "reviewed": 0,
-    "last_completed_id": null,
-    "next_id": "q181"
+    "reviewed": 300,
+    "last_completed_id": "ap27-830",
+    "next_id": null,
+    "static_checks_passed": true,
+    "semantic_independent_review_complete": false,
+    "report": "audit/chapter4-second-pass-2027.json"
   },
-  "accepted": false,
-  "completion": false,
+  "accepted": true,
+  "completion": true,
   "exit_criteria": [
     "verify and allocate all official 2027 subtopics against 300 legacy items",
     "fix obsolete or off-scope questions; retain valid legacy items",
@@ -46,8 +49,8 @@
     "unbounded_quality_loop": false,
     "source_and_ledger_persist_required": true
   },
-  "next_action": "Second pass static QA and substantive duplicate screen; bounded closure.",
-  "note": "First pass complete 300/300; all 81 official learning items nonempty and exact 9-section allocation. Second pass pending, not chapter accepted.",
+  "next_action": "Proceed to chapter5 2027 syllabus remediation; revisit chapter4 only when a concrete defect appears in real use.",
+  "note": "First pass 300 and bounded second-pass 300 completed. Source alignment and nine section totals verified; independent semantic item-by-item certification and runtime test outside acceptance.",
   "allocation_file": "audit/chapter4-allocation-2027.json",
   "source_blob_shas": {
     "src/data/questionBank.ts": "d01984f78a2bb9a956c10dbf089268e42319d70f",
@@ -56,5 +59,6 @@
     "src/data/advanced2027Questions.ts": "ee0cd597db12399a765e482bd27998f465a78d13",
     "src/data/practice2027Questions.ts": "9b34f83d0d0e056182d782d13652c3d46c252a4d",
     "src/data/applied2027Questions.ts": "ffb8a64543db44488f226eafe386eb1dfa36dc90"
-  }
+  },
+  "completion_stage": "一旦完成"
 }
