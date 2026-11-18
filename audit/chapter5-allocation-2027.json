@@ -1,0 +1,209 @@
+{
+  "schema_version": 1,
+  "chapter": 5,
+  "official_title": "第5章 生成AIの実践と活用事例",
+  "source": "https://guga.or.jp/assets/syllabus.pdf",
+  "effective_from": "2027年2月試験",
+  "target": 300,
+  "method": "配分は公式の出題比率ではなく、学習項目を網羅し実践応用を厚くする本問題集独自の編集目標。配分達成だけでは内容監査完了としない。",
+  "sections": [
+    {
+      "name": "プロンプトエンジニアリング",
+      "target": 56,
+      "learning_items": [
+        {
+          "name": "プロンプトエンジニアリングとは",
+          "target": 8
+        },
+        {
+          "name": "プロンプトの基本構成要素",
+          "target": 8
+        },
+        {
+          "name": "Zero-Shotプロンプティング",
+          "target": 8
+        },
+        {
+          "name": "Few-Shotプロンプティング",
+          "target": 8
+        },
+        {
+          "name": "Chain-of-Thought（思考の連鎖）",
+          "target": 8
+        },
+        {
+          "name": "役割設定・出力形式の指定",
+          "target": 8
+        },
+        {
+          "name": "具体度のコントロール",
+          "target": 8
+        }
+      ]
+    },
+    {
+      "name": "文書作成・コミュニケーション業務での活用",
+      "target": 42,
+      "learning_items": [
+        {
+          "name": "ビジネスメール・各種ビジネス文書の作成",
+          "target": 7
+        },
+        {
+          "name": "文章の校正・添削・整形",
+          "target": 7
+        },
+        {
+          "name": "文章の要約・対象読者やトーンの変更",
+          "target": 7
+        },
+        {
+          "name": "議事録の作成・要点抽出",
+          "target": 7
+        },
+        {
+          "name": "翻訳・多言語コミュニケーション",
+          "target": 7
+        },
+        {
+          "name": "プレゼンテーションスライドの作成",
+          "target": 7
+        }
+      ]
+    },
+    {
+      "name": "企画・マーケティング業務での活用",
+      "target": 48,
+      "learning_items": [
+        {
+          "name": "キャッチコピー・広告コピーの作成",
+          "target": 8
+        },
+        {
+          "name": "企画立案・ブレインストーミング・壁打ち",
+          "target": 8
+        },
+        {
+          "name": "アンケートの設計と分析",
+          "target": 8
+        },
+        {
+          "name": "SNS投稿・コンテンツ制作",
+          "target": 8
+        },
+        {
+          "name": "ランディングページの作成",
+          "target": 8
+        },
+        {
+          "name": "市場・競合リサーチ",
+          "target": 8
+        }
+      ]
+    },
+    {
+      "name": "クリエイティブ制作での活用",
+      "target": 36,
+      "learning_items": [
+        {
+          "name": "画像・ビジュアル素材の生成",
+          "target": 8
+        },
+        {
+          "name": "動画コンテンツの生成・編集",
+          "target": 7
+        },
+        {
+          "name": "ナレーション・音声・BGMの生成",
+          "target": 7
+        },
+        {
+          "name": "ロゴ・デザイン案・モックアップの作成",
+          "target": 7
+        },
+        {
+          "name": "既存素材のバリエーション展開・多言語ローカライズ",
+          "target": 7
+        }
+      ]
+    },
+    {
+      "name": "データ分析・リサーチ業務での活用",
+      "target": 44,
+      "learning_items": [
+        {
+          "name": "データの整形・分類",
+          "target": 9
+        },
+        {
+          "name": "表・データの集計と可視化",
+          "target": 9
+        },
+        {
+          "name": "大量文書からの情報抽出・要約",
+          "target": 9
+        },
+        {
+          "name": "ディープリサーチ：複数ソースを横断調査",
+          "target": 9
+        },
+        {
+          "name": "定例レポートの自動生成",
+          "target": 8
+        }
+      ]
+    },
+    {
+      "name": "開発・業務自動化での活用",
+      "target": 44,
+      "learning_items": [
+        {
+          "name": "コーディング・アプリ開発",
+          "target": 9
+        },
+        {
+          "name": "既存システム・コードベースの調査とリファクタリング",
+          "target": 9
+        },
+        {
+          "name": "定型業務の自動化",
+          "target": 9
+        },
+        {
+          "name": "ブラウザ操作・Web上の手続きの自動化",
+          "target": 9
+        },
+        {
+          "name": "複数ツール・複数ステップを横断する複合タスクの自動化",
+          "target": 8
+        }
+      ]
+    },
+    {
+      "name": "業種別に見る生成AI活用",
+      "target": 30,
+      "learning_items": [
+        {
+          "name": "規制・機密性が重視される業種",
+          "target": 8
+        },
+        {
+          "name": "現場・ものづくりを支える業種",
+          "target": 8
+        },
+        {
+          "name": "顧客接点・コンテンツ制作の業種",
+          "target": 7
+        },
+        {
+          "name": "業種を問わず共通する成功のポイント",
+          "target": 7
+        }
+      ]
+    }
+  ],
+  "first_pass": {
+    "start_id": "q241",
+    "completed": 0
+  }
+}
