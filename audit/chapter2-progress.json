@@ -76,7 +76,7 @@
     "src/data/questionBank.ts": "b76b380ae223674ca439333c49cb07f97770d1e5",
     "src/data/syllabus2027Questions.ts": "071600cfa4f85af7785c65466768103935f01073",
     "src/data/expansion2027Questions.ts": "5c445426ecb4481c7af71f10a5968f324f605abd",
-    "src/data/advanced2027Questions.ts": "94eac33cd7b07ae27b6d1ddbb32308fb347559ce",
+    "src/data/advanced2027Questions.ts": "943e5048cf25d6de366c1596b8e4ec55f2c20475",
     "src/data/practice2027Questions.ts": "08cf5035884532d6eab98ed7fbb8628c7656b4e2",
     "src/data/applied2027Questions.ts": "587ef062d47e5e8ceeaf750257ab5ac306f01977",
     "src/App.tsx": "0b4ceec8b0564871ad478f19733d7277542f8517"
@@ -85,7 +85,7 @@
   "checkpoint": {
     "last_completed_id": "q120",
     "next_question_id": null,
-    "next_action": "Continue bounded semantic review of high-similarity pairs; verify compile and Safari after Cursor deployment; do not equate similarity screen with 112 defects",
+    "next_action": "Review remaining high-similarity pairs by answer intent, then run build and static audit; do not claim tests run without execution",
     "last_verified_commit": "1a1a089d18cc89905f985aecc52c0daf3f006408",
     "chapter_accepted": false
   },
@@ -460,10 +460,12 @@
       "pairs_above_0_48": 112,
       "reviewed_example": "q066/q119 overlapping ChatGPT service definition",
       "fixed": [
-        "q066 rewritten as post-update business regression evaluation"
+        "q066 rewritten as post-update business regression evaluation",
+        "adv27-095 rewritten from scaling-law definition to applicability under changed data conditions"
       ],
       "commit": "13f92beb1da7bbff75e85eb30b80e7a14c9ddac5",
-      "remaining": "Other flagged pairs require judgment of answer intent, not automated deletion"
+      "remaining": "Other flagged pairs require judgment of answer intent, not automated deletion",
+      "latest_commit": "0b9c665825bfddb4e0ec6ef2bf8c6436318463db"
     },
     "build_status": "Not executed: GitHub source inspected and updated; no local dependency-backed build or Safari execution in this turn"
   }
