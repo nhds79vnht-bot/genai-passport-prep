@@ -4,20 +4,7 @@
   "checked": 300,
   "unique_ids": 300,
   "full_source_files": 6,
-  "issues": [
-    {
-      "id": "ex27-065",
-      "error": "ledger_source_mismatch"
-    },
-    {
-      "id": "ex27-078",
-      "error": "ledger_source_mismatch"
-    },
-    {
-      "id": "adv27-050",
-      "error": "ledger_source_mismatch"
-    }
-  ],
+  "issues": [],
   "exact_duplicate_prompts": [],
   "near_duplicate_pairs_over_044": 0,
   "near_duplicate_candidates": [],
@@ -76,5 +63,12 @@
     "src/data/practice2027Questions.ts": "9b34f83d0d0e056182d782d13652c3d46c252a4d",
     "src/data/applied2027Questions.ts": "ffb8a64543db44488f226eafe386eb1dfa36dc90"
   },
-  "method_limit": "Automated validation of rows/IDs/choices, ledger/source/section match, exact and trigram near-duplicate prompts. Not a human independent semantic verification of every explanation or legal rule."
+  "method_limit": "Automated validation of rows/IDs/choices, ledger/source/section match, exact and trigram near-duplicate prompts. Not a human independent semantic verification of every explanation or legal rule.",
+  "corrected_ledger_ids": [
+    "ex27-065",
+    "ex27-078",
+    "adv27-050"
+  ],
+  "status": "bounded_static_checks_passed",
+  "note": "Three source/ledger prompt or topic mismatches corrected in chapter4-inventory-2027.json. No structural issues or normalized duplicate prompts detected. Does not certify independent semantic accuracy of every legal claim."
 }
