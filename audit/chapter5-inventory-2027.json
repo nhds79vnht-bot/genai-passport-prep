@@ -580,9 +580,9 @@
       "source": "src/data/syllabus2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "業務改善",
-      "prompt": "生成AIによる問い合わせ対応を導入する際、効果測定として適切なのはどれか。",
-      "syllabus_2027_item": "業種を問わず共通する成功のポイント",
-      "review_status": "mapped_and_reclassified_first_pass"
+      "prompt": "AIが複数の割引条件を順番に適用した。説明は自然だが計算が怪しい。適切なのは。",
+      "syllabus_2027_item": "Chain-of-Thought（思考の連鎖）",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "s27-011",
@@ -661,9 +661,9 @@
       "source": "src/data/syllabus2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "段階導入",
-      "prompt": "生成AIの業務導入を安全に進める方法として適切なのはどれか。",
-      "syllabus_2027_item": "業種を問わず共通する成功のポイント",
-      "review_status": "mapped_and_reclassified_first_pass"
+      "prompt": "AI生成の予約アプリに他人の予約を見られる不具合があった。公開前に行うべきことは。",
+      "syllabus_2027_item": "コーディング・アプリ開発",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "s27-056",
@@ -679,9 +679,9 @@
       "source": "src/data/syllabus2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "継続改善",
-      "prompt": "生成AIの回答品質を継続改善する際に有効な方法はどれか。",
-      "syllabus_2027_item": "業種を問わず共通する成功のポイント",
-      "review_status": "mapped_and_reclassified_first_pass"
+      "prompt": "倉庫のAI配置案で荷物が避難経路にかかる。採用判断は。",
+      "syllabus_2027_item": "現場・ものづくりを支える業種",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ex27-081",
@@ -751,9 +751,9 @@
       "source": "src/data/expansion2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "業務選定",
-      "prompt": "生成AI導入の初期対象として比較的適した業務はどれか。",
-      "syllabus_2027_item": "業種を問わず共通する成功のポイント",
-      "review_status": "mapped_and_reclassified_first_pass"
+      "prompt": "日本語の製品チラシを英語・タイ語に展開したところ保証期間が欠落した。対応は。",
+      "syllabus_2027_item": "既存素材のバリエーション展開・多言語ローカライズ",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ex27-089",
@@ -796,18 +796,18 @@
       "source": "src/data/expansion2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "効果測定",
-      "prompt": "AI導入で作業時間が減ったが誤回答が増えた。評価として適切なのはどれか。",
-      "syllabus_2027_item": "業種を問わず共通する成功のポイント",
-      "review_status": "mapped_and_reclassified_first_pass"
+      "prompt": "AI広告画像に実製品にはない接続端子が描かれた。適切なのは。",
+      "syllabus_2027_item": "画像・ビジュアル素材の生成",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ex27-094",
       "source": "src/data/expansion2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "A/B比較",
-      "prompt": "AI導入前後の業務効率を比較する際に重要な条件はどれか。",
-      "syllabus_2027_item": "業種を問わず共通する成功のポイント",
-      "review_status": "mapped_and_reclassified_first_pass"
+      "prompt": "AI作成の申込ページでスマホだけ送信ボタンが隠れていた。対応は。",
+      "syllabus_2027_item": "ランディングページの作成",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ex27-095",
@@ -850,9 +850,9 @@
       "source": "src/data/expansion2027Questions.ts",
       "chapter": "第5章 活用実務",
       "legacy_topic": "教育",
-      "prompt": "社員に生成AIを導入する際の研修内容として適切なのはどれか。",
-      "syllabus_2027_item": "業種を問わず共通する成功のポイント",
-      "review_status": "mapped_and_reclassified_first_pass"
+      "prompt": "AIが古いコードを統合した結果、一部の既存画面が動かなくなった。対応は。",
+      "syllabus_2027_item": "既存システム・コードベースの調査とリファクタリング",
+      "review_status": "revised_first_pass"
     },
     {
       "id": "ex27-100",
