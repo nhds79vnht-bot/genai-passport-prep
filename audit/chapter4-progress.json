@@ -20,10 +20,10 @@
   "inventory_file": "audit/chapter4-inventory-2027.json",
   "allocation_status": "saved_9_sections_81_topics",
   "first_pass": {
-    "reviewed": 60,
-    "revised": 60,
-    "last_completed_id": "q240",
-    "next_id": "s27-005"
+    "reviewed": 73,
+    "revised": 73,
+    "last_completed_id": "s27-051",
+    "next_id": "ex27-061"
   },
   "second_pass": {
     "reviewed": 0,
@@ -45,10 +45,11 @@
     "unbounded_quality_loop": false,
     "source_and_ledger_persist_required": true
   },
-  "next_action": "Continue 2027 syllabus remediations from s27-005 and remaining 240 source questions; complete first pass and bounded second pass.",
-  "note": "q181-q240 source and 60 inventory rows confirmed. Not independent second-pass complete; not chapter accepted.",
+  "next_action": "Continue from ex27-061 (20 expansion questions), then advanced, practice, applied; perform bounded second pass",
+  "note": "q181-q240 60 revised and s27 13 revised in GitHub. Chapter not yet accepted.",
   "allocation_file": "audit/chapter4-allocation-2027.json",
   "source_blob_shas": {
-    "src/data/questionBank.ts": "d01984f78a2bb9a956c10dbf089268e42319d70f"
+    "src/data/questionBank.ts": "d01984f78a2bb9a956c10dbf089268e42319d70f",
+    "src/data/syllabus2027Questions.ts": "8ccfcf45ead1fe263ebc074fc84c8c68b32d182e"
   }
 }
