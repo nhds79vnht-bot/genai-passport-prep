@@ -22,7 +22,7 @@
   },
   "total": 300,
   "unique_ids": 300,
-  "classification_status": "first_267_content_reviewed",
+  "classification_status": "first_pass_300_completed",
   "note": "133 items reviewed and mapped in GitHub; 167 applied questions pending. Metadata and source verified at this checkpoint.",
   "items": [
     {
@@ -3234,297 +3234,396 @@
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "著作権とアイデア",
-      "prompt": "AIが他社記事と同じアイデアを異なる文章で説明した。著作権の観点で適切なのは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "認可されたAIが会議日程を誤って要約した。どうするか。",
+      "syllabus_2027_item": "承認されたAIでも出力確認が必要な理由",
+      "review_status": "first_pass_revised",
+      "new_section": "AI出力の評価と検証",
+      "decision": "REVISE",
+      "reason": "2027公式項目への改稿。正答・誤答・解説と実務判断を確認。"
     },
     {
       "id": "ap27-702",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "個人情報の安全管理",
-      "prompt": "顧客データを扱うAI業務で閲覧権限を全社員に与えていた。改善は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "承認済みAIが別の顧客名をメールに混入させた。適切なのは。",
+      "syllabus_2027_item": "承認されたAIでも出力確認が必要な理由",
+      "review_status": "first_pass_revised",
+      "new_section": "AI出力の評価と検証",
+      "decision": "REVISE",
+      "reason": "2027公式項目への改稿。正答・誤答・解説と実務判断を確認。"
     },
     {
       "id": "ap27-703",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "営業秘密",
-      "prompt": "未公開の設計資料を外部生成AIへ送信する前の対応は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIの催事案内と融資審査を比較した。適切な検証方針は。",
+      "syllabus_2027_item": "用途と影響度に応じた検証レベル",
+      "review_status": "first_pass_revised",
+      "new_section": "AI出力の評価と検証",
+      "decision": "REVISE",
+      "reason": "2027公式項目への改稿。正答・誤答・解説と実務判断を確認。"
     },
     {
       "id": "ap27-704",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "AIの透明性",
-      "prompt": "採用選考でAIが候補者を順位付けしている。運用上の留意点は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIが作る社内挨拶文と法定開示の数値表で確認すべき差は。",
+      "syllabus_2027_item": "用途と影響度に応じた検証レベル",
+      "review_status": "first_pass_revised",
+      "new_section": "AI出力の評価と検証",
+      "decision": "REVISE",
+      "reason": "2027公式項目への改稿。正答・誤答・解説と実務判断を確認。"
     },
     {
       "id": "ap27-705",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "個人情報の目的外利用",
-      "prompt": "顧客サポートで取得した情報を無関係な広告配信へ使う。確認すべきことは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIが補助金の上限額を示したが対象年度がない。どうするか。",
+      "syllabus_2027_item": "ファクトチェック：事実・数値・出典・最新情報の確認",
+      "review_status": "first_pass_revised",
+      "new_section": "AI出力の評価と検証",
+      "decision": "REVISE",
+      "reason": "2027公式項目への改稿。正答・誤答・解説と実務判断を確認。"
     },
     {
       "id": "ap27-706",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "差別の検証",
-      "prompt": "AIの審査結果に集団間の差が見つかった。適切な次の対応は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIが売上増を広告効果としたが値下げも実施していた。妥当な検証は。",
+      "syllabus_2027_item": "妥当性レビュー：前提・論理・抜け漏れの確認",
+      "review_status": "first_pass_revised",
+      "new_section": "AI出力の評価と検証",
+      "decision": "REVISE",
+      "reason": "2027公式項目への改稿。正答・誤答・解説と実務判断を確認。"
     },
     {
       "id": "ap27-707",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "引用の要件",
-      "prompt": "AI作成の記事に他者の文章を引用する場合に適切なのは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIの人員計画に繁忙期の問い合わせ数が含まれない。適切なのは。",
+      "syllabus_2027_item": "妥当性レビュー：前提・論理・抜け漏れの確認",
+      "review_status": "first_pass_revised",
+      "new_section": "AI出力の評価と検証",
+      "decision": "REVISE",
+      "reason": "2027公式項目への改稿。正答・誤答・解説と実務判断を確認。"
     },
     {
       "id": "ap27-708",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "個人情報の事故",
-      "prompt": "AIサービスへの誤送信で顧客情報が含まれた。初動は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AI作成広告に根拠のない『国内唯一』との表現がある。どうするか。",
+      "syllabus_2027_item": "表現・権利・個人情報・機密情報の確認",
+      "review_status": "first_pass_revised",
+      "new_section": "AI出力の評価と検証",
+      "decision": "REVISE",
+      "reason": "2027公式項目への改稿。正答・誤答・解説と実務判断を確認。"
     },
     {
       "id": "ap27-709",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "生成画像と商標",
-      "prompt": "広告用の生成画像に他社のロゴが含まれる。適切なのは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIが生成した展示会画像に他社ロゴがある。適切なのは。",
+      "syllabus_2027_item": "表現・権利・個人情報・機密情報の確認",
+      "review_status": "first_pass_revised",
+      "new_section": "AI出力の評価と検証",
+      "decision": "REVISE",
+      "reason": "2027公式項目への改稿。正答・誤答・解説と実務判断を確認。"
     },
     {
       "id": "ap27-710",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "出典の捏造",
-      "prompt": "AIが存在しない判例を引用した。法律関連の回答で必要なのは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIニュースレターに顧客の非公開購入履歴が混入した。どうするか。",
+      "syllabus_2027_item": "表現・権利・個人情報・機密情報の確認",
+      "review_status": "first_pass_revised",
+      "new_section": "AI出力の評価と検証",
+      "decision": "REVISE",
+      "reason": "2027公式項目への改稿。正答・誤答・解説と実務判断を確認。"
     },
     {
       "id": "ap27-751",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "著作権の引用",
-      "prompt": "AI作成資料へ他人の文章を長く転載する。確認事項は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AI作成の安全マニュアルに根拠不明の操作がある。採否は。",
+      "syllabus_2027_item": "採用・修正・破棄・専門家確認の判断",
+      "review_status": "first_pass_revised",
+      "new_section": "AI出力の評価と検証",
+      "decision": "REVISE",
+      "reason": "2027公式項目への改稿。正答・誤答・解説と実務判断を確認。"
     },
     {
       "id": "ap27-752",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "個人データ",
-      "prompt": "顧客氏名を消したが電話番号をAIへ送る。適切なのは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "社員の病歴をAIで分析する。入力前に必要なことは。",
+      "syllabus_2027_item": "要配慮個人情報と機微情報",
+      "review_status": "first_pass_revised",
+      "new_section": "個人情報・プライバシー・秘密保持",
+      "decision": "REVISE",
+      "reason": "2027公式項目への改稿。正答・誤答・解説と実務判断を確認。"
     },
     {
       "id": "ap27-753",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "利用目的",
-      "prompt": "問い合わせ時に取得した住所を無関係な広告配信へ使いたい。確認は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "虹彩特徴を変換した符号をAI認証に使う。適切な理解は。",
+      "syllabus_2027_item": "個人識別符号",
+      "review_status": "first_pass_revised",
+      "new_section": "個人情報・プライバシー・秘密保持",
+      "decision": "REVISE",
+      "reason": "2027公式項目への改稿。正答・誤答・解説と実務判断を確認。"
     },
     {
       "id": "ap27-754",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "生成画像",
-      "prompt": "生成した広告画像が既存作品と非常によく似ている。適切なのは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "数学の法則と教科書の独創的な解説文を比べる。適切な理解は。",
+      "syllabus_2027_item": "著作権と著作物の基本",
+      "review_status": "first_pass_revised",
+      "new_section": "著作権・知的財産・生成物の権利",
+      "decision": "REVISE",
+      "reason": "2027公式項目への改稿。正答・誤答・解説と実務判断を確認。"
     },
     {
       "id": "ap27-755",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "機密情報",
-      "prompt": "社内の未公開売上資料を外部AIへ送信する。事前に確認するのは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIで他人の原稿を改変し作者名も削って公開したい。確認する権利は。",
+      "syllabus_2027_item": "著作者人格権とは",
+      "review_status": "first_pass_revised",
+      "new_section": "著作権・知的財産・生成物の権利",
+      "decision": "REVISE",
+      "reason": "2027公式項目への改稿。正答・誤答・解説と実務判断を確認。"
     },
     {
       "id": "ap27-756",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "公平性",
-      "prompt": "AI審査で一部の集団の見逃し率が高い。適切な評価は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "購入した有料記事を契約範囲外のAIに送る。確認事項は。",
+      "syllabus_2027_item": "第三者コンテンツをAIに入力するリスク",
+      "review_status": "first_pass_revised",
+      "new_section": "著作権・知的財産・生成物の権利",
+      "decision": "REVISE",
+      "reason": "2027公式項目への改稿。正答・誤答・解説と実務判断を確認。"
     },
     {
       "id": "ap27-757",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "説明可能性",
-      "prompt": "AIが採用候補者を不採用にしたが理由を説明できない。対応は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIが製品のロゴと外観を提案した。検討すべき権利は。",
+      "syllabus_2027_item": "生成AIと知的財産権の全体像",
+      "review_status": "first_pass_revised",
+      "new_section": "著作権・知的財産・生成物の権利",
+      "decision": "REVISE",
+      "reason": "2027公式項目への改稿。正答・誤答・解説と実務判断を確認。"
     },
     {
       "id": "ap27-758",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "商標",
-      "prompt": "生成画像に競合企業のロゴが含まれている。対応は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "日本で著作物をAI学習に使う際の法的検討は。",
+      "syllabus_2027_item": "AI学習と著作権",
+      "review_status": "first_pass_revised",
+      "new_section": "著作権・知的財産・生成物の権利",
+      "decision": "REVISE",
+      "reason": "2027公式項目への改稿。正答・誤答・解説と実務判断を確認。"
     },
     {
       "id": "ap27-759",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "監査記録",
-      "prompt": "AIが顧客の登録情報を変更する業務で必要な記録は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIが記事の大半をそのまま使い『要約』と名付けた。適切な判断は。",
+      "syllabus_2027_item": "引用・転載・要約・翻案の違い",
+      "review_status": "first_pass_revised",
+      "new_section": "著作権・知的財産・生成物の権利",
+      "decision": "REVISE",
+      "reason": "2027公式項目への改稿。正答・誤答・解説と実務判断を確認。"
     },
     {
       "id": "ap27-760",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "情報の出典",
-      "prompt": "AIが存在しない法令条文を引用した。適切な対応は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "人が複数のAI出力を編集・配置してデザインを完成させた。判断の要点は。",
+      "syllabus_2027_item": "AI生成物の権利帰属と人の創作的関与",
+      "review_status": "first_pass_revised",
+      "new_section": "著作権・知的財産・生成物の権利",
+      "decision": "REVISE",
+      "reason": "2027公式項目への改稿。正答・誤答・解説と実務判断を確認。"
     },
     {
       "id": "ap27-818",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "個人情報",
-      "prompt": "AIに入力する社員番号から本人を特定できる。適切な扱いは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIパンフレットに第三者の広告文が含まれる。公開前の対応は。",
+      "syllabus_2027_item": "商用利用・社外公開前に確認すべきこと",
+      "review_status": "first_pass_revised",
+      "new_section": "著作権・知的財産・生成物の権利",
+      "decision": "REVISE",
+      "reason": "2027公式項目への改稿。正答・誤答・解説と実務判断を確認。"
     },
     {
       "id": "ap27-819",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "利用目的",
-      "prompt": "取得した顧客情報を別の目的へ転用する前の確認は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "高齢者向けAI案内を導入する。倫理・社会的な検討として適切なのは。",
+      "syllabus_2027_item": "AI倫理・ELSIとは",
+      "review_status": "first_pass_revised",
+      "new_section": "AI倫理とAI事業者ガイドライン",
+      "decision": "REVISE",
+      "reason": "2027公式項目への改稿。正答・誤答・解説と実務判断を確認。"
     },
     {
       "id": "ap27-820",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "著作権",
-      "prompt": "生成画像が既存作品に酷似する場合の確認は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "新人のAI研修で優先することは。",
+      "syllabus_2027_item": "教育・リテラシー：AIを適切に使うために",
+      "review_status": "first_pass_revised",
+      "new_section": "AI倫理とAI事業者ガイドライン",
+      "decision": "REVISE",
+      "reason": "2027公式項目への改稿。正答・誤答・解説と実務判断を確認。"
     },
     {
       "id": "ap27-821",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "引用",
-      "prompt": "他人の記事をAI作成資料へ引用する際に必要なのは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIサービスがデータの持ち出しを制限する契約である。評価すべき観点は。",
+      "syllabus_2027_item": "公正競争とイノベーション",
+      "review_status": "first_pass_revised",
+      "new_section": "AI倫理とAI事業者ガイドライン",
+      "decision": "REVISE",
+      "reason": "2027公式項目への改稿。正答・誤答・解説と実務判断を確認。"
     },
     {
       "id": "ap27-822",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "秘密情報",
-      "prompt": "未公開の設計図を外部AIへ送る前に確認するのは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIによる誤った健康情報がSNSで拡散した。対応は。",
+      "syllabus_2027_item": "偽情報・偏りと情報拡散のリスク",
+      "review_status": "first_pass_revised",
+      "new_section": "AI倫理とAI事業者ガイドライン",
+      "decision": "REVISE",
+      "reason": "2027公式項目への改稿。正答・誤答・解説と実務判断を確認。"
     },
     {
       "id": "ap27-823",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "商標",
-      "prompt": "AIが競合のロゴに似た広告画像を生成した。適切なのは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AI導入で部門間の技能格差が広がった。対応は。",
+      "syllabus_2027_item": "雇用・教育・格差・環境への影響",
+      "review_status": "first_pass_revised",
+      "new_section": "AI倫理とAI事業者ガイドライン",
+      "decision": "REVISE",
+      "reason": "2027公式項目への改稿。正答・誤答・解説と実務判断を確認。"
     },
     {
       "id": "ap27-824",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "公平性",
-      "prompt": "採用AIの誤判定率が集団ごとに異なる。対応は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "部署ごとのAI運用規程が食い違い事故対応が遅れた。改善は。",
+      "syllabus_2027_item": "AIガバナンスとは",
+      "review_status": "first_pass_revised",
+      "new_section": "AIガバナンスと社内ガイドライン",
+      "decision": "REVISE",
+      "reason": "2027公式項目への改稿。正答・誤答・解説と実務判断を確認。"
     },
     {
       "id": "ap27-825",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "説明責任",
-      "prompt": "AIが審査を拒否した理由を尋ねられた。適切な運用は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "日本のAI法の基本的な方向性は。",
+      "syllabus_2027_item": "AI法とは：制定の背景と基本構造",
+      "review_status": "first_pass_revised",
+      "new_section": "AI法・国際ルール・AI安全保障",
+      "decision": "REVISE",
+      "reason": "2027公式項目への改稿。正答・誤答・解説と実務判断を確認。"
     },
     {
       "id": "ap27-826",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "透明性",
-      "prompt": "顧客がAIによる自動応答を人間の回答と誤認している。改善は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "国のAI基本計画が示された。企業の役割として適切なのは。",
+      "syllabus_2027_item": "AI基本計画と国・事業者・利用者の役割",
+      "review_status": "first_pass_revised",
+      "new_section": "AI法・国際ルール・AI安全保障",
+      "decision": "REVISE",
+      "reason": "2027公式項目への改稿。正答・誤答・解説と実務判断を確認。"
     },
     {
       "id": "ap27-827",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "事故対応",
-      "prompt": "機密データを外部AIへ誤送信した。初動は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AI事業者ガイドラインを守れば著作権法の確認は不要か。",
+      "syllabus_2027_item": "AI法・ガイドライン・既存法令の関係",
+      "review_status": "first_pass_revised",
+      "new_section": "AI法・国際ルール・AI安全保障",
+      "decision": "REVISE",
+      "reason": "2027公式項目への改稿。正答・誤答・解説と実務判断を確認。"
     },
     {
       "id": "ap27-828",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "ログ管理",
-      "prompt": "AIの操作履歴に個人情報が含まれる。必要なのは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "自治体がAIで窓口を効率化したいが誤案内が懸念される。導入方針は。",
+      "syllabus_2027_item": "イノベーション促進とリスク対応の両立",
+      "review_status": "first_pass_revised",
+      "new_section": "AI法・国際ルール・AI安全保障",
+      "decision": "REVISE",
+      "reason": "2027公式項目への改稿。正答・誤答・解説と実務判断を確認。"
     },
     {
       "id": "ap27-829",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "出典",
-      "prompt": "AIが架空の法令を引用した。対応は。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIサービスの規約や制度が改定された。担当者の行動は。",
+      "syllabus_2027_item": "継続的な情報収集とリスキリングの重要性",
+      "review_status": "first_pass_revised",
+      "new_section": "AI法・国際ルール・AI安全保障",
+      "decision": "REVISE",
+      "reason": "2027公式項目への改稿。正答・誤答・解説と実務判断を確認。"
     },
     {
       "id": "ap27-830",
       "source": "src/data/applied2027Questions.ts",
       "chapter": "第4章 法律と倫理",
       "legacy_topic": "人の監督",
-      "prompt": "AIが重要な契約変更を自動実行しようとした。適切なのは。",
-      "syllabus_2027_item": null,
-      "review_status": "pending"
+      "prompt": "AIの回答を鵜呑みにした社員が社外資料へ誤った数字を掲載した。再発防止研修として適切なのは。",
+      "syllabus_2027_item": "教育・リテラシー：AIを適切に使うために",
+      "review_status": "first_pass_revised",
+      "new_section": "AI倫理とAI事業者ガイドライン",
+      "decision": "REVISE",
+      "reason": "2027公式項目への改稿。正答・誤答・解説と実務判断を確認。"
     }
   ]
 }
