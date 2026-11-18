@@ -126,9 +126,12 @@ export default function App() {
       wrongQuestionIds,
       completedAt: new Date().toISOString(),
     }
-    // Persist a locally validated attempt for future authenticated server-side scoring.
-    // The authenticated parent frame submits this candidate for independent server scoring.
-    const candidate = createScoreSubmissionCandidate(result, questions)
+    // The parent server can re-score only canonical q001-q300 questions.
+    // Full-bank mode is explicitly local-only, even if a random set happens
+    // to contain exclusively canonical IDs.
+    const candidate = learnerScope && includeAdditionalQuestions
+      ? null
+      : createScoreSubmissionCandidate(result, questions)
     if (candidate) {
       const scopedLearnerId = new URLSearchParams(window.location.search).get('learnerId')
       const parentOrigin = new URLSearchParams(window.location.search).get('parentOrigin')
@@ -155,7 +158,7 @@ export default function App() {
     )
     setResultFilter('wrong')
     setView('result')
-  }, [answers, mode, questions, selectedChapter])
+  }, [answers, includeAdditionalQuestions, learnerScope, mode, questions, selectedChapter])
 
   useEffect(() => {
     if (view !== 'exam' || mode !== 'mock' || mockDeadline === null) return
