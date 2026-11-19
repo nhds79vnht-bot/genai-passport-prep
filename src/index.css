@@ -777,3 +777,30 @@ button:disabled {
 .review-choices .review-choice-note { margin-top: 5px; font-size: .9rem; line-height: 1.75; }
 .review-answer-correct p { font-size: 1.05rem; line-height: 1.8; }
 .review-item h4 { font-family: var(--font-body); }
+
+/* Keep the adult iPhone reading order single-column even on wider screens. */
+.review-content-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 10px; }
+.review-answer-column, .review-support-column { min-width: 0; }
+.review-question-header { margin-bottom: 10px; }
+.review-example {
+  padding: 12px 14px;
+  margin-top: 12px;
+  border-left: 3px solid #34d399;
+  background: rgba(52, 211, 153, .10);
+  border-radius: 8px;
+}
+.review-example > strong { color: #86efac; }
+.review-example p { margin-top: 5px; line-height: 1.8; }
+.review-selected-feedback {
+  padding: 12px 14px;
+  margin-top: 12px;
+  border-left: 3px solid #fb7185;
+  background: rgba(251, 113, 133, .11);
+  border-radius: 8px;
+}
+.review-selected-feedback h4 { color: #ffb5bf; font-size: 1.02rem; margin: 0 0 7px; }
+.review-selected-feedback p { line-height: 1.8; color: #fff1f2; }
+.review-selected-feedback p + p { margin-top: 8px; }
+.review-original-explanation { margin-top: 10px; }
+.review-original-explanation summary { cursor: pointer; color: #a7f3ff; font-size: .92rem; }
+.review-original-explanation p { margin-top: 7px; color: #dce7f4; line-height: 1.75; }
