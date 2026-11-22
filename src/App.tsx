@@ -27,6 +27,7 @@ import {
 import { scoreAnswers } from './lib/scoring'
 import { createScoreSubmissionCandidate } from './lib/scoreSync'
 import { enqueueScoreCandidate, loadScoreOutbox, acknowledgeScoreCandidate } from './lib/scoreOutbox'
+import { ensurePassportProductionBaseline } from './lib/productionBaseline'
 import {
   loadResults,
   loadStats,
@@ -50,14 +51,33 @@ function modeLabel(mode: StudyMode, chapter?: Chapter): string {
   return `章別 (${chapter ? chapterDisplayName(chapter) : ''})`
 }
 
+function selectedLearnerScope(): string | null {
+  const params = new URLSearchParams(window.location.search)
+  const learnerId = params.get('learnerId')
+  return window.parent !== window && learnerId &&
+    /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(learnerId)
+    ? learnerId : null
+}
+
+/** Production baseline runs before state loads so tests never become real progress. */
 export default function App() {
+  const learnerScope = selectedLearnerScope()
+  if (import.meta.env.PROD) {
+    const baseline = ensurePassportProductionBaseline(learnerScope)
+    if (!baseline.ok) {
+      return <main role="alert" style={{padding:24}}>
+        <h2>本稼働前のテストデータ初期化を確認できません</h2>
+        <p>{baseline.reason}</p>
+        <button type="button" onClick={() => window.location.reload()}>初期化を再試行する</button>
+      </main>
+    }
+  }
+  return <AppReady key={learnerScope ?? 'adult'} learnerScope={learnerScope} />
+}
+
+function AppReady({ learnerScope }: { learnerScope: string | null }) {
   const completionGuard = useRef(false)
   const [view, setView] = useState<View>('home')
-  const learnerScope = (() => {
-    const params = new URLSearchParams(window.location.search)
-    const learnerId = params.get('learnerId')
-    return window.parent !== window && learnerId && /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(learnerId) ? learnerId : null
-  })()
   const progressKey = learnerScope ? `genai-passport-prep:progress-v1:${learnerScope}` : 'genai-passport-prep:progress-v1'
   const [progress, setProgress] = useState<LearnerProgress>(() => {
     try {
